@@ -1,0 +1,20 @@
+# Production dependencies
+jax>=0.4.0
+jaxlib>=0.4.0
+numpy>=1.21.0
+networkx>=2.8
+gymnasium>=0.28.0
+torch>=2.0.0
+torch-geometric>=2.3.0
+
+# Optional: GPU support (install separately with --find-links)
+# jax[cuda12_pip]
+# torch>=2.0.0+cu118
+
+# Optional: Distributed training
+# ray[rllib]>=2.5.0
+# wandb>=0.15.0
+
+# Optional: Monitoring
+# prometheus-client>=0.16.0
+# grafana-api>=1.0.3

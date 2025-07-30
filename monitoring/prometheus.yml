@@ -1,0 +1,20 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+scrape_configs:
+  - job_name: 'fed-rl-training'
+    static_configs:
+      - targets: ['localhost:8080']
+    scrape_interval: 5s
+    metrics_path: '/metrics'
+    
+  - job_name: 'fed-rl-agents'
+    static_configs:
+      - targets: ['localhost:8081', 'localhost:8082', 'localhost:8083']
+    scrape_interval: 10s
+    
+  - job_name: 'system-metrics'
+    static_configs:
+      - targets: ['localhost:9100']
+    scrape_interval: 30s

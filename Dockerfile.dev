@@ -1,0 +1,58 @@
+FROM nvidia/cuda:12.1-devel-ubuntu20.04
+
+# Set environment variables
+ENV DEBIAN_FRONTEND=noninteractive
+ENV PYTHONUNBUFFERED=1
+ENV CUDA_HOME=/usr/local/cuda
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    python3.9 \
+    python3.9-dev \
+    python3-pip \
+    git \
+    build-essential \
+    curl \
+    wget \
+    vim \
+    htop \
+    && rm -rf /var/lib/apt/lists/*
+
+# Create symlink for python
+RUN ln -s /usr/bin/python3.9 /usr/bin/python
+
+# Upgrade pip
+RUN python -m pip install --upgrade pip
+
+# Set working directory
+WORKDIR /workspace
+
+# Copy requirements first (for caching)
+COPY pyproject.toml ./
+
+# Install Python dependencies
+RUN pip install -e \".[dev,gpu,distributed,monitoring]\"
+
+# Install additional development tools
+RUN pip install \
+    jupyterlab \
+    ipython \
+    ipdb \
+    line_profiler \
+    memory_profiler
+
+# Set up Jupyter
+RUN jupyter lab --generate-config
+RUN echo \"c.ServerApp.ip = '0.0.0.0'\" >> /root/.jupyter/jupyter_lab_config.py
+RUN echo \"c.ServerApp.allow_root = True\" >> /root/.jupyter/jupyter_lab_config.py
+
+# Copy source code
+COPY . .
+
+# Install package in development mode
+RUN pip install -e .
+
+# Expose ports
+EXPOSE 8888 6006 8080
+
+CMD [\"/bin/bash\"]

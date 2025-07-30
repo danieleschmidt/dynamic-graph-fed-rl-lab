@@ -1,0 +1,86 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dynamic-graph-fed-rl"
+version = "0.1.0"
+description = "Federated Actor-Critic framework that learns policies over time-evolving graphs"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Daniel Schmidt", email = "author@example.com"}
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+requires-python = ">=3.9"
+dependencies = [
+    "jax>=0.4.0",
+    "jaxlib>=0.4.0",
+    "flax>=0.7.0",
+    "optax>=0.1.4",
+    "numpy>=1.21.0",
+    "scipy>=1.7.0",
+    "networkx>=2.8.0",
+    "gymnasium>=0.28.0",
+    "matplotlib>=3.5.0",
+    "tqdm>=4.64.0",
+    "pyyaml>=6.0",
+    "tensorboard>=2.10.0",
+]
+
+[project.optional-dependencies]
+gpu = [
+    "jax[cuda12_pip]",
+]
+distributed = [
+    "ray[default]>=2.0.0",
+    "mpi4py>=3.1.0",
+]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "black>=22.0.0",
+    "flake8>=5.0.0",
+    "mypy>=0.991",
+    "pre-commit>=2.20.0",
+    "sphinx>=5.0.0",
+    "sphinx-rtd-theme>=1.0.0",
+]
+monitoring = [
+    "prometheus-client>=0.15.0",
+    "grafana-client>=3.5.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/dynamic-graph-fed-rl-lab"
+Repository = "https://github.com/yourusername/dynamic-graph-fed-rl-lab"
+Documentation = "https://dynamic-graph-fed-rl.readthedocs.io"
+"Bug Reports" = "https://github.com/yourusername/dynamic-graph-fed-rl-lab/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 88
+target-version = ['py39']
+include = '\.pyi?$'
+
+[tool.mypy]
+python_version = "3.9"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py", "*_test.py"]
+addopts = "--cov=src --cov-report=html --cov-report=term-missing"

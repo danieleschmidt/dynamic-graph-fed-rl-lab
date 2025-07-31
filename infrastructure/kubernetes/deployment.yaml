@@ -1,0 +1,142 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fed-rl-coordinator
+  namespace: dynamic-graph-fed-rl
+  labels:
+    app: fed-rl-coordinator
+    component: coordination
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: fed-rl-coordinator
+  template:
+    metadata:
+      labels:
+        app: fed-rl-coordinator
+        component: coordination
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "8000"
+        prometheus.io/path: "/metrics"
+    spec:
+      serviceAccountName: fed-rl-service-account
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 1000
+        fsGroup: 1000
+      containers:
+      - name: coordinator
+        image: dynamic-graph-fed-rl:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8000
+          name: http
+        - containerPort: 8080
+          name: grpc
+        env:
+        - name: MODE
+          value: "coordinator"
+        - name: REDIS_URL
+          valueFrom:
+            secretKeyRef:
+              name: fed-rl-secrets
+              key: redis-url
+        - name: PROMETHEUS_PORT
+          value: "8000"
+        resources:
+          requests:
+            cpu: 500m
+            memory: 1Gi
+          limits:
+            cpu: 2
+            memory: 4Gi
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 8000
+          initialDelaySeconds: 30
+          periodSeconds: 10
+        readinessProbe:
+          httpGet:
+            path: /ready
+            port: 8000
+          initialDelaySeconds: 5
+          periodSeconds: 5
+        volumeMounts:
+        - name: config
+          mountPath: /app/config
+          readOnly: true
+      volumes:
+      - name: config
+        configMap:
+          name: fed-rl-config
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: fed-rl-agents
+  namespace: dynamic-graph-fed-rl
+  labels:
+    app: fed-rl-agents
+    component: training
+spec:
+  serviceName: fed-rl-agents
+  replicas: 5
+  selector:
+    matchLabels:
+      app: fed-rl-agents
+  template:
+    metadata:
+      labels:
+        app: fed-rl-agents
+        component: training
+    spec:
+      serviceAccountName: fed-rl-service-account
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 1000
+        fsGroup: 1000
+      containers:
+      - name: agent
+        image: dynamic-graph-fed-rl:gpu
+        imagePullPolicy: Always
+        env:
+        - name: MODE
+          value: "agent"
+        - name: AGENT_ID
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.name
+        - name: COORDINATOR_URL
+          value: "http://fed-rl-coordinator:8000"
+        resources:
+          requests:
+            cpu: 2
+            memory: 8Gi
+            nvidia.com/gpu: 1
+          limits:
+            cpu: 4
+            memory: 16Gi
+            nvidia.com/gpu: 1
+        volumeMounts:
+        - name: agent-data
+          mountPath: /app/data
+        - name: model-cache
+          mountPath: /app/models
+  volumeClaimTemplates:
+  - metadata:
+      name: agent-data
+    spec:
+      accessModes: ["ReadWriteOnce"]
+      resources:
+        requests:
+          storage: 50Gi
+  - metadata:
+      name: model-cache
+    spec:
+      accessModes: ["ReadWriteOnce"]
+      resources:
+        requests:
+          storage: 20Gi

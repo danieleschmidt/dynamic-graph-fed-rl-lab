@@ -1,0 +1,37 @@
+{
+  "security": {
+    "ignore-cvss-severity-below": 4.0,
+    "ignore-cvss-unknown-severity": false,
+    "continue-on-vulnerability-error": false
+  },
+  "vulnerabilities": {
+    "ignore": [
+      // Add specific vulnerability IDs to ignore (with justification)
+    ]
+  },
+  "scanning": {
+    "max-depth": 5,
+    "timeout": 300,
+    "include-dev-dependencies": true
+  },
+  "reporting": {
+    "format": "json",
+    "output-file": "security/reports/safety-report.json",
+    "include-remediation": true
+  },
+  "allowlist": {
+    "packages": [
+      // Packages that are allowed despite vulnerabilities (with version constraints)
+    ]
+  },
+  "notifications": {
+    "email": {
+      "enabled": false,
+      "recipients": ["security@terragon.ai"]
+    },
+    "slack": {
+      "enabled": false,
+      "webhook-url": ""
+    }
+  }
+}

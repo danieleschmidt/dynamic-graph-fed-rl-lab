@@ -1,0 +1,39 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: dynamic-graph-fed-rl
+  labels:
+    app.kubernetes.io/name: dynamic-graph-fed-rl
+    app.kubernetes.io/version: "0.1.0"
+    environment: production
+---
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: fed-rl-quota
+  namespace: dynamic-graph-fed-rl
+spec:
+  hard:
+    requests.cpu: "20"
+    requests.memory: 40Gi
+    requests.nvidia.com/gpu: "4"
+    limits.cpu: "40"
+    limits.memory: 80Gi
+    limits.nvidia.com/gpu: "8"
+    persistentvolumeclaims: "10"
+    services: "10"
+---
+apiVersion: v1
+kind: LimitRange
+metadata:
+  name: fed-rl-limits
+  namespace: dynamic-graph-fed-rl
+spec:
+  limits:
+  - default:
+      cpu: "2"
+      memory: "4Gi"
+    defaultRequest:
+      cpu: "500m"
+      memory: "1Gi"
+    type: Container

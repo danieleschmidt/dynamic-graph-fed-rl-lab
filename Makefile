@@ -1,4 +1,4 @@
-.PHONY: help install install-dev test test-unit test-integration test-e2e lint format typecheck docs clean build upload
+.PHONY: help install install-dev test test-unit test-integration test-e2e lint format typecheck docs clean build upload docker-build docker-push security-scan
 
 help:  ## Show this help message
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-20s\033[0m %s\n", $$1, $$2}'
@@ -63,3 +63,41 @@ dev-setup:  ## Complete development setup
 	make install-dev
 	pre-commit install
 	echo "Development environment ready!"
+
+docker-build:  ## Build all Docker images
+	docker build --target development -t dgfrl:dev .
+	docker build --target production -t dgfrl:prod .
+	docker build --target gpu -t dgfrl:gpu .
+
+docker-push:  ## Push Docker images to registry
+	docker tag dgfrl:prod $(REGISTRY)/dgfrl:latest
+	docker tag dgfrl:prod $(REGISTRY)/dgfrl:$(VERSION)
+	docker push $(REGISTRY)/dgfrl:latest
+	docker push $(REGISTRY)/dgfrl:$(VERSION)
+
+security-scan:  ## Run security scans
+	bandit -r src/
+	safety check
+	pip-audit
+
+docker-scan:  ## Scan Docker images for vulnerabilities
+	docker scout quickview dgfrl:prod
+	trivy image dgfrl:prod
+
+ci-test:  ## Run CI test suite
+	make lint
+	make typecheck
+	make test
+	make security-scan
+
+release:  ## Create a release build
+	make clean
+	make ci-test
+	make build
+	make docker-build
+
+k8s-deploy:  ## Deploy to Kubernetes
+	kubectl apply -f infrastructure/kubernetes/
+
+k8s-delete:  ## Delete Kubernetes deployment
+	kubectl delete -f infrastructure/kubernetes/

@@ -1,0 +1,3 @@
+extends: default
+
+rules:\n  line-length:\n    max: 120\n    level: warning\n  indentation:\n    spaces: 2\n  truthy:\n    allowed-values: ['true', 'false', 'yes', 'no']\n  comments:\n    min-spaces-from-content: 1\n  document-start:\n    present: false\n  braces:\n    max-spaces-inside: 1\n  brackets:\n    max-spaces-inside: 1\n\nignore: |\n  .github/workflows/\n  **/node_modules/\n  **/.venv/\n  **/venv/\n  htmlcov/\n  .coverage\n  build/\n  dist/\n  *.egg-info/

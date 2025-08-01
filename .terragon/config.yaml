@@ -1,0 +1,67 @@
+---
+# Terragon Autonomous SDLC Configuration
+# Repository: dynamic-graph-fed-rl-lab
+# Maturity Level: MATURING (65%)
+# Last Updated: 2025-08-01
+
+repository:
+  name: "dynamic-graph-fed-rl-lab"
+  maturity_level: "maturing"
+  maturity_score: 65
+  language: "python"
+  framework: "jax"
+  
+scoring:
+  weights:
+    maturing:
+      wsjf: 0.6
+      ice: 0.1 
+      technicalDebt: 0.2
+      security: 0.1
+  
+  thresholds:
+    minScore: 15
+    maxRisk: 0.7
+    securityBoost: 2.0
+    complianceBoost: 1.8
+
+discovery:
+  sources:
+    - gitHistory
+    - staticAnalysis
+    - issueTrackers
+    - vulnerabilityDatabases
+    - codeComplexity
+    - testCoverage
+  
+  tools:
+    staticAnalysis:
+      - ruff
+      - mypy
+      - bandit
+    security:
+      - safety
+      - bandit
+      - semgrep
+    quality:
+      - pytest
+      - coverage
+      - complexity
+
+execution:
+  maxConcurrentTasks: 1
+  testRequirements:
+    minCoverage: 80
+    performanceRegression: 5
+  rollbackTriggers:
+    - testFailure
+    - buildFailure
+    - securityViolation
+
+automation:
+  schedules:
+    immediate: "on_pr_merge"
+    hourly: "security_scan"
+    daily: "comprehensive_analysis"
+    weekly: "deep_sdlc_review"
+    monthly: "strategic_recalibration"

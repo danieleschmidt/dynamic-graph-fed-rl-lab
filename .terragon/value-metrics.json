@@ -1,0 +1,23 @@
+{
+  "discovery_timestamp": "2025-08-01T13:17:47.965035",
+  "total_items_discovered": 8,
+  "total_estimated_effort_hours": 35.0,
+  "high_priority_items": 1,
+  "security_items": 1,
+  "average_composite_score": 33.293933333333335,
+  "categories": {
+    "security": 1,
+    "performance": 2,
+    "reliability": 2,
+    "automation": 1,
+    "documentation": 1,
+    "monitoring": 1
+  },
+  "next_best_value_item": {
+    "id": "security_1754054267_003",
+    "title": "Add security scanning for JAX/ML dependencies",
+    "category": "security",
+    "score": 74.12,
+    "effort": 2.5
+  }
+}

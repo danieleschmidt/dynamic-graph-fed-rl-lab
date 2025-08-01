@@ -1,0 +1,237 @@
+global:
+  # SMTP configuration for email alerts
+  smtp_smarthost: 'localhost:587'
+  smtp_from: 'alerts@dgfrl.local'
+  smtp_auth_username: 'alerts@dgfrl.local'
+  smtp_auth_password: 'your-email-password'
+  smtp_require_tls: true
+
+  # Slack configuration
+  slack_api_url: 'https://hooks.slack.com/services/YOUR/SLACK/WEBHOOK'
+
+  # PagerDuty configuration
+  pagerduty_url: 'https://events.pagerduty.com/v2/enqueue'
+
+# Templates for notifications
+templates:
+  - '/etc/alertmanager/templates/*.tmpl'
+
+# Routing configuration
+route:
+  group_by: ['alertname', 'severity', 'instance']
+  group_wait: 30s
+  group_interval: 5m
+  repeat_interval: 4h
+  receiver: 'default-receiver'
+  
+  routes:
+    # Critical alerts go to PagerDuty and Slack immediately
+    - match:
+        severity: critical
+      receiver: 'critical-alerts'
+      group_wait: 10s
+      repeat_interval: 1h
+      
+    # Training-related alerts to ML team
+    - match_re:
+        alertname: 'Training.*|Agent.*|Federation.*'
+      receiver: 'ml-team'
+      group_wait: 2m
+      repeat_interval: 2h
+      
+    # Infrastructure alerts to DevOps team
+    - match_re:
+        alertname: 'High.*Usage|.*Down|Database.*|Redis.*'
+      receiver: 'devops-team'
+      group_wait: 1m
+      repeat_interval: 30m
+      
+    # Security alerts to security team
+    - match_re:
+        alertname: 'Unauthorized.*|Anomalous.*|TLS.*'
+      receiver: 'security-team'
+      group_wait: 30s
+      repeat_interval: 6h
+
+# Inhibition rules to suppress redundant alerts
+inhibit_rules:
+  # Suppress warning alerts when critical alerts are firing
+  - source_match:
+      severity: 'critical'
+    target_match:
+      severity: 'warning'
+    equal: ['alertname', 'instance']
+    
+  # Suppress individual component alerts when application is down
+  - source_match:
+      alertname: 'ApplicationDown'
+    target_match_re:
+      alertname: '.*'
+    equal: ['instance']
+
+# Receiver configurations
+receivers:
+  - name: 'default-receiver'
+    email_configs:
+      - to: 'devops@dgfrl.local'
+        subject: '[DGFRL Alert] {{ .GroupLabels.alertname }} - {{ .GroupLabels.severity }}'
+        body: |
+          {{ range .Alerts }}
+          Alert: {{ .Annotations.summary }}
+          Description: {{ .Annotations.description }}
+          Instance: {{ .Labels.instance }}
+          Severity: {{ .Labels.severity }}
+          Started: {{ .StartsAt.Format "2006-01-02 15:04:05" }}
+          {{ end }}
+
+  - name: 'critical-alerts'
+    pagerduty_configs:
+      - service_key: 'YOUR-PAGERDUTY-SERVICE-KEY'
+        description: '{{ .GroupLabels.alertname }}: {{ .Annotations.summary }}'
+        details:
+          firing: '{{ template "pagerduty.default.instances" . }}'
+          resolved: '{{ template "pagerduty.default.instances" . }}'
+    slack_configs:
+      - channel: '#critical-alerts'
+        username: 'AlertManager'
+        color: 'danger'
+        title: '🚨 Critical Alert: {{ .GroupLabels.alertname }}'
+        text: |
+          {{ range .Alerts }}
+          *Alert:* {{ .Annotations.summary }}
+          *Description:* {{ .Annotations.description }}
+          *Instance:* {{ .Labels.instance }}
+          *Started:* {{ .StartsAt.Format "2006-01-02 15:04:05" }}
+          {{ end }}
+        actions:
+          - type: button
+            text: 'View in Prometheus'
+            url: 'http://prometheus.local:9090/alerts'
+          - type: button
+            text: 'View in Grafana'
+            url: 'http://grafana.local:3000/alerting/list'
+            
+    email_configs:
+      - to: 'oncall@dgfrl.local'
+        subject: '🚨 [CRITICAL] {{ .GroupLabels.alertname }}'
+        body: |
+          CRITICAL ALERT FIRED
+          
+          {{ range .Alerts }}
+          Alert: {{ .Annotations.summary }}
+          Description: {{ .Annotations.description }}
+          Instance: {{ .Labels.instance }}
+          Severity: {{ .Labels.severity }}
+          Started: {{ .StartsAt.Format "2006-01-02 15:04:05" }}
+          
+          Runbook: {{ .Annotations.runbook_url }}
+          Dashboard: http://grafana.local:3000/d/system-overview
+          {{ end }}
+
+  - name: 'ml-team'
+    slack_configs:
+      - channel: '#ml-alerts'
+        username: 'ML-AlertManager'
+        color: 'warning'
+        title: '🤖 ML System Alert: {{ .GroupLabels.alertname }}'
+        text: |
+          {{ range .Alerts }}
+          *Alert:* {{ .Annotations.summary }}
+          *Description:* {{ .Annotations.description }}
+          *Instance:* {{ .Labels.instance }}
+          *Started:* {{ .StartsAt.Format "2006-01-02 15:04:05" }}
+          {{ end }}
+        actions:
+          - type: button
+            text: 'Training Dashboard'
+            url: 'http://grafana.local:3000/d/training-overview'
+          - type: button
+            text: 'Agent Performance'
+            url: 'http://grafana.local:3000/d/agent-performance'
+            
+    email_configs:
+      - to: 'ml-team@dgfrl.local'
+        subject: '[ML Alert] {{ .GroupLabels.alertname }}'
+        body: |
+          Machine Learning System Alert
+          
+          {{ range .Alerts }}
+          Alert: {{ .Annotations.summary }}
+          Description: {{ .Annotations.description }}
+          Instance: {{ .Labels.instance }}
+          Started: {{ .StartsAt.Format "2006-01-02 15:04:05" }}
+          {{ end }}
+          
+          Check the training dashboard: http://grafana.local:3000/d/training-overview
+
+  - name: 'devops-team'
+    slack_configs:
+      - channel: '#devops-alerts'
+        username: 'DevOps-AlertManager'
+        color: 'warning'
+        title: '⚙️ Infrastructure Alert: {{ .GroupLabels.alertname }}'
+        text: |
+          {{ range .Alerts }}
+          *Alert:* {{ .Annotations.summary }}
+          *Description:* {{ .Annotations.description }}
+          *Instance:* {{ .Labels.instance }}
+          *Started:* {{ .StartsAt.Format "2006-01-02 15:04:05" }}
+          {{ end }}
+        actions:
+          - type: button
+            text: 'System Dashboard'
+            url: 'http://grafana.local:3000/d/system-overview'
+          - type: button
+            text: 'Kubernetes Dashboard'
+            url: 'http://grafana.local:3000/d/kubernetes-overview'
+            
+    email_configs:
+      - to: 'devops@dgfrl.local'
+        subject: '[Infrastructure] {{ .GroupLabels.alertname }}'
+        body: |
+          Infrastructure Alert
+          
+          {{ range .Alerts }}
+          Alert: {{ .Annotations.summary }}
+          Description: {{ .Annotations.description }}
+          Instance: {{ .Labels.instance }}
+          Started: {{ .StartsAt.Format "2006-01-02 15:04:05" }}
+          {{ end }}
+
+  - name: 'security-team'
+    slack_configs:
+      - channel: '#security-alerts'
+        username: 'Security-AlertManager'
+        color: 'danger'
+        title: '🔒 Security Alert: {{ .GroupLabels.alertname }}'
+        text: |
+          {{ range .Alerts }}
+          *Alert:* {{ .Annotations.summary }}
+          *Description:* {{ .Annotations.description }}
+          *Instance:* {{ .Labels.instance }}
+          *Started:* {{ .StartsAt.Format "2006-01-02 15:04:05" }}
+          {{ end }}
+        actions:
+          - type: button
+            text: 'Security Dashboard'
+            url: 'http://grafana.local:3000/d/security-overview'
+          - type: button
+            text: 'Logs'
+            url: 'http://kibana.local:5601'
+            
+    email_configs:
+      - to: 'security@dgfrl.local'
+        subject: '🔒 [SECURITY] {{ .GroupLabels.alertname }}'
+        body: |
+          SECURITY ALERT
+          
+          {{ range .Alerts }}
+          Alert: {{ .Annotations.summary }}
+          Description: {{ .Annotations.description }}
+          Instance: {{ .Labels.instance }}
+          Started: {{ .StartsAt.Format "2006-01-02 15:04:05" }}
+          {{ end }}
+          
+          Please investigate immediately.
+          Security Dashboard: http://grafana.local:3000/d/security-overview
+          Logs: http://kibana.local:5601

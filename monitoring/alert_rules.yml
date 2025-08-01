@@ -1,0 +1,255 @@
+groups:
+  - name: dgfrl_system_alerts
+    rules:
+      # High-level system health alerts
+      - alert: HighCPUUsage
+        expr: 100 - (avg(rate(node_cpu_seconds_total{mode="idle"}[5m])) * 100) > 80
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High CPU usage detected"
+          description: "CPU usage is above 80% for more than 5 minutes. Current value: {{ $value }}%"
+
+      - alert: HighMemoryUsage
+        expr: (1 - (node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes)) * 100 > 85
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High memory usage detected"
+          description: "Memory usage is above 85% for more than 5 minutes. Current value: {{ $value }}%"
+
+      - alert: LowDiskSpace
+        expr: (1 - (node_filesystem_avail_bytes{fstype!="tmpfs"} / node_filesystem_size_bytes)) * 100 > 90
+        for: 10m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Low disk space detected"
+          description: "Disk usage is above 90% for more than 10 minutes on {{ $labels.device }}. Current value: {{ $value }}%"
+
+      - alert: ApplicationDown
+        expr: up{job="dynamic-graph-fed-rl"} == 0
+        for: 2m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Dynamic Graph Fed-RL application is down"
+          description: "The main application has been down for more than 2 minutes"
+
+  - name: dgfrl_training_alerts
+    rules:
+      # Training-specific alerts
+      - alert: TrainingStalled 
+        expr: increase(training_episodes_total[10m]) == 0
+        for: 10m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Training appears to be stalled"
+          description: "No new training episodes completed in the last 10 minutes"
+
+      - alert: LowTrainingReward
+        expr: avg_over_time(training_episode_reward[30m]) < 0.1
+        for: 30m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Training rewards are consistently low"
+          description: "Average training reward over 30 minutes is below 0.1: {{ $value }}"
+
+      - alert: HighTrainingLoss
+        expr: training_loss > 10
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Training loss is unusually high"
+          description: "Training loss has been above 10 for 5 minutes: {{ $value }}"
+
+      - alert: AgentConvergenceFailure
+        expr: stddev_over_time(agent_reward[30m]) > 5
+        for: 30m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Agent rewards showing high variance"
+          description: "Standard deviation of agent rewards over 30 minutes is {{ $value }}, indicating poor convergence"
+
+  - name: dgfrl_federation_alerts
+    rules:
+      # Federated learning specific alerts
+      - alert: HighCommunicationLatency
+        expr: avg(federation_communication_latency_seconds) > 1.0
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High federation communication latency"
+          description: "Average communication latency between agents is {{ $value }}s"
+
+      - alert: AgentDisconnection
+        expr: federation_active_agents < federation_total_agents * 0.8
+        for: 2m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Significant number of agents disconnected"
+          description: "Only {{ $value }} out of {{ with query \"federation_total_agents\" }}{{ . | first | value }}{{ end }} agents are active"
+
+      - alert: ParameterDivergence
+        expr: federation_parameter_divergence > 0.5
+        for: 10m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Agent parameters are diverging"
+          description: "Parameter divergence between agents is {{ $value }}, indicating potential federation issues"
+
+      - alert: ByzantineAgentDetected
+        expr: federation_byzantine_agents_detected > 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Byzantine agent behavior detected"
+          description: "{{ $value }} agent(s) showing byzantine behavior patterns"
+
+  - name: dgfrl_performance_alerts
+    rules:
+      # Performance and scalability alerts
+      - alert: HighGPUUtilization
+        expr: nvidia_gpu_utilization_gpu > 95
+        for: 10m
+        labels:
+          severity: warning
+        annotations:
+          summary: "GPU utilization is very high"
+          description: "GPU {{ $labels.gpu }} utilization is {{ $value }}% for more than 10 minutes"
+
+      - alert: GPUMemoryPressure
+        expr: (nvidia_gpu_memory_used_bytes / nvidia_gpu_memory_total_bytes) * 100 > 90
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "GPU memory usage is high"
+          description: "GPU {{ $labels.gpu }} memory usage is {{ $value }}%"
+
+      - alert: SlowInferenceTime
+        expr: histogram_quantile(0.95, rate(inference_duration_seconds_bucket[5m])) > 0.1
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Inference time is slower than expected"
+          description: "95th percentile inference time is {{ $value }}s"
+
+      - alert: HighThroughputDrop
+        expr: rate(processed_requests_total[5m]) < rate(processed_requests_total[5m] offset 30m) * 0.7
+        for: 10m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Request processing throughput has dropped significantly"
+          description: "Current throughput is {{ $value }} requests/sec, down from normal levels"
+
+  - name: dgfrl_data_alerts
+    rules:
+      # Data quality and integrity alerts
+      - alert: DataQualityIssue
+        expr: data_quality_score < 0.8
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Data quality score is below threshold"
+          description: "Data quality score is {{ $value }}, indicating potential data issues"
+
+      - alert: MissingGraphData
+        expr: graph_nodes_missing_ratio > 0.1
+        for: 2m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Significant graph data is missing"
+          description: "{{ $value }}% of expected graph nodes are missing"
+
+      - alert: GraphTopologyAnomaly
+        expr: graph_topology_change_rate > 0.5
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Unusual rate of graph topology changes"
+          description: "Graph topology is changing at {{ $value }}% per minute, higher than expected"
+
+  - name: dgfrl_infrastructure_alerts
+    rules:
+      # Infrastructure and dependency alerts
+      - alert: RedisConnectionFailure
+        expr: redis_connected_clients == 0
+        for: 2m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Redis has no connected clients"
+          description: "Redis appears to be unreachable or not accepting connections"
+
+      - alert: DatabaseConnectionPool Exhausted
+        expr: db_connection_pool_active / db_connection_pool_max > 0.9
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Database connection pool nearly exhausted"
+          description: "{{ $value }} of database connections are in use"
+
+      - alert: NetworkPartition
+        expr: federation_network_partitions_detected > 0
+        for: 30s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Network partition detected in federation"
+          description: "{{ $value }} network partition(s) detected between federated agents"
+
+      - alert: ExcessiveLogErrors
+        expr: increase(log_entries_total{level="error"}[5m]) > 10
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High rate of error log entries"
+          description: "{{ $value }} error log entries in the last 5 minutes"
+
+  - name: dgfrl_security_alerts
+    rules:
+      # Security-related alerts
+      - alert: UnauthorizedAccess
+        expr: increase(http_requests_total{code=~"401|403"}[5m]) > 5
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Multiple unauthorized access attempts"
+          description: "{{ $value }} unauthorized access attempts in the last 5 minutes"
+
+      - alert: AnomalousTrafficPattern
+        expr: rate(http_requests_total[5m]) > rate(http_requests_total[5m] offset 1h) * 5
+        for: 3m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Unusual spike in traffic"
+          description: "Current request rate is {{ $value }}x higher than normal"
+
+      - alert: TLSCertificateExpiry
+        expr: (tls_certificate_expiry_timestamp - time()) / 3600 / 24 < 30
+        for: 1h
+        labels:
+          severity: warning
+        annotations:
+          summary: "TLS certificate expiring soon"
+          description: "TLS certificate for {{ $labels.instance }} expires in {{ $value }} days"

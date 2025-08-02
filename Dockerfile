@@ -68,7 +68,7 @@ EXPOSE 8000
 CMD ["python", "-m", "dynamic_graph_fed_rl.server", "--production"]
 
 # GPU-enabled stage for training
-FROM nvidia/cuda:12.1-devel-ubuntu22.04 as gpu
+FROM nvidia/cuda:12.9.1-devel-ubuntu22.04 as gpu
 
 ENV PYTHONUNBUFFERED=1 \
     PYTHONDONTWRITEBYTECODE=1

@@ -11,7 +11,7 @@ from .graph_networks import GraphAttentionNetwork
 
 
 class GraphCritic(BaseGraphModel):
-    """Graph-based critic network for value function approximation."""
+    """Graph-based critic network for Q-value approximation in TD3."""
     
     def setup(self):
         self.graph_encoder = GraphAttentionNetwork(
@@ -20,7 +20,14 @@ class GraphCritic(BaseGraphModel):
             dropout_rate=self.dropout_rate,
         )
         
-        self.value_head = nn.Sequential([
+        # Action processing
+        self.action_encoder = nn.Sequential([
+            nn.Dense(self.hidden_dim // 2),
+            nn.activation.relu,
+        ])
+        
+        # Combined Q-value head  
+        self.q_head = nn.Sequential([
             nn.Dense(self.hidden_dim),
             nn.activation.relu,
             nn.Dense(self.hidden_dim // 2),
@@ -30,24 +37,40 @@ class GraphCritic(BaseGraphModel):
     
     def __call__(
         self,
-        node_features: jnp.ndarray,
-        edge_index: jnp.ndarray,
-        edge_features: Optional[jnp.ndarray] = None,
+        graph_state,
+        actions: jnp.ndarray,
         training: bool = True,
     ) -> jnp.ndarray:
-        """Forward pass through critic network."""
+        """Forward pass through critic network for Q-value estimation."""
+        # Handle both GraphState objects and direct tensor inputs
+        if hasattr(graph_state, 'node_features'):
+            node_features = graph_state.node_features
+            edge_index = graph_state.edge_index
+            edge_features = graph_state.edge_features
+        else:
+            # Backward compatibility 
+            node_features = graph_state
+            edge_index = None
+            edge_features = None
+        
         # Encode graph
         node_embeddings = self.graph_encoder(
             node_features, edge_index, edge_features, training
         )
         
-        # Global pooling for value estimation
-        graph_embedding = jnp.mean(node_embeddings, axis=0)
+        # Global pooling for state representation
+        state_embedding = jnp.mean(node_embeddings, axis=0)
         
-        # Estimate value
-        value = self.value_head(graph_embedding).squeeze(-1)
+        # Encode actions
+        action_embedding = self.action_encoder(actions)
         
-        return value
+        # Combine state and action representations
+        combined_embedding = jnp.concatenate([state_embedding, action_embedding], axis=-1)
+        
+        # Estimate Q-value
+        q_value = self.q_head(combined_embedding).squeeze(-1)
+        
+        return q_value
     
     def get_node_values(
         self,

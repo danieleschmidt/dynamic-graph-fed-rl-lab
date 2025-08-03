@@ -33,12 +33,21 @@ class GraphActor(BaseGraphModel):
     
     def __call__(
         self,
-        node_features: jnp.ndarray,
-        edge_index: jnp.ndarray,
-        edge_features: Optional[jnp.ndarray] = None,
+        graph_state,
         training: bool = True,
     ) -> jnp.ndarray:
         """Forward pass through actor network."""
+        # Handle both GraphState objects and direct tensor inputs
+        if hasattr(graph_state, 'node_features'):
+            node_features = graph_state.node_features
+            edge_index = graph_state.edge_index
+            edge_features = graph_state.edge_features
+        else:
+            # Backward compatibility - assume first arg is node_features
+            node_features = graph_state
+            edge_index = None
+            edge_features = None
+        
         # Encode graph
         node_embeddings = self.graph_encoder(
             node_features, edge_index, edge_features, training
@@ -49,6 +58,9 @@ class GraphActor(BaseGraphModel):
         
         # Generate action logits/values
         actions = self.policy_head(graph_embedding)
+        
+        # Apply tanh for bounded actions
+        actions = nn.tanh(actions) * self.max_action
         
         return actions
     

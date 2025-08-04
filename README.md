@@ -628,7 +628,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 ```bibtex
 @article{dynamic_graph_fed_rl,
   title={Federated Reinforcement Learning on Dynamic Graphs},
-  author={Your Name},
+  author={Daniel Schmidt},
   journal={Conference on Neural Information Processing Systems},
   year={2025}
 }

@@ -183,7 +183,7 @@ class ActionValueCritic(nn.Module):
         edge_features: Optional[jnp.ndarray] = None,
         training: bool = True,
     ) -> jnp.ndarray:
-        \"\"\"Forward pass through action-value critic.
+        """Forward pass through action-value critic.
         
         Args:
             node_features: Graph node features

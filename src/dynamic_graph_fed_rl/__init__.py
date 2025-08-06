@@ -14,6 +14,11 @@ from . import environments
 from . import federation
 from . import models
 from . import utils
+from . import quantum_planner
+
+# Core quantum planner exports
+from .quantum_planner import QuantumTaskPlanner, QuantumTask, TaskSuperposition
+from .quantum_planner import QuantumScheduler, QuantumOptimizer, QuantumExecutor
 
 __all__ = [
     "algorithms",
@@ -21,4 +26,12 @@ __all__ = [
     "federation",
     "models",
     "utils",
+    "quantum_planner",
+    # Quantum planner core
+    "QuantumTaskPlanner",
+    "QuantumTask",
+    "TaskSuperposition",
+    "QuantumScheduler", 
+    "QuantumOptimizer",
+    "QuantumExecutor",
 ]

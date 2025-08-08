@@ -1,0 +1,445 @@
+{
+  "timestamp": "2025-08-08T16:13:42.981088",
+  "episode_rewards": [
+    -590.3620110538603,
+    -560.3057378585097,
+    -446.95803743073554,
+    -523.8563488347613,
+    -511.34725518194404,
+    -472.74370176193327,
+    -428.35041500251793,
+    -487.496260248717,
+    -554.1128231835271,
+    -451.7687903249765,
+    -470.4561737217927,
+    -442.3603089375911,
+    -512.1157037100347,
+    -521.7630652423411,
+    -452.1566245074194,
+    -472.1291013743305,
+    -504.3885405115638,
+    -485.67267385667304,
+    -509.51143465407506,
+    -451.6848398887932,
+    -517.1886376503164,
+    -455.2744490989376,
+    -447.6966759573106,
+    -479.9321936739833,
+    -531.7532973352222
+  ],
+  "performance_history": [
+    {
+      "round": 1,
+      "participants": 8,
+      "successful_updates": 8,
+      "states_aggregated": 9,
+      "collection_time": 0.0015094369999815171,
+      "aggregation_time": 0.0005749179999838816,
+      "update_time": 0.0006101299999272669,
+      "total_time": 0.002697511999940616,
+      "throughput": 2965.695796784635,
+      "success": true
+    },
+    {
+      "round": 2,
+      "participants": 8,
+      "successful_updates": 8,
+      "states_aggregated": 15,
+      "collection_time": 0.001042495999968196,
+      "aggregation_time": 0.0009166410000034375,
+      "update_time": 0.000846140000021478,
+      "total_time": 0.0028090079999856243,
+      "throughput": 2847.9804970441314,
+      "success": true
+    },
+    {
+      "round": 3,
+      "participants": 8,
+      "successful_updates": 8,
+      "states_aggregated": 15,
+      "collection_time": 0.0007339250000768516,
+      "aggregation_time": 0.0011223029999882783,
+      "update_time": 0.0010905540000294422,
+      "total_time": 0.0029491100000313963,
+      "throughput": 2712.682809361072,
+      "success": true
+    },
+    {
+      "round": 4,
+      "participants": 8,
+      "successful_updates": 8,
+      "states_aggregated": 15,
+      "collection_time": 0.00027428999999301595,
+      "aggregation_time": 0.0008734140000115076,
+      "update_time": 0.00080703599996923,
+      "total_time": 0.0019559979999712596,
+      "throughput": 4089.9837321498017,
+      "success": true
+    },
+    {
+      "round": 5,
+      "participants": 8,
+      "successful_updates": 8,
+      "states_aggregated": 15,
+      "collection_time": 0.0006391239999175014,
+      "aggregation_time": 0.0016020040000057634,
+      "update_time": 0.0007747089999838863,
+      "total_time": 0.0030177759999787668,
+      "throughput": 2650.9588518353544,
+      "success": true
+    },
+    {
+      "round": 6,
+      "participants": 8,
+      "successful_updates": 8,
+      "states_aggregated": 15,
+      "collection_time": 0.0004867609999337219,
+      "aggregation_time": 0.0010666230000424548,
+      "update_time": 0.0008283210000854524,
+      "total_time": 0.002383691999966686,
+      "throughput": 3356.1382930814075,
+      "success": true
+    },
+    {
+      "round": 7,
+      "participants": 8,
+      "successful_updates": 8,
+      "states_aggregated": 15,
+      "collection_time": 0.00045687100009672577,
+      "aggregation_time": 0.0013803639999423467,
+      "update_time": 0.0008678700000928075,
+      "total_time": 0.002706633000002512,
+      "throughput": 2955.7017888988184,
+      "success": true
+    },
+    {
+      "round": 8,
+      "participants": 8,
+      "successful_updates": 8,
+      "states_aggregated": 15,
+      "collection_time": 0.0006041400000640351,
+      "aggregation_time": 0.0014273199999479402,
+      "update_time": 0.0008407169999600228,
+      "total_time": 0.002874271999985467,
+      "throughput": 2783.3134790445893,
+      "success": true
+    },
+    {
+      "round": 9,
+      "participants": 8,
+      "successful_updates": 8,
+      "states_aggregated": 15,
+      "collection_time": 0.0008146669999860023,
+      "aggregation_time": 0.0015609150000273075,
+      "update_time": 0.0006803910000598989,
+      "total_time": 0.0030584540000972993,
+      "throughput": 2615.700612056122,
+      "success": true
+    },
+    {
+      "round": 10,
+      "participants": 8,
+      "successful_updates": 8,
+      "states_aggregated": 15,
+      "collection_time": 0.0009796020000294448,
+      "aggregation_time": 0.0015448189999460737,
+      "update_time": 0.0011414460000196414,
+      "total_time": 0.0036703660000512173,
+      "throughput": 2179.6191442184145,
+      "success": true
+    },
+    {
+      "round": 11,
+      "participants": 8,
+      "successful_updates": 8,
+      "states_aggregated": 15,
+      "collection_time": 0.0007355149999739297,
+      "aggregation_time": 0.0011761169999999765,
+      "update_time": 0.0012100910000754084,
+      "total_time": 0.0031241930000760476,
+      "throughput": 2560.661265102786,
+      "success": true
+    },
+    {
+      "round": 12,
+      "participants": 8,
+      "successful_updates": 8,
+      "states_aggregated": 15,
+      "collection_time": 0.0006630919999679463,
+      "aggregation_time": 0.0010481330000402522,
+      "update_time": 0.000964694000003874,
+      "total_time": 0.0026784499999621403,
+      "throughput": 2986.8020684026505,
+      "success": true
+    },
+    {
+      "round": 13,
+      "participants": 8,
+      "successful_updates": 8,
+      "states_aggregated": 15,
+      "collection_time": 0.0008117610000226705,
+      "aggregation_time": 0.0010057929999902626,
+      "update_time": 0.001042774999973517,
+      "total_time": 0.0028624610000633766,
+      "throughput": 2794.797902861515,
+      "success": true
+    }
+  ],
+  "final_metrics": {
+    "system_overview": {
+      "num_agents": 8,
+      "communication_rounds": 13,
+      "successful_aggregations": 13,
+      "success_rate": 1.0,
+      "total_processing_time": 0.03678792500011241,
+      "avg_round_time": 0.0028298403846240315
+    },
+    "performance_metrics": {
+      "avg_throughput": 2884.6181723724076,
+      "peak_throughput": 4089.9837321498017,
+      "global_cache_hit_rate": 199.0,
+      "total_cache_hits": 7960,
+      "total_action_selections": 40
+    },
+    "server_stats": {
+      "num_workers": 2,
+      "queue_size": 0,
+      "processed_requests": 13,
+      "active_connections": 0,
+      "worker_loads": [
+        1,
+        -1
+      ],
+      "cache_stats": {
+        "size": 13,
+        "max_size": 5000,
+        "hit_count": 0,
+        "miss_count": 13,
+        "hit_rate": 0.0,
+        "ttl": 600.0
+      },
+      "is_running": true
+    },
+    "agent_stats": [
+      {
+        "agent_id": "quantum_agent_0",
+        "q_table_size": 15,
+        "action_selections": 5,
+        "cache_hits": 995,
+        "cache_hit_rate": 199.0,
+        "quantum_measurements": 5,
+        "quantum_coherence": 9.509900498999999,
+        "entanglement_size": 5,
+        "action_cache": {
+          "size": 5,
+          "max_size": 500,
+          "hit_count": 995,
+          "miss_count": 5,
+          "hit_rate": 0.995,
+          "ttl": 60.0
+        },
+        "state_cache": {
+          "size": 0,
+          "max_size": 1000,
+          "hit_count": 0,
+          "miss_count": 0,
+          "hit_rate": 0.0,
+          "ttl": 120.0
+        }
+      },
+      {
+        "agent_id": "quantum_agent_1",
+        "q_table_size": 15,
+        "action_selections": 5,
+        "cache_hits": 995,
+        "cache_hit_rate": 199.0,
+        "quantum_measurements": 4,
+        "quantum_coherence": 9.605960099999999,
+        "entanglement_size": 5,
+        "action_cache": {
+          "size": 5,
+          "max_size": 500,
+          "hit_count": 995,
+          "miss_count": 5,
+          "hit_rate": 0.995,
+          "ttl": 60.0
+        },
+        "state_cache": {
+          "size": 0,
+          "max_size": 1000,
+          "hit_count": 0,
+          "miss_count": 0,
+          "hit_rate": 0.0,
+          "ttl": 120.0
+        }
+      },
+      {
+        "agent_id": "quantum_agent_2",
+        "q_table_size": 15,
+        "action_selections": 5,
+        "cache_hits": 995,
+        "cache_hit_rate": 199.0,
+        "quantum_measurements": 5,
+        "quantum_coherence": 9.509900498999999,
+        "entanglement_size": 5,
+        "action_cache": {
+          "size": 5,
+          "max_size": 500,
+          "hit_count": 995,
+          "miss_count": 5,
+          "hit_rate": 0.995,
+          "ttl": 60.0
+        },
+        "state_cache": {
+          "size": 0,
+          "max_size": 1000,
+          "hit_count": 0,
+          "miss_count": 0,
+          "hit_rate": 0.0,
+          "ttl": 120.0
+        }
+      },
+      {
+        "agent_id": "quantum_agent_3",
+        "q_table_size": 15,
+        "action_selections": 5,
+        "cache_hits": 995,
+        "cache_hit_rate": 199.0,
+        "quantum_measurements": 5,
+        "quantum_coherence": 9.509900498999999,
+        "entanglement_size": 5,
+        "action_cache": {
+          "size": 5,
+          "max_size": 500,
+          "hit_count": 995,
+          "miss_count": 5,
+          "hit_rate": 0.995,
+          "ttl": 60.0
+        },
+        "state_cache": {
+          "size": 0,
+          "max_size": 1000,
+          "hit_count": 0,
+          "miss_count": 0,
+          "hit_rate": 0.0,
+          "ttl": 120.0
+        }
+      },
+      {
+        "agent_id": "quantum_agent_4",
+        "q_table_size": 15,
+        "action_selections": 5,
+        "cache_hits": 995,
+        "cache_hit_rate": 199.0,
+        "quantum_measurements": 5,
+        "quantum_coherence": 9.509900498999999,
+        "entanglement_size": 5,
+        "action_cache": {
+          "size": 5,
+          "max_size": 500,
+          "hit_count": 995,
+          "miss_count": 5,
+          "hit_rate": 0.995,
+          "ttl": 60.0
+        },
+        "state_cache": {
+          "size": 0,
+          "max_size": 1000,
+          "hit_count": 0,
+          "miss_count": 0,
+          "hit_rate": 0.0,
+          "ttl": 120.0
+        }
+      },
+      {
+        "agent_id": "quantum_agent_5",
+        "q_table_size": 15,
+        "action_selections": 5,
+        "cache_hits": 995,
+        "cache_hit_rate": 199.0,
+        "quantum_measurements": 5,
+        "quantum_coherence": 9.509900498999999,
+        "entanglement_size": 5,
+        "action_cache": {
+          "size": 5,
+          "max_size": 500,
+          "hit_count": 995,
+          "miss_count": 5,
+          "hit_rate": 0.995,
+          "ttl": 60.0
+        },
+        "state_cache": {
+          "size": 0,
+          "max_size": 1000,
+          "hit_count": 0,
+          "miss_count": 0,
+          "hit_rate": 0.0,
+          "ttl": 120.0
+        }
+      },
+      {
+        "agent_id": "quantum_agent_6",
+        "q_table_size": 15,
+        "action_selections": 5,
+        "cache_hits": 995,
+        "cache_hit_rate": 199.0,
+        "quantum_measurements": 5,
+        "quantum_coherence": 9.509900498999999,
+        "entanglement_size": 5,
+        "action_cache": {
+          "size": 5,
+          "max_size": 500,
+          "hit_count": 995,
+          "miss_count": 5,
+          "hit_rate": 0.995,
+          "ttl": 60.0
+        },
+        "state_cache": {
+          "size": 0,
+          "max_size": 1000,
+          "hit_count": 0,
+          "miss_count": 0,
+          "hit_rate": 0.0,
+          "ttl": 120.0
+        }
+      },
+      {
+        "agent_id": "quantum_agent_7",
+        "q_table_size": 15,
+        "action_selections": 5,
+        "cache_hits": 995,
+        "cache_hit_rate": 199.0,
+        "quantum_measurements": 5,
+        "quantum_coherence": 9.509900498999999,
+        "entanglement_size": 5,
+        "action_cache": {
+          "size": 5,
+          "max_size": 500,
+          "hit_count": 995,
+          "miss_count": 5,
+          "hit_rate": 0.995,
+          "ttl": 60.0
+        },
+        "state_cache": {
+          "size": 0,
+          "max_size": 1000,
+          "hit_count": 0,
+          "miss_count": 0,
+          "hit_rate": 0.0,
+          "ttl": 120.0
+        }
+      }
+    ],
+    "quantum_metrics": {
+      "total_quantum_measurements": 39,
+      "avg_coherence": 9.521907949124998,
+      "total_entanglements": 40
+    }
+  },
+  "scaling_analysis": {
+    "episodes_per_second": 679.5708102569963,
+    "memory_efficiency": "optimized_caching",
+    "parallelization": "multi_threaded_async",
+    "quantum_enhancement": "enabled"
+  }
+}

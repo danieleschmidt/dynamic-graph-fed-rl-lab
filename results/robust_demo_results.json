@@ -1,0 +1,387 @@
+{
+  "timestamp": "2025-08-08T16:11:19.813467",
+  "episode_rewards": [
+    -109.23844754663601,
+    -158.63070979698415,
+    -109.04043072332603,
+    -123.3651510085929,
+    -135.15365976152532,
+    -138.5417322296659,
+    -131.87353254852584,
+    -144.8381417302419,
+    -104.32149978378676,
+    -70.8664656662124,
+    -141.60543311034456,
+    -80.98169831842328,
+    -130.94403686869524,
+    -126.90850327035928,
+    -123.91096127724947,
+    -138.5371249991506,
+    -81.66025117244932,
+    -154.73830202559768,
+    -106.8591856754783,
+    -129.3686884712848,
+    -131.73130821355852,
+    -128.1757844216448,
+    -112.89993638214595,
+    -148.93754557298618,
+    -140.87169807947436,
+    -126.5917848707627,
+    -126.78305476102251,
+    -130.86693747498455,
+    -152.64543086619312,
+    -122.82723048580945
+  ],
+  "final_health": {
+    "timestamp": 1754669479.8124568,
+    "communication_rounds": 15,
+    "successful_aggregations": 0,
+    "failed_rounds": 15,
+    "success_rate": 0.0,
+    "total_agent_errors": 0,
+    "total_security_violations": 60,
+    "total_parameter_updates": 5936,
+    "agents_status": [
+      {
+        "agent_id": "agent_0",
+        "error_count": 0,
+        "security_violations": 15,
+        "update_count": 1484,
+        "q_table_size": 10
+      },
+      {
+        "agent_id": "agent_1",
+        "error_count": 0,
+        "security_violations": 15,
+        "update_count": 1484,
+        "q_table_size": 10
+      },
+      {
+        "agent_id": "agent_2",
+        "error_count": 0,
+        "security_violations": 15,
+        "update_count": 1484,
+        "q_table_size": 10
+      },
+      {
+        "agent_id": "agent_3",
+        "error_count": 0,
+        "security_violations": 15,
+        "update_count": 1484,
+        "q_table_size": 10
+      }
+    ]
+  },
+  "security_config": {
+    "enable_parameter_validation": true,
+    "max_parameter_magnitude": 50.0,
+    "enable_gradient_clipping": true,
+    "gradient_clip_norm": 2.0,
+    "enable_differential_privacy": false,
+    "privacy_epsilon": 1.0,
+    "enable_secure_aggregation": true,
+    "min_participants": 2
+  },
+  "metrics_history": [
+    {
+      "timestamp": 1754669479.6995811,
+      "total_delay": 10.923844754663602,
+      "avg_queue_length": 5.0,
+      "throughput": 98.90761552453364,
+      "green_ratio": 0.3,
+      "incidents": 0,
+      "topology_changes": 0,
+      "security_violations": 4
+    },
+    {
+      "timestamp": 1754669479.7025394,
+      "total_delay": 15.863070979698415,
+      "avg_queue_length": 5.1,
+      "throughput": 98.41369290203016,
+      "green_ratio": 0.35,
+      "incidents": 0,
+      "topology_changes": 0,
+      "security_violations": 4
+    },
+    {
+      "timestamp": 1754669479.7065496,
+      "total_delay": 10.904043072332604,
+      "avg_queue_length": 5.2,
+      "throughput": 98.90959569276674,
+      "green_ratio": 0.4,
+      "incidents": 1,
+      "topology_changes": 0,
+      "security_violations": 8
+    },
+    {
+      "timestamp": 1754669479.70914,
+      "total_delay": 12.336515100859291,
+      "avg_queue_length": 5.3,
+      "throughput": 98.76634848991407,
+      "green_ratio": 0.45,
+      "incidents": 0,
+      "topology_changes": 0,
+      "security_violations": 8
+    },
+    {
+      "timestamp": 1754669479.7134743,
+      "total_delay": 13.515365976152532,
+      "avg_queue_length": 5.4,
+      "throughput": 98.64846340238475,
+      "green_ratio": 0.5,
+      "incidents": 0,
+      "topology_changes": 0,
+      "security_violations": 12
+    },
+    {
+      "timestamp": 1754669479.7164552,
+      "total_delay": 13.854173222966592,
+      "avg_queue_length": 5.5,
+      "throughput": 98.61458267770334,
+      "green_ratio": 0.55,
+      "incidents": 2,
+      "topology_changes": 0,
+      "security_violations": 12
+    },
+    {
+      "timestamp": 1754669479.7205768,
+      "total_delay": 13.187353254852585,
+      "avg_queue_length": 5.6,
+      "throughput": 98.68126467451474,
+      "green_ratio": 0.6000000000000001,
+      "incidents": 1,
+      "topology_changes": 0,
+      "security_violations": 16
+    },
+    {
+      "timestamp": 1754669479.7232518,
+      "total_delay": 14.48381417302419,
+      "avg_queue_length": 5.7,
+      "throughput": 98.55161858269759,
+      "green_ratio": 0.65,
+      "incidents": 0,
+      "topology_changes": 0,
+      "security_violations": 16
+    },
+    {
+      "timestamp": 1754669479.7274473,
+      "total_delay": 10.432149978378677,
+      "avg_queue_length": 5.8,
+      "throughput": 98.95678500216214,
+      "green_ratio": 0.7,
+      "incidents": 1,
+      "topology_changes": 0,
+      "security_violations": 20
+    },
+    {
+      "timestamp": 1754669479.7301316,
+      "total_delay": 7.086646566621241,
+      "avg_queue_length": 5.9,
+      "throughput": 99.29133534333788,
+      "green_ratio": 0.75,
+      "incidents": 0,
+      "topology_changes": 0,
+      "security_violations": 20
+    },
+    {
+      "timestamp": 1754669479.7339504,
+      "total_delay": 14.160543311034457,
+      "avg_queue_length": 6.0,
+      "throughput": 98.58394566889656,
+      "green_ratio": 0.3,
+      "incidents": 0,
+      "topology_changes": 0,
+      "security_violations": 24
+    },
+    {
+      "timestamp": 1754669479.7369611,
+      "total_delay": 8.098169831842329,
+      "avg_queue_length": 6.1,
+      "throughput": 99.19018301681577,
+      "green_ratio": 0.35,
+      "incidents": 2,
+      "topology_changes": 0,
+      "security_violations": 24
+    },
+    {
+      "timestamp": 1754669479.7413352,
+      "total_delay": 13.094403686869525,
+      "avg_queue_length": 6.2,
+      "throughput": 98.69055963131305,
+      "green_ratio": 0.4,
+      "incidents": 0,
+      "topology_changes": 0,
+      "security_violations": 28
+    },
+    {
+      "timestamp": 1754669479.7448545,
+      "total_delay": 12.690850327035928,
+      "avg_queue_length": 6.3,
+      "throughput": 98.73091496729641,
+      "green_ratio": 0.45,
+      "incidents": 1,
+      "topology_changes": 0,
+      "security_violations": 28
+    },
+    {
+      "timestamp": 1754669479.7489855,
+      "total_delay": 12.391096127724948,
+      "avg_queue_length": 6.4,
+      "throughput": 98.7608903872275,
+      "green_ratio": 0.5,
+      "incidents": 2,
+      "topology_changes": 0,
+      "security_violations": 32
+    },
+    {
+      "timestamp": 1754669479.7518978,
+      "total_delay": 13.85371249991506,
+      "avg_queue_length": 6.5,
+      "throughput": 98.61462875000849,
+      "green_ratio": 0.55,
+      "incidents": 2,
+      "topology_changes": 0,
+      "security_violations": 32
+    },
+    {
+      "timestamp": 1754669479.7566261,
+      "total_delay": 8.166025117244933,
+      "avg_queue_length": 6.6,
+      "throughput": 99.1833974882755,
+      "green_ratio": 0.6000000000000001,
+      "incidents": 0,
+      "topology_changes": 0,
+      "security_violations": 36
+    },
+    {
+      "timestamp": 1754669479.7593057,
+      "total_delay": 15.473830202559768,
+      "avg_queue_length": 6.7,
+      "throughput": 98.45261697974402,
+      "green_ratio": 0.65,
+      "incidents": 0,
+      "topology_changes": 0,
+      "security_violations": 36
+    },
+    {
+      "timestamp": 1754669479.7637691,
+      "total_delay": 10.68591856754783,
+      "avg_queue_length": 6.8,
+      "throughput": 98.93140814324522,
+      "green_ratio": 0.7,
+      "incidents": 0,
+      "topology_changes": 0,
+      "security_violations": 40
+    },
+    {
+      "timestamp": 1754669479.7664745,
+      "total_delay": 12.93686884712848,
+      "avg_queue_length": 6.9,
+      "throughput": 98.70631311528714,
+      "green_ratio": 0.75,
+      "incidents": 0,
+      "topology_changes": 0,
+      "security_violations": 40
+    },
+    {
+      "timestamp": 1754669479.770557,
+      "total_delay": 13.173130821355853,
+      "avg_queue_length": 7.0,
+      "throughput": 98.68268691786442,
+      "green_ratio": 0.3,
+      "incidents": 0,
+      "topology_changes": 0,
+      "security_violations": 44
+    },
+    {
+      "timestamp": 1754669479.7741637,
+      "total_delay": 12.817578442164482,
+      "avg_queue_length": 7.1,
+      "throughput": 98.71824215578356,
+      "green_ratio": 0.35,
+      "incidents": 0,
+      "topology_changes": 0,
+      "security_violations": 44
+    },
+    {
+      "timestamp": 1754669479.7812493,
+      "total_delay": 11.289993638214597,
+      "avg_queue_length": 7.2,
+      "throughput": 98.87100063617854,
+      "green_ratio": 0.4,
+      "incidents": 0,
+      "topology_changes": 0,
+      "security_violations": 48
+    },
+    {
+      "timestamp": 1754669479.786659,
+      "total_delay": 14.89375455729862,
+      "avg_queue_length": 7.300000000000001,
+      "throughput": 98.51062454427014,
+      "green_ratio": 0.45,
+      "incidents": 0,
+      "topology_changes": 0,
+      "security_violations": 48
+    },
+    {
+      "timestamp": 1754669479.7942224,
+      "total_delay": 14.087169807947436,
+      "avg_queue_length": 7.4,
+      "throughput": 98.59128301920525,
+      "green_ratio": 0.5,
+      "incidents": 0,
+      "topology_changes": 0,
+      "security_violations": 52
+    },
+    {
+      "timestamp": 1754669479.7987518,
+      "total_delay": 12.65917848707627,
+      "avg_queue_length": 7.5,
+      "throughput": 98.73408215129237,
+      "green_ratio": 0.55,
+      "incidents": 1,
+      "topology_changes": 0,
+      "security_violations": 52
+    },
+    {
+      "timestamp": 1754669479.8028193,
+      "total_delay": 12.678305476102253,
+      "avg_queue_length": 7.6,
+      "throughput": 98.73216945238977,
+      "green_ratio": 0.6000000000000001,
+      "incidents": 1,
+      "topology_changes": 0,
+      "security_violations": 56
+    },
+    {
+      "timestamp": 1754669479.805619,
+      "total_delay": 13.086693747498456,
+      "avg_queue_length": 7.7,
+      "throughput": 98.69133062525016,
+      "green_ratio": 0.65,
+      "incidents": 1,
+      "topology_changes": 0,
+      "security_violations": 56
+    },
+    {
+      "timestamp": 1754669479.8094468,
+      "total_delay": 15.264543086619312,
+      "avg_queue_length": 7.800000000000001,
+      "throughput": 98.47354569133807,
+      "green_ratio": 0.7,
+      "incidents": 1,
+      "topology_changes": 0,
+      "security_violations": 60
+    },
+    {
+      "timestamp": 1754669479.8124347,
+      "total_delay": 12.282723048580946,
+      "avg_queue_length": 7.9,
+      "throughput": 98.7717276951419,
+      "green_ratio": 0.75,
+      "incidents": 0,
+      "topology_changes": 0,
+      "security_violations": 60
+    }
+  ]
+}

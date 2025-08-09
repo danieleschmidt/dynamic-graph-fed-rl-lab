@@ -11,21 +11,7 @@ import numpy as np
 from ..environments.base import GraphState, GraphTransition
 
 
-@dataclass
-class GraphTransition:
-    """Single transition for graph environments."""
-    
-    state: GraphState
-    action: Union[jnp.ndarray, Dict[int, jnp.ndarray]]
-    reward: Union[float, Dict[int, float]]
-    next_state: GraphState
-    done: bool
-    info: Dict[str, any] = None
-    
-    def __post_init__(self):
-        """Initialize info dict if None."""
-        if self.info is None:
-            self.info = {}
+# Remove duplicate GraphTransition - already defined in base.py
 
 
 class GraphReplayBuffer:
@@ -340,13 +326,14 @@ class PrioritizedGraphBuffer:
         probabilities = priorities ** self.alpha
         probabilities = probabilities / jnp.sum(probabilities)
         
-        # Sample indices
-        indices = jnp.random.choice(
+        # Sample indices (using numpy for compatibility)
+        indices = np.random.choice(
             len(self.buffer),
             size=batch_size,
             replace=False,
             p=probabilities,
         )
+        indices = jnp.array(indices)
         
         # Get transitions
         transitions = [self.buffer[int(idx)] for idx in indices]

@@ -150,6 +150,7 @@ exclude_lines = [
 dgfrl = "dynamic_graph_fed_rl.cli:main"
 dgfrl-server = "dynamic_graph_fed_rl.server.app:main"
 dgfrl-agent = "dynamic_graph_fed_rl.agent.cli:main"
+dgfrl-saas = "dynamic_graph_fed_rl.saas.app:main"
 
 [tool.bandit]
 exclude_dirs = ["tests", "build", "dist"]

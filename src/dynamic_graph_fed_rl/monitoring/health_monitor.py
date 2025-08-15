@@ -1,12 +1,31 @@
-"""Comprehensive health monitoring and system validation."""
+"""Comprehensive health monitoring and system validation.
+
+Generation 2 Robustness Features:
+- Auto-healing capabilities with intelligent recovery
+- Predictive failure detection
+- Circuit breaker integration
+- Comprehensive audit logging
+- Real-time alerting and notifications
+- Automated rollback and failover
+"""
 
 import time
 import asyncio
+import logging
+import json
+import hashlib
 from enum import Enum
 from dataclasses import dataclass, field
-from typing import Dict, List, Optional, Callable, Any, Set
+from typing import Dict, List, Optional, Callable, Any, Set, Union
 import threading
 import traceback
+from concurrent.futures import ThreadPoolExecutor
+
+# Import robustness framework
+from ..utils.error_handling import (
+    circuit_breaker, retry, robust, SecurityError, ValidationError,
+    CircuitBreakerConfig, RetryConfig, resilience
+)
 
 
 class HealthStatus(Enum):

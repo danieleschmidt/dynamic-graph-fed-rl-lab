@@ -1,14 +1,31 @@
-"""Base federated learning classes and protocols."""
+"""Base federated learning classes and protocols.
+
+Generation 2 Robustness Features:
+- Comprehensive input validation and sanitization
+- Enterprise-grade error handling with circuit breakers
+- Security hardening against malicious agents
+- Advanced Byzantine fault tolerance
+- Audit logging and monitoring
+"""
 
 import abc
 import asyncio
 import random
+import logging
+import time
+import hashlib
 from typing import Any, Dict, List, Optional, Tuple, Union
 
 import jax
 import jax.numpy as jnp
 import optax
 from flax.training.train_state import TrainState
+
+# Import robustness framework
+from ..utils.error_handling import (
+    circuit_breaker, retry, robust, SecurityError, ValidationError,
+    CircuitBreakerConfig, RetryConfig, resilience
+)
 
 
 class BaseFederatedProtocol(abc.ABC):

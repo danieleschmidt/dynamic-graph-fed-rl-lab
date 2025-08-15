@@ -18,6 +18,12 @@ from .quantum_fed_learning import QuantumFederatedLearning
 from .hybrid_optimizer import HybridClassicalQuantumOptimizer
 from .error_correction import QuantumErrorCorrection
 from .benchmarking import QuantumAdvantageBenchmark
+from .quantum_accelerated_optimizer import (
+    QuantumAcceleratedOptimizer, 
+    QuantumAccelerationConfig, 
+    QuantumOptimizationResult,
+    QuantumAccelerationType
+)
 
 __all__ = [
     "QuantumBackend",
@@ -30,4 +36,8 @@ __all__ = [
     "HybridClassicalQuantumOptimizer",
     "QuantumErrorCorrection",
     "QuantumAdvantageBenchmark",
+    "QuantumAcceleratedOptimizer",
+    "QuantumAccelerationConfig",
+    "QuantumOptimizationResult",
+    "QuantumAccelerationType",
 ]

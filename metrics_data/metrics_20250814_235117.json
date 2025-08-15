@@ -1,0 +1,17 @@
+{
+  "timestamp": 1755215477.361558,
+  "cpu_usage": 25.13904521806451,
+  "memory_usage": 51.48658481686691,
+  "disk_usage": 50.0,
+  "network_io": {
+    "bytes_sent": 1024000.0,
+    "bytes_recv": 2048000.0,
+    "packets_sent": 1000.0,
+    "packets_recv": 1500.0
+  },
+  "quantum_coherence": 0.0,
+  "federation_sync": 0.0,
+  "active_tasks": 0,
+  "completed_tasks": 0,
+  "failed_tasks": 0
+}

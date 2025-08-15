@@ -45,12 +45,12 @@ class IntersectionNode:
 class TrafficState(GraphState):
     """Extended graph state for traffic networks."""
     
-    intersections: List[IntersectionNode]
-    traffic_flow: jnp.ndarray  # [num_edges] - vehicles per minute
-    congestion_level: jnp.ndarray  # [num_edges] - 0.0 to 1.0
-    incident_locations: List[int]  # Node indices with incidents
-    weather_condition: float  # 0.0 (clear) to 1.0 (severe)
-    time_of_day: float  # 0.0 to 24.0 hours
+    traffic_flow: jnp.ndarray = None  # [num_edges] - vehicles per minute
+    congestion_level: jnp.ndarray = None  # [num_edges] - 0.0 to 1.0
+    intersections: List[IntersectionNode] = None
+    incident_locations: List[int] = None  # Node indices with incidents
+    weather_condition: float = 0.0  # 0.0 (clear) to 1.0 (severe)
+    time_of_day: float = 0.0  # 0.0 to 24.0 hours
     
     def get_total_delay(self) -> float:
         """Compute total network delay."""

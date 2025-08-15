@@ -303,10 +303,14 @@ class CircuitBreaker:
 
 
 class RetryHandler:
-    """Advanced retry mechanism with exponential backoff and jitter."""
+    """Advanced retry mechanism with exponential backoff and adaptive intelligence."""
     
     def __init__(self, config: RetryConfig):
         self.config = config
+        self.failure_patterns: Dict[str, List[float]] = {}
+        self.success_patterns: Dict[str, List[float]] = {}
+        self.adaptive_enabled = True
+        self.learning_rate = 0.1
     
     def __call__(self, func: Callable) -> Callable:
         """Decorator interface for retry handler."""
@@ -316,34 +320,63 @@ class RetryHandler:
         return wrapper
     
     def execute_with_retry(self, func: Callable, *args, **kwargs) -> Any:
-        """Execute function with retry logic."""
+        """Execute function with intelligent adaptive retry logic."""
+        func_signature = f"{func.__name__}_{hash(str(args))}"
         last_exception = None
+        attempt_times = []
         
-        for attempt in range(self.config.max_attempts):
+        # Get adaptive configuration based on historical patterns
+        if self.adaptive_enabled:
+            adaptive_config = self._get_adaptive_config(func_signature)
+        else:
+            adaptive_config = self.config
+        
+        for attempt in range(adaptive_config.max_attempts):
+            attempt_start = time.time()
+            
             try:
-                return func(*args, **kwargs)
+                result = func(*args, **kwargs)
+                
+                # Record successful execution pattern
+                execution_time = time.time() - attempt_start
+                self._record_success(func_signature, attempt, execution_time)
+                
+                return result
             
             except self.config.non_retryable_exceptions as e:
                 # Don't retry for non-retryable exceptions
+                execution_time = time.time() - attempt_start
+                self._record_failure(func_signature, attempt, execution_time, type(e).__name__)
                 raise
             
             except self.config.retryable_exceptions as e:
                 last_exception = e
+                execution_time = time.time() - attempt_start
+                attempt_times.append(execution_time)
+                
+                # Record failure pattern
+                self._record_failure(func_signature, attempt, execution_time, type(e).__name__)
                 
                 # Don't sleep on last attempt
-                if attempt < self.config.max_attempts - 1:
-                    delay = self._calculate_delay(attempt)
+                if attempt < adaptive_config.max_attempts - 1:
+                    if self.adaptive_enabled:
+                        delay = self._calculate_adaptive_delay(attempt, func_signature, e)
+                    else:
+                        delay = self._calculate_delay(attempt)
+                    
                     time.sleep(delay)
                     
                     logging.warning(
-                        f"Retry attempt {attempt + 1}/{self.config.max_attempts} "
-                        f"after {delay:.2f}s delay: {str(e)}"
+                        f"Intelligent retry {attempt + 1}/{adaptive_config.max_attempts} "
+                        f"after {delay:.2f}s delay: {str(e)} "
+                        f"{'(adaptive)' if self.adaptive_enabled else ''}"
                     )
         
         # All retries exhausted
         raise RetryExhaustedException(
-            f"All {self.config.max_attempts} retry attempts failed. "
-            f"Last error: {str(last_exception)}"
+            f"All {adaptive_config.max_attempts} intelligent retry attempts failed. "
+            f"Last error: {str(last_exception)} "
+            f"(Adaptive config used: max_attempts={adaptive_config.max_attempts})"
         ) from last_exception
     
     def _calculate_delay(self, attempt: int) -> float:
@@ -361,6 +394,159 @@ class RetryHandler:
             delay += jitter
         
         return delay
+    
+    def _calculate_adaptive_delay(self, attempt: int, func_signature: str, exception: Exception) -> float:
+        """Calculate adaptive delay based on historical failure patterns."""
+        base_delay = self._calculate_delay(attempt)
+        
+        if not self.adaptive_enabled or func_signature not in self.failure_patterns:
+            return base_delay
+        
+        # Analyze historical failure patterns
+        failure_history = self.failure_patterns[func_signature]
+        if len(failure_history) < 3:
+            return base_delay
+        
+        # Calculate adaptive adjustments
+        recent_failures = failure_history[-10:]  # Last 10 failures
+        avg_failure_time = sum(recent_failures) / len(recent_failures)
+        
+        # Adjust delay based on exception type and timing patterns
+        exception_type = type(exception).__name__
+        
+        # If failures are happening quickly, increase delay more aggressively
+        if avg_failure_time < 1.0:  # Fast failures
+            base_delay *= 1.5
+        
+        # Exception-specific adjustments
+        exception_multipliers = {
+            'TimeoutError': 2.0,      # Wait longer for timeouts
+            'ConnectionError': 1.8,   # Network issues need more time
+            'MemoryError': 3.0,       # Memory issues need substantial delay
+            'DatabaseError': 2.5,     # Database issues often need longer recovery
+            'RateLimitError': 5.0,    # Rate limits need much longer delays
+        }
+        
+        multiplier = exception_multipliers.get(exception_type, 1.0)
+        adaptive_delay = base_delay * multiplier
+        
+        # Apply learning rate for gradual adjustment
+        if hasattr(self, '_last_delays') and func_signature in self._last_delays:
+            last_delay = self._last_delays[func_signature]
+            adaptive_delay = last_delay + self.learning_rate * (adaptive_delay - last_delay)
+        
+        # Store for next iteration
+        if not hasattr(self, '_last_delays'):
+            self._last_delays = {}
+        self._last_delays[func_signature] = adaptive_delay
+        
+        return min(adaptive_delay, self.config.max_delay)
+    
+    def _get_adaptive_config(self, func_signature: str) -> RetryConfig:
+        """Get adaptive retry configuration based on historical success/failure patterns."""
+        if func_signature not in self.failure_patterns:
+            return self.config
+        
+        failure_history = self.failure_patterns[func_signature]
+        success_history = self.success_patterns.get(func_signature, [])
+        
+        # Calculate success rate
+        total_attempts = len(failure_history) + len(success_history)
+        success_rate = len(success_history) / total_attempts if total_attempts > 0 else 0.0
+        
+        # Adaptive configuration based on patterns
+        adaptive_config = RetryConfig(
+            max_attempts=self.config.max_attempts,
+            base_delay=self.config.base_delay,
+            max_delay=self.config.max_delay,
+            exponential_base=self.config.exponential_base,
+            jitter=self.config.jitter,
+            backoff_factor=self.config.backoff_factor,
+            retryable_exceptions=self.config.retryable_exceptions,
+            non_retryable_exceptions=self.config.non_retryable_exceptions
+        )
+        
+        # Adjust max attempts based on success rate
+        if success_rate < 0.3:  # Low success rate
+            adaptive_config.max_attempts = min(self.config.max_attempts + 2, 10)
+        elif success_rate > 0.8:  # High success rate
+            adaptive_config.max_attempts = max(self.config.max_attempts - 1, 1)
+        
+        # Adjust delays based on failure frequency
+        recent_failures = failure_history[-5:] if len(failure_history) >= 5 else failure_history
+        if recent_failures:
+            avg_failure_time = sum(recent_failures) / len(recent_failures)
+            
+            # If failures are very quick, increase base delay
+            if avg_failure_time < 0.5:
+                adaptive_config.base_delay = self.config.base_delay * 2.0
+            elif avg_failure_time > 5.0:
+                adaptive_config.base_delay = self.config.base_delay * 0.5
+        
+        return adaptive_config
+    
+    def _record_success(self, func_signature: str, attempt: int, execution_time: float):
+        """Record successful execution for pattern analysis."""
+        if func_signature not in self.success_patterns:
+            self.success_patterns[func_signature] = []
+        
+        self.success_patterns[func_signature].append(execution_time)
+        
+        # Keep history bounded
+        if len(self.success_patterns[func_signature]) > 100:
+            self.success_patterns[func_signature] = self.success_patterns[func_signature][-50:]
+    
+    def _record_failure(self, func_signature: str, attempt: int, execution_time: float, exception_type: str):
+        """Record failure for pattern analysis."""
+        if func_signature not in self.failure_patterns:
+            self.failure_patterns[func_signature] = []
+        
+        self.failure_patterns[func_signature].append(execution_time)
+        
+        # Keep history bounded
+        if len(self.failure_patterns[func_signature]) > 100:
+            self.failure_patterns[func_signature] = self.failure_patterns[func_signature][-50:]
+        
+        # Record exception type patterns
+        if not hasattr(self, 'exception_patterns'):
+            self.exception_patterns = {}
+        
+        if func_signature not in self.exception_patterns:
+            self.exception_patterns[func_signature] = {}
+        
+        self.exception_patterns[func_signature][exception_type] = \
+            self.exception_patterns[func_signature].get(exception_type, 0) + 1
+    
+    def get_retry_analytics(self) -> Dict[str, Any]:
+        """Get comprehensive retry analytics and patterns."""
+        analytics = {
+            'adaptive_enabled': self.adaptive_enabled,
+            'learning_rate': self.learning_rate,
+            'tracked_functions': len(self.failure_patterns),
+            'function_analytics': {}
+        }
+        
+        for func_signature in self.failure_patterns:
+            failures = len(self.failure_patterns[func_signature])
+            successes = len(self.success_patterns.get(func_signature, []))
+            total = failures + successes
+            
+            success_rate = successes / total if total > 0 else 0.0
+            
+            func_analytics = {
+                'total_attempts': total,
+                'success_rate': success_rate,
+                'failure_count': failures,
+                'success_count': successes
+            }
+            
+            # Add exception type distribution
+            if hasattr(self, 'exception_patterns') and func_signature in self.exception_patterns:
+                func_analytics['exception_types'] = self.exception_patterns[func_signature]
+            
+            analytics['function_analytics'][func_signature] = func_analytics
+        
+        return analytics
 
 
 class BulkheadIsolation:

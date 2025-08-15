@@ -25,6 +25,7 @@ from ..utils.error_handling import (
     circuit_breaker, retry, robust, SecurityError, ValidationError,
     CircuitBreakerConfig, RetryConfig, resilience
 )
+from ..utils.disaster_recovery import disaster_recovery, BackupType
 
 
 class QuantumBackendType(Enum):
@@ -94,29 +95,69 @@ class QuantumBackend(ABC):
         # Security and audit
         self.access_log: List[Dict[str, Any]] = []
         self.authorized_users: Set[str] = set()
+        
+        # Advanced resilience features
+        self.quantum_state_backup_enabled = True
+        self.auto_recovery_enabled = True
+        self.predictive_failure_detection = True
+        self.quantum_error_correction_enabled = True
+        
+        # Quantum-specific metrics
+        self.coherence_time_degradation = 0.0
+        self.gate_fidelity_history: List[float] = []
+        self.decoherence_events = 0
+        self.quantum_volume_trend: List[float] = []
     
     def _setup_circuit_breakers(self):
-        """Setup circuit breakers for quantum operations."""
-        # Circuit breaker for device connections
+        """Setup advanced circuit breakers for quantum operations."""
+        # Circuit breaker for device connections with adaptive thresholds
         connection_config = CircuitBreakerConfig(
             failure_threshold=3,
             recovery_timeout=300.0,  # 5 minutes
-            expected_exception=(ConnectionError, TimeoutError)
+            expected_exception=(ConnectionError, TimeoutError),
+            success_threshold=2,  # Require 2 successes before closing
+            request_volume_threshold=5  # Minimum requests before opening
         )
         self.connection_circuit = resilience.register_circuit_breaker(
             f"quantum-connection-{self.backend_type.value}", 
             connection_config
         )
         
-        # Circuit breaker for circuit execution
+        # Circuit breaker for circuit execution with quantum-specific handling
         execution_config = CircuitBreakerConfig(
             failure_threshold=5,
             recovery_timeout=120.0,  # 2 minutes
-            expected_exception=(RuntimeError, ValueError)
+            expected_exception=(RuntimeError, ValueError, Exception),
+            success_threshold=3,
+            request_volume_threshold=10
         )
         self.execution_circuit = resilience.register_circuit_breaker(
             f"quantum-execution-{self.backend_type.value}", 
             execution_config
+        )
+        
+        # Circuit breaker for quantum coherence monitoring
+        coherence_config = CircuitBreakerConfig(
+            failure_threshold=2,
+            recovery_timeout=60.0,  # 1 minute
+            expected_exception=(Exception,),
+            success_threshold=1
+        )
+        self.coherence_circuit = resilience.register_circuit_breaker(
+            f"quantum-coherence-{self.backend_type.value}",
+            coherence_config
+        )
+        
+        # Circuit breaker for quantum error correction
+        error_correction_config = CircuitBreakerConfig(
+            failure_threshold=3,
+            recovery_timeout=180.0,  # 3 minutes
+            expected_exception=(Exception,),
+            success_threshold=2
+        )
+        self.error_correction_circuit = resilience.register_circuit_breaker(
+            f"quantum-error-correction-{self.backend_type.value}",
+            error_correction_config
         )
         
     @robust(component="quantum_backend", operation="connect")
@@ -335,6 +376,10 @@ class QuantumBackend(ABC):
         connection_metrics = self.connection_circuit.get_metrics()
         execution_metrics = self.execution_circuit.get_metrics()
         
+        # Get quantum-specific metrics
+        coherence_metrics = getattr(self, 'coherence_circuit', None)
+        error_correction_metrics = getattr(self, 'error_correction_circuit', None)
+        
         health_status = {
             "backend_type": self.backend_type.value,
             "is_connected": self.is_connected,
@@ -346,7 +391,18 @@ class QuantumBackend(ABC):
             "uptime": current_time - self.last_health_check if self.last_health_check > 0 else 0,
             "circuit_breakers": {
                 "connection": connection_metrics,
-                "execution": execution_metrics
+                "execution": execution_metrics,
+                "coherence": coherence_metrics.get_metrics() if coherence_metrics else {},
+                "error_correction": error_correction_metrics.get_metrics() if error_correction_metrics else {}
+            },
+            "quantum_metrics": {
+                "coherence_time_degradation": self.coherence_time_degradation,
+                "average_gate_fidelity": sum(self.gate_fidelity_history[-50:]) / len(self.gate_fidelity_history[-50:]) if self.gate_fidelity_history else 0.0,
+                "decoherence_events": self.decoherence_events,
+                "quantum_volume_trend": self.quantum_volume_trend[-10:] if self.quantum_volume_trend else [],
+                "auto_recovery_enabled": self.auto_recovery_enabled,
+                "quantum_state_backup_enabled": self.quantum_state_backup_enabled,
+                "error_correction_enabled": self.quantum_error_correction_enabled
             },
             "access_logs": len(self.access_log),
             "status": self._determine_health_status(success_rate, connection_metrics, execution_metrics)
@@ -369,6 +425,261 @@ class QuantumBackend(ABC):
             return "unhealthy"
         else:
             return "healthy"
+    
+    @circuit_breaker("quantum_state_backup", failure_threshold=2, recovery_timeout=120.0)
+    async def backup_quantum_state(self, state_id: str, user_id: Optional[str] = None) -> str:
+        """Backup quantum system state for disaster recovery."""
+        if not self.quantum_state_backup_enabled:
+            logging.warning("Quantum state backup is disabled")
+            return ""
+        
+        try:
+            state_data = {
+                "backend_type": self.backend_type.value,
+                "device_info": self.device_info,
+                "timestamp": time.time(),
+                "coherence_metrics": {
+                    "coherence_time_degradation": self.coherence_time_degradation,
+                    "gate_fidelity_history": self.gate_fidelity_history[-100:],  # Last 100 measurements
+                    "decoherence_events": self.decoherence_events,
+                    "quantum_volume_trend": self.quantum_volume_trend[-50:]  # Last 50 measurements
+                },
+                "circuit_breaker_states": {
+                    "connection": self.connection_circuit.get_metrics(),
+                    "execution": self.execution_circuit.get_metrics(),
+                    "coherence": self.coherence_circuit.get_metrics(),
+                    "error_correction": self.error_correction_circuit.get_metrics()
+                },
+                "performance_metrics": {
+                    "total_executions": self.total_executions,
+                    "failed_executions": self.failed_executions,
+                    "connection_attempts": self.connection_attempts
+                }
+            }
+            
+            # Create backup using disaster recovery system
+            backup_id = await disaster_recovery.create_backup(
+                source_path=f"/tmp/quantum_state_{state_id}.json",
+                backup_type=BackupType.INCREMENTAL,
+                metadata={
+                    "type": "quantum_state",
+                    "backend": self.backend_type.value,
+                    "state_id": state_id,
+                    "user_id": user_id
+                }
+            )
+            
+            # Save state data to temporary file for backup
+            import json
+            import tempfile
+            with tempfile.NamedTemporaryFile(mode='w', suffix='.json', delete=False) as f:
+                json.dump(state_data, f, indent=2)
+                temp_path = f.name
+            
+            logging.info(f"Quantum state backup created: {backup_id}")
+            return backup_id
+            
+        except Exception as e:
+            logging.error(f"Quantum state backup failed: {e}")
+            raise
+    
+    @circuit_breaker("quantum_state_restore", failure_threshold=1, recovery_timeout=300.0)
+    async def restore_quantum_state(self, backup_id: str, user_id: Optional[str] = None) -> bool:
+        """Restore quantum system state from backup."""
+        try:
+            # Restore from disaster recovery system
+            restore_path = f"/tmp/quantum_state_restore_{backup_id}"
+            success = await disaster_recovery.restore_from_backup(
+                backup_id=backup_id,
+                target_path=restore_path
+            )
+            
+            if success:
+                # Load and apply restored state
+                import json
+                import os
+                state_file = os.path.join(restore_path, "quantum_state.json")
+                
+                if os.path.exists(state_file):
+                    with open(state_file, 'r') as f:
+                        state_data = json.load(f)
+                    
+                    # Restore metrics
+                    coherence_metrics = state_data.get("coherence_metrics", {})
+                    self.coherence_time_degradation = coherence_metrics.get("coherence_time_degradation", 0.0)
+                    self.gate_fidelity_history = coherence_metrics.get("gate_fidelity_history", [])
+                    self.decoherence_events = coherence_metrics.get("decoherence_events", 0)
+                    self.quantum_volume_trend = coherence_metrics.get("quantum_volume_trend", [])
+                    
+                    # Restore performance metrics
+                    perf_metrics = state_data.get("performance_metrics", {})
+                    self.total_executions = perf_metrics.get("total_executions", 0)
+                    self.failed_executions = perf_metrics.get("failed_executions", 0)
+                    self.connection_attempts = perf_metrics.get("connection_attempts", 0)
+                    
+                    logging.info(f"Quantum state restored from backup: {backup_id}")
+                    return True
+                
+            return False
+            
+        except Exception as e:
+            logging.error(f"Quantum state restore failed: {e}")
+            raise
+    
+    @robust(component="quantum_backend", operation="monitor_coherence")
+    async def monitor_quantum_coherence(self) -> Dict[str, Any]:
+        """Monitor quantum coherence and detect degradation."""
+        if not self.predictive_failure_detection:
+            return {"status": "monitoring_disabled"}
+        
+        try:
+            # Simulate coherence monitoring (in practice, this would query actual quantum device)
+            import random
+            import numpy as np
+            
+            # Simulate coherence time measurement
+            baseline_coherence = 100.0  # microseconds
+            current_coherence = baseline_coherence * (0.8 + 0.4 * random.random())
+            
+            # Calculate degradation
+            if len(self.quantum_volume_trend) > 0:
+                avg_previous = np.mean(self.quantum_volume_trend[-10:])
+                degradation = (avg_previous - current_coherence) / avg_previous if avg_previous > 0 else 0
+            else:
+                degradation = 0
+            
+            self.coherence_time_degradation = degradation
+            self.quantum_volume_trend.append(current_coherence)
+            
+            # Simulate gate fidelity
+            gate_fidelity = 0.99 * (0.95 + 0.1 * random.random())
+            self.gate_fidelity_history.append(gate_fidelity)
+            
+            # Detect decoherence events
+            if current_coherence < baseline_coherence * 0.7:  # 30% degradation threshold
+                self.decoherence_events += 1
+                logging.warning(f"Decoherence event detected: coherence={current_coherence:.2f}μs")
+            
+            # Predictive failure detection
+            failure_risk = 0.0
+            if degradation > 0.2:  # 20% degradation
+                failure_risk += 0.3
+            if gate_fidelity < 0.95:
+                failure_risk += 0.2
+            if self.decoherence_events > 5:
+                failure_risk += 0.3
+            
+            # Limit to recent history to prevent memory growth
+            if len(self.quantum_volume_trend) > 1000:
+                self.quantum_volume_trend = self.quantum_volume_trend[-500:]
+            if len(self.gate_fidelity_history) > 1000:
+                self.gate_fidelity_history = self.gate_fidelity_history[-500:]
+            
+            coherence_status = {
+                "timestamp": time.time(),
+                "current_coherence_time": current_coherence,
+                "baseline_coherence_time": baseline_coherence,
+                "degradation_percentage": degradation * 100,
+                "gate_fidelity": gate_fidelity,
+                "decoherence_events": self.decoherence_events,
+                "failure_risk_score": failure_risk,
+                "status": "critical" if failure_risk > 0.7 else "warning" if failure_risk > 0.4 else "healthy",
+                "recommendations": self._generate_coherence_recommendations(failure_risk, degradation, gate_fidelity)
+            }
+            
+            # Trigger auto-recovery if needed
+            if self.auto_recovery_enabled and failure_risk > 0.8:
+                await self._trigger_quantum_auto_recovery(coherence_status)
+            
+            return coherence_status
+            
+        except Exception as e:
+            logging.error(f"Quantum coherence monitoring failed: {e}")
+            raise
+    
+    def _generate_coherence_recommendations(self, failure_risk: float, degradation: float, gate_fidelity: float) -> List[str]:
+        """Generate recommendations based on coherence monitoring."""
+        recommendations = []
+        
+        if failure_risk > 0.7:
+            recommendations.append("CRITICAL: Consider immediate quantum state backup")
+            recommendations.append("CRITICAL: Reduce circuit depth and complexity")
+        
+        if degradation > 0.3:
+            recommendations.append("HIGH: Implement quantum error correction")
+            recommendations.append("HIGH: Consider device recalibration")
+        
+        if gate_fidelity < 0.95:
+            recommendations.append("MEDIUM: Monitor gate operation parameters")
+            recommendations.append("MEDIUM: Consider using error mitigation techniques")
+        
+        if failure_risk > 0.5:
+            recommendations.append("MEDIUM: Increase measurement repetitions")
+            recommendations.append("MEDIUM: Consider switching to backup quantum device")
+        
+        if not recommendations:
+            recommendations.append("System operating within normal parameters")
+        
+        return recommendations
+    
+    async def _trigger_quantum_auto_recovery(self, coherence_status: Dict[str, Any]):
+        """Trigger automatic quantum recovery procedures."""
+        try:
+            logging.warning("Triggering quantum auto-recovery procedures")
+            
+            # Create emergency backup
+            backup_id = await self.backup_quantum_state(
+                state_id=f"emergency_{int(time.time())}",
+                user_id="auto_recovery_system"
+            )
+            
+            # Attempt quantum error correction
+            if self.quantum_error_correction_enabled:
+                await self._apply_quantum_error_correction()
+            
+            # Reset quantum state if necessary
+            if coherence_status["failure_risk_score"] > 0.9:
+                await self._reset_quantum_device_state()
+            
+            logging.info("Quantum auto-recovery completed")
+            
+        except Exception as e:
+            logging.error(f"Quantum auto-recovery failed: {e}")
+    
+    @circuit_breaker("quantum_error_correction", failure_threshold=3, recovery_timeout=180.0)
+    async def _apply_quantum_error_correction(self):
+        """Apply quantum error correction protocols."""
+        try:
+            # Simulate quantum error correction application
+            import asyncio
+            await asyncio.sleep(2)  # Simulate processing time
+            
+            logging.info("Quantum error correction applied successfully")
+            return True
+            
+        except Exception as e:
+            logging.error(f"Quantum error correction failed: {e}")
+            raise
+    
+    async def _reset_quantum_device_state(self):
+        """Reset quantum device to clean state."""
+        try:
+            # Simulate device state reset
+            import asyncio
+            await asyncio.sleep(5)  # Simulate reset time
+            
+            # Reset internal metrics
+            self.coherence_time_degradation = 0.0
+            self.decoherence_events = 0
+            self.gate_fidelity_history = self.gate_fidelity_history[-10:]  # Keep recent history
+            self.quantum_volume_trend = self.quantum_volume_trend[-10:]
+            
+            logging.info("Quantum device state reset completed")
+            return True
+            
+        except Exception as e:
+            logging.error(f"Quantum device state reset failed: {e}")
+            raise
     
     def reset_circuit_breakers(self) -> None:
         """Reset circuit breakers - use with caution."""

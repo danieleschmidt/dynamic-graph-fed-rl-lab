@@ -1,0 +1,1922 @@
+[
+  {
+    "episode": 0,
+    "agent_rewards": {
+      "0": -1.1809957407743157,
+      "1": -1.403633130135721,
+      "2": -1.2877996391218902,
+      "3": -1.2234941198205938,
+      "4": -1.3518409191933753
+    },
+    "system_metrics": {
+      "federation_rounds": 5,
+      "failed_aggregations": 0,
+      "success_rate": 1.0,
+      "num_agents": 5,
+      "avg_reward": -1.3800026526495235,
+      "total_training_steps": 486,
+      "load_balancing": {
+        "agent_loads": {
+          "0": 0.099,
+          "1": 0.096,
+          "2": 0.096,
+          "3": 0.096,
+          "4": 0.096
+        },
+        "agent_performance": {
+          "0": 0.9046896220553726,
+          "1": 0.8220966787060862,
+          "2": 0.8942215140594274,
+          "3": 0.8574600788610411,
+          "4": 0.88061203442723
+        },
+        "avg_load": 0.09659999999999999,
+        "load_variance": 1.4400000000000025e-06
+      },
+      "cache_stats": {
+        "size": 5,
+        "max_size": 5000,
+        "hit_count": 0,
+        "miss_count": 5,
+        "hit_rate": 0.0,
+        "fill_ratio": 0.001
+      },
+      "resource_pool_stats": {
+        "pool_size": 1,
+        "max_size": 50,
+        "created_count": 1,
+        "acquired_count": 5,
+        "released_count": 5,
+        "active_resources": 0
+      },
+      "profiler_stats": {
+        "federated_averaging": {
+          "count": 5,
+          "avg_time": 0.003146402200002285,
+          "min_time": 0.0019516440000302282,
+          "max_time": 0.004872429000045031,
+          "total_time": 0.015732011000011425,
+          "avg_memory_delta": 0.0
+        }
+      }
+    },
+    "episode_time": 0.7018170356750488,
+    "timestamp": 1755371950.7724462
+  },
+  {
+    "episode": 1,
+    "agent_rewards": {
+      "0": -1.3767189418986743,
+      "1": -1.408254814088703,
+      "2": -1.0482780892473138,
+      "3": -1.291088724331145,
+      "4": -1.2510203780790274
+    },
+    "system_metrics": {
+      "federation_rounds": 10,
+      "failed_aggregations": 0,
+      "success_rate": 1.0,
+      "num_agents": 5,
+      "avg_reward": -1.1578351785680283,
+      "total_training_steps": 992,
+      "load_balancing": {
+        "agent_loads": {
+          "0": 0.196,
+          "1": 0.196,
+          "2": 0.196,
+          "3": 0.196,
+          "4": 0.196
+        },
+        "agent_performance": {
+          "0": 0.870348229618955,
+          "1": 0.8633300005290654,
+          "2": 0.898828465842594,
+          "3": 0.8589813348594029,
+          "4": 0.8917475656472048
+        },
+        "avg_load": 0.196,
+        "load_variance": 0.0
+      },
+      "cache_stats": {
+        "size": 10,
+        "max_size": 5000,
+        "hit_count": 0,
+        "miss_count": 10,
+        "hit_rate": 0.0,
+        "fill_ratio": 0.002
+      },
+      "resource_pool_stats": {
+        "pool_size": 1,
+        "max_size": 50,
+        "created_count": 1,
+        "acquired_count": 10,
+        "released_count": 10,
+        "active_resources": 0
+      },
+      "profiler_stats": {
+        "federated_averaging": {
+          "count": 10,
+          "avg_time": 0.0025103843000010783,
+          "min_time": 0.001591896999968867,
+          "max_time": 0.004872429000045031,
+          "total_time": 0.025103843000010784,
+          "avg_memory_delta": 0.0
+        }
+      }
+    },
+    "episode_time": 0.6554300785064697,
+    "timestamp": 1755371951.439535
+  },
+  {
+    "episode": 2,
+    "agent_rewards": {
+      "0": -1.2638070758694457,
+      "1": -1.4333876438921964,
+      "2": -1.3811725108443218,
+      "3": -1.2132444161469258,
+      "4": -1.4969121795064881
+    },
+    "system_metrics": {
+      "federation_rounds": 15,
+      "failed_aggregations": 0,
+      "success_rate": 1.0,
+      "num_agents": 5,
+      "avg_reward": -1.4116626443226614,
+      "total_training_steps": 1484,
+      "load_balancing": {
+        "agent_loads": {
+          "0": 0.296,
+          "1": 0.297,
+          "2": 0.296,
+          "3": 0.296,
+          "4": 0.296
+        },
+        "agent_performance": {
+          "0": 0.8721962551896006,
+          "1": 0.8222223126177722,
+          "2": 0.8679114378091216,
+          "3": 0.8437875628468382,
+          "4": 0.836509000165317
+        },
+        "avg_load": 0.29619999999999996,
+        "load_variance": 1.600000000000003e-07
+      },
+      "cache_stats": {
+        "size": 15,
+        "max_size": 5000,
+        "hit_count": 0,
+        "miss_count": 15,
+        "hit_rate": 0.0,
+        "fill_ratio": 0.003
+      },
+      "resource_pool_stats": {
+        "pool_size": 1,
+        "max_size": 50,
+        "created_count": 1,
+        "acquired_count": 15,
+        "released_count": 15,
+        "active_resources": 0
+      },
+      "profiler_stats": {
+        "federated_averaging": {
+          "count": 15,
+          "avg_time": 0.002390243733331469,
+          "min_time": 0.001591896999968867,
+          "max_time": 0.004872429000045031,
+          "total_time": 0.035853655999972034,
+          "avg_memory_delta": 0.0
+        }
+      }
+    },
+    "episode_time": 0.6936604976654053,
+    "timestamp": 1755371952.133621
+  },
+  {
+    "episode": 3,
+    "agent_rewards": {
+      "0": -1.3023991642360124,
+      "1": -1.4331138729942492,
+      "2": -1.27094959546878,
+      "3": -1.4369877380705367,
+      "4": -1.4265953313225759
+    },
+    "system_metrics": {
+      "federation_rounds": 20,
+      "failed_aggregations": 0,
+      "success_rate": 1.0,
+      "num_agents": 5,
+      "avg_reward": -1.2929727997349088,
+      "total_training_steps": 1993,
+      "load_balancing": {
+        "agent_loads": {
+          "0": 0.396,
+          "1": 0.396,
+          "2": 0.396,
+          "3": 0.396,
+          "4": 0.396
+        },
+        "agent_performance": {
+          "0": 0.9101036335003909,
+          "1": 0.8625856584230327,
+          "2": 0.8724659555765104,
+          "3": 0.839981205052686,
+          "4": 0.8759031710099704
+        },
+        "avg_load": 0.396,
+        "load_variance": 0.0
+      },
+      "cache_stats": {
+        "size": 20,
+        "max_size": 5000,
+        "hit_count": 0,
+        "miss_count": 20,
+        "hit_rate": 0.0,
+        "fill_ratio": 0.004
+      },
+      "resource_pool_stats": {
+        "pool_size": 1,
+        "max_size": 50,
+        "created_count": 1,
+        "acquired_count": 20,
+        "released_count": 20,
+        "active_resources": 0
+      },
+      "profiler_stats": {
+        "federated_averaging": {
+          "count": 20,
+          "avg_time": 0.0023780862999956296,
+          "min_time": 0.0012783160000253702,
+          "max_time": 0.004982045999952334,
+          "total_time": 0.047561725999912596,
+          "avg_memory_delta": 0.0
+        }
+      }
+    },
+    "episode_time": 0.6087286472320557,
+    "timestamp": 1755371952.7427397
+  },
+  {
+    "episode": 4,
+    "agent_rewards": {
+      "0": -1.452178768718391,
+      "1": -1.2874595691451571,
+      "2": -1.247136294886387,
+      "3": -1.344718022593068,
+      "4": -1.2142442462413552
+    },
+    "system_metrics": {
+      "federation_rounds": 25,
+      "failed_aggregations": 0,
+      "success_rate": 1.0,
+      "num_agents": 5,
+      "avg_reward": -1.3061278763444366,
+      "total_training_steps": 2487,
+      "load_balancing": {
+        "agent_loads": {
+          "0": 0.496,
+          "1": 0.496,
+          "2": 0.496,
+          "3": 0.496,
+          "4": 0.496
+        },
+        "agent_performance": {
+          "0": 0.8101975884977155,
+          "1": 0.8287857432486707,
+          "2": 0.919825336915044,
+          "3": 0.8882925660402775,
+          "4": 0.9003849658166035
+        },
+        "avg_load": 0.496,
+        "load_variance": 0.0
+      },
+      "cache_stats": {
+        "size": 25,
+        "max_size": 5000,
+        "hit_count": 0,
+        "miss_count": 25,
+        "hit_rate": 0.0,
+        "fill_ratio": 0.005
+      },
+      "resource_pool_stats": {
+        "pool_size": 1,
+        "max_size": 50,
+        "created_count": 1,
+        "acquired_count": 25,
+        "released_count": 25,
+        "active_resources": 0
+      },
+      "profiler_stats": {
+        "federated_averaging": {
+          "count": 25,
+          "avg_time": 0.00237193295999532,
+          "min_time": 0.0012783160000253702,
+          "max_time": 0.004982045999952334,
+          "total_time": 0.059298323999882996,
+          "avg_memory_delta": 0.0
+        }
+      }
+    },
+    "episode_time": 0.597416877746582,
+    "timestamp": 1755371953.340612
+  },
+  {
+    "episode": 5,
+    "agent_rewards": {
+      "0": -1.2994121030788455,
+      "1": -1.3971602564625882,
+      "2": -1.2792151728603058,
+      "3": -1.4346349932578664,
+      "4": -1.2655198778124035
+    },
+    "system_metrics": {
+      "federation_rounds": 30,
+      "failed_aggregations": 0,
+      "success_rate": 1.0,
+      "num_agents": 5,
+      "avg_reward": -1.161109021111542,
+      "total_training_steps": 3000,
+      "load_balancing": {
+        "agent_loads": {
+          "0": 0.596,
+          "1": 0.596,
+          "2": 0.597,
+          "3": 0.596,
+          "4": 0.596
+        },
+        "agent_performance": {
+          "0": 0.8915141083471548,
+          "1": 0.9050528215708762,
+          "2": 0.8673075380025187,
+          "3": 0.7961950770238007,
+          "4": 0.8799795339117217
+        },
+        "avg_load": 0.5962,
+        "load_variance": 1.600000000000003e-07
+      },
+      "cache_stats": {
+        "size": 30,
+        "max_size": 5000,
+        "hit_count": 0,
+        "miss_count": 30,
+        "hit_rate": 0.0,
+        "fill_ratio": 0.006
+      },
+      "resource_pool_stats": {
+        "pool_size": 1,
+        "max_size": 50,
+        "created_count": 1,
+        "acquired_count": 30,
+        "released_count": 30,
+        "active_resources": 0
+      },
+      "profiler_stats": {
+        "federated_averaging": {
+          "count": 30,
+          "avg_time": 0.0022645397333292292,
+          "min_time": 0.0012783160000253702,
+          "max_time": 0.004982045999952334,
+          "total_time": 0.06793619199987688,
+          "avg_memory_delta": 0.0
+        }
+      }
+    },
+    "episode_time": 0.642780065536499,
+    "timestamp": 1755371953.9838529
+  },
+  {
+    "episode": 6,
+    "agent_rewards": {
+      "0": -1.3777380768702228,
+      "1": -1.4548264272007134,
+      "2": -1.3423228904811049,
+      "3": -1.34184892513507,
+      "4": -1.2589595290255162
+    },
+    "system_metrics": {
+      "federation_rounds": 35,
+      "failed_aggregations": 0,
+      "success_rate": 1.0,
+      "num_agents": 5,
+      "avg_reward": -1.2887027847653765,
+      "total_training_steps": 3500,
+      "load_balancing": {
+        "agent_loads": {
+          "0": 0.696,
+          "1": 0.696,
+          "2": 0.696,
+          "3": 0.696,
+          "4": 0.696
+        },
+        "agent_performance": {
+          "0": 0.8659264492638858,
+          "1": 0.8649351465345623,
+          "2": 0.8400271030177136,
+          "3": 0.8640920710430681,
+          "4": 0.8700563562025467
+        },
+        "avg_load": 0.696,
+        "load_variance": 0.0
+      },
+      "cache_stats": {
+        "size": 35,
+        "max_size": 5000,
+        "hit_count": 0,
+        "miss_count": 35,
+        "hit_rate": 0.0,
+        "fill_ratio": 0.007
+      },
+      "resource_pool_stats": {
+        "pool_size": 1,
+        "max_size": 50,
+        "created_count": 1,
+        "acquired_count": 35,
+        "released_count": 35,
+        "active_resources": 0
+      },
+      "profiler_stats": {
+        "federated_averaging": {
+          "count": 35,
+          "avg_time": 0.0022273137428555855,
+          "min_time": 0.0012783160000253702,
+          "max_time": 0.004982045999952334,
+          "total_time": 0.0779559809999455,
+          "avg_memory_delta": 0.0
+        }
+      }
+    },
+    "episode_time": 0.6149544715881348,
+    "timestamp": 1755371954.5990405
+  },
+  {
+    "episode": 7,
+    "agent_rewards": {
+      "0": -1.5305673273477618,
+      "1": -1.229331385143952,
+      "2": -1.2859060485769833,
+      "3": -1.3171222787482362,
+      "4": -1.3296448765108937
+    },
+    "system_metrics": {
+      "federation_rounds": 40,
+      "failed_aggregations": 0,
+      "success_rate": 1.0,
+      "num_agents": 5,
+      "avg_reward": -1.4578472064901884,
+      "total_training_steps": 3983,
+      "load_balancing": {
+        "agent_loads": {
+          "0": 0.796,
+          "1": 0.798,
+          "2": 0.796,
+          "3": 0.796,
+          "4": 0.796
+        },
+        "agent_performance": {
+          "0": 0.8625255317492483,
+          "1": 0.8871612390198231,
+          "2": 0.9004269722646461,
+          "3": 0.8755399051068272,
+          "4": 0.8588511022695153
+        },
+        "avg_load": 0.7964,
+        "load_variance": 6.400000000000012e-07
+      },
+      "cache_stats": {
+        "size": 40,
+        "max_size": 5000,
+        "hit_count": 0,
+        "miss_count": 40,
+        "hit_rate": 0.0,
+        "fill_ratio": 0.008
+      },
+      "resource_pool_stats": {
+        "pool_size": 1,
+        "max_size": 50,
+        "created_count": 1,
+        "acquired_count": 40,
+        "released_count": 40,
+        "active_resources": 0
+      },
+      "profiler_stats": {
+        "federated_averaging": {
+          "count": 40,
+          "avg_time": 0.002221033074997081,
+          "min_time": 0.001186401999973441,
+          "max_time": 0.004982045999952334,
+          "total_time": 0.08884132299988323,
+          "avg_memory_delta": 0.0
+        }
+      }
+    },
+    "episode_time": 0.5921070575714111,
+    "timestamp": 1755371955.1916485
+  },
+  {
+    "episode": 8,
+    "agent_rewards": {
+      "0": -1.2674130095297629,
+      "1": -1.375862523977127,
+      "2": -1.4543411320722095,
+      "3": -1.378225413457686,
+      "4": -1.6346341678167926
+    },
+    "system_metrics": {
+      "federation_rounds": 45,
+      "failed_aggregations": 0,
+      "success_rate": 1.0,
+      "num_agents": 5,
+      "avg_reward": -1.3378682383504286,
+      "total_training_steps": 4488,
+      "load_balancing": {
+        "agent_loads": {
+          "0": 0.896,
+          "1": 0.896,
+          "2": 0.896,
+          "3": 0.896,
+          "4": 0.896
+        },
+        "agent_performance": {
+          "0": 0.8579394906529794,
+          "1": 0.8818801452280853,
+          "2": 0.8415343433860959,
+          "3": 0.8834351084154961,
+          "4": 0.8925455216062822
+        },
+        "avg_load": 0.8960000000000001,
+        "load_variance": 1.232595164407831e-32
+      },
+      "cache_stats": {
+        "size": 45,
+        "max_size": 5000,
+        "hit_count": 0,
+        "miss_count": 45,
+        "hit_rate": 0.0,
+        "fill_ratio": 0.009
+      },
+      "resource_pool_stats": {
+        "pool_size": 1,
+        "max_size": 50,
+        "created_count": 1,
+        "acquired_count": 45,
+        "released_count": 45,
+        "active_resources": 0
+      },
+      "profiler_stats": {
+        "federated_averaging": {
+          "count": 45,
+          "avg_time": 0.002226610022220636,
+          "min_time": 0.001186401999973441,
+          "max_time": 0.004982045999952334,
+          "total_time": 0.1001974509999286,
+          "avg_memory_delta": 0.0
+        }
+      }
+    },
+    "episode_time": 0.6323189735412598,
+    "timestamp": 1755371955.824411
+  },
+  {
+    "episode": 9,
+    "agent_rewards": {
+      "0": -1.2739260772628962,
+      "1": -1.4778523845522897,
+      "2": -1.2173089204350902,
+      "3": -1.3074797974674683,
+      "4": -1.3062991462784075
+    },
+    "system_metrics": {
+      "federation_rounds": 50,
+      "failed_aggregations": 0,
+      "success_rate": 1.0,
+      "num_agents": 5,
+      "avg_reward": -1.308610789388485,
+      "total_training_steps": 4981,
+      "load_balancing": {
+        "agent_loads": {
+          "0": 0.997,
+          "1": 0.996,
+          "2": 0.996,
+          "3": 0.996,
+          "4": 0.996
+        },
+        "agent_performance": {
+          "0": 0.8624768458833372,
+          "1": 0.8469718858325606,
+          "2": 0.8531630794427881,
+          "3": 0.9099371804584253,
+          "4": 0.8837937719325468
+        },
+        "avg_load": 0.9962,
+        "load_variance": 1.600000000000003e-07
+      },
+      "cache_stats": {
+        "size": 50,
+        "max_size": 5000,
+        "hit_count": 0,
+        "miss_count": 50,
+        "hit_rate": 0.0,
+        "fill_ratio": 0.01
+      },
+      "resource_pool_stats": {
+        "pool_size": 1,
+        "max_size": 50,
+        "created_count": 1,
+        "acquired_count": 50,
+        "released_count": 50,
+        "active_resources": 0
+      },
+      "profiler_stats": {
+        "federated_averaging": {
+          "count": 50,
+          "avg_time": 0.0021813269799974932,
+          "min_time": 0.001186401999973441,
+          "max_time": 0.004982045999952334,
+          "total_time": 0.10906634899987466,
+          "avg_memory_delta": 0.0
+        }
+      }
+    },
+    "episode_time": 0.6288869380950928,
+    "timestamp": 1755371956.453899
+  },
+  {
+    "episode": 10,
+    "agent_rewards": {
+      "0": -1.2997401759505984,
+      "1": -1.3314501398156378,
+      "2": -1.1629884503331385,
+      "3": -1.2886697087377896,
+      "4": -1.3276628940328943
+    },
+    "system_metrics": {
+      "federation_rounds": 55,
+      "failed_aggregations": 0,
+      "success_rate": 1.0,
+      "num_agents": 5,
+      "avg_reward": -1.4252659870042705,
+      "total_training_steps": 5500,
+      "load_balancing": {
+        "agent_loads": {
+          "0": 1.0,
+          "1": 1.0,
+          "2": 1.0,
+          "3": 1.0,
+          "4": 1.0
+        },
+        "agent_performance": {
+          "0": 0.8132390957346924,
+          "1": 0.870610164984565,
+          "2": 0.8725216174076195,
+          "3": 0.9197395620532255,
+          "4": 0.8813773229998975
+        },
+        "avg_load": 1.0,
+        "load_variance": 0.0
+      },
+      "cache_stats": {
+        "size": 55,
+        "max_size": 5000,
+        "hit_count": 0,
+        "miss_count": 55,
+        "hit_rate": 0.0,
+        "fill_ratio": 0.011
+      },
+      "resource_pool_stats": {
+        "pool_size": 1,
+        "max_size": 50,
+        "created_count": 1,
+        "acquired_count": 55,
+        "released_count": 55,
+        "active_resources": 0
+      },
+      "profiler_stats": {
+        "federated_averaging": {
+          "count": 55,
+          "avg_time": 0.0021295009454526982,
+          "min_time": 0.001186401999973441,
+          "max_time": 0.004982045999952334,
+          "total_time": 0.1171225519998984,
+          "avg_memory_delta": 0.0
+        }
+      }
+    },
+    "episode_time": 0.6522729396820068,
+    "timestamp": 1755371957.106599
+  },
+  {
+    "episode": 11,
+    "agent_rewards": {
+      "0": -1.3670805801311827,
+      "1": -1.5607790473604843,
+      "2": -1.31218602168785,
+      "3": -1.455581802919058,
+      "4": -1.3524172271693564
+    },
+    "system_metrics": {
+      "federation_rounds": 60,
+      "failed_aggregations": 0,
+      "success_rate": 1.0,
+      "num_agents": 5,
+      "avg_reward": -1.3302073650535609,
+      "total_training_steps": 5983,
+      "load_balancing": {
+        "agent_loads": {
+          "0": 1.0,
+          "1": 1.0,
+          "2": 1.0,
+          "3": 1.0,
+          "4": 1.0
+        },
+        "agent_performance": {
+          "0": 0.8578226423601069,
+          "1": 0.845269020418975,
+          "2": 0.8849737167332167,
+          "3": 0.8399907457024807,
+          "4": 0.8611639746694459
+        },
+        "avg_load": 1.0,
+        "load_variance": 0.0
+      },
+      "cache_stats": {
+        "size": 60,
+        "max_size": 5000,
+        "hit_count": 0,
+        "miss_count": 60,
+        "hit_rate": 0.0,
+        "fill_ratio": 0.012
+      },
+      "resource_pool_stats": {
+        "pool_size": 1,
+        "max_size": 50,
+        "created_count": 1,
+        "acquired_count": 60,
+        "released_count": 60,
+        "active_resources": 0
+      },
+      "profiler_stats": {
+        "federated_averaging": {
+          "count": 60,
+          "avg_time": 0.002117812433330831,
+          "min_time": 0.001169248999985939,
+          "max_time": 0.004982045999952334,
+          "total_time": 0.12706874599984985,
+          "avg_memory_delta": 0.0
+        }
+      }
+    },
+    "episode_time": 0.6224617958068848,
+    "timestamp": 1755371957.7354817
+  },
+  {
+    "episode": 12,
+    "agent_rewards": {
+      "0": -1.350635600963296,
+      "1": -1.3219787580495697,
+      "2": -1.3088152143163347,
+      "3": -1.194715306305614,
+      "4": -1.2594464886030245
+    },
+    "system_metrics": {
+      "federation_rounds": 65,
+      "failed_aggregations": 0,
+      "success_rate": 1.0,
+      "num_agents": 5,
+      "avg_reward": -1.340662091431892,
+      "total_training_steps": 6482,
+      "load_balancing": {
+        "agent_loads": {
+          "0": 1.0,
+          "1": 1.0,
+          "2": 1.0,
+          "3": 1.0,
+          "4": 1.0
+        },
+        "agent_performance": {
+          "0": 0.8226481657187049,
+          "1": 0.8561949782218774,
+          "2": 0.886602600414382,
+          "3": 0.8346545110304682,
+          "4": 0.8403179404146982
+        },
+        "avg_load": 1.0,
+        "load_variance": 0.0
+      },
+      "cache_stats": {
+        "size": 65,
+        "max_size": 5000,
+        "hit_count": 0,
+        "miss_count": 65,
+        "hit_rate": 0.0,
+        "fill_ratio": 0.013
+      },
+      "resource_pool_stats": {
+        "pool_size": 1,
+        "max_size": 50,
+        "created_count": 1,
+        "acquired_count": 65,
+        "released_count": 65,
+        "active_resources": 0
+      },
+      "profiler_stats": {
+        "federated_averaging": {
+          "count": 65,
+          "avg_time": 0.002124718015382034,
+          "min_time": 0.001169248999985939,
+          "max_time": 0.004982045999952334,
+          "total_time": 0.1381066709998322,
+          "avg_memory_delta": 0.0
+        }
+      }
+    },
+    "episode_time": 0.6927440166473389,
+    "timestamp": 1755371958.428704
+  },
+  {
+    "episode": 13,
+    "agent_rewards": {
+      "0": -1.230174186101432,
+      "1": -1.3708982985924627,
+      "2": -1.4654663168189068,
+      "3": -1.2110964021941855,
+      "4": -1.230977483617918
+    },
+    "system_metrics": {
+      "federation_rounds": 70,
+      "failed_aggregations": 0,
+      "success_rate": 1.0,
+      "num_agents": 5,
+      "avg_reward": -1.4171343065888276,
+      "total_training_steps": 6981,
+      "load_balancing": {
+        "agent_loads": {
+          "0": 1.0,
+          "1": 1.0,
+          "2": 1.0,
+          "3": 1.0,
+          "4": 1.0
+        },
+        "agent_performance": {
+          "0": 0.8559070926683114,
+          "1": 0.8626393731314659,
+          "2": 0.860955144792849,
+          "3": 0.8292558166917176,
+          "4": 0.8605205731712522
+        },
+        "avg_load": 1.0,
+        "load_variance": 0.0
+      },
+      "cache_stats": {
+        "size": 70,
+        "max_size": 5000,
+        "hit_count": 0,
+        "miss_count": 70,
+        "hit_rate": 0.0,
+        "fill_ratio": 0.014
+      },
+      "resource_pool_stats": {
+        "pool_size": 1,
+        "max_size": 50,
+        "created_count": 1,
+        "acquired_count": 70,
+        "released_count": 70,
+        "active_resources": 0
+      },
+      "profiler_stats": {
+        "federated_averaging": {
+          "count": 70,
+          "avg_time": 0.0021605883857124092,
+          "min_time": 0.001169248999985939,
+          "max_time": 0.004982045999952334,
+          "total_time": 0.15124118699986866,
+          "avg_memory_delta": 0.0
+        }
+      }
+    },
+    "episode_time": 0.8641624450683594,
+    "timestamp": 1755371959.293493
+  },
+  {
+    "episode": 14,
+    "agent_rewards": {
+      "0": -1.390896559526909,
+      "1": -1.287271792120941,
+      "2": -1.332856254157781,
+      "3": -1.456857964023543,
+      "4": -1.308810905715575
+    },
+    "system_metrics": {
+      "federation_rounds": 75,
+      "failed_aggregations": 0,
+      "success_rate": 1.0,
+      "num_agents": 5,
+      "avg_reward": -1.3599634324163747,
+      "total_training_steps": 7498,
+      "load_balancing": {
+        "agent_loads": {
+          "0": 1.0,
+          "1": 1.0,
+          "2": 1.0,
+          "3": 1.0,
+          "4": 1.0
+        },
+        "agent_performance": {
+          "0": 0.8783462085365634,
+          "1": 0.910307809823097,
+          "2": 0.8615857780152844,
+          "3": 0.8226114274777074,
+          "4": 0.9047020423700586
+        },
+        "avg_load": 1.0,
+        "load_variance": 0.0
+      },
+      "cache_stats": {
+        "size": 75,
+        "max_size": 5000,
+        "hit_count": 0,
+        "miss_count": 75,
+        "hit_rate": 0.0,
+        "fill_ratio": 0.015
+      },
+      "resource_pool_stats": {
+        "pool_size": 1,
+        "max_size": 50,
+        "created_count": 1,
+        "acquired_count": 75,
+        "released_count": 75,
+        "active_resources": 0
+      },
+      "profiler_stats": {
+        "federated_averaging": {
+          "count": 75,
+          "avg_time": 0.002175617319999219,
+          "min_time": 0.001169248999985939,
+          "max_time": 0.004982045999952334,
+          "total_time": 0.16317129899994143,
+          "avg_memory_delta": 0.0
+        }
+      }
+    },
+    "episode_time": 0.8900458812713623,
+    "timestamp": 1755371960.1841416
+  },
+  {
+    "episode": 15,
+    "agent_rewards": {
+      "0": -1.2835462279471672,
+      "1": -1.387212690517063,
+      "2": -1.2986309299761687,
+      "3": -1.2933855129172511,
+      "4": -1.2055193802945174
+    },
+    "system_metrics": {
+      "federation_rounds": 80,
+      "failed_aggregations": 0,
+      "success_rate": 1.0,
+      "num_agents": 5,
+      "avg_reward": -1.3308849830900518,
+      "total_training_steps": 7983,
+      "load_balancing": {
+        "agent_loads": {
+          "0": 1.0,
+          "1": 1.0,
+          "2": 1.0,
+          "3": 1.0,
+          "4": 1.0
+        },
+        "agent_performance": {
+          "0": 0.8333375102147391,
+          "1": 0.8780260737448925,
+          "2": 0.8893786443539636,
+          "3": 0.8712117272630878,
+          "4": 0.833627122632904
+        },
+        "avg_load": 1.0,
+        "load_variance": 0.0
+      },
+      "cache_stats": {
+        "size": 80,
+        "max_size": 5000,
+        "hit_count": 0,
+        "miss_count": 80,
+        "hit_rate": 0.0,
+        "fill_ratio": 0.016
+      },
+      "resource_pool_stats": {
+        "pool_size": 1,
+        "max_size": 50,
+        "created_count": 1,
+        "acquired_count": 80,
+        "released_count": 80,
+        "active_resources": 0
+      },
+      "profiler_stats": {
+        "federated_averaging": {
+          "count": 80,
+          "avg_time": 0.0021771281124998154,
+          "min_time": 0.001169248999985939,
+          "max_time": 0.004982045999952334,
+          "total_time": 0.17417024899998523,
+          "avg_memory_delta": 0.0
+        }
+      }
+    },
+    "episode_time": 0.8369393348693848,
+    "timestamp": 1755371961.0217814
+  },
+  {
+    "episode": 16,
+    "agent_rewards": {
+      "0": -1.2135559571584091,
+      "1": -1.3051098036765725,
+      "2": -1.2095501826377366,
+      "3": -1.2594112115114497,
+      "4": -1.2556635566970809
+    },
+    "system_metrics": {
+      "federation_rounds": 85,
+      "failed_aggregations": 0,
+      "success_rate": 1.0,
+      "num_agents": 5,
+      "avg_reward": -1.3991721652455749,
+      "total_training_steps": 8500,
+      "load_balancing": {
+        "agent_loads": {
+          "0": 1.0,
+          "1": 1.0,
+          "2": 1.0,
+          "3": 1.0,
+          "4": 1.0
+        },
+        "agent_performance": {
+          "0": 0.8883033392915526,
+          "1": 0.8808230020974689,
+          "2": 0.8912156378055257,
+          "3": 0.8554486368771546,
+          "4": 0.8867831892865462
+        },
+        "avg_load": 1.0,
+        "load_variance": 0.0
+      },
+      "cache_stats": {
+        "size": 85,
+        "max_size": 5000,
+        "hit_count": 0,
+        "miss_count": 85,
+        "hit_rate": 0.0,
+        "fill_ratio": 0.017
+      },
+      "resource_pool_stats": {
+        "pool_size": 1,
+        "max_size": 50,
+        "created_count": 1,
+        "acquired_count": 85,
+        "released_count": 85,
+        "active_resources": 0
+      },
+      "profiler_stats": {
+        "federated_averaging": {
+          "count": 85,
+          "avg_time": 0.002181280223530447,
+          "min_time": 0.001169248999985939,
+          "max_time": 0.004982045999952334,
+          "total_time": 0.185408819000088,
+          "avg_memory_delta": 0.0
+        }
+      }
+    },
+    "episode_time": 0.8390560150146484,
+    "timestamp": 1755371961.8616683
+  },
+  {
+    "episode": 17,
+    "agent_rewards": {
+      "0": -1.4267034025941177,
+      "1": -1.191976850661123,
+      "2": -1.3255964111606529,
+      "3": -1.3242414910209592,
+      "4": -1.3757268959780666
+    },
+    "system_metrics": {
+      "federation_rounds": 90,
+      "failed_aggregations": 0,
+      "success_rate": 1.0,
+      "num_agents": 5,
+      "avg_reward": -1.3750767262091288,
+      "total_training_steps": 8982,
+      "load_balancing": {
+        "agent_loads": {
+          "0": 1.0,
+          "1": 1.0,
+          "2": 1.0,
+          "3": 1.0,
+          "4": 1.0
+        },
+        "agent_performance": {
+          "0": 0.8192444960019037,
+          "1": 0.823544505695942,
+          "2": 0.8573842558870934,
+          "3": 0.8549756691792083,
+          "4": 0.8570674066237102
+        },
+        "avg_load": 1.0,
+        "load_variance": 0.0
+      },
+      "cache_stats": {
+        "size": 90,
+        "max_size": 5000,
+        "hit_count": 0,
+        "miss_count": 90,
+        "hit_rate": 0.0,
+        "fill_ratio": 0.018
+      },
+      "resource_pool_stats": {
+        "pool_size": 1,
+        "max_size": 50,
+        "created_count": 1,
+        "acquired_count": 90,
+        "released_count": 90,
+        "active_resources": 0
+      },
+      "profiler_stats": {
+        "federated_averaging": {
+          "count": 90,
+          "avg_time": 0.0022109371888891223,
+          "min_time": 0.001169248999985939,
+          "max_time": 0.004982045999952334,
+          "total_time": 0.198984347000021,
+          "avg_memory_delta": 0.0
+        }
+      }
+    },
+    "episode_time": 0.7820546627044678,
+    "timestamp": 1755371962.6440067
+  },
+  {
+    "episode": 18,
+    "agent_rewards": {
+      "0": -1.2619309213247225,
+      "1": -1.4379542799180778,
+      "2": -1.3623896186661104,
+      "3": -1.2612407484621766,
+      "4": -1.3112478432889763
+    },
+    "system_metrics": {
+      "federation_rounds": 95,
+      "failed_aggregations": 0,
+      "success_rate": 1.0,
+      "num_agents": 5,
+      "avg_reward": -1.4182306048175117,
+      "total_training_steps": 9481,
+      "load_balancing": {
+        "agent_loads": {
+          "0": 1.0,
+          "1": 1.0,
+          "2": 1.0,
+          "3": 1.0,
+          "4": 1.0
+        },
+        "agent_performance": {
+          "0": 0.8271486858781032,
+          "1": 0.8877904565208058,
+          "2": 0.8205764130927253,
+          "3": 0.9261954633041222,
+          "4": 0.8255637033480341
+        },
+        "avg_load": 1.0,
+        "load_variance": 0.0
+      },
+      "cache_stats": {
+        "size": 95,
+        "max_size": 5000,
+        "hit_count": 0,
+        "miss_count": 95,
+        "hit_rate": 0.0,
+        "fill_ratio": 0.019
+      },
+      "resource_pool_stats": {
+        "pool_size": 1,
+        "max_size": 50,
+        "created_count": 1,
+        "acquired_count": 95,
+        "released_count": 95,
+        "active_resources": 0
+      },
+      "profiler_stats": {
+        "federated_averaging": {
+          "count": 95,
+          "avg_time": 0.0022231127894734096,
+          "min_time": 0.001169248999985939,
+          "max_time": 0.004982045999952334,
+          "total_time": 0.21119571499997392,
+          "avg_memory_delta": 0.0
+        }
+      }
+    },
+    "episode_time": 0.8596038818359375,
+    "timestamp": 1755371963.5041516
+  },
+  {
+    "episode": 19,
+    "agent_rewards": {
+      "0": -1.3135155736899522,
+      "1": -1.3839887424169859,
+      "2": -1.2000310315123284,
+      "3": -1.1119845034923839,
+      "4": -1.287913468341824
+    },
+    "system_metrics": {
+      "federation_rounds": 100,
+      "failed_aggregations": 0,
+      "success_rate": 1.0,
+      "num_agents": 5,
+      "avg_reward": -1.2074159338586905,
+      "total_training_steps": 9994,
+      "load_balancing": {
+        "agent_loads": {
+          "0": 1.0,
+          "1": 1.0,
+          "2": 1.0,
+          "3": 1.0,
+          "4": 1.0
+        },
+        "agent_performance": {
+          "0": 0.8491159778388706,
+          "1": 0.8130019786732658,
+          "2": 0.9630067937888961,
+          "3": 0.864922072210584,
+          "4": 0.8917070333884567
+        },
+        "avg_load": 1.0,
+        "load_variance": 0.0
+      },
+      "cache_stats": {
+        "size": 100,
+        "max_size": 5000,
+        "hit_count": 0,
+        "miss_count": 100,
+        "hit_rate": 0.0,
+        "fill_ratio": 0.02
+      },
+      "resource_pool_stats": {
+        "pool_size": 1,
+        "max_size": 50,
+        "created_count": 1,
+        "acquired_count": 100,
+        "released_count": 100,
+        "active_resources": 0
+      },
+      "profiler_stats": {
+        "federated_averaging": {
+          "count": 100,
+          "avg_time": 0.002262457249998988,
+          "min_time": 0.001169248999985939,
+          "max_time": 0.004982045999952334,
+          "total_time": 0.2262457249998988,
+          "avg_memory_delta": 0.0
+        }
+      }
+    },
+    "episode_time": 0.8662643432617188,
+    "timestamp": 1755371964.371039
+  },
+  {
+    "episode": 20,
+    "agent_rewards": {
+      "0": -1.1289563024612574,
+      "1": -1.3442623907724225,
+      "2": -1.3929494850662154,
+      "3": -1.4761756370186374,
+      "4": -1.3730317179615985
+    },
+    "system_metrics": {
+      "federation_rounds": 105,
+      "failed_aggregations": 0,
+      "success_rate": 1.0,
+      "num_agents": 5,
+      "avg_reward": -1.4710187651398159,
+      "total_training_steps": 10488,
+      "load_balancing": {
+        "agent_loads": {
+          "0": 1.0,
+          "1": 1.0,
+          "2": 1.0,
+          "3": 1.0,
+          "4": 1.0
+        },
+        "agent_performance": {
+          "0": 0.874020698315474,
+          "1": 0.850547099859108,
+          "2": 0.8585898267483216,
+          "3": 0.8103390888405158,
+          "4": 0.8507636237334987
+        },
+        "avg_load": 1.0,
+        "load_variance": 0.0
+      },
+      "cache_stats": {
+        "size": 105,
+        "max_size": 5000,
+        "hit_count": 0,
+        "miss_count": 105,
+        "hit_rate": 0.0,
+        "fill_ratio": 0.021
+      },
+      "resource_pool_stats": {
+        "pool_size": 1,
+        "max_size": 50,
+        "created_count": 1,
+        "acquired_count": 105,
+        "released_count": 105,
+        "active_resources": 0
+      },
+      "profiler_stats": {
+        "federated_averaging": {
+          "count": 105,
+          "avg_time": 0.002303954409522443,
+          "min_time": 0.001169248999985939,
+          "max_time": 0.005964256999959616,
+          "total_time": 0.24191521299985652,
+          "avg_memory_delta": 0.0
+        }
+      }
+    },
+    "episode_time": 1.092466115951538,
+    "timestamp": 1755371965.4643068
+  },
+  {
+    "episode": 21,
+    "agent_rewards": {
+      "0": -1.4324267091415175,
+      "1": -1.2932154699682201,
+      "2": -1.1050592667279917,
+      "3": -1.3504398794737913,
+      "4": -1.3379204556759274
+    },
+    "system_metrics": {
+      "federation_rounds": 110,
+      "failed_aggregations": 0,
+      "success_rate": 1.0,
+      "num_agents": 5,
+      "avg_reward": -1.2433149745009735,
+      "total_training_steps": 10983,
+      "load_balancing": {
+        "agent_loads": {
+          "0": 1.0,
+          "1": 1.0,
+          "2": 1.0,
+          "3": 1.0,
+          "4": 1.0
+        },
+        "agent_performance": {
+          "0": 0.9071654859414856,
+          "1": 0.8910608064749171,
+          "2": 0.9521432382292462,
+          "3": 0.8680037068496553,
+          "4": 0.8435174585159472
+        },
+        "avg_load": 1.0,
+        "load_variance": 0.0
+      },
+      "cache_stats": {
+        "size": 110,
+        "max_size": 5000,
+        "hit_count": 0,
+        "miss_count": 110,
+        "hit_rate": 0.0,
+        "fill_ratio": 0.022
+      },
+      "resource_pool_stats": {
+        "pool_size": 1,
+        "max_size": 50,
+        "created_count": 1,
+        "acquired_count": 110,
+        "released_count": 110,
+        "active_resources": 0
+      },
+      "profiler_stats": {
+        "federated_averaging": {
+          "count": 110,
+          "avg_time": 0.002299358945452923,
+          "min_time": 0.001169248999985939,
+          "max_time": 0.005964256999959616,
+          "total_time": 0.2529294839998215,
+          "avg_memory_delta": 0.0
+        }
+      }
+    },
+    "episode_time": 0.5712170600891113,
+    "timestamp": 1755371966.0482826
+  },
+  {
+    "episode": 22,
+    "agent_rewards": {
+      "0": -1.220075222910694,
+      "1": -1.2959767362146155,
+      "2": -1.2542356967071233,
+      "3": -1.160799910477518,
+      "4": -1.332580814977209
+    },
+    "system_metrics": {
+      "federation_rounds": 115,
+      "failed_aggregations": 0,
+      "success_rate": 1.0,
+      "num_agents": 5,
+      "avg_reward": -1.4924877355244073,
+      "total_training_steps": 11481,
+      "load_balancing": {
+        "agent_loads": {
+          "0": 1.0,
+          "1": 1.0,
+          "2": 1.0,
+          "3": 1.0,
+          "4": 1.0
+        },
+        "agent_performance": {
+          "0": 0.7947737734016849,
+          "1": 0.9014699549730313,
+          "2": 0.9012821847717715,
+          "3": 0.8294171642564108,
+          "4": 0.7716269004735619
+        },
+        "avg_load": 1.0,
+        "load_variance": 0.0
+      },
+      "cache_stats": {
+        "size": 115,
+        "max_size": 5000,
+        "hit_count": 0,
+        "miss_count": 115,
+        "hit_rate": 0.0,
+        "fill_ratio": 0.023
+      },
+      "resource_pool_stats": {
+        "pool_size": 1,
+        "max_size": 50,
+        "created_count": 1,
+        "acquired_count": 115,
+        "released_count": 115,
+        "active_resources": 0
+      },
+      "profiler_stats": {
+        "federated_averaging": {
+          "count": 115,
+          "avg_time": 0.002302163947824145,
+          "min_time": 0.001169248999985939,
+          "max_time": 0.005964256999959616,
+          "total_time": 0.26474885399977666,
+          "avg_memory_delta": 0.0
+        }
+      }
+    },
+    "episode_time": 0.5933585166931152,
+    "timestamp": 1755371966.6420403
+  },
+  {
+    "episode": 23,
+    "agent_rewards": {
+      "0": -1.3213776100620611,
+      "1": -1.3094749182171594,
+      "2": -1.2804499619694731,
+      "3": -1.363101971827312,
+      "4": -1.4897168829976557
+    },
+    "system_metrics": {
+      "federation_rounds": 120,
+      "failed_aggregations": 0,
+      "success_rate": 1.0,
+      "num_agents": 5,
+      "avg_reward": -1.4223940381990854,
+      "total_training_steps": 11998,
+      "load_balancing": {
+        "agent_loads": {
+          "0": 1.0,
+          "1": 1.0,
+          "2": 1.0,
+          "3": 1.0,
+          "4": 1.0
+        },
+        "agent_performance": {
+          "0": 0.8707227782908256,
+          "1": 0.8377457448848433,
+          "2": 0.8571317778423824,
+          "3": 0.8341340815367373,
+          "4": 0.8571176527948194
+        },
+        "avg_load": 1.0,
+        "load_variance": 0.0
+      },
+      "cache_stats": {
+        "size": 120,
+        "max_size": 5000,
+        "hit_count": 0,
+        "miss_count": 120,
+        "hit_rate": 0.0,
+        "fill_ratio": 0.024
+      },
+      "resource_pool_stats": {
+        "pool_size": 1,
+        "max_size": 50,
+        "created_count": 1,
+        "acquired_count": 120,
+        "released_count": 120,
+        "active_resources": 0
+      },
+      "profiler_stats": {
+        "federated_averaging": {
+          "count": 120,
+          "avg_time": 0.002296411841666194,
+          "min_time": 0.001169248999985939,
+          "max_time": 0.005964256999959616,
+          "total_time": 0.2755694209999433,
+          "avg_memory_delta": 0.0
+        }
+      }
+    },
+    "episode_time": 0.6283516883850098,
+    "timestamp": 1755371967.2707648
+  },
+  {
+    "episode": 24,
+    "agent_rewards": {
+      "0": -1.0659076333498683,
+      "1": -1.2305986423173938,
+      "2": -1.3665011548744055,
+      "3": -1.417630852473141,
+      "4": -1.4088054211751637
+    },
+    "system_metrics": {
+      "federation_rounds": 125,
+      "failed_aggregations": 0,
+      "success_rate": 1.0,
+      "num_agents": 5,
+      "avg_reward": -1.3179378276603226,
+      "total_training_steps": 12481,
+      "load_balancing": {
+        "agent_loads": {
+          "0": 1.0,
+          "1": 1.0,
+          "2": 1.0,
+          "3": 1.0,
+          "4": 1.0
+        },
+        "agent_performance": {
+          "0": 0.8925303951861701,
+          "1": 0.8964947490440178,
+          "2": 0.8336974244091246,
+          "3": 0.8305880740230099,
+          "4": 0.816617628167656
+        },
+        "avg_load": 1.0,
+        "load_variance": 0.0
+      },
+      "cache_stats": {
+        "size": 125,
+        "max_size": 5000,
+        "hit_count": 0,
+        "miss_count": 125,
+        "hit_rate": 0.0,
+        "fill_ratio": 0.025
+      },
+      "resource_pool_stats": {
+        "pool_size": 1,
+        "max_size": 50,
+        "created_count": 1,
+        "acquired_count": 125,
+        "released_count": 125,
+        "active_resources": 0
+      },
+      "profiler_stats": {
+        "federated_averaging": {
+          "count": 125,
+          "avg_time": 0.0022997510719992534,
+          "min_time": 0.001169248999985939,
+          "max_time": 0.005964256999959616,
+          "total_time": 0.28746888399990667,
+          "avg_memory_delta": 0.0
+        }
+      }
+    },
+    "episode_time": 0.5982339382171631,
+    "timestamp": 1755371967.8693335
+  },
+  {
+    "episode": 25,
+    "agent_rewards": {
+      "0": -1.2951603610523916,
+      "1": -1.220167855091226,
+      "2": -1.2796515807315814,
+      "3": -1.2582986909400653,
+      "4": -1.1665519463039837
+    },
+    "system_metrics": {
+      "federation_rounds": 130,
+      "failed_aggregations": 0,
+      "success_rate": 1.0,
+      "num_agents": 5,
+      "avg_reward": -1.315231348092978,
+      "total_training_steps": 12999,
+      "load_balancing": {
+        "agent_loads": {
+          "0": 1.0,
+          "1": 1.0,
+          "2": 1.0,
+          "3": 1.0,
+          "4": 1.0
+        },
+        "agent_performance": {
+          "0": 0.869804128209462,
+          "1": 0.8330923441646212,
+          "2": 0.9037545446099664,
+          "3": 0.8321219545650729,
+          "4": 0.8941254906769864
+        },
+        "avg_load": 1.0,
+        "load_variance": 0.0
+      },
+      "cache_stats": {
+        "size": 130,
+        "max_size": 5000,
+        "hit_count": 0,
+        "miss_count": 130,
+        "hit_rate": 0.0,
+        "fill_ratio": 0.026
+      },
+      "resource_pool_stats": {
+        "pool_size": 1,
+        "max_size": 50,
+        "created_count": 1,
+        "acquired_count": 130,
+        "released_count": 130,
+        "active_resources": 0
+      },
+      "profiler_stats": {
+        "federated_averaging": {
+          "count": 130,
+          "avg_time": 0.002268844069229859,
+          "min_time": 0.001169248999985939,
+          "max_time": 0.005964256999959616,
+          "total_time": 0.2949497289998817,
+          "avg_memory_delta": 0.0
+        }
+      }
+    },
+    "episode_time": 0.5932130813598633,
+    "timestamp": 1755371968.4628696
+  },
+  {
+    "episode": 26,
+    "agent_rewards": {
+      "0": -1.4429150215089352,
+      "1": -1.267376712247955,
+      "2": -1.4185537589367396,
+      "3": -1.305806049076883,
+      "4": -1.2255060665312614
+    },
+    "system_metrics": {
+      "federation_rounds": 135,
+      "failed_aggregations": 0,
+      "success_rate": 1.0,
+      "num_agents": 5,
+      "avg_reward": -1.4938165755150579,
+      "total_training_steps": 13500,
+      "load_balancing": {
+        "agent_loads": {
+          "0": 1.0,
+          "1": 1.0,
+          "2": 1.0,
+          "3": 1.0,
+          "4": 1.0
+        },
+        "agent_performance": {
+          "0": 0.8293504934233759,
+          "1": 0.8746831299880672,
+          "2": 0.8553251040030082,
+          "3": 0.798162574554039,
+          "4": 0.8797207363690146
+        },
+        "avg_load": 1.0,
+        "load_variance": 0.0
+      },
+      "cache_stats": {
+        "size": 135,
+        "max_size": 5000,
+        "hit_count": 0,
+        "miss_count": 135,
+        "hit_rate": 0.0,
+        "fill_ratio": 0.027
+      },
+      "resource_pool_stats": {
+        "pool_size": 1,
+        "max_size": 50,
+        "created_count": 1,
+        "acquired_count": 135,
+        "released_count": 135,
+        "active_resources": 0
+      },
+      "profiler_stats": {
+        "federated_averaging": {
+          "count": 135,
+          "avg_time": 0.002255513859258237,
+          "min_time": 0.0011295570000129374,
+          "max_time": 0.005964256999959616,
+          "total_time": 0.304494370999862,
+          "avg_memory_delta": 0.0
+        }
+      }
+    },
+    "episode_time": 0.5698714256286621,
+    "timestamp": 1755371969.0332894
+  },
+  {
+    "episode": 27,
+    "agent_rewards": {
+      "0": -1.4462719206684655,
+      "1": -1.3304936803828276,
+      "2": -1.251275036609172,
+      "3": -1.304863610001253,
+      "4": -1.30248703456243
+    },
+    "system_metrics": {
+      "federation_rounds": 140,
+      "failed_aggregations": 0,
+      "success_rate": 1.0,
+      "num_agents": 5,
+      "avg_reward": -1.2923419611806384,
+      "total_training_steps": 13984,
+      "load_balancing": {
+        "agent_loads": {
+          "0": 1.0,
+          "1": 1.0,
+          "2": 1.0,
+          "3": 1.0,
+          "4": 1.0
+        },
+        "agent_performance": {
+          "0": 0.8563311318554618,
+          "1": 0.8739177395272524,
+          "2": 0.884036401382855,
+          "3": 0.8962732007026277,
+          "4": 0.8459290329465421
+        },
+        "avg_load": 1.0,
+        "load_variance": 0.0
+      },
+      "cache_stats": {
+        "size": 140,
+        "max_size": 5000,
+        "hit_count": 0,
+        "miss_count": 140,
+        "hit_rate": 0.0,
+        "fill_ratio": 0.028
+      },
+      "resource_pool_stats": {
+        "pool_size": 1,
+        "max_size": 50,
+        "created_count": 1,
+        "acquired_count": 140,
+        "released_count": 140,
+        "active_resources": 0
+      },
+      "profiler_stats": {
+        "federated_averaging": {
+          "count": 140,
+          "avg_time": 0.0022722773357129102,
+          "min_time": 0.0011295570000129374,
+          "max_time": 0.005964256999959616,
+          "total_time": 0.3181188269998074,
+          "avg_memory_delta": 0.0
+        }
+      }
+    },
+    "episode_time": 0.61726975440979,
+    "timestamp": 1755371969.6507576
+  },
+  {
+    "episode": 28,
+    "agent_rewards": {
+      "0": -1.2678845714068716,
+      "1": -1.2578571099530362,
+      "2": -1.2916796435462794,
+      "3": -1.2421113780437472,
+      "4": -1.4758946101794925
+    },
+    "system_metrics": {
+      "federation_rounds": 145,
+      "failed_aggregations": 0,
+      "success_rate": 1.0,
+      "num_agents": 5,
+      "avg_reward": -1.4382682659002992,
+      "total_training_steps": 14498,
+      "load_balancing": {
+        "agent_loads": {
+          "0": 1.0,
+          "1": 1.0,
+          "2": 1.0,
+          "3": 1.0,
+          "4": 1.0
+        },
+        "agent_performance": {
+          "0": 0.8596537962981909,
+          "1": 0.8815613488767039,
+          "2": 0.8671390220131019,
+          "3": 0.8657593171958808,
+          "4": 0.7876365897560214
+        },
+        "avg_load": 1.0,
+        "load_variance": 0.0
+      },
+      "cache_stats": {
+        "size": 145,
+        "max_size": 5000,
+        "hit_count": 0,
+        "miss_count": 145,
+        "hit_rate": 0.0,
+        "fill_ratio": 0.029
+      },
+      "resource_pool_stats": {
+        "pool_size": 1,
+        "max_size": 50,
+        "created_count": 1,
+        "acquired_count": 145,
+        "released_count": 145,
+        "active_resources": 0
+      },
+      "profiler_stats": {
+        "federated_averaging": {
+          "count": 145,
+          "avg_time": 0.002263998855170061,
+          "min_time": 0.0011295570000129374,
+          "max_time": 0.005964256999959616,
+          "total_time": 0.3282798339996589,
+          "avg_memory_delta": 0.0
+        }
+      }
+    },
+    "episode_time": 0.5980372428894043,
+    "timestamp": 1755371970.2492137
+  },
+  {
+    "episode": 29,
+    "agent_rewards": {
+      "0": -1.3773936965496958,
+      "1": -1.1404488714483652,
+      "2": -1.1913069013990651,
+      "3": -1.2041884288379525,
+      "4": -1.2658474349646875
+    },
+    "system_metrics": {
+      "federation_rounds": 150,
+      "failed_aggregations": 0,
+      "success_rate": 1.0,
+      "num_agents": 5,
+      "avg_reward": -1.1746175216222712,
+      "total_training_steps": 15000,
+      "load_balancing": {
+        "agent_loads": {
+          "0": 1.0,
+          "1": 1.0,
+          "2": 1.0,
+          "3": 1.0,
+          "4": 1.0
+        },
+        "agent_performance": {
+          "0": 0.8794051968930601,
+          "1": 0.8756752478253763,
+          "2": 0.875231339081938,
+          "3": 0.9113410217208613,
+          "4": 0.8799168491769263
+        },
+        "avg_load": 1.0,
+        "load_variance": 0.0
+      },
+      "cache_stats": {
+        "size": 150,
+        "max_size": 5000,
+        "hit_count": 0,
+        "miss_count": 150,
+        "hit_rate": 0.0,
+        "fill_ratio": 0.03
+      },
+      "resource_pool_stats": {
+        "pool_size": 1,
+        "max_size": 50,
+        "created_count": 1,
+        "acquired_count": 150,
+        "released_count": 150,
+        "active_resources": 0
+      },
+      "profiler_stats": {
+        "federated_averaging": {
+          "count": 150,
+          "avg_time": 0.002239626353331611,
+          "min_time": 0.0011295570000129374,
+          "max_time": 0.005964256999959616,
+          "total_time": 0.33594395299974167,
+          "avg_memory_delta": 0.0
+        }
+      }
+    },
+    "episode_time": 0.6016323566436768,
+    "timestamp": 1755371970.8512409
+  }
+]

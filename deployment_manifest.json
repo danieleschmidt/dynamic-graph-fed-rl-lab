@@ -1,107 +1,84 @@
 {
-  "name": "quantum-task-planner",
-  "version": "1.0.0",
-  "description": "Quantum-inspired task planning and scheduling system",
-  "deployment": {
+  "deployment_metadata": {
+    "deployment_id": "d15a3ca3-cc19-4730-bddd-23590ccadbba",
+    "timestamp": "2025-08-16T19:23:42.986875+00:00",
     "environment": "production",
-    "timestamp": "2024-08-06T00:00:00Z",
-    "config": {
-      "log_level": "INFO",
-      "cache_size": 10000,
-      "enable_monitoring": true,
-      "enable_profiling": true,
-      "health_check_interval": 30,
-      "max_concurrent_tasks": 1000,
-      "security_validation": true,
-      "performance_optimization": true,
-      "auto_scaling": true,
-      "circuit_breaker_enabled": true
+    "region": "us-east-1",
+    "version": "1.0.0",
+    "build_info": {
+      "platform": "Linux",
+      "python_version": "3.12.3",
+      "architecture": "x86_64"
     }
   },
-  "components": {
-    "core": {
-      "quantum_task_manager": "Core task management with quantum superposition",
-      "state_measurement": "Quantum state collapse and measurement",
-      "entanglement_tracking": "Task dependency and relationship management"
-    },
-    "scheduling": {
-      "quantum_scheduler": "Interference-optimized task scheduling",
-      "adaptive_scheduler": "Self-learning parameter optimization"
-    },
-    "performance": {
-      "quantum_cache": "Coherence-aware caching system",
-      "jit_optimization": "Just-in-time compilation for hot paths",
-      "vectorized_operations": "Batch processing optimization",
-      "memory_pooling": "Pre-allocated memory management"
-    },
-    "security": {
-      "input_validation": "Comprehensive sanitization and validation",
-      "security_monitoring": "Real-time threat detection",
-      "access_control": "Role-based access management"
-    },
-    "monitoring": {
-      "health_checks": "System health monitoring and alerting",
-      "performance_profiling": "Execution time and resource tracking",
-      "metrics_collection": "Operational metrics and KPIs"
-    },
-    "scaling": {
-      "auto_scaler": "Dynamic resource scaling based on load",
-      "load_balancer": "Request distribution and circuit breaking",
-      "resource_manager": "CPU, memory, and I/O optimization"
-    }
+  "configuration": {
+    "environment": "production",
+    "region": "us-east-1",
+    "instance_type": "c5.xlarge",
+    "auto_scaling_enabled": true,
+    "monitoring_enabled": true,
+    "security_hardened": true,
+    "compliance_mode": "GDPR",
+    "multi_region_replicas": [
+      "us-west-2",
+      "eu-west-1"
+    ],
+    "load_balancer_enabled": true
   },
-  "requirements": {
-    "python": ">=3.8",
-    "dependencies": [
-      "jax>=0.4.0",
-      "jaxlib>=0.4.0",
-      "numpy>=1.21.0",
-      "psutil>=5.8.0"
-    ],
-    "optional_dependencies": [
-      "flax>=0.6.0",
-      "optax>=0.1.0",
-      "networkx>=2.8.0",
-      "gymnasium>=0.28.0"
-    ]
+  "compliance": {
+    "framework": "GDPR",
+    "privacy_policy": {
+      "data_collection": "We collect minimal data necessary for federated learning",
+      "data_usage": "Data is used only for training federated models",
+      "data_sharing": "No personal data is shared with third parties",
+      "data_retention": "Data is retained for 30 days",
+      "user_rights": [
+        "Right to access your data",
+        "Right to rectification",
+        "Right to erasure (right to be forgotten)",
+        "Right to restrict processing",
+        "Right to data portability",
+        "Right to object to processing"
+      ],
+      "contact_info": "privacy@terragon.ai",
+      "last_updated": "2025-08-16T19:23:42.986921+00:00",
+      "compliance_framework": "GDPR"
+    },
+    "data_retention_days": 30
   },
-  "features": {
-    "quantum_principles": [
-      "Superposition-based task states",
-      "Quantum entanglement for dependencies",
-      "Interference optimization",
-      "Coherence tracking and measurement"
-    ],
-    "performance_optimization": [
-      "JIT compilation with JAX",
-      "Vectorized batch operations",
-      "Memory pooling and reuse",
-      "Quantum-aware caching"
-    ],
-    "reliability": [
-      "Circuit breaker patterns",
-      "Graceful degradation",
-      "Health monitoring",
-      "Auto-recovery mechanisms"
-    ],
-    "security": [
-      "Input sanitization",
-      "Injection attack prevention",
-      "Security audit logging",
-      "Access control validation"
-    ],
-    "scalability": [
-      "Horizontal auto-scaling",
-      "Load balancing",
-      "Resource optimization",
-      "Concurrent processing"
-    ]
+  "security": {
+    "hardening_enabled": true,
+    "encryption_enabled": true,
+    "audit_logging": true
   },
-  "quality_metrics": {
-    "test_coverage": "85%+",
-    "performance": "Sub-200ms response time",
-    "security": "Zero known vulnerabilities",
-    "reliability": "99.9% uptime target",
-    "scalability": "1000+ concurrent tasks"
+  "internationalization": {
+    "supported_languages": [
+      "en",
+      "es",
+      "fr",
+      "de",
+      "ja",
+      "zh",
+      "pt",
+      "ru"
+    ],
+    "default_language": "en"
+  },
+  "monitoring": {
+    "enabled": true,
+    "health_check_interval": 30,
+    "metrics_retention_days": 30
+  },
+  "scaling": {
+    "auto_scaling": true,
+    "min_instances": 1,
+    "max_instances": 10,
+    "target_cpu_utilization": 70
+  },
+  "infrastructure": {
+    "load_balancer": true,
+    "multi_region": true,
+    "backup_enabled": true,
+    "disaster_recovery": true
   }
 }

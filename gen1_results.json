@@ -1,0 +1,302 @@
+[
+  {
+    "episode": 0,
+    "agent_rewards": {
+      "0": -0.5399169697142345,
+      "1": -0.22759042893095452,
+      "2": -0.7164454940980576
+    },
+    "federation_stats": {
+      "federation_rounds": 5,
+      "num_agents": 3,
+      "avg_reward": -0.4460881069359633,
+      "parameter_norm": 0.1723997688087098
+    },
+    "timestamp": 1755371653.6408522
+  },
+  {
+    "episode": 1,
+    "agent_rewards": {
+      "0": -0.7062401577020349,
+      "1": -0.6317988075559708,
+      "2": -0.5887875382791836
+    },
+    "federation_stats": {
+      "federation_rounds": 10,
+      "num_agents": 3,
+      "avg_reward": -0.3684977142254378,
+      "parameter_norm": 0.17054379116849502
+    },
+    "timestamp": 1755371653.6435146
+  },
+  {
+    "episode": 2,
+    "agent_rewards": {
+      "0": -0.6605246920741454,
+      "1": -0.5362108355954291,
+      "2": -0.1068606807979972
+    },
+    "federation_stats": {
+      "federation_rounds": 15,
+      "num_agents": 3,
+      "avg_reward": -0.2845222190847228,
+      "parameter_norm": 0.17112235273280335
+    },
+    "timestamp": 1755371653.6458995
+  },
+  {
+    "episode": 3,
+    "agent_rewards": {
+      "0": -1.502150489897204,
+      "1": -0.7379255929940676,
+      "2": -0.4025272678508774
+    },
+    "federation_stats": {
+      "federation_rounds": 20,
+      "num_agents": 3,
+      "avg_reward": -0.9385422057372381,
+      "parameter_norm": 0.16759402798259945
+    },
+    "timestamp": 1755371653.6486237
+  },
+  {
+    "episode": 4,
+    "agent_rewards": {
+      "0": -0.8874187150586333,
+      "1": -0.44187803125339437,
+      "2": -0.7189234860436993
+    },
+    "federation_stats": {
+      "federation_rounds": 25,
+      "num_agents": 3,
+      "avg_reward": -0.5623857098237951,
+      "parameter_norm": 0.17152178982590158
+    },
+    "timestamp": 1755371653.6514032
+  },
+  {
+    "episode": 5,
+    "agent_rewards": {
+      "0": -0.7897893534598286,
+      "1": -0.46639301540442846,
+      "2": -0.4294799471879061
+    },
+    "federation_stats": {
+      "federation_rounds": 30,
+      "num_agents": 3,
+      "avg_reward": -0.28714915120299606,
+      "parameter_norm": 0.169557030047426
+    },
+    "timestamp": 1755371653.6538424
+  },
+  {
+    "episode": 6,
+    "agent_rewards": {
+      "0": -1.0102896805370296,
+      "1": -0.8011541088706704,
+      "2": -1.0044177790740965
+    },
+    "federation_stats": {
+      "federation_rounds": 35,
+      "num_agents": 3,
+      "avg_reward": -0.4611114063522098,
+      "parameter_norm": 0.17069711000040874
+    },
+    "timestamp": 1755371653.6567392
+  },
+  {
+    "episode": 7,
+    "agent_rewards": {
+      "0": -0.24692154628285126,
+      "1": -0.8267240711730611,
+      "2": -0.5002882240005552
+    },
+    "federation_stats": {
+      "federation_rounds": 40,
+      "num_agents": 3,
+      "avg_reward": -0.2736633025333399,
+      "parameter_norm": 0.17465812395722932
+    },
+    "timestamp": 1755371653.6596532
+  },
+  {
+    "episode": 8,
+    "agent_rewards": {
+      "0": -0.9206000382567885,
+      "1": -0.8596312909102045,
+      "2": -1.1840910791677255
+    },
+    "federation_stats": {
+      "federation_rounds": 45,
+      "num_agents": 3,
+      "avg_reward": -0.7191817164964461,
+      "parameter_norm": 0.17697836389528612
+    },
+    "timestamp": 1755371653.6622083
+  },
+  {
+    "episode": 9,
+    "agent_rewards": {
+      "0": -0.3278063639383753,
+      "1": -0.8192610734425609,
+      "2": -1.2085640867345386
+    },
+    "federation_stats": {
+      "federation_rounds": 50,
+      "num_agents": 3,
+      "avg_reward": -0.78483459704998,
+      "parameter_norm": 0.1743366232839025
+    },
+    "timestamp": 1755371653.6649075
+  },
+  {
+    "episode": 10,
+    "agent_rewards": {
+      "0": -0.5305142507875916,
+      "1": -1.7073123476442587,
+      "2": -0.43842499738698204
+    },
+    "federation_stats": {
+      "federation_rounds": 55,
+      "num_agents": 3,
+      "avg_reward": -0.729908219048465,
+      "parameter_norm": 0.16756653027453694
+    },
+    "timestamp": 1755371653.6674993
+  },
+  {
+    "episode": 11,
+    "agent_rewards": {
+      "0": -2.1376733935204357,
+      "1": -0.5449939818313648,
+      "2": -0.3287803413879318
+    },
+    "federation_stats": {
+      "federation_rounds": 60,
+      "num_agents": 3,
+      "avg_reward": -0.9344055344066695,
+      "parameter_norm": 0.1634742239361213
+    },
+    "timestamp": 1755371653.6701105
+  },
+  {
+    "episode": 12,
+    "agent_rewards": {
+      "0": -0.166684808364449,
+      "1": -0.18013411125527004,
+      "2": -1.3611132542118218
+    },
+    "federation_stats": {
+      "federation_rounds": 65,
+      "num_agents": 3,
+      "avg_reward": -0.547194192352482,
+      "parameter_norm": 0.16115260125997943
+    },
+    "timestamp": 1755371653.6728773
+  },
+  {
+    "episode": 13,
+    "agent_rewards": {
+      "0": -1.2855615683436221,
+      "1": -0.7393161016514149,
+      "2": -2.0596379083133596
+    },
+    "federation_stats": {
+      "federation_rounds": 70,
+      "num_agents": 3,
+      "avg_reward": -1.5805226329725441,
+      "parameter_norm": 0.15879357215921336
+    },
+    "timestamp": 1755371653.6753995
+  },
+  {
+    "episode": 14,
+    "agent_rewards": {
+      "0": -0.22675515251468167,
+      "1": -0.8808212646080608,
+      "2": -0.8534585917629743
+    },
+    "federation_stats": {
+      "federation_rounds": 75,
+      "num_agents": 3,
+      "avg_reward": -0.512305067313339,
+      "parameter_norm": 0.15678050963772233
+    },
+    "timestamp": 1755371653.6780763
+  },
+  {
+    "episode": 15,
+    "agent_rewards": {
+      "0": -1.8114317628447034,
+      "1": -1.4444016238100525,
+      "2": -0.9644803108255486
+    },
+    "federation_stats": {
+      "federation_rounds": 80,
+      "num_agents": 3,
+      "avg_reward": -0.967095393924669,
+      "parameter_norm": 0.15560675645502803
+    },
+    "timestamp": 1755371653.6807792
+  },
+  {
+    "episode": 16,
+    "agent_rewards": {
+      "0": -1.2138495716890296,
+      "1": -1.4913958702577321,
+      "2": -0.3056888933223124
+    },
+    "federation_stats": {
+      "federation_rounds": 85,
+      "num_agents": 3,
+      "avg_reward": -0.7654865077251777,
+      "parameter_norm": 0.14971276071235504
+    },
+    "timestamp": 1755371653.6833715
+  },
+  {
+    "episode": 17,
+    "agent_rewards": {
+      "0": -0.34891468418475347,
+      "1": -0.9259958701629654,
+      "2": -0.9774301661986684
+    },
+    "federation_stats": {
+      "federation_rounds": 90,
+      "num_agents": 3,
+      "avg_reward": -0.6519177333028161,
+      "parameter_norm": 0.1476126454664765
+    },
+    "timestamp": 1755371653.6858137
+  },
+  {
+    "episode": 18,
+    "agent_rewards": {
+      "0": -0.6927256099878045,
+      "1": -1.3123749331385182,
+      "2": -0.9077811082287751
+    },
+    "federation_stats": {
+      "federation_rounds": 95,
+      "num_agents": 3,
+      "avg_reward": -0.7259470880972444,
+      "parameter_norm": 0.14737688401667878
+    },
+    "timestamp": 1755371653.6885123
+  },
+  {
+    "episode": 19,
+    "agent_rewards": {
+      "0": -0.7051782199511607,
+      "1": -0.8349445993530709,
+      "2": -0.7770834731516314
+    },
+    "federation_stats": {
+      "federation_rounds": 100,
+      "num_agents": 3,
+      "avg_reward": -0.2346838056674243,
+      "parameter_norm": 0.1495769356198985
+    },
+    "timestamp": 1755371653.6909864
+  }
+]

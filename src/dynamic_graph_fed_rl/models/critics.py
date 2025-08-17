@@ -194,7 +194,7 @@ class ActionValueCritic(nn.Module):
             
         Returns:
             Q-value estimate
-        \"\"\"
+        """
         # Encode state
         node_embeddings = self.state_encoder(
             node_features, edge_index, edge_features, training

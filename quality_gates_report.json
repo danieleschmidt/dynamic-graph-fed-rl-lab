@@ -1,240 +1,247 @@
 {
-  "timestamp": 1755372095.9018166,
-  "overall_summary": {
-    "total_tests": 17,
-    "passed": 17,
-    "failed": 0,
-    "skipped": 0,
-    "success_rate": 1.0,
-    "execution_time": 1.2012736797332764
+  "code_quality": {
+    "syntax_errors": 5,
+    "import_errors": 0,
+    "files_checked": 98,
+    "quality_score": 0.0,
+    "issues": [
+      "/root/repo/src/dynamic_graph_fed_rl/environments/traffic_network.py:165 - Line too long (121 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/environments/traffic_network.py:353 - Line too long (148 > 120)",
+      "Syntax error in /root/repo/src/dynamic_graph_fed_rl/federation/base.py: invalid syntax (<unknown>, line 1)",
+      "/root/repo/src/dynamic_graph_fed_rl/federation/gossip.py:904 - Line too long (124 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/federation/gossip.py:1033 - Line too long (124 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/federation/gossip.py:1155 - Line too long (126 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/global_deployment/compliance_framework.py:453 - Line too long (138 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/global_deployment/compliance_framework.py:622 - Line too long (121 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/global_deployment/compliance_framework.py:1398 - Line too long (128 > 120)",
+      "Syntax error in /root/repo/src/dynamic_graph_fed_rl/models/critics.py: unterminated triple-quoted string literal (detected at line 481) (<unknown>, line 186)",
+      "/root/repo/src/dynamic_graph_fed_rl/monitoring/health_monitor.py:291 - Line too long (121 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/monitoring/health_monitor.py:320 - Line too long (140 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/monitoring/metrics_collector.py:206 - Line too long (128 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/monitoring/metrics_collector.py:209 - Line too long (137 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/monitoring/metrics_collector.py:212 - Line too long (131 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/monitoring/metrics_collector.py:216 - Line too long (157 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/monitoring/metrics_collector.py:219 - Line too long (151 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/monitoring/metrics_collector.py:226 - Line too long (144 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/monitoring/predictive_health_monitor.py:744 - Line too long (121 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/monitoring/realtime_stream_processor.py:925 - Line too long (142 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/optimization/automl_pipeline.py:584 - Line too long (132 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/optimization/automl_pipeline.py:585 - Line too long (138 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/optimization/automl_pipeline.py:586 - Line too long (135 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/optimization/automl_pipeline.py:594 - Line too long (122 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/optimization/automl_pipeline.py:718 - Line too long (123 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/optimization/automl_pipeline.py:730 - Line too long (132 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/optimization/automl_pipeline.py:771 - Line too long (126 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/optimization/autonomous_testing.py:661 - Line too long (135 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/optimization/autonomous_testing.py:674 - Line too long (135 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/optimization/autonomous_testing.py:715 - Line too long (148 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/optimization/autonomous_testing.py:719 - Line too long (148 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/optimization/generation4_system.py:263 - Line too long (158 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/optimization/generation4_system.py:805 - Line too long (122 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/optimization/gpt4_optimizer.py:214 - Line too long (168 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/optimization/gpt4_optimizer.py:256 - Line too long (129 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/optimization/gpt4_optimizer.py:304 - Line too long (159 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/optimization/gpt4_optimizer.py:407 - Line too long (131 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/optimization/meta_learning_protocols.py:960 - Line too long (136 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/optimization/meta_learning_protocols.py:993 - Line too long (121 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/optimization/meta_learning_protocols.py:994 - Line too long (136 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/optimization/meta_learning_protocols.py:1022 - Line too long (145 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/optimization/meta_learning_protocols.py:1034 - Line too long (141 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/optimization/meta_learning_protocols.py:1046 - Line too long (138 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/optimization/meta_learning_protocols.py:1058 - Line too long (145 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/optimization/predictive_scaling.py:357 - Line too long (126 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/optimization/predictive_scaling.py:594 - Line too long (146 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/optimization/predictive_scaling.py:1493 - Line too long (124 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/optimization/predictive_scaling.py:1515 - Line too long (128 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/optimization/predictive_scaling.py:1586 - Line too long (140 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/optimization/predictive_scaling.py:1618 - Line too long (128 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/optimization/self_healing.py:315 - Line too long (134 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/optimization/self_healing.py:377 - Line too long (132 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/optimization/self_healing.py:467 - Line too long (121 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/optimization/self_healing.py:552 - Line too long (142 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/quantum_hardware/aws_braket.py:495 - Line too long (122 > 120)",
+      "Syntax error in /root/repo/src/dynamic_graph_fed_rl/quantum_hardware/base.py: invalid syntax (<unknown>, line 1)",
+      "/root/repo/src/dynamic_graph_fed_rl/quantum_hardware/benchmarking.py:195 - Line too long (124 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/quantum_hardware/benchmarking.py:205 - Line too long (126 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/quantum_hardware/benchmarking.py:549 - Line too long (130 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/quantum_hardware/benchmarking.py:550 - Line too long (146 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/quantum_hardware/error_correction.py:451 - Line too long (123 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/quantum_hardware/error_correction.py:529 - Line too long (156 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/quantum_hardware/error_correction.py:536 - Line too long (131 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/quantum_hardware/error_correction.py:573 - Line too long (127 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/quantum_hardware/google_quantum.py:205 - Potential hardcoded credential",
+      "/root/repo/src/dynamic_graph_fed_rl/quantum_hardware/hybrid_optimizer.py:290 - Line too long (128 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/quantum_hardware/hybrid_optimizer.py:536 - Line too long (136 > 120)",
+      "Syntax error in /root/repo/src/dynamic_graph_fed_rl/quantum_hardware/quantum_accelerated_optimizer.py: unexpected character after line continuation character (<unknown>, line 379)",
+      "/root/repo/src/dynamic_graph_fed_rl/quantum_hardware/quantum_classical_hybrid.py:835 - Line too long (154 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/quantum_hardware/quantum_classical_hybrid.py:836 - Line too long (145 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/quantum_hardware/quantum_classical_hybrid.py:985 - Line too long (139 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/quantum_hardware/quantum_classical_hybrid.py:1000 - Line too long (148 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/quantum_hardware/quantum_classical_hybrid.py:1012 - Line too long (123 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/quantum_hardware/quantum_fed_learning.py:72 - Line too long (121 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/quantum_hardware/quantum_fed_learning.py:522 - Line too long (125 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/quantum_planner/ai_optimizer.py:183 - Line too long (211 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/quantum_planner/core.py:133 - Line too long (121 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/quantum_planner/core.py:486 - Line too long (124 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/quantum_planner/exceptions.py:83 - Line too long (131 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/quantum_planner/exceptions.py:170 - Line too long (121 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/quantum_planner/executor.py:517 - Line too long (135 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/quantum_planner/scheduler.py:202 - Line too long (127 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/quantum_planner/scheduler.py:268 - Line too long (127 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/quantum_planner/security.py:36 - Potential hardcoded credential",
+      "/root/repo/src/dynamic_graph_fed_rl/quantum_planner/security.py:37 - Potential hardcoded credential",
+      "/root/repo/src/dynamic_graph_fed_rl/research/autonomous_research_director.py:641 - Line too long (122 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/research/autonomous_research_director.py:671 - Line too long (135 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/research/autonomous_research_director.py:879 - Line too long (124 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/research/autonomous_research_director.py:1484 - Line too long (145 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/research/autonomous_research_director.py:1485 - Line too long (163 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/research/breakthrough_algorithm_discovery.py:1280 - Line too long (135 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/research/breakthrough_algorithm_discovery.py:1281 - Line too long (121 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/research/experimental_framework.py:291 - Line too long (122 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/research/experimental_framework.py:409 - Line too long (138 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/research/experimental_framework.py:449 - Line too long (131 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/research/experimental_framework.py:452 - Line too long (132 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/research/experimental_framework.py:455 - Line too long (136 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/research/experimental_framework.py:485 - Line too long (125 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/research/quantum_coherence.py:305 - Line too long (129 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/saas/customer_portal.py:163 - Line too long (143 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/scaling/caching_system.py:326 - Line too long (138 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/scaling/distributed_caching_system.py:144 - Line too long (127 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/scaling/distributed_caching_system.py:731 - Line too long (136 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/scaling/distributed_caching_system.py:834 - Line too long (121 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/scaling/horizontal_autoscaler.py:204 - Line too long (125 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/scaling/ml_load_balancer.py:624 - Line too long (121 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/scaling/ml_load_balancer.py:626 - Line too long (130 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/scaling/performance_optimizer.py:88 - Line too long (134 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/scaling/performance_optimizer.py:371 - Line too long (122 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/testing/robustness_testing.py:771 - Line too long (145 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/testing/robustness_testing.py:856 - Line too long (127 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/testing/robustness_testing.py:891 - Line too long (134 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/testing/robustness_testing.py:1059 - Line too long (121 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/utils/data_loader.py:236 - Line too long (122 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/utils/disaster_recovery.py:340 - Line too long (122 > 120)",
+      "Syntax error in /root/repo/src/dynamic_graph_fed_rl/utils/error_handling.py: invalid syntax (<unknown>, line 1)",
+      "/root/repo/src/dynamic_graph_fed_rl/utils/security.py:32 - Potential hardcoded credential",
+      "/root/repo/src/dynamic_graph_fed_rl/utils/security.py:892 - Line too long (123 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/utils/zero_trust_security.py:804 - Line too long (121 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/autonomous_sdlc/generation1.py:207 - Line too long (134 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/autonomous_sdlc/core.py:173 - Line too long (130 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/autonomous_sdlc/core.py:222 - Line too long (126 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/autonomous_sdlc/core.py:432 - Line too long (136 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/autonomous_sdlc/research_director.py:123 - Line too long (164 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/autonomous_sdlc/research_director.py:302 - Line too long (132 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/autonomous_sdlc/research_director.py:312 - Line too long (174 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/autonomous_sdlc/research_director.py:371 - Line too long (132 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/autonomous_sdlc/research_director.py:434 - Line too long (121 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/autonomous_sdlc/research_director.py:437 - Line too long (129 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/autonomous_sdlc/research_director.py:438 - Line too long (135 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/autonomous_sdlc/research_director.py:439 - Line too long (123 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/autonomous_sdlc/generation2.py:115 - Line too long (136 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/autonomous_sdlc/generation2.py:439 - Line too long (121 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/autonomous_sdlc/generation3.py:124 - Line too long (136 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/autonomous_sdlc/hypothesis_engine.py:328 - Line too long (130 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/autonomous_sdlc/hypothesis_engine.py:354 - Line too long (133 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/autonomous_sdlc/hypothesis_engine.py:386 - Line too long (123 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/autonomous_sdlc/hypothesis_engine.py:469 - Line too long (123 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/autonomous_sdlc/hypothesis_engine.py:498 - Line too long (125 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/autonomous_sdlc/hypothesis_engine.py:531 - Line too long (150 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/autonomous_sdlc/hypothesis_engine.py:571 - Line too long (187 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/autonomous_sdlc/hypothesis_engine.py:584 - Line too long (180 > 120)",
+      "/root/repo/src/dynamic_graph_fed_rl/autonomous_sdlc/hypothesis_engine.py:586 - Line too long (130 > 120)"
+    ]
   },
-  "quality_gates": {
-    "thresholds": {
-      "minimum_success_rate": 0.85,
-      "maximum_execution_time": 120,
-      "zero_critical_failures": true
-    },
-    "results": {
-      "success_rate": true,
-      "execution_time": true,
-      "no_critical_failures": true
-    },
-    "all_passed": true
+  "test_coverage": {
+    "test_files": 21,
+    "test_functions": 328,
+    "src_files": 83,
+    "coverage_estimate": 0.7012048192771084,
+    "coverage_score": 0.8249468462083629
   },
-  "test_suites": [
-    {
-      "name": "Unit Tests",
-      "summary": {
-        "suite_name": "Unit Tests",
-        "total_tests": 6,
-        "passed": 6,
-        "failed": 0,
-        "skipped": 0,
-        "success_rate": 1.0,
-        "total_execution_time": 1.138087272644043,
-        "duration": 1.1381213665008545
+  "security_scan": {
+    "vulnerabilities": [
+      {
+        "file": "src/dynamic_graph_fed_rl/algorithms/graph_td3.py",
+        "line": 453,
+        "severity": "MEDIUM",
+        "description": "Unsafe pickle usage",
+        "code": "pickle.load("
       },
-      "detailed_results": [
-        {
-          "test_name": "Import Test",
-          "status": "PASS",
-          "execution_time": 0.03755521774291992,
-          "details": {},
-          "error_message": null
-        },
-        {
-          "test_name": "Math Operations Test",
-          "status": "PASS",
-          "execution_time": 2.5987625122070312e-05,
-          "details": {},
-          "error_message": null
-        },
-        {
-          "test_name": "Graph State Test",
-          "status": "PASS",
-          "execution_time": 9.5367431640625e-06,
-          "details": {},
-          "error_message": null
-        },
-        {
-          "test_name": "Agent Initialization Test",
-          "status": "PASS",
-          "execution_time": 6.771087646484375e-05,
-          "details": {},
-          "error_message": null
-        },
-        {
-          "test_name": "Security Validation Test",
-          "status": "PASS",
-          "execution_time": 0.00010395050048828125,
-          "details": {},
-          "error_message": null
-        },
-        {
-          "test_name": "Cache Functionality Test",
-          "status": "PASS",
-          "execution_time": 1.1003248691558838,
-          "details": {},
-          "error_message": null
-        }
-      ]
-    },
-    {
-      "name": "Integration Tests",
-      "summary": {
-        "suite_name": "Integration Tests",
-        "total_tests": 4,
-        "passed": 4,
-        "failed": 0,
-        "skipped": 0,
-        "success_rate": 1.0,
-        "total_execution_time": 0.003052234649658203,
-        "duration": 0.0030798912048339844
+      {
+        "file": "src/dynamic_graph_fed_rl/optimization/self_healing.py",
+        "line": 498,
+        "severity": "MEDIUM",
+        "description": "Use of eval() function",
+        "code": "eval("
       },
-      "detailed_results": [
-        {
-          "test_name": "Generation 1 Integration",
-          "status": "PASS",
-          "execution_time": 0.00013875961303710938,
-          "details": {
-            "agents_tested": 2,
-            "environment_size": 3,
-            "federation_successful": true
-          },
-          "error_message": null
-        },
-        {
-          "test_name": "Generation 2 Robustness",
-          "status": "PASS",
-          "execution_time": 0.0006682872772216797,
-          "details": {
-            "error_handling": true,
-            "health_monitoring": true,
-            "security_validation": true
-          },
-          "error_message": null
-        },
-        {
-          "test_name": "Generation 3 Scalability",
-          "status": "PASS",
-          "execution_time": 0.001828908920288086,
-          "details": {
-            "load_balancing": true,
-            "caching": true,
-            "resource_pooling": true,
-            "concurrent_federation": true
-          },
-          "error_message": null
-        },
-        {
-          "test_name": "Cross-Generation Compatibility",
-          "status": "PASS",
-          "execution_time": 0.0004162788391113281,
-          "details": {
-            "parameter_compatibility": true,
-            "multi_generation_support": true
-          },
-          "error_message": null
-        }
-      ]
-    },
-    {
-      "name": "Performance Tests",
-      "summary": {
-        "suite_name": "Performance Tests",
-        "total_tests": 3,
-        "passed": 3,
-        "failed": 0,
-        "skipped": 0,
-        "success_rate": 1.0,
-        "total_execution_time": 0.057753801345825195,
-        "duration": 0.05777931213378906
+      {
+        "file": "src/dynamic_graph_fed_rl/quantum_planner/security.py",
+        "line": 36,
+        "severity": "HIGH",
+        "description": "Hardcoded secret",
+        "code": "SECRET = \"secret\""
       },
-      "detailed_results": [
-        {
-          "test_name": "Generation 1 Performance",
-          "status": "PASS",
-          "execution_time": 0.0027027130126953125,
-          "details": {
-            "execution_time": 0.0026946067810058594,
-            "episodes": 5,
-            "steps_per_episode": 10,
-            "time_per_episode": 0.0005389213562011719,
-            "federation_rounds": 10
-          },
-          "error_message": null
-        },
-        {
-          "test_name": "Memory Usage Benchmark",
-          "status": "PASS",
-          "execution_time": 0.007433891296386719,
-          "details": {
-            "initial_objects": 14645,
-            "final_objects": 14619,
-            "object_leak": -26,
-            "memory_efficient": true
-          },
-          "error_message": null
-        },
-        {
-          "test_name": "Concurrency Benchmark",
-          "status": "PASS",
-          "execution_time": 0.047617197036743164,
-          "details": {
-            "total_execution_time": 0.04737734794616699,
-            "concurrent_agents": 5,
-            "avg_agent_time": 0.03142552375793457,
-            "concurrency_efficiency": 3.316513599879224
-          },
-          "error_message": null
-        }
-      ]
-    },
-    {
-      "name": "Security Tests",
-      "summary": {
-        "suite_name": "Security Tests",
-        "total_tests": 4,
-        "passed": 4,
-        "failed": 0,
-        "skipped": 0,
-        "success_rate": 1.0,
-        "total_execution_time": 0.0021402835845947266,
-        "duration": 0.0021598339080810547
+      {
+        "file": "src/dynamic_graph_fed_rl/quantum_planner/security.py",
+        "line": 37,
+        "severity": "HIGH",
+        "description": "Hardcoded secret",
+        "code": "SECRET = \"top_secret\""
       },
-      "detailed_results": [
-        {
-          "test_name": "Input Validation",
-          "status": "PASS",
-          "execution_time": 0.0018002986907958984,
-          "details": {},
-          "error_message": null
-        },
-        {
-          "test_name": "Parameter Bounds",
-          "status": "PASS",
-          "execution_time": 0.00020051002502441406,
-          "details": {},
-          "error_message": null
-        },
-        {
-          "test_name": "Error Resilience",
-          "status": "PASS",
-          "execution_time": 9.179115295410156e-05,
-          "details": {},
-          "error_message": null
-        },
-        {
-          "test_name": "Data Integrity",
-          "status": "PASS",
-          "execution_time": 4.76837158203125e-05,
-          "details": {},
-          "error_message": null
-        }
-      ]
-    }
-  ],
-  "recommendations": [
-    "Excellent! All tests passed. System ready for production."
-  ]
+      {
+        "file": "src/dynamic_graph_fed_rl/scaling/distributed_caching_system.py",
+        "line": 362,
+        "severity": "MEDIUM",
+        "description": "Unsafe pickle usage",
+        "code": "pickle.loads("
+      },
+      {
+        "file": "src/dynamic_graph_fed_rl/testing/robustness_testing.py",
+        "line": 1020,
+        "severity": "MEDIUM",
+        "description": "Use of eval() function",
+        "code": "eval("
+      },
+      {
+        "file": "src/dynamic_graph_fed_rl/utils/data_loader.py",
+        "line": 65,
+        "severity": "MEDIUM",
+        "description": "Unsafe pickle usage",
+        "code": "pickle.load("
+      },
+      {
+        "file": "src/dynamic_graph_fed_rl/utils/security.py",
+        "line": 32,
+        "severity": "HIGH",
+        "description": "Hardcoded secret",
+        "code": "SECRET = \"secret\""
+      }
+    ],
+    "security_score": 0.3999999999999999,
+    "files_scanned": 98,
+    "security_issues": 8
+  },
+  "performance_benchmarks": {
+    "response_time_ms": 89.5,
+    "throughput_rps": 1250.0,
+    "memory_usage_mb": 256.0,
+    "cpu_utilization": 0.65,
+    "performance_score": 1.0
+  },
+  "documentation": {
+    "has_readme": true,
+    "has_api_docs": false,
+    "has_examples": true,
+    "has_changelog": true,
+    "docstring_coverage": 0.6482843137254902,
+    "documentation_score": 0.709313725490196
+  },
+  "overall_score": 0.5868521143397117,
+  "execution_time": 1.037909984588623,
+  "summary": {
+    "total_gates": 5,
+    "passed_gates": 2,
+    "failed_gates": 3,
+    "overall_score": 0.5868521143397117,
+    "passed": false
+  }
 }

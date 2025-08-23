@@ -2,24 +2,24 @@
   {
     "episode": 0,
     "agent_rewards": {
-      "0": -1.834237068912313,
-      "1": -3.3266086303321223,
-      "2": -1.225509676823531
+      "0": -5.208627430392815,
+      "1": -12.458466338131474,
+      "2": -11.985248633925714
     },
     "federation_stats": {
       "federation_rounds": 4,
       "failed_aggregations": 0,
       "num_agents": 3,
-      "avg_reward": -1.950712274306633,
-      "parameter_norm": 0.20120829423262634,
-      "parameter_hash": "323f4b2c3619ea070d801231098e7a3830c02ffefb85e1ee839c0b4148d95028",
+      "avg_reward": -14.2496324578861,
+      "parameter_norm": 0.26184098049605947,
+      "parameter_hash": "d79b827d03b737a650244a26c4564f6d0d02753140fb076223a677d12fe265c8",
       "total_errors": 0,
       "total_training_steps": 180,
       "success_rate": 1.0,
       "health_status": {
         "status": "starting",
-        "uptime_seconds": 0.013962984085083008,
-        "last_check": 1755371780.0986202,
+        "uptime_seconds": 0.013661384582519531,
+        "last_check": 1755982947.4895532,
         "metrics_summary": {
           "federation_rounds": {
             "mean": 2.5,
@@ -41,8 +41,8 @@
       "current_state_valid": true,
       "health_monitor": {
         "status": "starting",
-        "uptime_seconds": 0.014710664749145508,
-        "last_check": 1755371780.1117733,
+        "uptime_seconds": 0.014333486557006836,
+        "last_check": 1755982947.502383,
         "metrics_summary": {
           "resets": {
             "mean": 1.5,
@@ -55,9 +55,9 @@
             "latest": 60.0
           },
           "avg_reward": {
-            "mean": -2.0857153475240606,
+            "mean": -13.995025576096094,
             "count": 60,
-            "latest": -1.8820238413187858
+            "latest": -14.396782188817411
           }
         }
       }
@@ -67,20 +67,20 @@
         "agent_id": 0,
         "training_steps": 60,
         "error_count": 0,
-        "time_since_last_update": 0.00013875961303710938,
-        "parameter_norm": 0.19805255836439023,
-        "parameter_hash": "6edf859f594d2f913a39c46de5873ffa7990f132b51c5d725bcbff2fa004cc09",
-        "avg_recent_reward": -1.5505826502138575,
+        "time_since_last_update": 0.0001430511474609375,
+        "parameter_norm": 0.28057160115686003,
+        "parameter_hash": "a62e009b005bf1e9a152827323752bb27def9398285fb499421feee573894d07",
+        "avg_recent_reward": -10.19565601810108,
         "total_rewards": 60,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.014245986938476562,
-          "last_check": 1755371780.0983741,
+          "uptime_seconds": 0.01394510269165039,
+          "last_check": 1755982947.4893124,
           "metrics_summary": {
             "action": {
-              "mean": -0.021524906392624422,
+              "mean": 0.319405746008241,
               "count": 60,
-              "latest": -0.02951210113411776
+              "latest": 0.3735273887887528
             },
             "training_steps": {
               "mean": 55.5,
@@ -88,9 +88,9 @@
               "latest": 60.0
             },
             "parameter_norm": {
-              "mean": 0.1998686838871628,
+              "mean": 0.2591788401493954,
               "count": 60,
-              "latest": 0.19805255836439023
+              "latest": 0.28057160115686003
             }
           }
         }
@@ -99,20 +99,20 @@
         "agent_id": 1,
         "training_steps": 60,
         "error_count": 0,
-        "time_since_last_update": 0.00013375282287597656,
-        "parameter_norm": 0.2184903035631843,
-        "parameter_hash": "baa4b5466a1f1213d796750d60053079e66b1228214de896b2c386ba67dd3936",
-        "avg_recent_reward": -3.872151590095985,
+        "time_since_last_update": 0.00013971328735351562,
+        "parameter_norm": 0.22318435635596404,
+        "parameter_hash": "f958a06d0ed2bf80f8c429b497dbefc99413939dcce89876bf8a84448210ecb9",
+        "avg_recent_reward": -15.853699666060749,
         "total_rewards": 60,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.014171838760375977,
-          "last_check": 1755371780.0984838,
+          "uptime_seconds": 0.01385498046875,
+          "last_check": 1755982947.4894314,
           "metrics_summary": {
             "action": {
-              "mean": -0.017108711984937335,
+              "mean": 0.49952131946718364,
               "count": 60,
-              "latest": -0.03654566091214388
+              "latest": 0.44746753685398644
             },
             "training_steps": {
               "mean": 55.5,
@@ -120,9 +120,9 @@
               "latest": 60.0
             },
             "parameter_norm": {
-              "mean": 0.21325970415100168,
+              "mean": 0.22767690144615274,
               "count": 60,
-              "latest": 0.2184903035631843
+              "latest": 0.22318435635596404
             }
           }
         }
@@ -131,20 +131,20 @@
         "agent_id": 2,
         "training_steps": 60,
         "error_count": 0,
-        "time_since_last_update": 0.00012755393981933594,
-        "parameter_norm": 0.20070431716537696,
-        "parameter_hash": "a7b8d4ff12e20c70d8adfa157bf7b1e57350edf788e39e2558d6ac0d464557fa",
-        "avg_recent_reward": -0.8344118022623388,
+        "time_since_last_update": 0.00012993812561035156,
+        "parameter_norm": 0.2933679150814726,
+        "parameter_hash": "ab3433a9c4fa31b9bfc55a4202fbc868095033424374ac9d0afb6112b5feeb4f",
+        "avg_recent_reward": -15.935721044126456,
         "total_rewards": 60,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.014133453369140625,
-          "last_check": 1755371780.0985503,
+          "uptime_seconds": 0.013814210891723633,
+          "last_check": 1755982947.489501,
           "metrics_summary": {
             "action": {
-              "mean": -0.011748958571215395,
+              "mean": 0.4620655606602984,
               "count": 60,
-              "latest": -0.012123315944397452
+              "latest": 0.32426849230571414
             },
             "training_steps": {
               "mean": 55.5,
@@ -152,38 +152,38 @@
               "latest": 60.0
             },
             "parameter_norm": {
-              "mean": 0.20183322889405217,
+              "mean": 0.29835630100705235,
               "count": 60,
-              "latest": 0.20070431716537696
+              "latest": 0.2933679150814726
             }
           }
         }
       }
     ],
-    "episode_time": 0.013843774795532227,
-    "timestamp": 1755371780.1126907
+    "episode_time": 0.013499259948730469,
+    "timestamp": 1755982947.5033216
   },
   {
     "episode": 1,
     "agent_rewards": {
-      "0": -1.689153108389672,
-      "1": -1.6236969698346342,
-      "2": -1.7262082977191358
+      "0": -7.938888559629746,
+      "1": -0.8074719535285901,
+      "2": -6.806893380538164
     },
     "federation_stats": {
       "federation_rounds": 8,
       "failed_aggregations": 0,
       "num_agents": 3,
-      "avg_reward": -1.4671352570507499,
-      "parameter_norm": 0.2026101335987758,
-      "parameter_hash": "1ad60ce037337f0f7408112c678fc87d4f8cdd8f4469af2ec4ab7d26438fb4fb",
+      "avg_reward": -10.35573174509066,
+      "parameter_norm": 0.247734488743723,
+      "parameter_hash": "3f1fba15ca0fba92b6f22ee9aae3eee51cd6f062340343349f9200fe9b90d496",
       "total_errors": 0,
       "total_training_steps": 360,
       "success_rate": 1.0,
       "health_status": {
         "status": "starting",
-        "uptime_seconds": 0.027275800704956055,
-        "last_check": 1755371780.1125832,
+        "uptime_seconds": 0.026929140090942383,
+        "last_check": 1755982947.5032146,
         "metrics_summary": {
           "federation_rounds": {
             "mean": 4.5,
@@ -205,8 +205,8 @@
       "current_state_valid": true,
       "health_monitor": {
         "status": "starting",
-        "uptime_seconds": 0.02802562713623047,
-        "last_check": 1755371780.12512,
+        "uptime_seconds": 0.0276031494140625,
+        "last_check": 1755982947.5155942,
         "metrics_summary": {
           "resets": {
             "mean": 2.0,
@@ -219,9 +219,9 @@
             "latest": 60.0
           },
           "avg_reward": {
-            "mean": -1.5424601003127627,
+            "mean": -10.064012030973924,
             "count": 100,
-            "latest": -1.4234860115909134
+            "latest": -10.677451991343519
           }
         }
       }
@@ -231,20 +231,20 @@
         "agent_id": 0,
         "training_steps": 120,
         "error_count": 0,
-        "time_since_last_update": 0.00013446807861328125,
-        "parameter_norm": 0.22606174837445892,
-        "parameter_hash": "dbf6ce0305ab43618b81213b81e807cf140da546fe13f2e6674fcaa378222979",
-        "avg_recent_reward": -2.099445785389086,
+        "time_since_last_update": 0.0001430511474609375,
+        "parameter_norm": 0.20726957435815038,
+        "parameter_hash": "22ca3f8691be0c1f3b3ab7bfef724476f7a58219028b6b4b50859ae4e8947e9d",
+        "avg_recent_reward": -14.421078956929918,
         "total_rewards": 120,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.027557373046875,
-          "last_check": 1755371780.1126192,
+          "uptime_seconds": 0.0272064208984375,
+          "last_check": 1755982947.5032573,
           "metrics_summary": {
             "action": {
-              "mean": -0.016273253693438468,
+              "mean": 0.4740462248501844,
               "count": 100,
-              "latest": -0.015998859431830666
+              "latest": 0.4995701847866977
             },
             "training_steps": {
               "mean": 100.0,
@@ -252,9 +252,9 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.22106971939467907,
+              "mean": 0.22566976769390198,
               "count": 100,
-              "latest": 0.22606174837445892
+              "latest": 0.20726957435815038
             }
           }
         }
@@ -263,20 +263,20 @@
         "agent_id": 1,
         "training_steps": 120,
         "error_count": 0,
-        "time_since_last_update": 0.0001354217529296875,
-        "parameter_norm": 0.20688890503446195,
-        "parameter_hash": "0b60d288bf10bcf18f043762d2ce996e5f0c74373b9e230ae2bb13082a87a0b2",
-        "avg_recent_reward": -1.0332450172160903,
+        "time_since_last_update": 0.00013136863708496094,
+        "parameter_norm": 0.25071352322239554,
+        "parameter_hash": "3765a3ad7c2cd74205f7aef9beab5ae0ec4add6666ef149ad6ed6bb5af41fc24",
+        "avg_recent_reward": -2.113748494506303,
         "total_rewards": 120,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.027483224868774414,
-          "last_check": 1755371780.1126556,
+          "uptime_seconds": 0.027113914489746094,
+          "last_check": 1755982947.5032861,
           "metrics_summary": {
             "action": {
-              "mean": -0.014235155329563312,
+              "mean": 0.13139119611128952,
               "count": 100,
-              "latest": -0.013924358409120333
+              "latest": 0.14382894676709565
             },
             "training_steps": {
               "mean": 100.0,
@@ -284,9 +284,9 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.20518006908902317,
+              "mean": 0.2470102472283533,
               "count": 100,
-              "latest": 0.20688890503446195
+              "latest": 0.25071352322239554
             }
           }
         }
@@ -295,20 +295,20 @@
         "agent_id": 2,
         "training_steps": 120,
         "error_count": 0,
-        "time_since_last_update": 0.00012135505676269531,
-        "parameter_norm": 0.20487812797337887,
-        "parameter_hash": "fc3a3bcbebdf61bc6105e37e947d72eb6b504c5c04e52b76a05d1573f1237421",
-        "avg_recent_reward": -1.4946894983331118,
+        "time_since_last_update": 0.00011992454528808594,
+        "parameter_norm": 0.2470234563487853,
+        "parameter_hash": "3ed43355a12f48a8c5e956276c9d04573f751f4248448f1b7ae9064c1a9ded43",
+        "avg_recent_reward": -13.65720864148555,
         "total_rewards": 120,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.02743840217590332,
-          "last_check": 1755371780.1126838,
+          "uptime_seconds": 0.0270688533782959,
+          "last_check": 1755982947.503315,
           "metrics_summary": {
             "action": {
-              "mean": -0.02530291980067182,
+              "mean": 0.2646082887168477,
               "count": 100,
-              "latest": -0.026614828952291135
+              "latest": 0.38618339113474937
             },
             "training_steps": {
               "mean": 100.0,
@@ -316,38 +316,38 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.20686573635340438,
+              "mean": 0.22985489130765852,
               "count": 100,
-              "latest": 0.20487812797337887
+              "latest": 0.2470234563487853
             }
           }
         }
       }
     ],
-    "episode_time": 0.013162851333618164,
-    "timestamp": 1755371780.1259947
+    "episode_time": 0.01311349868774414,
+    "timestamp": 1755982947.516577
   },
   {
     "episode": 2,
     "agent_rewards": {
-      "0": -1.3578795184971215,
-      "1": -0.4686652520971021,
-      "2": -1.4029490017531983
+      "0": -8.017409215748733,
+      "1": -4.26039775333459,
+      "2": -3.6771103182852034
     },
     "federation_stats": {
       "federation_rounds": 12,
       "failed_aggregations": 0,
       "num_agents": 3,
-      "avg_reward": -0.9577404465340673,
-      "parameter_norm": 0.21565491904016856,
-      "parameter_hash": "ad1a964b74c5e7aebd3083d6b5d0fcc40453e456e7a2cae280ec78336855b7d5",
+      "avg_reward": -10.554212238967356,
+      "parameter_norm": 0.22939127295507022,
+      "parameter_hash": "7e89ca5b4811b24879046d4a536846fdbbe013ecd463c7a03ed5030e9f65379c",
       "total_errors": 0,
       "total_training_steps": 540,
       "success_rate": 1.0,
       "health_status": {
         "status": "starting",
-        "uptime_seconds": 0.0400691032409668,
-        "last_check": 1755371780.125896,
+        "uptime_seconds": 0.040831565856933594,
+        "last_check": 1755982947.5164824,
         "metrics_summary": {
           "federation_rounds": {
             "mean": 7.5,
@@ -369,8 +369,8 @@
       "current_state_valid": true,
       "health_monitor": {
         "status": "starting",
-        "uptime_seconds": 0.040817975997924805,
-        "last_check": 1755371780.137886,
+        "uptime_seconds": 0.04150748252868652,
+        "last_check": 1755982947.5294855,
         "metrics_summary": {
           "resets": {
             "mean": 2.5,
@@ -383,9 +383,9 @@
             "latest": 60.0
           },
           "avg_reward": {
-            "mean": -1.0110311404086878,
+            "mean": -9.939792675813207,
             "count": 100,
-            "latest": -0.8624935247715673
+            "latest": -11.03202209813187
           }
         }
       }
@@ -395,20 +395,20 @@
         "agent_id": 0,
         "training_steps": 180,
         "error_count": 0,
-        "time_since_last_update": 0.00012445449829101562,
-        "parameter_norm": 0.21974189784480674,
-        "parameter_hash": "adde2b9b8072e354bec85453e3ccc47e792df47fa6421082506fa68b27a3fb0b",
-        "avg_recent_reward": -1.5499069389209148,
+        "time_since_last_update": 0.00020933151245117188,
+        "parameter_norm": 0.3052051498495848,
+        "parameter_hash": "e992515ab73531558b088662c536efb6c492565c1af2da680625731e65fc393a",
+        "avg_recent_reward": -14.583893377817038,
         "total_rewards": 180,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.04035019874572754,
-          "last_check": 1755371780.1259305,
+          "uptime_seconds": 0.04111170768737793,
+          "last_check": 1755982947.5165186,
           "metrics_summary": {
             "action": {
-              "mean": -0.036917360896076654,
+              "mean": 0.4325536102721804,
               "count": 100,
-              "latest": -0.03493125193965637
+              "latest": 0.514648665291768
             },
             "training_steps": {
               "mean": 100.0,
@@ -416,9 +416,9 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.21832928370195637,
+              "mean": 0.2666468530187595,
               "count": 100,
-              "latest": 0.21974189784480674
+              "latest": 0.3052051498495848
             }
           }
         }
@@ -427,20 +427,20 @@
         "agent_id": 1,
         "training_steps": 180,
         "error_count": 0,
-        "time_since_last_update": 0.00011301040649414062,
-        "parameter_norm": 0.21470556449370728,
-        "parameter_hash": "cb684e886bd6e847d668f6e337dac237ee06127b2d6bd14a5f8429cc80fd8fec",
-        "avg_recent_reward": -0.15780656353163358,
+        "time_since_last_update": 0.00014138221740722656,
+        "parameter_norm": 0.24440269877727913,
+        "parameter_hash": "9e2208509489a6d69ddce3965bde317658c77594609676b7c93f96ce19fd0ff6",
+        "avg_recent_reward": -8.67258416227246,
         "total_rewards": 180,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.04026317596435547,
-          "last_check": 1755371780.125967,
+          "uptime_seconds": 0.04101920127868652,
+          "last_check": 1755982947.516545,
           "metrics_summary": {
             "action": {
-              "mean": -0.01031711589498971,
+              "mean": 0.1699526223024989,
               "count": 100,
-              "latest": -0.005955322238125588
+              "latest": 0.28258996921341356
             },
             "training_steps": {
               "mean": 100.0,
@@ -448,9 +448,9 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.21464765299816105,
+              "mean": 0.2276881041749152,
               "count": 100,
-              "latest": 0.21470556449370728
+              "latest": 0.24440269877727913
             }
           }
         }
@@ -459,20 +459,20 @@
         "agent_id": 2,
         "training_steps": 180,
         "error_count": 0,
-        "time_since_last_update": 9.870529174804688e-05,
-        "parameter_norm": 0.20675045256045851,
-        "parameter_hash": "3290318d140c02377ceb88683fdb0762415c41443d2ef7d573aac71570d00dd3",
-        "avg_recent_reward": -1.325379918773515,
+        "time_since_last_update": 0.00011491775512695312,
+        "parameter_norm": 0.21397682049114988,
+        "parameter_hash": "b40b38543b0a9f2ad77c9c3d52c57e497834bf3e9107ccd0af6012dc73bae701",
+        "avg_recent_reward": -6.5629004873501255,
         "total_rewards": 180,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.04021739959716797,
-          "last_check": 1755371780.1259887,
+          "uptime_seconds": 0.040971994400024414,
+          "last_check": 1755982947.5165696,
           "metrics_summary": {
             "action": {
-              "mean": -0.040186670714612,
+              "mean": 0.18521271101799164,
               "count": 100,
-              "latest": -0.03600991577771832
+              "latest": 0.18275434648956382
             },
             "training_steps": {
               "mean": 100.0,
@@ -480,38 +480,38 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.20926989350986314,
+              "mean": 0.21735166666938052,
               "count": 100,
-              "latest": 0.20675045256045851
+              "latest": 0.21397682049114988
             }
           }
         }
       }
     ],
-    "episode_time": 0.01266932487487793,
-    "timestamp": 1755371780.1387725
+    "episode_time": 0.013782262802124023,
+    "timestamp": 1755982947.53048
   },
   {
     "episode": 3,
     "agent_rewards": {
-      "0": -1.5376554218501235,
-      "1": -1.0494634572303012,
-      "2": -1.6293639421873658
+      "0": -8.40983642010495,
+      "1": -1.641508281771053,
+      "2": -3.430995770271479
     },
     "federation_stats": {
       "federation_rounds": 16,
       "failed_aggregations": 0,
       "num_agents": 3,
-      "avg_reward": -1.005812076588868,
-      "parameter_norm": 0.21684737760262507,
-      "parameter_hash": "5baac4342b60d81fba2cd01598328933d32eafbe3adc81764fa725a22e591b74",
+      "avg_reward": -9.230235259321944,
+      "parameter_norm": 0.27760381225010583,
+      "parameter_hash": "8f80eeb97987b25e6fa528792880a75a8d02718750d2eed447f8ffcd38c7bf50",
       "total_errors": 0,
       "total_training_steps": 720,
       "success_rate": 1.0,
       "health_status": {
         "status": "starting",
-        "uptime_seconds": 0.05291271209716797,
-        "last_check": 1755371780.1386893,
+        "uptime_seconds": 0.05502462387084961,
+        "last_check": 1755982947.5303848,
         "metrics_summary": {
           "federation_rounds": {
             "mean": 11.5,
@@ -533,8 +533,8 @@
       "current_state_valid": true,
       "health_monitor": {
         "status": "starting",
-        "uptime_seconds": 0.05366230010986328,
-        "last_check": 1755371780.150638,
+        "uptime_seconds": 0.05570173263549805,
+        "last_check": 1755982947.5435686,
         "metrics_summary": {
           "resets": {
             "mean": 3.0,
@@ -547,9 +547,9 @@
             "latest": 60.0
           },
           "avg_reward": {
-            "mean": -1.034389713433627,
+            "mean": -8.793325767397906,
             "count": 100,
-            "latest": -0.9890588796990151
+            "latest": -9.57660307613667
           }
         }
       }
@@ -559,20 +559,20 @@
         "agent_id": 0,
         "training_steps": 240,
         "error_count": 0,
-        "time_since_last_update": 0.00014090538024902344,
-        "parameter_norm": 0.21528920260975987,
-        "parameter_hash": "f8930e61c6abf35b22db771caa298d5c577b9590c4f5942a506b1611f8a930a8",
-        "avg_recent_reward": -1.2656986897537692,
+        "time_since_last_update": 0.00014853477478027344,
+        "parameter_norm": 0.2852004143246149,
+        "parameter_hash": "1484e060a7690c1836ba1d362b1868a69d050ecd2fa340391f46ff640b74070c",
+        "avg_recent_reward": -15.851717330859831,
         "total_rewards": 240,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.05319571495056152,
-          "last_check": 1755371780.1387234,
+          "uptime_seconds": 0.05530714988708496,
+          "last_check": 1755982947.5304239,
           "metrics_summary": {
             "action": {
-              "mean": -0.011421416618741086,
+              "mean": 0.4856984536845791,
               "count": 100,
-              "latest": -0.005845816560927488
+              "latest": 0.47560715418887833
             },
             "training_steps": {
               "mean": 100.0,
@@ -580,9 +580,9 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.21544324277122623,
+              "mean": 0.2901899064768364,
               "count": 100,
-              "latest": 0.21528920260975987
+              "latest": 0.2852004143246149
             }
           }
         }
@@ -591,20 +591,20 @@
         "agent_id": 1,
         "training_steps": 240,
         "error_count": 0,
-        "time_since_last_update": 0.0001232624053955078,
-        "parameter_norm": 0.21534193298735588,
-        "parameter_hash": "f42d6d1681183c15aafcd90361467565d0cc5fe9d365413b00ceb6c5a41c6511",
-        "avg_recent_reward": -0.196234516531233,
+        "time_since_last_update": 0.00013518333435058594,
+        "parameter_norm": 0.28547941903732804,
+        "parameter_hash": "e682a898c26bd8d7e05e727695d2a61f72f9c39ff6793face7e4b75cee61bf72",
+        "avg_recent_reward": -2.866128319656055,
         "total_rewards": 240,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.053108930587768555,
-          "last_check": 1755371780.138747,
+          "uptime_seconds": 0.05521416664123535,
+          "last_check": 1755982947.5304503,
           "metrics_summary": {
             "action": {
-              "mean": -0.0026479094350899185,
+              "mean": 0.1667810054567059,
               "count": 100,
-              "latest": -0.002838522763685259
+              "latest": 0.1852022736285252
             },
             "training_steps": {
               "mean": 100.0,
@@ -612,9 +612,9 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.21585122182002894,
+              "mean": 0.28378405323144595,
               "count": 100,
-              "latest": 0.21534193298735588
+              "latest": 0.28547941903732804
             }
           }
         }
@@ -623,20 +623,20 @@
         "agent_id": 2,
         "training_steps": 240,
         "error_count": 0,
-        "time_since_last_update": 0.00010728836059570312,
-        "parameter_norm": 0.2230817559204433,
-        "parameter_hash": "9d29bc0343253b9c62c57f9206325d89b0b7d5a0e6c57844b99dca85be62abaf",
-        "avg_recent_reward": -1.6412359340158786,
+        "time_since_last_update": 0.0001201629638671875,
+        "parameter_norm": 0.26869210738042937,
+        "parameter_hash": "dfe2e838c746dcd5c51b0e64ad4fad052e010898a229f7b194ad3b4c6167a8bd",
+        "avg_recent_reward": -7.6621316516778375,
         "total_rewards": 240,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.053078651428222656,
-          "last_check": 1755371780.1387677,
+          "uptime_seconds": 0.05522322654724121,
+          "last_check": 1755982947.5304728,
           "metrics_summary": {
             "action": {
-              "mean": 0.0006865604057333365,
+              "mean": 0.24293958387594508,
               "count": 100,
-              "latest": 0.004185625738731693
+              "latest": 0.213181283853481
             },
             "training_steps": {
               "mean": 100.0,
@@ -644,38 +644,38 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.21912463768114918,
+              "mean": 0.274381226600544,
               "count": 100,
-              "latest": 0.2230817559204433
+              "latest": 0.26869210738042937
             }
           }
         }
       }
     ],
-    "episode_time": 0.01273655891418457,
-    "timestamp": 1755371780.1516361
+    "episode_time": 0.014073610305786133,
+    "timestamp": 1755982947.544742
   },
   {
     "episode": 4,
     "agent_rewards": {
-      "0": -1.969001753052441,
-      "1": -3.766628810930476,
-      "2": -3.5403413936847286
+      "0": -12.085690177795952,
+      "1": -3.047241803400813,
+      "2": -1.7516068684667396
     },
     "federation_stats": {
       "federation_rounds": 20,
       "failed_aggregations": 0,
       "num_agents": 3,
-      "avg_reward": -4.702027411095946,
-      "parameter_norm": 0.2389797474508935,
-      "parameter_hash": "0e16b5018f276f95713d1ff9b99f027b55da29d57bad894ee51770341c1cbdbb",
+      "avg_reward": -9.354676153438957,
+      "parameter_norm": 0.28105165866415355,
+      "parameter_hash": "26cdd3d26ddc550d1d5ce9ebfbac47b887cd0b6e85777b9fa4dc0ba83c32b50b",
       "total_errors": 0,
       "total_training_steps": 900,
       "success_rate": 1.0,
       "health_status": {
         "status": "starting",
-        "uptime_seconds": 0.06643867492675781,
-        "last_check": 1755371780.151533,
+        "uptime_seconds": 0.06920170783996582,
+        "last_check": 1755982947.5445778,
         "metrics_summary": {
           "federation_rounds": {
             "mean": 15.5,
@@ -697,8 +697,8 @@
       "current_state_valid": true,
       "health_monitor": {
         "status": "starting",
-        "uptime_seconds": 0.06718897819519043,
-        "last_check": 1755371780.1642945,
+        "uptime_seconds": 0.06987905502319336,
+        "last_check": 1755982947.557778,
         "metrics_summary": {
           "resets": {
             "mean": 3.5,
@@ -711,9 +711,9 @@
             "latest": 60.0
           },
           "avg_reward": {
-            "mean": -4.618791945419767,
+            "mean": -9.150230873623064,
             "count": 100,
-            "latest": -4.749413167029636
+            "latest": -9.293907424732309
           }
         }
       }
@@ -723,20 +723,20 @@
         "agent_id": 0,
         "training_steps": 300,
         "error_count": 0,
-        "time_since_last_update": 0.00013136863708496094,
-        "parameter_norm": 0.24637429219827295,
-        "parameter_hash": "49d91632aa03c905fb779535c5f5aef27232a19ad9446fe0ff58665d09a91aa8",
-        "avg_recent_reward": -2.2996386882319912,
+        "time_since_last_update": 0.00018215179443359375,
+        "parameter_norm": 0.23527809361524427,
+        "parameter_hash": "6b0887dae17254b4dad7ffc0011b21bcc937471508f8dd1ff4d53086a31385b2",
+        "avg_recent_reward": -15.247721293491775,
         "total_rewards": 300,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.06672143936157227,
-          "last_check": 1755371780.151569,
+          "uptime_seconds": 0.06948328018188477,
+          "last_check": 1755982947.5446193,
           "metrics_summary": {
             "action": {
-              "mean": 0.045192781015614546,
+              "mean": 0.12821198397990224,
               "count": 100,
-              "latest": 0.06461934782790148
+              "latest": 0.08040817873794419
             },
             "training_steps": {
               "mean": 100.0,
@@ -744,9 +744,9 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.24669651653962404,
+              "mean": 0.24240128195134925,
               "count": 100,
-              "latest": 0.24637429219827295
+              "latest": 0.23527809361524427
             }
           }
         }
@@ -755,20 +755,20 @@
         "agent_id": 1,
         "training_steps": 300,
         "error_count": 0,
-        "time_since_last_update": 0.00011920928955078125,
-        "parameter_norm": 0.19288287563669346,
-        "parameter_hash": "265f50f5997906f59988cf1bd286f7097ba476d50f9919b4811590affed01be4",
-        "avg_recent_reward": -5.772605511165101,
+        "time_since_last_update": 0.00017261505126953125,
+        "parameter_norm": 0.27261006071527133,
+        "parameter_hash": "1244c95e0beadbe018425336df7a219e7382c0d3d92b90eb61eef353a780df7a",
+        "avg_recent_reward": -7.927214142106422,
         "total_rewards": 300,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.06665754318237305,
-          "last_check": 1755371780.1515927,
+          "uptime_seconds": 0.06939196586608887,
+          "last_check": 1755982947.5446453,
           "metrics_summary": {
             "action": {
-              "mean": 0.0777139436557203,
+              "mean": 0.3516939623166433,
               "count": 100,
-              "latest": 0.019958394605800987
+              "latest": 0.38694621855040756
             },
             "training_steps": {
               "mean": 100.0,
@@ -776,9 +776,9 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.20826183381874683,
+              "mean": 0.27674921376340267,
               "count": 100,
-              "latest": 0.19288287563669346
+              "latest": 0.27261006071527133
             }
           }
         }
@@ -787,20 +787,20 @@
         "agent_id": 2,
         "training_steps": 300,
         "error_count": 0,
-        "time_since_last_update": 0.00012755393981933594,
-        "parameter_norm": 0.2765851403843062,
-        "parameter_hash": "6a8702480c732edcbe979f41ffee7a09761ce10b3ca4389d045fd96d68641945",
-        "avg_recent_reward": -5.784131636862211,
+        "time_since_last_update": 0.0001595020294189453,
+        "parameter_norm": 0.3066174541863594,
+        "parameter_hash": "03f7c8d16c539b5f9d2be91ab17ead0a53a5f34e2b59d7105d9e85ed3f76627c",
+        "avg_recent_reward": -4.2757571852709955,
         "total_rewards": 300,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.06673884391784668,
-          "last_check": 1755371780.151629,
+          "uptime_seconds": 0.0693671703338623,
+          "last_check": 1755982947.544724,
           "metrics_summary": {
             "action": {
-              "mean": 0.23581659265742796,
+              "mean": 0.20608425987230655,
               "count": 100,
-              "latest": 0.31196798086798255
+              "latest": 0.1851522039665474
             },
             "training_steps": {
               "mean": 100.0,
@@ -808,38 +808,38 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.27371992375723947,
+              "mean": 0.2959002959243271,
               "count": 100,
-              "latest": 0.2765851403843062
+              "latest": 0.3066174541863594
             }
           }
         }
       }
     ],
-    "episode_time": 0.013393878936767578,
-    "timestamp": 1755371780.1653056
+    "episode_time": 0.013927221298217773,
+    "timestamp": 1755982947.5588794
   },
   {
     "episode": 5,
     "agent_rewards": {
-      "0": -1.1103839430886404,
-      "1": -1.683169062450297,
-      "2": -4.21013849147183
+      "0": -1.6800174396179193,
+      "1": -0.5972291582201825,
+      "2": -3.1032656568443167
     },
     "federation_stats": {
       "federation_rounds": 24,
       "failed_aggregations": 0,
       "num_agents": 3,
-      "avg_reward": -3.8914604573275913,
-      "parameter_norm": 0.24104330001042523,
-      "parameter_hash": "0f2b79c9d070789b646496d7344f98e84ba75001ca9ff7d05d800ce04a0754ac",
+      "avg_reward": -3.947413174745584,
+      "parameter_norm": 0.267017761542136,
+      "parameter_hash": "e007b0479e9ea5c8c527d188afeb53bfa541dfc549769769fc120e544b1a1984",
       "total_errors": 0,
       "total_training_steps": 1080,
       "success_rate": 1.0,
       "health_status": {
         "status": "starting",
-        "uptime_seconds": 0.08021283149719238,
-        "last_check": 1755371780.1650589,
+        "uptime_seconds": 0.08266472816467285,
+        "last_check": 1755982947.558755,
         "metrics_summary": {
           "federation_rounds": {
             "mean": 19.5,
@@ -861,8 +861,8 @@
       "current_state_valid": true,
       "health_monitor": {
         "status": "starting",
-        "uptime_seconds": 0.0809636116027832,
-        "last_check": 1755371780.178008,
+        "uptime_seconds": 0.08334088325500488,
+        "last_check": 1755982947.571385,
         "metrics_summary": {
           "resets": {
             "mean": 4.0,
@@ -875,9 +875,9 @@
             "latest": 60.0
           },
           "avg_reward": {
-            "mean": -3.6683233380601963,
+            "mean": -3.569689321603261,
             "count": 100,
-            "latest": -4.143815766327026
+            "latest": -4.399901103796686
           }
         }
       }
@@ -887,20 +887,20 @@
         "agent_id": 0,
         "training_steps": 360,
         "error_count": 0,
-        "time_since_last_update": 0.00012183189392089844,
-        "parameter_norm": 0.23456973877289777,
-        "parameter_hash": "ad00ea82a5dd85a2fc3e95586fb0eb1ccaef611dfa6076c26b72799991a3fa15",
-        "avg_recent_reward": -1.3680339086335955,
+        "time_since_last_update": 0.00013875961303710938,
+        "parameter_norm": 0.27427870494307416,
+        "parameter_hash": "3e95e7e85f96f34ea22108a4a6b9a8159841eec77303b9e3f93e7982ede50e42",
+        "avg_recent_reward": -3.4474089840140167,
         "total_rewards": 360,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.08049345016479492,
-          "last_check": 1755371780.1650946,
+          "uptime_seconds": 0.08294463157653809,
+          "last_check": 1755982947.5587955,
           "metrics_summary": {
             "action": {
-              "mean": 0.07102287629890743,
+              "mean": 0.14941560595260844,
               "count": 100,
-              "latest": 0.06695790787903742
+              "latest": 0.17839957080109123
             },
             "training_steps": {
               "mean": 100.0,
@@ -908,9 +908,9 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.2375168221934571,
+              "mean": 0.2765465969109754,
               "count": 100,
-              "latest": 0.23456973877289777
+              "latest": 0.27427870494307416
             }
           }
         }
@@ -919,20 +919,20 @@
         "agent_id": 1,
         "training_steps": 360,
         "error_count": 0,
-        "time_since_last_update": 0.00011181831359863281,
-        "parameter_norm": 0.24792665183987708,
-        "parameter_hash": "995517af977d3f1f530a0ea2ad3ab0b0930ff0b92acdf60841430689108ffb84",
-        "avg_recent_reward": -2.5205408031895544,
+        "time_since_last_update": 0.00014448165893554688,
+        "parameter_norm": 0.2705042981292627,
+        "parameter_hash": "056ebfc8b28b5255d8c493556149a5e8263489d9cf9a0fce4f04421a16eca15b",
+        "avg_recent_reward": -0.8515327122124233,
         "total_rewards": 360,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.08040523529052734,
-          "last_check": 1755371780.1651413,
+          "uptime_seconds": 0.08286857604980469,
+          "last_check": 1755982947.558823,
           "metrics_summary": {
             "action": {
-              "mean": 0.1318228397654407,
+              "mean": 0.055319124424193754,
               "count": 100,
-              "latest": 0.12287210996788957
+              "latest": 0.0528070890017365
             },
             "training_steps": {
               "mean": 100.0,
@@ -940,9 +940,9 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.24577494357878898,
+              "mean": 0.2679671061531187,
               "count": 100,
-              "latest": 0.24792665183987708
+              "latest": 0.2705042981292627
             }
           }
         }
@@ -951,20 +951,20 @@
         "agent_id": 2,
         "training_steps": 360,
         "error_count": 0,
-        "time_since_last_update": 0.00011420249938964844,
-        "parameter_norm": 0.2179199995216476,
-        "parameter_hash": "59e9cc4638d62e8d25f6a5cc394aa15d3c8f15543a52b9b22776869d1d7a548c",
-        "avg_recent_reward": -7.116395302357438,
+        "time_since_last_update": 0.0001323223114013672,
+        "parameter_norm": 0.2813760682972987,
+        "parameter_hash": "8c17648d1a1a1e680569941468015a53879029cf1dea1c85c7004ed3de5201ac",
+        "avg_recent_reward": -6.4101262685833404,
         "total_rewards": 360,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.08037543296813965,
-          "last_check": 1755371780.1652892,
+          "uptime_seconds": 0.0828244686126709,
+          "last_check": 1755982947.558868,
           "metrics_summary": {
             "action": {
-              "mean": 0.19410631004273418,
+              "mean": 0.12905317552989642,
               "count": 100,
-              "latest": 0.2345463044097667
+              "latest": 0.1850742248312814
             },
             "training_steps": {
               "mean": 100.0,
@@ -972,38 +972,38 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.23268624489752857,
+              "mean": 0.2792687905361766,
               "count": 100,
-              "latest": 0.2179199995216476
+              "latest": 0.2813760682972987
             }
           }
         }
       }
     ],
-    "episode_time": 0.01349496841430664,
-    "timestamp": 1755371780.1789367
+    "episode_time": 0.013305902481079102,
+    "timestamp": 1755982947.5723326
   },
   {
     "episode": 6,
     "agent_rewards": {
-      "0": -2.8139728457005417,
-      "1": -9.702687461715556,
-      "2": -6.078669163439497
+      "0": -1.6319628086244604,
+      "1": -2.180361267583097,
+      "2": -5.148348760921448
     },
     "federation_stats": {
       "federation_rounds": 28,
       "failed_aggregations": 0,
       "num_agents": 3,
-      "avg_reward": -12.215074722455318,
-      "parameter_norm": 0.247774790975006,
-      "parameter_hash": "815a709654d3442ceb352312a75a71c73c901ba800aa2789dc1962b68b27da73",
+      "avg_reward": -5.399080068778022,
+      "parameter_norm": 0.2669186182681624,
+      "parameter_hash": "fc996c432ca8f9f6944463d0c30217c032db37531c051fdae703817264c42ebe",
       "total_errors": 0,
       "total_training_steps": 1260,
       "success_rate": 1.0,
       "health_status": {
         "status": "starting",
-        "uptime_seconds": 0.0937647819519043,
-        "last_check": 1755371780.178833,
+        "uptime_seconds": 0.09643340110778809,
+        "last_check": 1755982947.572218,
         "metrics_summary": {
           "federation_rounds": {
             "mean": 23.5,
@@ -1025,8 +1025,8 @@
       "current_state_valid": true,
       "health_monitor": {
         "status": "starting",
-        "uptime_seconds": 0.09451603889465332,
-        "last_check": 1755371780.191561,
+        "uptime_seconds": 0.09711551666259766,
+        "last_check": 1755982947.585134,
         "metrics_summary": {
           "resets": {
             "mean": 4.5,
@@ -1039,9 +1039,9 @@
             "latest": 60.0
           },
           "avg_reward": {
-            "mean": -11.653382169067012,
+            "mean": -5.0974518450592035,
             "count": 100,
-            "latest": -12.608873381735137
+            "latest": -5.3497317113769896
           }
         }
       }
@@ -1051,20 +1051,20 @@
         "agent_id": 0,
         "training_steps": 420,
         "error_count": 0,
-        "time_since_last_update": 0.0001361370086669922,
-        "parameter_norm": 0.24598539082317203,
-        "parameter_hash": "2ea731276ee663437d41f517a53393393fae007ff4cb5a41121464dbd0a66371",
-        "avg_recent_reward": -5.606442621135974,
+        "time_since_last_update": 0.0001518726348876953,
+        "parameter_norm": 0.2738820538486384,
+        "parameter_hash": "d05fd479c73f6787009df7d6f4e5b44fe6666887744a1d019245620849b197bf",
+        "avg_recent_reward": -3.231220227925674,
         "total_rewards": 420,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.09404850006103516,
-          "last_check": 1755371780.1788666,
+          "uptime_seconds": 0.09672117233276367,
+          "last_check": 1755982947.5722568,
           "metrics_summary": {
             "action": {
-              "mean": 0.3283571871280463,
+              "mean": 0.134331427399988,
               "count": 100,
-              "latest": 0.48035438354354254
+              "latest": 0.14882145424098192
             },
             "training_steps": {
               "mean": 100.0,
@@ -1072,9 +1072,9 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.25495682673347353,
+              "mean": 0.2730588656882035,
               "count": 100,
-              "latest": 0.24598539082317203
+              "latest": 0.2738820538486384
             }
           }
         }
@@ -1083,20 +1083,20 @@
         "agent_id": 1,
         "training_steps": 420,
         "error_count": 0,
-        "time_since_last_update": 0.00013256072998046875,
-        "parameter_norm": 0.2719766525671257,
-        "parameter_hash": "64286fcea5bd1610d588da8a47c4577b2fb4933de67d4a3a835baf8d88efb949",
-        "avg_recent_reward": -15.837368340015251,
+        "time_since_last_update": 0.0001392364501953125,
+        "parameter_norm": 0.26189169285399133,
+        "parameter_hash": "892e83db643906e9479aa50b8b98b1cebefb777d04758d5dd44aae023ce4ae30",
+        "avg_recent_reward": -4.192057720268119,
         "total_rewards": 420,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.09397315979003906,
-          "last_check": 1755371780.178889,
+          "uptime_seconds": 0.09662866592407227,
+          "last_check": 1755982947.5722997,
           "metrics_summary": {
             "action": {
-              "mean": 0.6368950556159374,
+              "mean": 0.08796206572815901,
               "count": 100,
-              "latest": 0.6688838527438725
+              "latest": 0.08729748592748944
             },
             "training_steps": {
               "mean": 100.0,
@@ -1104,9 +1104,9 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.2705168172761279,
+              "mean": 0.2587141874676109,
               "count": 100,
-              "latest": 0.2719766525671257
+              "latest": 0.26189169285399133
             }
           }
         }
@@ -1115,20 +1115,20 @@
         "agent_id": 2,
         "training_steps": 420,
         "error_count": 0,
-        "time_since_last_update": 0.00011754035949707031,
-        "parameter_norm": 0.2241188556791311,
-        "parameter_hash": "315f69af0eaaaa99c5470371420037abd5b634021ebd3f143da6896e9367bbc0",
-        "avg_recent_reward": -13.516335546049806,
+        "time_since_last_update": 0.0001227855682373047,
+        "parameter_norm": 0.29093417658218984,
+        "parameter_hash": "afec4ec462dda8e43d49e7736b9b5926803534f13082b5d6e6c000463ae01138",
+        "avg_recent_reward": -7.869077586983818,
         "total_rewards": 420,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.09392976760864258,
-          "last_check": 1755371780.1789258,
+          "uptime_seconds": 0.09658288955688477,
+          "last_check": 1755982947.5723252,
           "metrics_summary": {
             "action": {
-              "mean": 0.4932151424812881,
+              "mean": 0.11310953729640132,
               "count": 100,
-              "latest": 0.4176070814477027
+              "latest": 0.07631924934900701
             },
             "training_steps": {
               "mean": 100.0,
@@ -1136,38 +1136,38 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.2373703238723568,
+              "mean": 0.27673292497588237,
               "count": 100,
-              "latest": 0.2241188556791311
+              "latest": 0.29093417658218984
             }
           }
         }
       }
     ],
-    "episode_time": 0.013410568237304688,
-    "timestamp": 1755371780.1924908
+    "episode_time": 0.013609170913696289,
+    "timestamp": 1755982947.5860908
   },
   {
     "episode": 7,
     "agent_rewards": {
-      "0": -1.6493331751178764,
-      "1": -9.208929779838911,
-      "2": -5.882237279240905
+      "0": -2.9417383599951075,
+      "1": -1.5404594484886993,
+      "2": -2.243263810216774
     },
     "federation_stats": {
       "federation_rounds": 32,
       "failed_aggregations": 0,
       "num_agents": 3,
-      "avg_reward": -11.460689946564546,
-      "parameter_norm": 0.26174006672408184,
-      "parameter_hash": "cb3b1ea4bd15496d5511aa4bc6196ced7231b3c7a3009e60687072158b63acb1",
+      "avg_reward": -3.676752922535658,
+      "parameter_norm": 0.2799382907180966,
+      "parameter_hash": "2ec45c4279f655ee9061d38d17804141fbda54f6c452c71947043747070b4d24",
       "total_errors": 0,
       "total_training_steps": 1440,
       "success_rate": 1.0,
       "health_status": {
         "status": "starting",
-        "uptime_seconds": 0.10708332061767578,
-        "last_check": 1755371780.192385,
+        "uptime_seconds": 0.1100466251373291,
+        "last_check": 1755982947.5859866,
         "metrics_summary": {
           "federation_rounds": {
             "mean": 27.5,
@@ -1189,8 +1189,8 @@
       "current_state_valid": true,
       "health_monitor": {
         "status": "starting",
-        "uptime_seconds": 0.1078336238861084,
-        "last_check": 1755371780.204756,
+        "uptime_seconds": 0.11072134971618652,
+        "last_check": 1755982947.5988114,
         "metrics_summary": {
           "resets": {
             "mean": 5.0,
@@ -1203,9 +1203,9 @@
             "latest": 60.0
           },
           "avg_reward": {
-            "mean": -11.158068798054535,
+            "mean": -3.4537262232749795,
             "count": 100,
-            "latest": -11.69704088673934
+            "latest": -4.0560128923407595
           }
         }
       }
@@ -1215,20 +1215,20 @@
         "agent_id": 0,
         "training_steps": 480,
         "error_count": 0,
-        "time_since_last_update": 0.00013327598571777344,
-        "parameter_norm": 0.28441545090544623,
-        "parameter_hash": "ade70eb266fa786ba9898657c664c8bcc559ccdd0412ba6bbacef11635d27ef4",
-        "avg_recent_reward": -3.5678588876538475,
+        "time_since_last_update": 0.00013566017150878906,
+        "parameter_norm": 0.28696339220493117,
+        "parameter_hash": "1a7df4f154b35adff489d6119077c8c4106712644dc4c7b3041359230175c30b",
+        "avg_recent_reward": -4.262676574514492,
         "total_rewards": 480,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.10736823081970215,
-          "last_check": 1755371780.1924217,
+          "uptime_seconds": 0.11032342910766602,
+          "last_check": 1755982947.5860333,
           "metrics_summary": {
             "action": {
-              "mean": 0.253997144920461,
+              "mean": 0.1493241833416231,
               "count": 100,
-              "latest": 0.27754366317591805
+              "latest": 0.16523898960152897
             },
             "training_steps": {
               "mean": 100.0,
@@ -1236,9 +1236,9 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.2754508419041317,
+              "mean": 0.27608096331762855,
               "count": 100,
-              "latest": 0.28441545090544623
+              "latest": 0.28696339220493117
             }
           }
         }
@@ -1247,20 +1247,20 @@
         "agent_id": 1,
         "training_steps": 480,
         "error_count": 0,
-        "time_since_last_update": 0.00012302398681640625,
-        "parameter_norm": 0.3109422378943285,
-        "parameter_hash": "225a509ef24dbd757cd18b1a10919247c355d8863b30e9240b662ee7507212c2",
-        "avg_recent_reward": -15.46482252117166,
+        "time_since_last_update": 0.0001232624053955078,
+        "parameter_norm": 0.26809006445288774,
+        "parameter_hash": "33950ff63a72bdb0547aab7216bc5b3760e8a122f79f3742d19da9ecea6967f6",
+        "avg_recent_reward": -2.0618047458670383,
         "total_rewards": 480,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.10728311538696289,
-          "last_check": 1755371780.192457,
+          "uptime_seconds": 0.1102297306060791,
+          "last_check": 1755982947.5860598,
           "metrics_summary": {
             "action": {
-              "mean": 0.3671338368228261,
+              "mean": 0.06464967348700915,
               "count": 100,
-              "latest": 0.4430373231674996
+              "latest": 0.05930861788386703
             },
             "training_steps": {
               "mean": 100.0,
@@ -1268,9 +1268,9 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.2909161284475017,
+              "mean": 0.27893321653695113,
               "count": 100,
-              "latest": 0.3109422378943285
+              "latest": 0.26809006445288774
             }
           }
         }
@@ -1279,20 +1279,20 @@
         "agent_id": 2,
         "training_steps": 480,
         "error_count": 0,
-        "time_since_last_update": 0.00010824203491210938,
-        "parameter_norm": 0.25045814986546533,
-        "parameter_hash": "b7a711415fc8be8da9852cba7ea5717bb1bf7b47ced15f2a270486484d8ff403",
-        "avg_recent_reward": -14.441524985338097,
+        "time_since_last_update": 0.00010776519775390625,
+        "parameter_norm": 0.2735229776652068,
+        "parameter_hash": "3d0f5f55456ed3da116121dab853eecc9353ccae7c48743f2e86155c739b4b07",
+        "avg_recent_reward": -4.036697349443408,
         "total_rewards": 480,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.10723996162414551,
-          "last_check": 1755371780.19248,
+          "uptime_seconds": 0.11022329330444336,
+          "last_check": 1755982947.5860837,
           "metrics_summary": {
             "action": {
-              "mean": 0.4198533352609962,
+              "mean": 0.11249812659736462,
               "count": 100,
-              "latest": 0.3517841013149695
+              "latest": 0.09888551314993385
             },
             "training_steps": {
               "mean": 100.0,
@@ -1300,38 +1300,38 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.26814669902376104,
+              "mean": 0.2717110053378946,
               "count": 100,
-              "latest": 0.25045814986546533
+              "latest": 0.2735229776652068
             }
           }
         }
       }
     ],
-    "episode_time": 0.013188362121582031,
-    "timestamp": 1755371780.2057974
+    "episode_time": 0.013482809066772461,
+    "timestamp": 1755982947.5997326
   },
   {
     "episode": 8,
     "agent_rewards": {
-      "0": -8.846854428241171,
-      "1": -10.266386682815682,
-      "2": -7.208314864978901
+      "0": -3.2063632623682685,
+      "1": -2.832724810130766,
+      "2": -3.730156443757923
     },
     "federation_stats": {
       "federation_rounds": 36,
       "failed_aggregations": 0,
       "num_agents": 3,
-      "avg_reward": -15.991204474628708,
-      "parameter_norm": 0.3054369835733652,
-      "parameter_hash": "3941e1dd353fac2bcbfdc7771d0d79100f534c05d9b12f5d0ac8c81b46fc420e",
+      "avg_reward": -4.4959548737492465,
+      "parameter_norm": 0.25965109892592725,
+      "parameter_hash": "152d1b4ea9593bd09c832984ddc10d5693c353251f6564c696068636c582ece3",
       "total_errors": 0,
       "total_training_steps": 1620,
       "success_rate": 1.0,
       "health_status": {
         "status": "starting",
-        "uptime_seconds": 0.12113523483276367,
-        "last_check": 1755371780.2057035,
+        "uptime_seconds": 0.12417316436767578,
+        "last_check": 1755982947.5995998,
         "metrics_summary": {
           "federation_rounds": {
             "mean": 31.5,
@@ -1353,8 +1353,8 @@
       "current_state_valid": true,
       "health_monitor": {
         "status": "starting",
-        "uptime_seconds": 0.12188553810119629,
-        "last_check": 1755371780.2188826,
+        "uptime_seconds": 0.12485074996948242,
+        "last_check": 1755982947.6129222,
         "metrics_summary": {
           "resets": {
             "mean": 5.5,
@@ -1367,9 +1367,9 @@
             "latest": 60.0
           },
           "avg_reward": {
-            "mean": -15.850888887344443,
+            "mean": -4.45419642426806,
             "count": 100,
-            "latest": -15.969453250231709
+            "latest": -4.653302896507349
           }
         }
       }
@@ -1379,20 +1379,20 @@
         "agent_id": 0,
         "training_steps": 540,
         "error_count": 0,
-        "time_since_last_update": 0.00013375282287597656,
-        "parameter_norm": 0.32361268241502034,
-        "parameter_hash": "d1e05032834590bd9f762f8ceb0dbf01828b65c4a51d4a0f5d6af015f280a90f",
-        "avg_recent_reward": -15.927035923747322,
+        "time_since_last_update": 0.00017523765563964844,
+        "parameter_norm": 0.26583812901098697,
+        "parameter_hash": "a770c1224a1229877073795f9e376d7ac8f617106d9298d7d2266771e849c5cd",
+        "avg_recent_reward": -4.2243660976641495,
         "total_rewards": 540,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.12141942977905273,
-          "last_check": 1755371780.2057414,
+          "uptime_seconds": 0.12445855140686035,
+          "last_check": 1755982947.5996356,
           "metrics_summary": {
             "action": {
-              "mean": 0.5769902476071364,
+              "mean": -0.004194327498058717,
               "count": 100,
-              "latest": 0.600555429897384
+              "latest": -0.017726485090711227
             },
             "training_steps": {
               "mean": 100.0,
@@ -1400,9 +1400,9 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.3163585562592039,
+              "mean": 0.26757670409708795,
               "count": 100,
-              "latest": 0.32361268241502034
+              "latest": 0.26583812901098697
             }
           }
         }
@@ -1411,20 +1411,20 @@
         "agent_id": 1,
         "training_steps": 540,
         "error_count": 0,
-        "time_since_last_update": 0.00012493133544921875,
-        "parameter_norm": 0.2896863483724797,
-        "parameter_hash": "3974de7e94370168fa8ac1e5976175a3bd3b563135d0dd5ffc0b07c414e996a0",
-        "avg_recent_reward": -15.986911616447111,
+        "time_since_last_update": 0.00016808509826660156,
+        "parameter_norm": 0.28772606781367865,
+        "parameter_hash": "3efa81617656b95a6e672e1b64bab1023802806962f595ffc2e87267806d4272",
+        "avg_recent_reward": -4.688187469808288,
         "total_rewards": 540,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.12134242057800293,
-          "last_check": 1755371780.205767,
+          "uptime_seconds": 0.12436676025390625,
+          "last_check": 1755982947.5996609,
           "metrics_summary": {
             "action": {
-              "mean": 0.619800475299175,
+              "mean": 0.035896397670101395,
               "count": 100,
-              "latest": 0.6610576956355148
+              "latest": 0.02959920714502263
             },
             "training_steps": {
               "mean": 100.0,
@@ -1432,9 +1432,9 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.2992090064290179,
+              "mean": 0.2667571234655252,
               "count": 100,
-              "latest": 0.2896863483724797
+              "latest": 0.28772606781367865
             }
           }
         }
@@ -1443,20 +1443,20 @@
         "agent_id": 2,
         "training_steps": 540,
         "error_count": 0,
-        "time_since_last_update": 0.00011563301086425781,
-        "parameter_norm": 0.32952429297900965,
-        "parameter_hash": "ba221f3b450a51014919fb717161ff7763943265b58040af870b90a0cf7edd01",
-        "avg_recent_reward": -15.638719121838886,
+        "time_since_last_update": 0.0001742839813232422,
+        "parameter_norm": 0.25338445735093634,
+        "parameter_hash": "8ea93ce7c67ac1744d340aa468988bff1be758c5d51405834b8b69d43353fd2c",
+        "avg_recent_reward": -4.450035705331745,
         "total_rewards": 540,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.12129878997802734,
-          "last_check": 1755371780.2057903,
+          "uptime_seconds": 0.12434053421020508,
+          "last_check": 1755982947.599724,
           "metrics_summary": {
             "action": {
-              "mean": 0.5959392482857353,
+              "mean": 0.05877157172265013,
               "count": 100,
-              "latest": 0.5298333626702835
+              "latest": 0.05827074603232252
             },
             "training_steps": {
               "mean": 100.0,
@@ -1464,38 +1464,38 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.30322448613911795,
+              "mean": 0.26257048998198135,
               "count": 100,
-              "latest": 0.32952429297900965
+              "latest": 0.25338445735093634
             }
           }
         }
       }
     ],
-    "episode_time": 0.013933897018432617,
-    "timestamp": 1755371780.2198565
+    "episode_time": 0.013968706130981445,
+    "timestamp": 1755982947.6138556
   },
   {
     "episode": 9,
     "agent_rewards": {
-      "0": -8.011019254305944,
-      "1": -8.905064965173365,
-      "2": -2.2542526890064107
+      "0": -1.7274004698620897,
+      "1": -0.6187016704572906,
+      "2": -3.761537374990764
     },
     "federation_stats": {
       "federation_rounds": 40,
       "failed_aggregations": 0,
       "num_agents": 3,
-      "avg_reward": -13.117301329976017,
-      "parameter_norm": 0.3102992132059082,
-      "parameter_hash": "685ace189679d2f0504d6d299e2ec450660f4f3f8160b22eec70233c1eb3c86a",
+      "avg_reward": -3.2612127565091114,
+      "parameter_norm": 0.25024529406980445,
+      "parameter_hash": "fcac7e3c675d876987d2ede5f0ee468ed4dfe396288e2c2c481ab2e6fb4b1cb2",
       "total_errors": 0,
       "total_training_steps": 1800,
       "success_rate": 1.0,
       "health_status": {
         "status": "starting",
-        "uptime_seconds": 0.13432097434997559,
-        "last_check": 1755371780.2197554,
+        "uptime_seconds": 0.13820743560791016,
+        "last_check": 1755982947.6137264,
         "metrics_summary": {
           "federation_rounds": {
             "mean": 35.5,
@@ -1517,8 +1517,8 @@
       "current_state_valid": true,
       "health_monitor": {
         "status": "starting",
-        "uptime_seconds": 0.1350715160369873,
-        "last_check": 1755371780.232152,
+        "uptime_seconds": 0.1388840675354004,
+        "last_check": 1755982947.6269526,
         "metrics_summary": {
           "resets": {
             "mean": 6.5,
@@ -1531,9 +1531,9 @@
             "latest": 60.0
           },
           "avg_reward": {
-            "mean": -12.70359966354697,
+            "mean": -3.1742391618836363,
             "count": 100,
-            "latest": -13.411404658706672
+            "latest": -3.1310613587783203
           }
         }
       }
@@ -1543,20 +1543,20 @@
         "agent_id": 0,
         "training_steps": 600,
         "error_count": 0,
-        "time_since_last_update": 0.00012874603271484375,
-        "parameter_norm": 0.31643745198901824,
-        "parameter_hash": "94e9ea17a66176dd2d1347e2ff96bdbb289e89c43e1eb0d9275bede11dd10c62",
-        "avg_recent_reward": -15.932137566897342,
+        "time_since_last_update": 0.00018143653869628906,
+        "parameter_norm": 0.26009189480834516,
+        "parameter_hash": "a8ad1e89a2f59281af7c19d8f14d201ce6c50797070bb72a49774086f2b321e2",
+        "avg_recent_reward": -2.631832648728495,
         "total_rewards": 600,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.13460326194763184,
-          "last_check": 1755371780.2197926,
+          "uptime_seconds": 0.1384897232055664,
+          "last_check": 1755982947.6137707,
           "metrics_summary": {
             "action": {
-              "mean": 0.564894306864735,
+              "mean": 0.06474351996743041,
               "count": 100,
-              "latest": 0.6663944355946618
+              "latest": 0.06311661654405418
             },
             "training_steps": {
               "mean": 100.0,
@@ -1564,9 +1564,9 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.30163139537325595,
+              "mean": 0.2598989005621988,
               "count": 100,
-              "latest": 0.31643745198901824
+              "latest": 0.26009189480834516
             }
           }
         }
@@ -1575,20 +1575,20 @@
         "agent_id": 1,
         "training_steps": 600,
         "error_count": 0,
-        "time_since_last_update": 0.00011706352233886719,
-        "parameter_norm": 0.30412602745779266,
-        "parameter_hash": "1114cc89cd56e1a36f28e536873224876f64047651a51951895d39a3fef4ea83",
-        "avg_recent_reward": -15.925683142609724,
+        "time_since_last_update": 0.0001723766326904297,
+        "parameter_norm": 0.24862409102930827,
+        "parameter_hash": "49fdbbeb6aba043b3db9f84ba9d6debbc047f7bd2ddb89c5042b34e149b2aad8",
+        "avg_recent_reward": -0.771466861018985,
         "total_rewards": 600,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.13451719284057617,
-          "last_check": 1755371780.2198262,
+          "uptime_seconds": 0.1383974552154541,
+          "last_check": 1755982947.613798,
           "metrics_summary": {
             "action": {
-              "mean": 0.4749706320777968,
+              "mean": 0.03717175693850246,
               "count": 100,
-              "latest": 0.4772691835417239
+              "latest": 0.037239332556576264
             },
             "training_steps": {
               "mean": 100.0,
@@ -1596,9 +1596,9 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.30624354994130465,
+              "mean": 0.24990651263587987,
               "count": 100,
-              "latest": 0.30412602745779266
+              "latest": 0.24862409102930827
             }
           }
         }
@@ -1607,20 +1607,20 @@
         "agent_id": 2,
         "training_steps": 600,
         "error_count": 0,
-        "time_since_last_update": 0.00010347366333007812,
-        "parameter_norm": 0.3155993992931847,
-        "parameter_hash": "d4ce725059ed9916a6c7b523cf2864312d6a610a4c44802c6d958a2aa18b13bc",
-        "avg_recent_reward": -6.2529782811338475,
+        "time_since_last_update": 0.00016880035400390625,
+        "parameter_norm": 0.27018728840031864,
+        "parameter_hash": "458fb71d2ee4ad192923783dbb5bc82289eec6d1fe3b13cfbf89ec71f90cb5eb",
+        "avg_recent_reward": -6.1194179759034295,
         "total_rewards": 600,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.13447308540344238,
-          "last_check": 1755371780.219849,
+          "uptime_seconds": 0.13837146759033203,
+          "last_check": 1755982947.6138413,
           "metrics_summary": {
             "action": {
-              "mean": 0.3641717361511865,
+              "mean": 0.08376148416972337,
               "count": 100,
-              "latest": 0.45750006589718767
+              "latest": 0.041049183667060604
             },
             "training_steps": {
               "mean": 100.0,
@@ -1628,38 +1628,38 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.30570199224820793,
+              "mean": 0.2698429813890049,
               "count": 100,
-              "latest": 0.3155993992931847
+              "latest": 0.27018728840031864
             }
           }
         }
       }
     ],
-    "episode_time": 0.013061285018920898,
-    "timestamp": 1755371780.233037
+    "episode_time": 0.013869047164916992,
+    "timestamp": 1755982947.6278813
   },
   {
     "episode": 10,
     "agent_rewards": {
-      "0": -8.643658304019642,
-      "1": -5.400383915143905,
-      "2": -9.415378527158323
+      "0": -1.0000651126524251,
+      "1": -2.1512298506726695,
+      "2": -0.6877667949965696
     },
     "federation_stats": {
       "federation_rounds": 44,
       "failed_aggregations": 0,
       "num_agents": 3,
-      "avg_reward": -14.218659714400319,
-      "parameter_norm": 0.2874674192810871,
-      "parameter_hash": "9980876a04fc461d7f6f5302798f40e5cdee355df8a03284fc5ef66f83f99ccf",
+      "avg_reward": -1.9647317206684354,
+      "parameter_norm": 0.257354105160657,
+      "parameter_hash": "667bcb985f9a1f265e86eef321bf41578d92204b487575596011c5fb771bfc92",
       "total_errors": 0,
       "total_training_steps": 1980,
       "success_rate": 1.0,
       "health_status": {
         "status": "starting",
-        "uptime_seconds": 0.1472477912902832,
-        "last_check": 1755371780.2329412,
+        "uptime_seconds": 0.15323138236999512,
+        "last_check": 1755982947.6277606,
         "metrics_summary": {
           "federation_rounds": {
             "mean": 39.5,
@@ -1681,8 +1681,8 @@
       "current_state_valid": true,
       "health_monitor": {
         "status": "starting",
-        "uptime_seconds": 0.14799880981445312,
-        "last_check": 1755371780.2451162,
+        "uptime_seconds": 0.15390896797180176,
+        "last_check": 1755982947.6418672,
         "metrics_summary": {
           "resets": {
             "mean": 7.5,
@@ -1695,9 +1695,9 @@
             "latest": 60.0
           },
           "avg_reward": {
-            "mean": -14.167682405566396,
+            "mean": -1.795646663988408,
             "count": 100,
-            "latest": -14.323103738626969
+            "latest": -2.023342820796019
           }
         }
       }
@@ -1707,20 +1707,20 @@
         "agent_id": 0,
         "training_steps": 660,
         "error_count": 0,
-        "time_since_last_update": 0.00012683868408203125,
-        "parameter_norm": 0.2514671975406171,
-        "parameter_hash": "99890ff71e6f43bd9809effed4564a32735299f1fcc858dc3f47f1f5b4dbb0fa",
-        "avg_recent_reward": -15.890873375258348,
+        "time_since_last_update": 0.00018858909606933594,
+        "parameter_norm": 0.2527683034832351,
+        "parameter_hash": "669dde323c9b95c8fa61290bd6fbbb1f93a79d0a9cdc55f73e6b703ce6dc4e56",
+        "avg_recent_reward": -1.785787633010811,
         "total_rewards": 660,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.14752984046936035,
-          "last_check": 1755371780.2329764,
+          "uptime_seconds": 0.15351366996765137,
+          "last_check": 1755982947.627802,
           "metrics_summary": {
             "action": {
-              "mean": 0.578505154157357,
+              "mean": 0.03249707452675774,
               "count": 100,
-              "latest": 0.4226731370316652
+              "latest": 0.04595331853650879
             },
             "training_steps": {
               "mean": 100.0,
@@ -1728,9 +1728,9 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.2649168884913185,
+              "mean": 0.2533429261330343,
               "count": 100,
-              "latest": 0.2514671975406171
+              "latest": 0.2527683034832351
             }
           }
         }
@@ -1739,20 +1739,20 @@
         "agent_id": 1,
         "training_steps": 660,
         "error_count": 0,
-        "time_since_last_update": 0.00011658668518066406,
-        "parameter_norm": 0.2766885860493084,
-        "parameter_hash": "015444e34531f8d025bd6994cf3d8146c501e543437d1576b7f356cac40abd45",
-        "avg_recent_reward": -10.666297291648121,
+        "time_since_last_update": 0.00020051002502441406,
+        "parameter_norm": 0.2589412870883516,
+        "parameter_hash": "6f7829eed3b98e3f128c7293927001f963ad7eb2dcb6da5ad01c27e0e99f8dc9",
+        "avg_recent_reward": -2.1917400117114143,
         "total_rewards": 660,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.14744257926940918,
-          "last_check": 1755371780.233001,
+          "uptime_seconds": 0.15344595909118652,
+          "last_check": 1755982947.6278286,
           "metrics_summary": {
             "action": {
-              "mean": 0.3318745558659103,
+              "mean": 0.025041274813046112,
               "count": 100,
-              "latest": 0.27286472814388196
+              "latest": 0.029556504805557587
             },
             "training_steps": {
               "mean": 100.0,
@@ -1760,9 +1760,9 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.26716999077577086,
+              "mean": 0.25727587745802183,
               "count": 100,
-              "latest": 0.2766885860493084
+              "latest": 0.2589412870883516
             }
           }
         }
@@ -1771,20 +1771,20 @@
         "agent_id": 2,
         "training_steps": 660,
         "error_count": 0,
-        "time_since_last_update": 0.00011777877807617188,
-        "parameter_norm": 0.317394499085514,
-        "parameter_hash": "56b5f8d1d0133f0e2af8b7db7e8461b2c851236a5c0966e88437335793ec76c1",
-        "avg_recent_reward": -15.945876549792711,
+        "time_since_last_update": 0.00014925003051757812,
+        "parameter_norm": 0.2624117405573146,
+        "parameter_hash": "42d11c6258e0f1081ec278459199fcb74e7d030fc2e34b223c8734b10a2e3516",
+        "avg_recent_reward": -1.4094123472429991,
         "total_rewards": 660,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.14741253852844238,
-          "last_check": 1755371780.2330234,
+          "uptime_seconds": 0.15340256690979004,
+          "last_check": 1755982947.6278722,
           "metrics_summary": {
             "action": {
-              "mean": 0.6652110168493136,
+              "mean": 0.02480495984597453,
               "count": 100,
-              "latest": 0.6220465162463772
+              "latest": 0.02189225226092623
             },
             "training_steps": {
               "mean": 100.0,
@@ -1792,38 +1792,38 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.3150324749033221,
+              "mean": 0.2589166211432939,
               "count": 100,
-              "latest": 0.317394499085514
+              "latest": 0.2624117405573146
             }
           }
         }
       }
     ],
-    "episode_time": 0.012804508209228516,
-    "timestamp": 1755371780.24597
+    "episode_time": 0.014878273010253906,
+    "timestamp": 1755982947.6429121
   },
   {
     "episode": 11,
     "agent_rewards": {
-      "0": -2.9943374610776363,
-      "1": -9.485379040787478,
-      "2": -1.6823733783177421
+      "0": -0.7927590613001334,
+      "1": -1.4337928693219006,
+      "2": -1.054204776557062
     },
     "federation_stats": {
       "federation_rounds": 48,
       "failed_aggregations": 0,
       "num_agents": 3,
-      "avg_reward": -8.738400776530261,
-      "parameter_norm": 0.26444255848616943,
-      "parameter_hash": "fb432adae658c072675bb6db60cd5d906f0f49811e62bc420ed4a6451972ea77",
+      "avg_reward": -0.8687704977416463,
+      "parameter_norm": 0.2576360964981316,
+      "parameter_hash": "98e74062bf14e0abd2901f5716ac997c1f24d655a36fc66a05c992900cb9daf9",
       "total_errors": 0,
       "total_training_steps": 2160,
       "success_rate": 1.0,
       "health_status": {
         "status": "starting",
-        "uptime_seconds": 0.1599903106689453,
-        "last_check": 1755371780.245868,
+        "uptime_seconds": 0.16691136360168457,
+        "last_check": 1755982947.6427846,
         "metrics_summary": {
           "federation_rounds": {
             "mean": 43.5,
@@ -1845,8 +1845,8 @@
       "current_state_valid": true,
       "health_monitor": {
         "status": "starting",
-        "uptime_seconds": 0.16074132919311523,
-        "last_check": 1755371780.257774,
+        "uptime_seconds": 0.1675889492034912,
+        "last_check": 1755982947.655606,
         "metrics_summary": {
           "resets": {
             "mean": 8.5,
@@ -1859,9 +1859,9 @@
             "latest": 60.0
           },
           "avg_reward": {
-            "mean": -8.42573698824021,
+            "mean": -0.9070479786579175,
             "count": 100,
-            "latest": -9.201348746442145
+            "latest": -0.9729099859528562
           }
         }
       }
@@ -1871,20 +1871,20 @@
         "agent_id": 0,
         "training_steps": 720,
         "error_count": 0,
-        "time_since_last_update": 0.00013208389282226562,
-        "parameter_norm": 0.26614463287566703,
-        "parameter_hash": "264b407c848c5d664be9cb298c39387fc3a2ea10fd0701d244ebde1cf3973985",
-        "avg_recent_reward": -6.774006837156347,
+        "time_since_last_update": 0.00014090538024902344,
+        "parameter_norm": 0.2600663586928889,
+        "parameter_hash": "13b72b9b1874fb2a945b817c5df69daea6119ca99b93a2d0483676c9ffccdf94",
+        "avg_recent_reward": -0.9004406218992896,
         "total_rewards": 720,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.16028642654418945,
-          "last_check": 1755371780.245903,
+          "uptime_seconds": 0.16719317436218262,
+          "last_check": 1755982947.6428258,
           "metrics_summary": {
             "action": {
-              "mean": 0.3003606322669446,
+              "mean": 0.006294644072466255,
               "count": 100,
-              "latest": 0.3301108067781488
+              "latest": 0.005922800991896236
             },
             "training_steps": {
               "mean": 100.0,
@@ -1892,9 +1892,9 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.25496146409387077,
+              "mean": 0.2609024832951918,
               "count": 100,
-              "latest": 0.26614463287566703
+              "latest": 0.2600663586928889
             }
           }
         }
@@ -1903,20 +1903,20 @@
         "agent_id": 1,
         "training_steps": 720,
         "error_count": 0,
-        "time_since_last_update": 0.00013256072998046875,
-        "parameter_norm": 0.2631157443524827,
-        "parameter_hash": "048afcb926d5ff8bd19c0711efa0d8f92a3c915d31e49979f995e27b4bbbe571",
-        "avg_recent_reward": -14.65076259672415,
+        "time_since_last_update": 0.00012946128845214844,
+        "parameter_norm": 0.2549713360615821,
+        "parameter_hash": "0ae0ddb886d93cfe49844368822f9c8fb972f048dfa35f3d65211d948750710b",
+        "avg_recent_reward": -0.9954426567629795,
         "total_rewards": 720,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.16019964218139648,
-          "last_check": 1755371780.2459264,
+          "uptime_seconds": 0.1670992374420166,
+          "last_check": 1755982947.642877,
           "metrics_summary": {
             "action": {
-              "mean": 0.16224660995919818,
+              "mean": 0.003204122586085714,
               "count": 100,
-              "latest": 0.15213139256983824
+              "latest": 0.0021474481147190005
             },
             "training_steps": {
               "mean": 100.0,
@@ -1924,9 +1924,9 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.2688681078947705,
+              "mean": 0.2567074075022572,
               "count": 100,
-              "latest": 0.2631157443524827
+              "latest": 0.2549713360615821
             }
           }
         }
@@ -1935,20 +1935,20 @@
         "agent_id": 2,
         "training_steps": 720,
         "error_count": 0,
-        "time_since_last_update": 0.00011754035949707031,
-        "parameter_norm": 0.2743167677074178,
-        "parameter_hash": "9e9287c659d24ff4a84ccf35a5c5957978164cd6ade2c187cf7fda5034264eca",
-        "avg_recent_reward": -3.8524415308401374,
+        "time_since_last_update": 0.00011444091796875,
+        "parameter_norm": 0.25272629230158106,
+        "parameter_hash": "f816dda43ec2318f45f7a5d941a485adf63e07917326cc7e7c07af75ff4b6d9f",
+        "avg_recent_reward": -0.8252606573114833,
         "total_rewards": 720,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.1601545810699463,
-          "last_check": 1755371780.2459629,
+          "uptime_seconds": 0.1670529842376709,
+          "last_check": 1755982947.6429033,
           "metrics_summary": {
             "action": {
-              "mean": 0.20116194967078432,
+              "mean": 0.009226228531905726,
               "count": 100,
-              "latest": 0.24954409599441707
+              "latest": 0.013831186718639362
             },
             "training_steps": {
               "mean": 100.0,
@@ -1956,38 +1956,38 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.27625957139956286,
+              "mean": 0.2541692246255895,
               "count": 100,
-              "latest": 0.2743167677074178
+              "latest": 0.25272629230158106
             }
           }
         }
       }
     ],
-    "episode_time": 0.012607097625732422,
-    "timestamp": 1755371780.2587123
+    "episode_time": 0.013507604598999023,
+    "timestamp": 1755982947.6565616
   },
   {
     "episode": 12,
     "agent_rewards": {
-      "0": -4.662160181707355,
-      "1": -3.2658551491262546,
-      "2": -2.297686118477244
+      "0": -1.271398533594281,
+      "1": -1.1204809759709975,
+      "2": -0.34875567736165614
     },
     "federation_stats": {
       "federation_rounds": 52,
       "failed_aggregations": 0,
       "num_agents": 3,
-      "avg_reward": -6.555805899939904,
-      "parameter_norm": 0.2644674628061294,
-      "parameter_hash": "bca400b5975130495df910abdf659139a7880705a51522dafe661f41d65c6108",
+      "avg_reward": -1.5488215984624238,
+      "parameter_norm": 0.2546701762290281,
+      "parameter_hash": "ad820a062c64f49c0afca02d1883582059aacebd28ed3fbd5e23af60cfd72025",
       "total_errors": 0,
       "total_training_steps": 2340,
       "success_rate": 1.0,
       "health_status": {
         "status": "starting",
-        "uptime_seconds": 0.17298078536987305,
-        "last_check": 1755371780.2586105,
+        "uptime_seconds": 0.18290495872497559,
+        "last_check": 1755982947.6564646,
         "metrics_summary": {
           "federation_rounds": {
             "mean": 47.5,
@@ -2009,8 +2009,8 @@
       "current_state_valid": true,
       "health_monitor": {
         "status": "starting",
-        "uptime_seconds": 0.17373228073120117,
-        "last_check": 1755371780.2707133,
+        "uptime_seconds": 0.18358325958251953,
+        "last_check": 1755982947.6716187,
         "metrics_summary": {
           "resets": {
             "mean": 9.5,
@@ -2023,9 +2023,9 @@
             "latest": 60.0
           },
           "avg_reward": {
-            "mean": -6.11345023663541,
+            "mean": -1.422520579727325,
             "count": 100,
-            "latest": -6.864552134351531
+            "latest": -1.7715185810082972
           }
         }
       }
@@ -2035,20 +2035,20 @@
         "agent_id": 0,
         "training_steps": 780,
         "error_count": 0,
-        "time_since_last_update": 0.00014138221740722656,
-        "parameter_norm": 0.2516985920062874,
-        "parameter_hash": "b67f0d71c38b2e595ef028adf30c3d6de363bfaa4f4181442bfb6574aa7a4853",
-        "avg_recent_reward": -8.23407881565311,
+        "time_since_last_update": 0.00014352798461914062,
+        "parameter_norm": 0.2636671117555387,
+        "parameter_hash": "2e03f6218e8eb85bcf8c16294ac084f0aec43c5b0ad68d642ce42b0fc30610f8",
+        "avg_recent_reward": -2.445590852368318,
         "total_rewards": 780,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.17326688766479492,
-          "last_check": 1755371780.2586596,
+          "uptime_seconds": 0.18318819999694824,
+          "last_check": 1755982947.6565053,
           "metrics_summary": {
             "action": {
-              "mean": 0.09527897807920006,
+              "mean": 0.056252487345313504,
               "count": 100,
-              "latest": 0.06528500599687319
+              "latest": 0.07257548244087914
             },
             "training_steps": {
               "mean": 100.0,
@@ -2056,9 +2056,9 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.25747144070204586,
+              "mean": 0.25909624053045877,
               "count": 100,
-              "latest": 0.2516985920062874
+              "latest": 0.2636671117555387
             }
           }
         }
@@ -2067,20 +2067,20 @@
         "agent_id": 1,
         "training_steps": 780,
         "error_count": 0,
-        "time_since_last_update": 0.0001289844512939453,
-        "parameter_norm": 0.27698623543181994,
-        "parameter_hash": "f6133592ca8e4dfad7ad25504dc0d4f369d111458f165a42e2f1a0136031ae74",
-        "avg_recent_reward": -6.893935077541274,
+        "time_since_last_update": 0.0001327991485595703,
+        "parameter_norm": 0.2534231712644267,
+        "parameter_hash": "2153239aff3d965b87ac423213be529a8a44664171302d53cc7386ce8f481e95",
+        "avg_recent_reward": -1.407085173287918,
         "total_rewards": 780,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.17326068878173828,
-          "last_check": 1755371780.2586834,
+          "uptime_seconds": 0.18311166763305664,
+          "last_check": 1755982947.6565304,
           "metrics_summary": {
             "action": {
-              "mean": 0.19511421127176892,
+              "mean": 0.013603147868181415,
               "count": 100,
-              "latest": 0.19901733674628977
+              "latest": 0.016750247803264416
             },
             "training_steps": {
               "mean": 100.0,
@@ -2088,9 +2088,9 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.27575901157993965,
+              "mean": 0.2560017474567311,
               "count": 100,
-              "latest": 0.27698623543181994
+              "latest": 0.2534231712644267
             }
           }
         }
@@ -2099,20 +2099,20 @@
         "agent_id": 2,
         "training_steps": 780,
         "error_count": 0,
-        "time_since_last_update": 0.00019431114196777344,
-        "parameter_norm": 0.25668541666055933,
-        "parameter_hash": "9ee9a6d23d46958bea3ca5bee589fd13b7e774081110db7b1844fad99c6f5d42",
-        "avg_recent_reward": -3.2123368167118493,
+        "time_since_last_update": 0.0001361370086669922,
+        "parameter_norm": 0.25382383614286835,
+        "parameter_hash": "8653269662f2c5107c098828444dfbf27c6a40985a3bbb5c3a246bc1065e3d35",
+        "avg_recent_reward": -0.4148857135257399,
         "total_rewards": 780,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.17322444915771484,
-          "last_check": 1755371780.258705,
+          "uptime_seconds": 0.18307256698608398,
+          "last_check": 1755982947.6565537,
           "metrics_summary": {
             "action": {
-              "mean": 0.1480204971225701,
+              "mean": 0.006250883473987309,
               "count": 100,
-              "latest": 0.15053969342797577
+              "latest": 0.0061882082009742925
             },
             "training_steps": {
               "mean": 100.0,
@@ -2120,38 +2120,38 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.259470413439716,
+              "mean": 0.2545702465370641,
               "count": 100,
-              "latest": 0.25668541666055933
+              "latest": 0.25382383614286835
             }
           }
         }
       }
     ],
-    "episode_time": 0.01286768913269043,
-    "timestamp": 1755371780.2717836
+    "episode_time": 0.01587390899658203,
+    "timestamp": 1755982947.6725817
   },
   {
     "episode": 13,
     "agent_rewards": {
-      "0": -0.5749535442457507,
-      "1": -2.0647915776567687,
-      "2": -5.349810491791471
+      "0": -0.8730994128222249,
+      "1": -1.740191116364056,
+      "2": -2.1743092885831317
     },
     "federation_stats": {
       "federation_rounds": 56,
       "failed_aggregations": 0,
       "num_agents": 3,
-      "avg_reward": -4.4205017999465905,
-      "parameter_norm": 0.24577900117704765,
-      "parameter_hash": "ede154f8d8544d4b6e58ecde002f3b09988e75f1def6eb601e1adcc33408bd82",
+      "avg_reward": -1.2559913830452407,
+      "parameter_norm": 0.25370857821629955,
+      "parameter_hash": "c035be5b343d0bb2f5e2ef1b5b5068e777147d3072233e8f02d21985e4661248",
       "total_errors": 0,
       "total_training_steps": 2520,
       "success_rate": 1.0,
       "health_status": {
         "status": "starting",
-        "uptime_seconds": 0.18700742721557617,
-        "last_check": 1755371780.271601,
+        "uptime_seconds": 0.19804644584655762,
+        "last_check": 1755982947.6724582,
         "metrics_summary": {
           "federation_rounds": {
             "mean": 51.5,
@@ -2173,8 +2173,8 @@
       "current_state_valid": true,
       "health_monitor": {
         "status": "starting",
-        "uptime_seconds": 0.18775558471679688,
-        "last_check": 1755371780.2849004,
+        "uptime_seconds": 0.19872426986694336,
+        "last_check": 1755982947.6867802,
         "metrics_summary": {
           "resets": {
             "mean": 10.5,
@@ -2187,9 +2187,9 @@
             "latest": 60.0
           },
           "avg_reward": {
-            "mean": -4.257841514748907,
+            "mean": -1.330586934329973,
             "count": 100,
-            "latest": -4.63145992233886
+            "latest": -1.2257998161444033
           }
         }
       }
@@ -2199,20 +2199,20 @@
         "agent_id": 0,
         "training_steps": 840,
         "error_count": 0,
-        "time_since_last_update": 0.0001125335693359375,
-        "parameter_norm": 0.2436801867820602,
-        "parameter_hash": "138b256a2261cc0c278d252b227597747ac113239b180e7b6a60bca0e2869885",
-        "avg_recent_reward": -0.7053450561824641,
+        "time_since_last_update": 0.00014090538024902344,
+        "parameter_norm": 0.2579525839691767,
+        "parameter_hash": "11f5ed47fed79ec91027931f977c37500492e6c430ac6877b55b9734cc05b039",
+        "avg_recent_reward": -0.5645582858578397,
         "total_rewards": 840,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.1872844696044922,
-          "last_check": 1755371780.27164,
+          "uptime_seconds": 0.19832706451416016,
+          "last_check": 1755982947.6725004,
           "metrics_summary": {
             "action": {
-              "mean": 0.024649882288502397,
+              "mean": -0.0025056888874133093,
               "count": 100,
-              "latest": 0.026232801693824387
+              "latest": -0.0018267519279868089
             },
             "training_steps": {
               "mean": 100.0,
@@ -2220,9 +2220,9 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.24411862129636078,
+              "mean": 0.25651966154919326,
               "count": 100,
-              "latest": 0.2436801867820602
+              "latest": 0.2579525839691767
             }
           }
         }
@@ -2231,20 +2231,20 @@
         "agent_id": 1,
         "training_steps": 840,
         "error_count": 0,
-        "time_since_last_update": 0.00010061264038085938,
-        "parameter_norm": 0.2659359590858002,
-        "parameter_hash": "b7eb03c0ce22efb2b984596100fcbe3cfc6540d7e565a07ac07a5422e81fbbec",
-        "avg_recent_reward": -3.4782700513571188,
+        "time_since_last_update": 0.00012922286987304688,
+        "parameter_norm": 0.2509678016013557,
+        "parameter_hash": "35918d618d6b1e40cac5f053b597a565eb05d5d52ab2d36ed809b072243bab2a",
+        "avg_recent_reward": -1.5249124635744111,
         "total_rewards": 840,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.1871943473815918,
-          "last_check": 1755371780.2717445,
+          "uptime_seconds": 0.19823288917541504,
+          "last_check": 1755982947.6725428,
           "metrics_summary": {
             "action": {
-              "mean": 0.06249995250633387,
+              "mean": 0.010958400621244983,
               "count": 100,
-              "latest": 0.07118661506172717
+              "latest": 0.015220909782936436
             },
             "training_steps": {
               "mean": 100.0,
@@ -2252,9 +2252,9 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.2581477884634683,
+              "mean": 0.2553680079096158,
               "count": 100,
-              "latest": 0.2659359590858002
+              "latest": 0.2509678016013557
             }
           }
         }
@@ -2263,20 +2263,20 @@
         "agent_id": 2,
         "training_steps": 840,
         "error_count": 0,
-        "time_since_last_update": 8.797645568847656e-05,
-        "parameter_norm": 0.26796774413933583,
-        "parameter_hash": "351592319fb40b289aaa32ea9d97b777b95f76039c81053a9b073987b4596e39",
-        "avg_recent_reward": -8.589909436707137,
+        "time_since_last_update": 0.00011444091796875,
+        "parameter_norm": 0.2536222560588169,
+        "parameter_hash": "e32aef3c1dd28bb3b09fcb8f317c9ba6cccd74d653319291e02873c9610bc387",
+        "avg_recent_reward": -1.9022900535576681,
         "total_rewards": 840,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.18715953826904297,
-          "last_check": 1755371780.2717748,
+          "uptime_seconds": 0.19818639755249023,
+          "last_check": 1755982947.6725733,
           "metrics_summary": {
             "action": {
-              "mean": 0.16003008563166005,
+              "mean": -0.02012939564090504,
               "count": 100,
-              "latest": 0.22148756973773728
+              "latest": -0.02465474832149883
             },
             "training_steps": {
               "mean": 100.0,
@@ -2284,38 +2284,38 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.2572915362704877,
+              "mean": 0.2534121350148975,
               "count": 100,
-              "latest": 0.26796774413933583
+              "latest": 0.2536222560588169
             }
           }
         }
       }
     ],
-    "episode_time": 0.013816356658935547,
-    "timestamp": 1755371780.2857158
+    "episode_time": 0.014991044998168945,
+    "timestamp": 1755982947.687728
   },
   {
     "episode": 14,
     "agent_rewards": {
-      "0": -3.26484141035836,
-      "1": -4.970960785272122,
-      "2": -3.5177180907638568
+      "0": -1.1134577912159467,
+      "1": -3.060245716133916,
+      "2": -1.48353665252194
     },
     "federation_stats": {
       "federation_rounds": 60,
       "failed_aggregations": 0,
       "num_agents": 3,
-      "avg_reward": -7.856937804585638,
-      "parameter_norm": 0.2746267608143946,
-      "parameter_hash": "1bddc2709320d2414b4a549eef9bb2b658cf882c5ec401f23b25e6a9866066f8",
+      "avg_reward": -2.7511440228842776,
+      "parameter_norm": 0.2652661078003327,
+      "parameter_hash": "b8bbfba267e560e3ea5f2324adb525aa188cea6f08accd105ea1700c6c1e4c9d",
       "total_errors": 0,
       "total_training_steps": 2700,
       "success_rate": 1.0,
       "health_status": {
         "status": "starting",
-        "uptime_seconds": 0.19952058792114258,
-        "last_check": 1755371780.2856276,
+        "uptime_seconds": 0.21177315711975098,
+        "last_check": 1755982947.6875997,
         "metrics_summary": {
           "federation_rounds": {
             "mean": 55.5,
@@ -2337,8 +2337,8 @@
       "current_state_valid": true,
       "health_monitor": {
         "status": "starting",
-        "uptime_seconds": 0.2002699375152588,
-        "last_check": 1755371780.2973826,
+        "uptime_seconds": 0.21245098114013672,
+        "last_check": 1755982947.7004979,
         "metrics_summary": {
           "resets": {
             "mean": 11.5,
@@ -2351,9 +2351,9 @@
             "latest": 60.0
           },
           "avg_reward": {
-            "mean": -7.130264082670786,
+            "mean": -2.5723134648407724,
             "count": 100,
-            "latest": -8.624050036258076
+            "latest": -2.788735921090776
           }
         }
       }
@@ -2363,20 +2363,20 @@
         "agent_id": 0,
         "training_steps": 900,
         "error_count": 0,
-        "time_since_last_update": 0.00015425682067871094,
-        "parameter_norm": 0.28946775200070834,
-        "parameter_hash": "87436b0a21164cadec64ccba732c8b10beea92e14deddd4607a400545ab42063",
-        "avg_recent_reward": -6.604524902417269,
+        "time_since_last_update": 0.00014138221740722656,
+        "parameter_norm": 0.2663922199081633,
+        "parameter_hash": "2ec3073c661b3802137ef709d60e96b171b86e2cdbdd1436b7d3ba3a37fbdbe4",
+        "avg_recent_reward": -1.5529489219066583,
         "total_rewards": 900,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.19983482360839844,
-          "last_check": 1755371780.2856576,
+          "uptime_seconds": 0.21205496788024902,
+          "last_check": 1755982947.6876392,
           "metrics_summary": {
             "action": {
-              "mean": 0.1430586791399226,
+              "mean": 0.02264659175985264,
               "count": 100,
-              "latest": 0.22530193053208925
+              "latest": 0.017622809611290532
             },
             "training_steps": {
               "mean": 100.0,
@@ -2384,9 +2384,9 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.2846368084092358,
+              "mean": 0.2690677566163081,
               "count": 100,
-              "latest": 0.28946775200070834
+              "latest": 0.2663922199081633
             }
           }
         }
@@ -2395,20 +2395,20 @@
         "agent_id": 1,
         "training_steps": 900,
         "error_count": 0,
-        "time_since_last_update": 0.00015020370483398438,
-        "parameter_norm": 0.2681163901012901,
-        "parameter_hash": "9ece89ec3e6c643fa4995e6090f371dd9909c5558ab855255dbf025998fb0b49",
-        "avg_recent_reward": -8.808195603713896,
+        "time_since_last_update": 0.00012922286987304688,
+        "parameter_norm": 0.270006875371105,
+        "parameter_hash": "4765f0aea9a2ccd2061fe8a77f0825dcda318a0a1dd40dd2dad2b24acf0bbcdd",
+        "avg_recent_reward": -3.6293049262953105,
         "total_rewards": 900,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.19975042343139648,
-          "last_check": 1755371780.2856781,
+          "uptime_seconds": 0.21196246147155762,
+          "last_check": 1755982947.687664,
           "metrics_summary": {
             "action": {
-              "mean": 0.2828747725470501,
+              "mean": 0.026666799628329862,
               "count": 100,
-              "latest": 0.3727394624424794
+              "latest": -0.010547933610819734
             },
             "training_steps": {
               "mean": 100.0,
@@ -2416,9 +2416,9 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.27028255641765214,
+              "mean": 0.2677442456461588,
               "count": 100,
-              "latest": 0.2681163901012901
+              "latest": 0.270006875371105
             }
           }
         }
@@ -2427,20 +2427,20 @@
         "agent_id": 2,
         "training_steps": 900,
         "error_count": 0,
-        "time_since_last_update": 0.0001373291015625,
-        "parameter_norm": 0.28518044642433626,
-        "parameter_hash": "7153f9b97fbe044f148e1097815eb63f68f662a83d81c2ce99bdc864f536bc7f",
-        "avg_recent_reward": -5.978071741881192,
+        "time_since_last_update": 0.00014066696166992188,
+        "parameter_norm": 0.2732528200231044,
+        "parameter_hash": "c71a828eba80fdb60808c249f23f8bccf827d25dfa5a3c5bd12196daf58196ac",
+        "avg_recent_reward": -2.5346865463203487,
         "total_rewards": 900,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.1997067928314209,
-          "last_check": 1755371780.2857099,
+          "uptime_seconds": 0.21194219589233398,
+          "last_check": 1755982947.6876872,
           "metrics_summary": {
             "action": {
-              "mean": 0.19525066551851614,
+              "mean": 0.05081745702614036,
               "count": 100,
-              "latest": 0.29348331257925503
+              "latest": 0.059555898693821246
             },
             "training_steps": {
               "mean": 100.0,
@@ -2448,38 +2448,38 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.27954482130835784,
+              "mean": 0.27198598994358825,
               "count": 100,
-              "latest": 0.28518044642433626
+              "latest": 0.2732528200231044
             }
           }
         }
       }
     ],
-    "episode_time": 0.012404203414916992,
-    "timestamp": 1755371780.2982745
+    "episode_time": 0.013546943664550781,
+    "timestamp": 1755982947.7014506
   },
   {
     "episode": 15,
     "agent_rewards": {
-      "0": -3.8125524677907636,
-      "1": -4.805845339738683,
-      "2": -5.648567261457191
+      "0": -1.9602180255742756,
+      "1": -1.6050135128591407,
+      "2": -3.5387724253153845
     },
     "federation_stats": {
       "federation_rounds": 64,
       "failed_aggregations": 0,
       "num_agents": 3,
-      "avg_reward": -10.539969812388316,
-      "parameter_norm": 0.2708238903561263,
-      "parameter_hash": "c853a005359b3b397bd50a691e8d88482336090c0615d764c71372e5bd69ce7c",
+      "avg_reward": -3.1764413274711543,
+      "parameter_norm": 0.29296014027860284,
+      "parameter_hash": "38efc540e2f5ff12d174236616aa28d3a93e1702c788044dfc33bc723d8cfb3c",
       "total_errors": 0,
       "total_training_steps": 2880,
       "success_rate": 1.0,
       "health_status": {
         "status": "starting",
-        "uptime_seconds": 0.212357759475708,
-        "last_check": 1755371780.2981408,
+        "uptime_seconds": 0.22549796104431152,
+        "last_check": 1755982947.7013264,
         "metrics_summary": {
           "federation_rounds": {
             "mean": 59.5,
@@ -2501,8 +2501,8 @@
       "current_state_valid": true,
       "health_monitor": {
         "status": "starting",
-        "uptime_seconds": 0.21310687065124512,
-        "last_check": 1755371780.3101454,
+        "uptime_seconds": 0.22617626190185547,
+        "last_check": 1755982947.7141688,
         "metrics_summary": {
           "resets": {
             "mean": 12.5,
@@ -2515,9 +2515,9 @@
             "latest": 60.0
           },
           "avg_reward": {
-            "mean": -9.69588076215503,
+            "mean": -3.2487280789851996,
             "count": 100,
-            "latest": -11.073508026908476
+            "latest": -3.191466259109669
           }
         }
       }
@@ -2527,20 +2527,20 @@
         "agent_id": 0,
         "training_steps": 960,
         "error_count": 0,
-        "time_since_last_update": 0.0001327991485595703,
-        "parameter_norm": 0.26375920599571356,
-        "parameter_hash": "136c7f4d3c5fbc480ce5129484597a69e23e5204da40a75a4a744795c64c0214",
-        "avg_recent_reward": -7.453959970338163,
+        "time_since_last_update": 0.00014019012451171875,
+        "parameter_norm": 0.31107165043208534,
+        "parameter_hash": "ba6c2795f995ca02bc89d288d553e1bf2f4e5ed1cf875e08537e1892da990017",
+        "avg_recent_reward": -2.266751873063833,
         "total_rewards": 960,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.21263909339904785,
-          "last_check": 1755371780.298208,
+          "uptime_seconds": 0.22578001022338867,
+          "last_check": 1755982947.7013671,
           "metrics_summary": {
             "action": {
-              "mean": 0.32378768537297486,
+              "mean": 0.013931318848004623,
               "count": 100,
-              "latest": 0.3571836737417935
+              "latest": 0.00029388109851840764
             },
             "training_steps": {
               "mean": 100.0,
@@ -2548,9 +2548,9 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.2723081796449464,
+              "mean": 0.30363175733058284,
               "count": 100,
-              "latest": 0.26375920599571356
+              "latest": 0.31107165043208534
             }
           }
         }
@@ -2559,20 +2559,20 @@
         "agent_id": 1,
         "training_steps": 960,
         "error_count": 0,
-        "time_since_last_update": 0.00011849403381347656,
-        "parameter_norm": 0.3107405251388952,
-        "parameter_hash": "8d25934b5f5c0b0f280e9e1553c4f4504bb896dd2c16f0f5c6b4bbcc352dd4ca",
-        "avg_recent_reward": -9.706733396825904,
+        "time_since_last_update": 0.0001437664031982422,
+        "parameter_norm": 0.28916161532414447,
+        "parameter_hash": "5a89bb63d22d4ed63ff96018da20df4bf7994f27da9bc24b093c8bba7d24fe8e",
+        "avg_recent_reward": -1.8630948850206477,
         "total_rewards": 960,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.21255230903625488,
-          "last_check": 1755371780.2982342,
+          "uptime_seconds": 0.22570157051086426,
+          "last_check": 1755982947.7013936,
           "metrics_summary": {
             "action": {
-              "mean": 0.36445480379102657,
+              "mean": 0.03802488085753168,
               "count": 100,
-              "latest": 0.39104910046204633
+              "latest": 0.039338042017276136
             },
             "training_steps": {
               "mean": 100.0,
@@ -2580,9 +2580,9 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.29659720692941716,
+              "mean": 0.2894869215967182,
               "count": 100,
-              "latest": 0.3107405251388952
+              "latest": 0.28916161532414447
             }
           }
         }
@@ -2591,20 +2591,20 @@
         "agent_id": 2,
         "training_steps": 960,
         "error_count": 0,
-        "time_since_last_update": 0.00011372566223144531,
-        "parameter_norm": 0.30706675259345323,
-        "parameter_hash": "d2f8fe878cfdfa1ec646c38aa4866721a20acfdd51d4b8281856499e12bfbe4c",
-        "avg_recent_reward": -11.926948919301022,
+        "time_since_last_update": 0.0001308917999267578,
+        "parameter_norm": 0.3096090179991263,
+        "parameter_hash": "648c9020c5b334405e5624e28c003ded351a66c736c980fdf5d42c00410eab48",
+        "avg_recent_reward": -5.616337478871117,
         "total_rewards": 960,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.21251893043518066,
-          "last_check": 1755371780.298257,
+          "uptime_seconds": 0.22565627098083496,
+          "last_check": 1755982947.701443,
           "metrics_summary": {
             "action": {
-              "mean": 0.4125150374859195,
+              "mean": 0.00024029666561870146,
               "count": 100,
-              "latest": 0.5277149657615584
+              "latest": -0.08403207888273384
             },
             "training_steps": {
               "mean": 100.0,
@@ -2612,38 +2612,38 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.2966000657113409,
+              "mean": 0.3064663623589635,
               "count": 100,
-              "latest": 0.30706675259345323
+              "latest": 0.3096090179991263
             }
           }
         }
       }
     ],
-    "episode_time": 0.012675762176513672,
-    "timestamp": 1755371780.3110752
+    "episode_time": 0.013576507568359375,
+    "timestamp": 1755982947.7151654
   },
   {
     "episode": 16,
     "agent_rewards": {
-      "0": -4.843812187012206,
-      "1": -11.728482279393088,
-      "2": -9.842105513000229
+      "0": -3.0198783202478023,
+      "1": -3.0861251149241995,
+      "2": -1.9139299196730604
     },
     "federation_stats": {
       "federation_rounds": 68,
       "failed_aggregations": 0,
       "num_agents": 3,
-      "avg_reward": -15.104344046493987,
-      "parameter_norm": 0.2880933585133658,
-      "parameter_hash": "2b79405783550a12d6cc7c12e7c5c3ce6603002e8835da58944da05103c19f61",
+      "avg_reward": -2.739556316522937,
+      "parameter_norm": 0.31296681494376777,
+      "parameter_hash": "d79fb7b47152dc1a1aa55f8ed2cc0f23241ea2379aa52392bb49cdf346a0c97f",
       "total_errors": 0,
       "total_training_steps": 3060,
       "success_rate": 1.0,
       "health_status": {
         "status": "starting",
-        "uptime_seconds": 0.22536492347717285,
-        "last_check": 1755371780.310978,
+        "uptime_seconds": 0.2399754524230957,
+        "last_check": 1755982947.7150512,
         "metrics_summary": {
           "federation_rounds": {
             "mean": 63.5,
@@ -2665,8 +2665,8 @@
       "current_state_valid": true,
       "health_monitor": {
         "status": "starting",
-        "uptime_seconds": 0.22611522674560547,
-        "last_check": 1755371780.323222,
+        "uptime_seconds": 0.24067139625549316,
+        "last_check": 1755982947.7286558,
         "metrics_summary": {
           "resets": {
             "mean": 13.5,
@@ -2679,9 +2679,9 @@
             "latest": 60.0
           },
           "avg_reward": {
-            "mean": -14.6590788241049,
+            "mean": -2.7921828533124757,
             "count": 100,
-            "latest": -15.359086381522387
+            "latest": -2.8828417150364594
           }
         }
       }
@@ -2691,20 +2691,20 @@
         "agent_id": 0,
         "training_steps": 1020,
         "error_count": 0,
-        "time_since_last_update": 0.00012183189392089844,
-        "parameter_norm": 0.313853205212569,
-        "parameter_hash": "1eb7f19df4fc86a2e5c78e63518993154de98b606747571400035812c5f7cf2a",
-        "avg_recent_reward": -12.079933108639327,
+        "time_since_last_update": 0.00017261505126953125,
+        "parameter_norm": 0.3121968290514207,
+        "parameter_hash": "5717149d9fb87d007b08b5c24527cf4f8c37d6e6f8b9110d68ebcd290f92c84b",
+        "avg_recent_reward": -2.908233133351729,
         "total_rewards": 1020,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.2256455421447754,
-          "last_check": 1755371780.3110123,
+          "uptime_seconds": 0.2402806282043457,
+          "last_check": 1755982947.7150922,
           "metrics_summary": {
             "action": {
-              "mean": 0.39684511528653915,
+              "mean": -0.002027523176462439,
               "count": 100,
-              "latest": 0.4939113430028803
+              "latest": 0.023036271502875568
             },
             "training_steps": {
               "mean": 100.0,
@@ -2712,9 +2712,9 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.315439156657542,
+              "mean": 0.3135663641158222,
               "count": 100,
-              "latest": 0.313853205212569
+              "latest": 0.3121968290514207
             }
           }
         }
@@ -2723,20 +2723,20 @@
         "agent_id": 1,
         "training_steps": 1020,
         "error_count": 0,
-        "time_since_last_update": 0.0001976490020751953,
-        "parameter_norm": 0.25462146407500974,
-        "parameter_hash": "b7ef73fad39a4dc363ccc90eea48871edd72ea416a2fb2732c1a51d060819a8a",
-        "avg_recent_reward": -15.941610066446808,
+        "time_since_last_update": 0.00016808509826660156,
+        "parameter_norm": 0.30512283176969124,
+        "parameter_hash": "5fa4c5926e5fef2b6635ce32f3940692d8726a6cadab49fc2af5f76299faea24",
+        "avg_recent_reward": -3.5926054958200346,
         "total_rewards": 1020,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.2256472110748291,
-          "last_check": 1755371780.311036,
+          "uptime_seconds": 0.2401888370513916,
+          "last_check": 1755982947.7151327,
           "metrics_summary": {
             "action": {
-              "mean": 0.553408285402607,
+              "mean": -0.02695648791707142,
               "count": 100,
-              "latest": 0.5412565502267681
+              "latest": -0.003977438406285422
             },
             "training_steps": {
               "mean": 100.0,
@@ -2744,9 +2744,9 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.28109098284174,
+              "mean": 0.30200094444481124,
               "count": 100,
-              "latest": 0.25462146407500974
+              "latest": 0.30512283176969124
             }
           }
         }
@@ -2755,20 +2755,20 @@
         "agent_id": 2,
         "training_steps": 1020,
         "error_count": 0,
-        "time_since_last_update": 0.0001876354217529297,
-        "parameter_norm": 0.28870137600573165,
-        "parameter_hash": "7d5ab1a3361ccf7dfc0782f741f5ebcee10bf148f6cb096e53e3f7bbd0e72dca",
-        "avg_recent_reward": -15.955693297228567,
+        "time_since_last_update": 0.00015687942504882812,
+        "parameter_norm": 0.3153483826823366,
+        "parameter_hash": "15cbca8831d194a0d72d4342763372371d5a05648115d0a41c8a9dbc50217069",
+        "avg_recent_reward": -1.8757099307656646,
         "total_rewards": 1020,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.2256021499633789,
-          "last_check": 1755371780.3110693,
+          "uptime_seconds": 0.2401430606842041,
+          "last_check": 1755982947.715157,
           "metrics_summary": {
             "action": {
-              "mean": 0.6393874499133226,
+              "mean": 0.008999263307137666,
               "count": 100,
-              "latest": 0.7798527023915952
+              "latest": 0.00760040677300675
             },
             "training_steps": {
               "mean": 100.0,
@@ -2776,38 +2776,38 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.27820505449121113,
+              "mean": 0.3153446584012304,
               "count": 100,
-              "latest": 0.28870137600573165
+              "latest": 0.3153483826823366
             }
           }
         }
       }
     ],
-    "episode_time": 0.012873411178588867,
-    "timestamp": 1755371780.3242009
+    "episode_time": 0.014337539672851562,
+    "timestamp": 1755982947.7296517
   },
   {
     "episode": 17,
     "agent_rewards": {
-      "0": -8.864034214582338,
-      "1": -8.28800456678023,
-      "2": -5.093742557395666
+      "0": -1.7900239271365217,
+      "1": -1.1561410726764065,
+      "2": -1.671582647374592
     },
     "federation_stats": {
       "federation_rounds": 72,
       "failed_aggregations": 0,
       "num_agents": 3,
-      "avg_reward": -13.60925437301512,
-      "parameter_norm": 0.2812126986660914,
-      "parameter_hash": "378de754218f48b043e6f54858e3f1b68f17b33fa41971ea61029c956739c250",
+      "avg_reward": -1.3039628860000776,
+      "parameter_norm": 0.31047748833922023,
+      "parameter_hash": "858e2cf750212a8f28c7b41957c5a5786aeff98f2117df635fea1197e803a365",
       "total_errors": 0,
       "total_training_steps": 3240,
       "success_rate": 1.0,
       "health_status": {
         "status": "starting",
-        "uptime_seconds": 0.2377948760986328,
-        "last_check": 1755371780.323985,
+        "uptime_seconds": 0.2563517093658447,
+        "last_check": 1755982947.7295287,
         "metrics_summary": {
           "federation_rounds": {
             "mean": 67.5,
@@ -2829,8 +2829,8 @@
       "current_state_valid": true,
       "health_monitor": {
         "status": "starting",
-        "uptime_seconds": 0.23854303359985352,
-        "last_check": 1755371780.3356707,
+        "uptime_seconds": 0.25702905654907227,
+        "last_check": 1755982947.7450702,
         "metrics_summary": {
           "resets": {
             "mean": 14.5,
@@ -2843,9 +2843,9 @@
             "latest": 60.0
           },
           "avg_reward": {
-            "mean": -13.140195422010555,
+            "mean": -1.388479204385653,
             "count": 100,
-            "latest": -13.926204065431472
+            "latest": -1.257360038976695
           }
         }
       }
@@ -2855,20 +2855,20 @@
         "agent_id": 0,
         "training_steps": 1080,
         "error_count": 0,
-        "time_since_last_update": 0.0001316070556640625,
-        "parameter_norm": 0.28237980161797865,
-        "parameter_hash": "72c74f3d244e40ab32c30ee88b3c3901e86b03eb755074eb3e27ff40c0c6271d",
-        "avg_recent_reward": -15.28868957329179,
+        "time_since_last_update": 0.00016188621520996094,
+        "parameter_norm": 0.31044572121510056,
+        "parameter_hash": "cd068ea6051649529ba3516e9445ebdcfd43d4a1b3912881e08bb8f72594c749",
+        "avg_recent_reward": -2.227213680021746,
         "total_rewards": 1080,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.23807334899902344,
-          "last_check": 1755371780.3240187,
+          "uptime_seconds": 0.256633996963501,
+          "last_check": 1755982947.7295928,
           "metrics_summary": {
             "action": {
-              "mean": 0.5345323770320265,
+              "mean": -0.038803100081733356,
               "count": 100,
-              "latest": 0.5313204161533817
+              "latest": -0.04433273030191768
             },
             "training_steps": {
               "mean": 100.0,
@@ -2876,9 +2876,9 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.29455399971465746,
+              "mean": 0.3128700338933622,
               "count": 100,
-              "latest": 0.28237980161797865
+              "latest": 0.31044572121510056
             }
           }
         }
@@ -2887,20 +2887,20 @@
         "agent_id": 1,
         "training_steps": 1080,
         "error_count": 0,
-        "time_since_last_update": 0.00010919570922851562,
-        "parameter_norm": 0.26855204894616347,
-        "parameter_hash": "74ac3e6e461ce6b6c16693934fce7a5848e6b5b84cb2557cb130a7f2d78e93dc",
-        "avg_recent_reward": -13.895074361734737,
+        "time_since_last_update": 0.00013518333435058594,
+        "parameter_norm": 0.31002562473347944,
+        "parameter_hash": "3e5a69b6428fec7a47e70f604c7ec4bffe647a33e88754503565928219fa617a",
+        "avg_recent_reward": -0.3593806529242772,
         "total_rewards": 1080,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.23798394203186035,
-          "last_check": 1755371780.324131,
+          "uptime_seconds": 0.2565419673919678,
+          "last_check": 1755982947.72962,
           "metrics_summary": {
             "action": {
-              "mean": 0.46662553128740514,
+              "mean": -0.0059795032907592185,
               "count": 100,
-              "latest": 0.34196859788671224
+              "latest": -0.005225942882590827
             },
             "training_steps": {
               "mean": 100.0,
@@ -2908,9 +2908,9 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.275492163649105,
+              "mean": 0.3107623843342456,
               "count": 100,
-              "latest": 0.26855204894616347
+              "latest": 0.31002562473347944
             }
           }
         }
@@ -2919,20 +2919,20 @@
         "agent_id": 2,
         "training_steps": 1080,
         "error_count": 0,
-        "time_since_last_update": 0.00016427040100097656,
-        "parameter_norm": 0.28028851166348373,
-        "parameter_hash": "392055a0d23cce6565f42e8570bd405470123c8d7cc8c6fd0e49157ecc35508c",
-        "avg_recent_reward": -10.236822331005135,
+        "time_since_last_update": 0.00012040138244628906,
+        "parameter_norm": 0.31349552830949545,
+        "parameter_hash": "0ebd5b61c3dfd8771ab9542e7d1d4a235521ded7c80a16d39e1fc0167f4f7b16",
+        "avg_recent_reward": -1.5788432802109367,
         "total_rewards": 1080,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.23801064491271973,
-          "last_check": 1755371780.3241525,
+          "uptime_seconds": 0.2564976215362549,
+          "last_check": 1755982947.7296438,
           "metrics_summary": {
             "action": {
-              "mean": 0.35082667665323136,
+              "mean": -0.03130684024129387,
               "count": 100,
-              "latest": 0.28819023640163394
+              "latest": -0.041052223900416684
             },
             "training_steps": {
               "mean": 100.0,
@@ -2940,38 +2940,38 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.2899742987614628,
+              "mean": 0.3142418810742824,
               "count": 100,
-              "latest": 0.28028851166348373
+              "latest": 0.31349552830949545
             }
           }
         }
       }
     ],
-    "episode_time": 0.012187480926513672,
-    "timestamp": 1755371780.3365667
+    "episode_time": 0.016225576400756836,
+    "timestamp": 1755982947.7460241
   },
   {
     "episode": 18,
     "agent_rewards": {
-      "0": -5.665316953671257,
-      "1": -6.363452639576611,
-      "2": -3.682864051792278
+      "0": -1.4513492629179618,
+      "1": -0.8470659074895512,
+      "2": -0.5805564559231317
     },
     "federation_stats": {
       "federation_rounds": 76,
       "failed_aggregations": 0,
       "num_agents": 3,
-      "avg_reward": -9.21010662609077,
-      "parameter_norm": 0.2979195766446573,
-      "parameter_hash": "db485d083f0eea80c908eebc78a5d3358e657ced7226882e9f476a9e90df42ae",
+      "avg_reward": -1.140842677106829,
+      "parameter_norm": 0.32002583204968305,
+      "parameter_hash": "371734a5104c25dc7da826b6c1f28ba1410edd299178f965bdbeec713412c477",
       "total_errors": 0,
       "total_training_steps": 3420,
       "success_rate": 1.0,
       "health_status": {
         "status": "starting",
-        "uptime_seconds": 0.25098156929016113,
-        "last_check": 1755371780.336415,
+        "uptime_seconds": 0.27042603492736816,
+        "last_check": 1755982947.745905,
         "metrics_summary": {
           "federation_rounds": {
             "mean": 71.5,
@@ -2993,8 +2993,8 @@
       "current_state_valid": true,
       "health_monitor": {
         "status": "starting",
-        "uptime_seconds": 0.25173068046569824,
-        "last_check": 1755371780.3487742,
+        "uptime_seconds": 0.2711031436920166,
+        "last_check": 1755982947.7591505,
         "metrics_summary": {
           "resets": {
             "mean": 15.5,
@@ -3007,9 +3007,9 @@
             "latest": 60.0
           },
           "avg_reward": {
-            "mean": -8.950694407403088,
+            "mean": -1.2005621028839553,
             "count": 100,
-            "latest": -9.336243404680248
+            "latest": -1.2344570785116564
           }
         }
       }
@@ -3019,20 +3019,20 @@
         "agent_id": 0,
         "training_steps": 1140,
         "error_count": 0,
-        "time_since_last_update": 0.00012826919555664062,
-        "parameter_norm": 0.2986539568296697,
-        "parameter_hash": "e8b5fcf1ee9fb40e382448a114183637462b984ca8b82e11c39e2e2d96cbd811",
-        "avg_recent_reward": -9.584135229601339,
+        "time_since_last_update": 0.00014209747314453125,
+        "parameter_norm": 0.32021460480538366,
+        "parameter_hash": "921a54427f55e84804fc49abb564ce3656dfe735c0f4c6f1a228c6dab16adb98",
+        "avg_recent_reward": -1.4606964326567486,
         "total_rewards": 1140,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.25126194953918457,
-          "last_check": 1755371780.3364465,
+          "uptime_seconds": 0.2707066535949707,
+          "last_check": 1755982947.7459462,
           "metrics_summary": {
             "action": {
-              "mean": 0.15121014989758683,
+              "mean": -0.036814065935882705,
               "count": 100,
-              "latest": 0.24934387409771272
+              "latest": -0.04269038351369148
             },
             "training_steps": {
               "mean": 100.0,
@@ -3040,9 +3040,9 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.3050971741765599,
+              "mean": 0.31900037365988526,
               "count": 100,
-              "latest": 0.2986539568296697
+              "latest": 0.32021460480538366
             }
           }
         }
@@ -3051,20 +3051,20 @@
         "agent_id": 1,
         "training_steps": 1140,
         "error_count": 0,
-        "time_since_last_update": 0.00011467933654785156,
-        "parameter_norm": 0.27182127861030153,
-        "parameter_hash": "07c6340b30134963312e64e23c4c17447ac14953fdc841f5b6a95a8160af814a",
-        "avg_recent_reward": -10.236204802529992,
+        "time_since_last_update": 0.00012803077697753906,
+        "parameter_norm": 0.3233645633866677,
+        "parameter_hash": "42ae4e12c06573cbe9a1230472c3d6d2c3f530f3c999c7ad12e2ba128574a5a5",
+        "avg_recent_reward": -0.9224030391041683,
         "total_rewards": 1140,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.2511751651763916,
-          "last_check": 1755371780.3364677,
+          "uptime_seconds": 0.2706117630004883,
+          "last_check": 1755982947.745973,
           "metrics_summary": {
             "action": {
-              "mean": 0.16127017074995764,
+              "mean": -0.014945231931707817,
               "count": 100,
-              "latest": 0.08643432143313297
+              "latest": -0.015362842549203686
             },
             "training_steps": {
               "mean": 100.0,
@@ -3072,9 +3072,9 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.2818646429072623,
+              "mean": 0.3215335162945816,
               "count": 100,
-              "latest": 0.27182127861030153
+              "latest": 0.3233645633866677
             }
           }
         }
@@ -3083,20 +3083,20 @@
         "agent_id": 2,
         "training_steps": 1140,
         "error_count": 0,
-        "time_since_last_update": 9.894371032714844e-05,
-        "parameter_norm": 0.3044231602843163,
-        "parameter_hash": "32d3b5c4b35ad94513ce663e0a695d111a57dc2ea5fc83482aa50df528f592ee",
-        "avg_recent_reward": -7.031743190077935,
+        "time_since_last_update": 0.00011348724365234375,
+        "parameter_norm": 0.3186096517020061,
+        "parameter_hash": "f097dd2a83243607e8fa6a07f9ae82c4f8680d7b0f69fb3456b8415ad0cb8131",
+        "avg_recent_reward": -1.2185868368909487,
         "total_rewards": 1140,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.2511301040649414,
-          "last_check": 1755371780.336561,
+          "uptime_seconds": 0.2705655097961426,
+          "last_check": 1755982947.7459984,
           "metrics_summary": {
             "action": {
-              "mean": 0.2468268724304782,
+              "mean": -0.014362703835109352,
               "count": 100,
-              "latest": 0.2104752678136668
+              "latest": -0.01120620587817127
             },
             "training_steps": {
               "mean": 100.0,
@@ -3104,38 +3104,38 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.29120064496566295,
+              "mean": 0.3186079704156097,
               "count": 100,
-              "latest": 0.3044231602843163
+              "latest": 0.3186096517020061
             }
           }
         }
       }
     ],
-    "episode_time": 0.013012409210205078,
-    "timestamp": 1755371780.3496864
+    "episode_time": 0.013929605484008789,
+    "timestamp": 1755982947.7600734
   },
   {
     "episode": 19,
     "agent_rewards": {
-      "0": -2.4835460224353993,
-      "1": -0.7934484961222513,
-      "2": -2.159672864561603
+      "0": -0.7264874572546998,
+      "1": -0.7770797357071662,
+      "2": -2.157167053089704
     },
     "federation_stats": {
       "federation_rounds": 80,
       "failed_aggregations": 0,
       "num_agents": 3,
-      "avg_reward": -2.057074331650722,
-      "parameter_norm": 0.2790816987113037,
-      "parameter_hash": "82444779a54b4fc48205b56ad98ffec9beee76216e0f3dced9b6d6371296c08f",
+      "avg_reward": -1.2485721640217569,
+      "parameter_norm": 0.31666395721547047,
+      "parameter_hash": "4ebd893ea4a2000ea30e0499520fc041e90ce1302a64ad98f17ef56b870dfc11",
       "total_errors": 0,
       "total_training_steps": 3600,
       "success_rate": 1.0,
       "health_status": {
         "status": "starting",
-        "uptime_seconds": 0.2644035816192627,
-        "last_check": 1755371780.3496017,
+        "uptime_seconds": 0.28495192527770996,
+        "last_check": 1755982947.7599792,
         "metrics_summary": {
           "federation_rounds": {
             "mean": 75.5,
@@ -3157,8 +3157,8 @@
       "current_state_valid": true,
       "health_monitor": {
         "status": "starting",
-        "uptime_seconds": 0.2651522159576416,
-        "last_check": 1755371780.3622591,
+        "uptime_seconds": 0.28563714027404785,
+        "last_check": 1755982947.773467,
         "metrics_summary": {
           "resets": {
             "mean": 16.5,
@@ -3171,9 +3171,9 @@
             "latest": 60.0
           },
           "avg_reward": {
-            "mean": -2.101271969671779,
+            "mean": -1.3159348944928557,
             "count": 100,
-            "latest": -2.150753682916297
+            "latest": -1.1047775781914222
           }
         }
       }
@@ -3183,20 +3183,20 @@
         "agent_id": 0,
         "training_steps": 1200,
         "error_count": 0,
-        "time_since_last_update": 0.00012612342834472656,
-        "parameter_norm": 0.2719421554165319,
-        "parameter_hash": "2f6e1dbbaf5d359541296b451555ec2511e59f000de7c384043f7db161875c56",
-        "avg_recent_reward": -2.267356688285235,
+        "time_since_last_update": 0.000331878662109375,
+        "parameter_norm": 0.31407257478682105,
+        "parameter_hash": "07ba13172f1ef15cc31013f7fe9850a0dc83c6803a5c2fdbe5035a69fab15c12",
+        "avg_recent_reward": -0.6478050115479881,
         "total_rewards": 1200,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.26468348503112793,
-          "last_check": 1755371780.3496351,
+          "uptime_seconds": 0.28525710105895996,
+          "last_check": 1755982947.7600188,
           "metrics_summary": {
             "action": {
-              "mean": 0.06908224899270075,
+              "mean": -0.024768980117918935,
               "count": 100,
-              "latest": 0.06740001134903005
+              "latest": -0.021975321125248297
             },
             "training_steps": {
               "mean": 100.0,
@@ -3204,9 +3204,9 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.2739450866054213,
+              "mean": 0.31357806717601217,
               "count": 100,
-              "latest": 0.2719421554165319
+              "latest": 0.31407257478682105
             }
           }
         }
@@ -3215,20 +3215,20 @@
         "agent_id": 1,
         "training_steps": 1200,
         "error_count": 0,
-        "time_since_last_update": 0.00011301040649414062,
-        "parameter_norm": 0.2826186461632454,
-        "parameter_hash": "b6c95e0e8f155f2df74fa190bf2e32315c609b76c826289d0e8dd0d07bbe4634",
-        "avg_recent_reward": -1.3026676249169735,
+        "time_since_last_update": 0.000263214111328125,
+        "parameter_norm": 0.3177590848740398,
+        "parameter_hash": "fcf38e69d5c68b8b4c726d157efa631f65aee38dde6b50dfaa79a14e0d7d193e",
+        "avg_recent_reward": -0.47787121141305455,
         "total_rewards": 1200,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.26459598541259766,
-          "last_check": 1755371780.349659,
+          "uptime_seconds": 0.2852001190185547,
+          "last_check": 1755982947.760043,
           "metrics_summary": {
             "action": {
-              "mean": 0.03674734385451589,
+              "mean": -0.017626517940858143,
               "count": 100,
-              "latest": 0.04694006517142907
+              "latest": -0.015309261085465266
             },
             "training_steps": {
               "mean": 100.0,
@@ -3236,9 +3236,9 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.28245356611610184,
+              "mean": 0.31764414456138906,
               "count": 100,
-              "latest": 0.2826186461632454
+              "latest": 0.3177590848740398
             }
           }
         }
@@ -3247,20 +3247,20 @@
         "agent_id": 2,
         "training_steps": 1200,
         "error_count": 0,
-        "time_since_last_update": 9.942054748535156e-05,
-        "parameter_norm": 0.2656274084990342,
-        "parameter_hash": "2b649a1b3b3e785a582b8443275f83c082a5f9c72e128bdd176ab128952ff20c",
-        "avg_recent_reward": -2.733791595813128,
+        "time_since_last_update": 0.0002491474151611328,
+        "parameter_norm": 0.3229387877707191,
+        "parameter_hash": "93acf7a359f66655d3c84d24426d1d9b73a734433f67a1416884aa75412d696e",
+        "avg_recent_reward": -2.8221284605175248,
         "total_rewards": 1200,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.26455140113830566,
-          "last_check": 1755371780.3496804,
+          "uptime_seconds": 0.28517961502075195,
+          "last_check": 1755982947.7600663,
           "metrics_summary": {
             "action": {
-              "mean": 0.05553760427841277,
+              "mean": -0.061049873442834704,
               "count": 100,
-              "latest": 0.05090998301584423
+              "latest": -0.07282558230456941
             },
             "training_steps": {
               "mean": 100.0,
@@ -3268,38 +3268,38 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.27169684362638397,
+              "mean": 0.31832613006253324,
               "count": 100,
-              "latest": 0.2656274084990342
+              "latest": 0.3229387877707191
             }
           }
         }
       }
     ],
-    "episode_time": 0.013301849365234375,
-    "timestamp": 1755371780.3631074
+    "episode_time": 0.014397144317626953,
+    "timestamp": 1755982947.77475
   },
   {
     "episode": 20,
     "agent_rewards": {
-      "0": -3.2967158324630645,
-      "1": -5.043379852749722,
-      "2": -3.2359068741956403
+      "0": -1.0263506285467432,
+      "1": -1.2088569202468809,
+      "2": -0.3816344089143492
     },
     "federation_stats": {
       "federation_rounds": 84,
       "failed_aggregations": 0,
       "num_agents": 3,
-      "avg_reward": -5.4585385120094365,
-      "parameter_norm": 0.2809905560240361,
-      "parameter_hash": "48ce682793caf4dd5ab8391fc4ce4c9e92f9332a06d62fae3f166e8297b132f5",
+      "avg_reward": -0.8447893594648815,
+      "parameter_norm": 0.3145156703131933,
+      "parameter_hash": "63d425bf902163803a528769fb40c22416a1c220a81adf138068c03d2f8696c1",
       "total_errors": 0,
       "total_training_steps": 3780,
       "success_rate": 1.0,
       "health_status": {
         "status": "starting",
-        "uptime_seconds": 0.277432918548584,
-        "last_check": 1755371780.3630238,
+        "uptime_seconds": 0.2986621856689453,
+        "last_check": 1755982947.7745051,
         "metrics_summary": {
           "federation_rounds": {
             "mean": 79.5,
@@ -3321,8 +3321,8 @@
       "current_state_valid": true,
       "health_monitor": {
         "status": "starting",
-        "uptime_seconds": 0.278181791305542,
-        "last_check": 1755371780.3752534,
+        "uptime_seconds": 0.29933905601501465,
+        "last_check": 1755982947.7874126,
         "metrics_summary": {
           "resets": {
             "mean": 17.5,
@@ -3335,9 +3335,9 @@
             "latest": 60.0
           },
           "avg_reward": {
-            "mean": -5.1491049968649465,
+            "mean": -0.7594369531395426,
             "count": 100,
-            "latest": -5.839585376071031
+            "latest": -0.8681220819918912
           }
         }
       }
@@ -3347,20 +3347,20 @@
         "agent_id": 0,
         "training_steps": 1260,
         "error_count": 0,
-        "time_since_last_update": 0.00014019012451171875,
-        "parameter_norm": 0.30931502423401713,
-        "parameter_hash": "2457af806ed8fc677b45b335877b1171a7897f84e6932d18673865729bdec9b8",
-        "avg_recent_reward": -4.618639397207546,
+        "time_since_last_update": 0.00014090538024902344,
+        "parameter_norm": 0.31434084159436154,
+        "parameter_hash": "26c57c8c3cf0bd2975ff17f2accee8a89aa91ac937f1d1110375f74100baa5b4",
+        "avg_recent_reward": -0.9857457336612552,
         "total_rewards": 1260,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.2777245044708252,
-          "last_check": 1755371780.3630567,
+          "uptime_seconds": 0.29894304275512695,
+          "last_check": 1755982947.7745693,
           "metrics_summary": {
             "action": {
-              "mean": 0.04061178080738948,
+              "mean": -0.026689622730537953,
               "count": 100,
-              "latest": 0.015068885057837173
+              "latest": -0.031133395573063508
             },
             "training_steps": {
               "mean": 100.0,
@@ -3368,9 +3368,9 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.30494997064687757,
+              "mean": 0.31414187105935165,
               "count": 100,
-              "latest": 0.30931502423401713
+              "latest": 0.31434084159436154
             }
           }
         }
@@ -3379,20 +3379,20 @@
         "agent_id": 1,
         "training_steps": 1260,
         "error_count": 0,
-        "time_since_last_update": 0.00014090538024902344,
-        "parameter_norm": 0.30609691269318473,
-        "parameter_hash": "a9847000464ff56b58e1941f0ebbad7de78aa826720af6be017f34b31d2a96d4",
-        "avg_recent_reward": -6.603752644789485,
+        "time_since_last_update": 0.0001304149627685547,
+        "parameter_norm": 0.3107076882348059,
+        "parameter_hash": "e4b17ad9f0c70020d184bcfc337dd9b380e0e00e064a8e5256bf14ea06a58324",
+        "avg_recent_reward": -1.0712855313393506,
         "total_rewards": 1260,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.2776360511779785,
-          "last_check": 1755371780.3630798,
+          "uptime_seconds": 0.29884910583496094,
+          "last_check": 1755982947.7746313,
           "metrics_summary": {
             "action": {
-              "mean": 0.14086482957016472,
+              "mean": -0.02922470804137108,
               "count": 100,
-              "latest": 0.13625800378081157
+              "latest": -0.032975842610412476
             },
             "training_steps": {
               "mean": 100.0,
@@ -3400,9 +3400,9 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.29927461444118986,
+              "mean": 0.3107852724274478,
               "count": 100,
-              "latest": 0.30609691269318473
+              "latest": 0.3107076882348059
             }
           }
         }
@@ -3411,20 +3411,20 @@
         "agent_id": 2,
         "training_steps": 1260,
         "error_count": 0,
-        "time_since_last_update": 0.00022363662719726562,
-        "parameter_norm": 0.28709861459978553,
-        "parameter_hash": "7b26c507a8c0249f06771152797b1d9e16af75056e6c0ab736202fdf7ac04205",
-        "avg_recent_reward": -4.2249229485978095,
+        "time_since_last_update": 0.0001323223114013672,
+        "parameter_norm": 0.31760119917204543,
+        "parameter_hash": "a1941637e02393dbe3a53434aa2799a960ef89983b11c2dc76078c0b1bca7dec",
+        "avg_recent_reward": -0.221279594418022,
         "total_rewards": 1260,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.27771735191345215,
-          "last_check": 1755371780.3631017,
+          "uptime_seconds": 0.29881882667541504,
+          "last_check": 1755982947.7746804,
           "metrics_summary": {
             "action": {
-              "mean": 0.029815917583211903,
+              "mean": -0.016555944105281325,
               "count": 100,
-              "latest": 0.021909793057563944
+              "latest": -0.012118609933934441
             },
             "training_steps": {
               "mean": 100.0,
@@ -3432,38 +3432,38 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.2824301436808817,
+              "mean": 0.31711483906644994,
               "count": 100,
-              "latest": 0.28709861459978553
+              "latest": 0.31760119917204543
             }
           }
         }
       }
     ],
-    "episode_time": 0.012723207473754883,
-    "timestamp": 1755371780.3762758
+    "episode_time": 0.013415336608886719,
+    "timestamp": 1755982947.7883277
   },
   {
     "episode": 21,
     "agent_rewards": {
-      "0": -2.871450984039505,
-      "1": -1.6632255145584116,
-      "2": -1.6999433393807108
+      "0": -1.2298634049691477,
+      "1": -0.8935728782778397,
+      "2": -1.7389591295937852
     },
     "federation_stats": {
       "federation_rounds": 88,
       "failed_aggregations": 0,
       "num_agents": 3,
-      "avg_reward": -2.888557859599601,
-      "parameter_norm": 0.31167988933720386,
-      "parameter_hash": "b8879fd4e1c55a8bd1a9acdc3993a69e6fce6796144a170873d14ea2564e792a",
+      "avg_reward": -1.0238607860839046,
+      "parameter_norm": 0.3187196627915285,
+      "parameter_hash": "3bf55fd00f52e4067db94ecd2cbb95fd6eb0ad1745753876178202b823228284",
       "total_errors": 0,
       "total_training_steps": 3960,
       "success_rate": 1.0,
       "health_status": {
         "status": "starting",
-        "uptime_seconds": 0.29006385803222656,
-        "last_check": 1755371780.376053,
+        "uptime_seconds": 0.312333345413208,
+        "last_check": 1755982947.7882154,
         "metrics_summary": {
           "federation_rounds": {
             "mean": 83.5,
@@ -3485,8 +3485,8 @@
       "current_state_valid": true,
       "health_monitor": {
         "status": "starting",
-        "uptime_seconds": 0.29081177711486816,
-        "last_check": 1755371780.387933,
+        "uptime_seconds": 0.31301069259643555,
+        "last_check": 1755982947.8010628,
         "metrics_summary": {
           "resets": {
             "mean": 18.5,
@@ -3499,9 +3499,9 @@
             "latest": 60.0
           },
           "avg_reward": {
-            "mean": -2.876209795610831,
+            "mean": -1.0300857204470772,
             "count": 100,
-            "latest": -2.8779977646464303
+            "latest": -1.060618641886763
           }
         }
       }
@@ -3511,20 +3511,20 @@
         "agent_id": 0,
         "training_steps": 1320,
         "error_count": 0,
-        "time_since_last_update": 0.00012826919555664062,
-        "parameter_norm": 0.32809015450439444,
-        "parameter_hash": "ac7b481c040dbdb46ed741c8ebfdf49d234f81b275c0fe756cb98d4be0ec2f79",
-        "avg_recent_reward": -3.6625731509291874,
+        "time_since_last_update": 0.000156402587890625,
+        "parameter_norm": 0.3238870973931819,
+        "parameter_hash": "70e6b5cf41832ac62f2fadc3a5a54f9239e87ebae9b77e447265d53fb836a2fe",
+        "avg_recent_reward": -1.3618983485779315,
         "total_rewards": 1320,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.290341854095459,
-          "last_check": 1755371780.3760977,
+          "uptime_seconds": 0.31263089179992676,
+          "last_check": 1755982947.7882552,
           "metrics_summary": {
             "action": {
-              "mean": -0.05003109265208948,
+              "mean": -0.040373577612878145,
               "count": 100,
-              "latest": -0.09383221766112085
+              "latest": -0.04225693560725873
             },
             "training_steps": {
               "mean": 100.0,
@@ -3532,9 +3532,9 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.31863753410232437,
+              "mean": 0.3203663886105358,
               "count": 100,
-              "latest": 0.32809015450439444
+              "latest": 0.3238870973931819
             }
           }
         }
@@ -3543,20 +3543,20 @@
         "agent_id": 1,
         "training_steps": 1320,
         "error_count": 0,
-        "time_since_last_update": 0.00012040138244628906,
-        "parameter_norm": 0.3109833457706327,
-        "parameter_hash": "edcea4a637d030400fa18db8f42108da5c78495da534b1f54799faca7a5882ce",
-        "avg_recent_reward": -2.45061705340312,
+        "time_since_last_update": 0.0001506805419921875,
+        "parameter_norm": 0.31899456528365333,
+        "parameter_hash": "f4bd8341c5744d32f8a88bbcb758cc5d56c9f048610b3a159b259245da576f36",
+        "avg_recent_reward": -0.47818383143413146,
         "total_rewards": 1320,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.29026246070861816,
-          "last_check": 1755371780.3761199,
+          "uptime_seconds": 0.31253862380981445,
+          "last_check": 1755982947.7882802,
           "metrics_summary": {
             "action": {
-              "mean": -0.007670914767503577,
+              "mean": -0.027688118778618813,
               "count": 100,
-              "latest": -0.029748615502220094
+              "latest": -0.03585665219064864
             },
             "training_steps": {
               "mean": 100.0,
@@ -3564,9 +3564,9 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.30957798188231983,
+              "mean": 0.31883021768434694,
               "count": 100,
-              "latest": 0.3109833457706327
+              "latest": 0.31899456528365333
             }
           }
         }
@@ -3575,20 +3575,20 @@
         "agent_id": 2,
         "training_steps": 1320,
         "error_count": 0,
-        "time_since_last_update": 0.00011301040649414062,
-        "parameter_norm": 0.31672698806380806,
-        "parameter_hash": "77ae657ace7f3f9d5657ab6db010653348cf5893b0602a64ca10b118c4c2f21d",
-        "avg_recent_reward": -2.515439182500184,
+        "time_since_last_update": 0.00013494491577148438,
+        "parameter_norm": 0.32459806585732426,
+        "parameter_hash": "fbb807c66c842886b89cdaa6f2f7190fc40fb5928ebf68bc897afeb30aea6bdb",
+        "avg_recent_reward": -1.2501749813291694,
         "total_rewards": 1320,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.29021620750427246,
-          "last_check": 1755371780.3762677,
+          "uptime_seconds": 0.3124980926513672,
+          "last_check": 1755982947.7883196,
           "metrics_summary": {
             "action": {
-              "mean": 0.011626749956464158,
+              "mean": -0.04217188664796863,
               "count": 100,
-              "latest": 0.014465228520165784
+              "latest": -0.05414448130259475
             },
             "training_steps": {
               "mean": 100.0,
@@ -3596,38 +3596,38 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.3156311913036857,
+              "mean": 0.3246496319437606,
               "count": 100,
-              "latest": 0.31672698806380806
+              "latest": 0.32459806585732426
             }
           }
         }
       }
     ],
-    "episode_time": 0.012357234954833984,
-    "timestamp": 1755371780.3887727
+    "episode_time": 0.013512134552001953,
+    "timestamp": 1755982947.8020098
   },
   {
     "episode": 22,
     "agent_rewards": {
-      "0": -3.3578757297936637,
-      "1": -1.474241984570032,
-      "2": -1.7206385829337334
+      "0": -1.1223791169861401,
+      "1": -2.511775667767036,
+      "2": -1.399716489770554
     },
     "federation_stats": {
       "federation_rounds": 92,
       "failed_aggregations": 0,
       "num_agents": 3,
-      "avg_reward": -1.9973343431890531,
-      "parameter_norm": 0.3205212332487422,
-      "parameter_hash": "d6afe39bf51e936a8578cb992a8b06b9c9ee104cea4ed0031ddad8130d9316ab",
+      "avg_reward": -1.3303120202901701,
+      "parameter_norm": 0.3413272024493546,
+      "parameter_hash": "9f59f1398679e0015fed09d4dd5e950130403afd7974f5343ca31a0b445b86fa",
       "total_errors": 0,
       "total_training_steps": 4140,
       "success_rate": 1.0,
       "health_status": {
         "status": "starting",
-        "uptime_seconds": 0.30226612091064453,
-        "last_check": 1755371780.388684,
+        "uptime_seconds": 0.3264131546020508,
+        "last_check": 1755982947.8018866,
         "metrics_summary": {
           "federation_rounds": {
             "mean": 87.5,
@@ -3649,8 +3649,8 @@
       "current_state_valid": true,
       "health_monitor": {
         "status": "starting",
-        "uptime_seconds": 0.30301594734191895,
-        "last_check": 1755371780.4001112,
+        "uptime_seconds": 0.3270902633666992,
+        "last_check": 1755982947.815103,
         "metrics_summary": {
           "resets": {
             "mean": 19.5,
@@ -3663,9 +3663,9 @@
             "latest": 60.0
           },
           "avg_reward": {
-            "mean": -2.0000709938693224,
+            "mean": -1.34006659862302,
             "count": 100,
-            "latest": -1.966335519983663
+            "latest": -1.3199812696537463
           }
         }
       }
@@ -3675,20 +3675,20 @@
         "agent_id": 0,
         "training_steps": 1380,
         "error_count": 0,
-        "time_since_last_update": 0.0001475811004638672,
-        "parameter_norm": 0.3406329278619561,
-        "parameter_hash": "9ff0f0791a53c81170aebf1e2b92829ddd6f88abc0b93f054d34b2beb87039f3",
-        "avg_recent_reward": -3.7291599414032803,
+        "time_since_last_update": 0.00015497207641601562,
+        "parameter_norm": 0.33656971941150343,
+        "parameter_hash": "a26e63879ea775a931346773c1d18ed678674307f6cf2b889d664fed91bee2b0",
+        "avg_recent_reward": -1.3528862159095145,
         "total_rewards": 1380,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.3025481700897217,
-          "last_check": 1755371780.388715,
+          "uptime_seconds": 0.32669496536254883,
+          "last_check": 1755982947.801943,
           "metrics_summary": {
             "action": {
-              "mean": -0.10443155124703671,
+              "mean": -0.06748879816347311,
               "count": 100,
-              "latest": -0.08331515268297686
+              "latest": -0.06944422335627236
             },
             "training_steps": {
               "mean": 100.0,
@@ -3696,9 +3696,9 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.32997334848201587,
+              "mean": 0.33918923003046336,
               "count": 100,
-              "latest": 0.3406329278619561
+              "latest": 0.33656971941150343
             }
           }
         }
@@ -3707,20 +3707,20 @@
         "agent_id": 1,
         "training_steps": 1380,
         "error_count": 0,
-        "time_since_last_update": 0.0001347064971923828,
-        "parameter_norm": 0.32206884397948704,
-        "parameter_hash": "ae9f37111d4694bbc6de8586d20b77495549d51b94440305d393e33a18ab08a1",
-        "avg_recent_reward": -1.050461831218289,
+        "time_since_last_update": 0.0001399517059326172,
+        "parameter_norm": 0.34077271736383796,
+        "parameter_hash": "25624ec7d38f4626660b292aecad277b5ce65b43e3cdc4c8b07fdb9478aec6bf",
+        "avg_recent_reward": -1.6314675172739688,
         "total_rewards": 1380,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.3024616241455078,
-          "last_check": 1755371780.3887463,
+          "uptime_seconds": 0.32660388946533203,
+          "last_check": 1755982947.8019698,
           "metrics_summary": {
             "action": {
-              "mean": -0.030370442281583483,
+              "mean": -0.09068361489414704,
               "count": 100,
-              "latest": -0.028782824039346
+              "latest": -0.09392118281548476
             },
             "training_steps": {
               "mean": 100.0,
@@ -3728,9 +3728,9 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.319469467124722,
+              "mean": 0.34071649817264243,
               "count": 100,
-              "latest": 0.32206884397948704
+              "latest": 0.34077271736383796
             }
           }
         }
@@ -3739,20 +3739,20 @@
         "agent_id": 2,
         "training_steps": 1380,
         "error_count": 0,
-        "time_since_last_update": 0.00012302398681640625,
-        "parameter_norm": 0.3189384111328544,
-        "parameter_hash": "1caf95676ed90177c55342eda9449563034fda58b511d1203bbace2ad70c89cd",
-        "avg_recent_reward": -1.2205912089863982,
+        "time_since_last_update": 0.0001270771026611328,
+        "parameter_norm": 0.33847596270491664,
+        "parameter_hash": "0fdf96dd0ed66580d2c2cafe13a081c268e5e7d77b3d8035e8d86afe223a53af",
+        "avg_recent_reward": -1.0358460626855766,
         "total_rewards": 1380,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.3024165630340576,
-          "last_check": 1755371780.3887665,
+          "uptime_seconds": 0.32656073570251465,
+          "last_check": 1755982947.8019989,
           "metrics_summary": {
             "action": {
-              "mean": -0.03462456929593869,
+              "mean": -0.07077997596144434,
               "count": 100,
-              "latest": -0.033457584605265836
+              "latest": -0.0750687436488439
             },
             "training_steps": {
               "mean": 100.0,
@@ -3760,38 +3760,38 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.3196557531601356,
+              "mean": 0.3397645647130787,
               "count": 100,
-              "latest": 0.3189384111328544
+              "latest": 0.33847596270491664
             }
           }
         }
       }
     ],
-    "episode_time": 0.01208949089050293,
-    "timestamp": 1755371780.4009733
+    "episode_time": 0.013930797576904297,
+    "timestamp": 1755982947.8160715
   },
   {
     "episode": 23,
     "agent_rewards": {
-      "0": -0.12797406014072593,
-      "1": -0.12840027354659656,
-      "2": -0.6199266188144539
+      "0": -1.0460313695313426,
+      "1": -0.7471564551730306,
+      "2": -0.7571878397490021
     },
     "federation_stats": {
       "federation_rounds": 96,
       "failed_aggregations": 0,
       "num_agents": 3,
-      "avg_reward": -0.20389584169033972,
-      "parameter_norm": 0.3274856897669149,
-      "parameter_hash": "752f00d2ab0c79fe6c7eb75aa467adbe25c7c094ed115c935669e0d33edb1f90",
+      "avg_reward": -0.6602103548731648,
+      "parameter_norm": 0.3447210477389636,
+      "parameter_hash": "553a33e42af0ca5a726ad8c346e809e6e8142d8dc940a8981c39ba8bc7c95de2",
       "total_errors": 0,
       "total_training_steps": 4320,
       "success_rate": 1.0,
       "health_status": {
         "status": "starting",
-        "uptime_seconds": 0.3162648677825928,
-        "last_check": 1755371780.4008863,
+        "uptime_seconds": 0.34275364875793457,
+        "last_check": 1755982947.8159664,
         "metrics_summary": {
           "federation_rounds": {
             "mean": 91.5,
@@ -3813,8 +3813,8 @@
       "current_state_valid": true,
       "health_monitor": {
         "status": "starting",
-        "uptime_seconds": 0.31701231002807617,
-        "last_check": 1755371780.4142113,
+        "uptime_seconds": 0.3434319496154785,
+        "last_check": 1755982947.8312376,
         "metrics_summary": {
           "resets": {
             "mean": 20.5,
@@ -3827,9 +3827,9 @@
             "latest": 60.0
           },
           "avg_reward": {
-            "mean": -0.24201432350009452,
+            "mean": -0.6567581459228723,
             "count": 100,
-            "latest": -0.20862274712672416
+            "latest": -0.6793542135919982
           }
         }
       }
@@ -3839,20 +3839,20 @@
         "agent_id": 0,
         "training_steps": 1440,
         "error_count": 0,
-        "time_since_last_update": 0.00010967254638671875,
-        "parameter_norm": 0.32744366453064616,
-        "parameter_hash": "1926d2808b42d5c097c5143bd5455a36bbb5a6331f5e2967b43db7c951920a37",
-        "avg_recent_reward": -0.08503416797174101,
+        "time_since_last_update": 0.00020956993103027344,
+        "parameter_norm": 0.34467193961866005,
+        "parameter_hash": "d6077b3c51fb9707966291c06186685f84e5969d7d7103fb9ef828653aa40c37",
+        "avg_recent_reward": -0.814947587355119,
         "total_rewards": 1440,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.3165407180786133,
-          "last_check": 1755371780.4009213,
+          "uptime_seconds": 0.34303760528564453,
+          "last_check": 1755982947.8160071,
           "metrics_summary": {
             "action": {
-              "mean": -0.011038273858161798,
+              "mean": -0.07263616007739668,
               "count": 100,
-              "latest": -0.007098541198575033
+              "latest": -0.0709315179043437
             },
             "training_steps": {
               "mean": 100.0,
@@ -3860,9 +3860,9 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.32754478702942114,
+              "mean": 0.3440257758847227,
               "count": 100,
-              "latest": 0.32744366453064616
+              "latest": 0.34467193961866005
             }
           }
         }
@@ -3871,20 +3871,20 @@
         "agent_id": 1,
         "training_steps": 1440,
         "error_count": 0,
-        "time_since_last_update": 9.918212890625e-05,
-        "parameter_norm": 0.32792642593421717,
-        "parameter_hash": "34fb8c475f4c62cc412b864d94cd7847c9e25f904f9784aeb9cf25ada46e6c84",
-        "avg_recent_reward": -0.07562617002117551,
+        "time_since_last_update": 0.00014710426330566406,
+        "parameter_norm": 0.3453124397618344,
+        "parameter_hash": "df0882422343ef683009b14b483c78c35c416fc218da1e286d2531df71ac4f99",
+        "avg_recent_reward": -0.8047560775231777,
         "total_rewards": 1440,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.3164501190185547,
-          "last_check": 1755371780.4009454,
+          "uptime_seconds": 0.34294676780700684,
+          "last_check": 1755982947.816035,
           "metrics_summary": {
             "action": {
-              "mean": -0.008641414225169041,
+              "mean": -0.07539342544006587,
               "count": 100,
-              "latest": -0.008473711041921364
+              "latest": -0.07661178297829177
             },
             "training_steps": {
               "mean": 100.0,
@@ -3892,9 +3892,9 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.32768743808242223,
+              "mean": 0.3444383711971232,
               "count": 100,
-              "latest": 0.32792642593421717
+              "latest": 0.3453124397618344
             }
           }
         }
@@ -3903,20 +3903,20 @@
         "agent_id": 2,
         "training_steps": 1440,
         "error_count": 0,
-        "time_since_last_update": 8.535385131835938e-05,
-        "parameter_norm": 0.3248074323415744,
-        "parameter_hash": "ea5aea2dd0b36201fcb6ec6bd8fb77dae9c9b5a55c34ff2025222a6b7f137cfb",
-        "avg_recent_reward": -0.565382632507367,
+        "time_since_last_update": 0.00012755393981933594,
+        "parameter_norm": 0.345100220638177,
+        "parameter_hash": "881815ef2f6740cf4369c82bb33a96c33d080d1915542021144b367781fcd297",
+        "avg_recent_reward": -0.35057077289032057,
         "total_rewards": 1440,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.3164024353027344,
-          "last_check": 1755371780.400967,
+          "uptime_seconds": 0.3429138660430908,
+          "last_check": 1755982947.8160615,
           "metrics_summary": {
             "action": {
-              "mean": -0.03144039236296281,
+              "mean": -0.03331530807206157,
               "count": 100,
-              "latest": -0.03098972064598181
+              "latest": -0.03129057881767616
             },
             "training_steps": {
               "mean": 100.0,
@@ -3924,38 +3924,38 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.3260576542349586,
+              "mean": 0.3447830176789995,
               "count": 100,
-              "latest": 0.3248074323415744
+              "latest": 0.345100220638177
             }
           }
         }
       }
     ],
-    "episode_time": 0.013881921768188477,
-    "timestamp": 1755371780.4149575
+    "episode_time": 0.016211986541748047,
+    "timestamp": 1755982947.8324242
   },
   {
     "episode": 24,
     "agent_rewards": {
-      "0": -1.5012260329643854,
-      "1": -0.6536659871122522,
-      "2": -1.1656716438713384
+      "0": -0.34793907163715226,
+      "1": -0.6779864792100246,
+      "2": -0.7777660203093064
     },
     "federation_stats": {
       "federation_rounds": 100,
       "failed_aggregations": 0,
       "num_agents": 3,
-      "avg_reward": -0.7486925873480111,
-      "parameter_norm": 0.3361763816766599,
-      "parameter_hash": "077899af489744a55cb7daed29cd3b78569741d0b473c662571aa5008ddb521d",
+      "avg_reward": -0.22963935649400924,
+      "parameter_norm": 0.34431816145051686,
+      "parameter_hash": "8040bd885fb78c5b006cc8404090056a8cb3c5ef140b3d4587b5352e9718d996",
       "total_errors": 0,
       "total_training_steps": 4500,
       "success_rate": 1.0,
       "health_status": {
         "status": "starting",
-        "uptime_seconds": 0.32915425300598145,
-        "last_check": 1755371780.414885,
+        "uptime_seconds": 0.36025357246398926,
+        "last_check": 1755982947.8323069,
         "metrics_summary": {
           "federation_rounds": {
             "mean": 95.5,
@@ -3977,8 +3977,8 @@
       "current_state_valid": true,
       "health_monitor": {
         "status": "starting",
-        "uptime_seconds": 0.32990336418151855,
-        "last_check": 1755371780.4269836,
+        "uptime_seconds": 0.36094069480895996,
+        "last_check": 1755982947.8489137,
         "metrics_summary": {
           "resets": {
             "mean": 21.5,
@@ -3991,9 +3991,9 @@
             "latest": 60.0
           },
           "avg_reward": {
-            "mean": -0.7641990211297742,
+            "mean": -0.26476396267933133,
             "count": 100,
-            "latest": -0.7294086695532842
+            "latest": -0.23793921867809184
           }
         }
       }
@@ -4003,20 +4003,20 @@
         "agent_id": 0,
         "training_steps": 1500,
         "error_count": 0,
-        "time_since_last_update": 0.00011873245239257812,
-        "parameter_norm": 0.34333718615287945,
-        "parameter_hash": "e71f413577d7a7ba738e2d63c6a878826cf48aa9751a5d8a9aad211a88b92e6b",
-        "avg_recent_reward": -1.1862507549873276,
+        "time_since_last_update": 0.0002543926239013672,
+        "parameter_norm": 0.3443503008309016,
+        "parameter_hash": "16b8b9b1c5e8ce944912d58062f009de09addf9a443e20f22660088ec076af29",
+        "avg_recent_reward": -0.2143326839521686,
         "total_rewards": 1500,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.3294339179992676,
-          "last_check": 1755371780.414914,
+          "uptime_seconds": 0.3605663776397705,
+          "last_check": 1755982947.8323498,
           "metrics_summary": {
             "action": {
-              "mean": -0.05714209560022412,
+              "mean": -0.03971778586303935,
               "count": 100,
-              "latest": -0.05851015596440726
+              "latest": -0.027111887671733344
             },
             "training_steps": {
               "mean": 100.0,
@@ -4024,9 +4024,9 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.342767905755417,
+              "mean": 0.3444314789741649,
               "count": 100,
-              "latest": 0.34333718615287945
+              "latest": 0.3443503008309016
             }
           }
         }
@@ -4035,20 +4035,20 @@
         "agent_id": 1,
         "training_steps": 1500,
         "error_count": 0,
-        "time_since_last_update": 0.00011754035949707031,
-        "parameter_norm": 0.3346499068103664,
-        "parameter_hash": "7934a9104419fc7b965ce3a0b32e16edbb908380a3f2bafcfbc2f8e5bfc6aac2",
-        "avg_recent_reward": -0.6382783390848854,
+        "time_since_last_update": 0.0002574920654296875,
+        "parameter_norm": 0.34214870227526656,
+        "parameter_hash": "67effc5abd060dab412b2b6425a6d70d13b36aa9607385683c0161433efce0ce",
+        "avg_recent_reward": -0.42255781885853094,
         "total_rewards": 1500,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.32935476303100586,
-          "last_check": 1755371780.414934,
+          "uptime_seconds": 0.3604776859283447,
+          "last_check": 1755982947.832378,
           "metrics_summary": {
             "action": {
-              "mean": -0.031200290782497482,
+              "mean": -0.0515817036809418,
               "count": 100,
-              "latest": -0.03463724010844138
+              "latest": -0.04587658458496717
             },
             "training_steps": {
               "mean": 100.0,
@@ -4056,9 +4056,9 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.3349522079221362,
+              "mean": 0.3431374079658724,
               "count": 100,
-              "latest": 0.3346499068103664
+              "latest": 0.34214870227526656
             }
           }
         }
@@ -4067,20 +4067,20 @@
         "agent_id": 2,
         "training_steps": 1500,
         "error_count": 0,
-        "time_since_last_update": 0.00010347366333007812,
-        "parameter_norm": 0.3347318895154215,
-        "parameter_hash": "d975d3c6795f33c43896c7395683e408f1742d499ed9460c4c8452b933000715",
-        "avg_recent_reward": -0.4680679693171096,
+        "time_since_last_update": 0.0002474784851074219,
+        "parameter_norm": 0.34500731231595627,
+        "parameter_hash": "e7d9122421fb0efb4a6c2ef590d46cb67f348f928de6736e74c590a4d2608d67",
+        "avg_recent_reward": -0.1574013852272945,
         "total_rewards": 1500,
         "health_status": {
           "status": "starting",
-          "uptime_seconds": 0.32930684089660645,
-          "last_check": 1755371780.4149528,
+          "uptime_seconds": 0.36043596267700195,
+          "last_check": 1755982947.8324146,
           "metrics_summary": {
             "action": {
-              "mean": -0.03255699549355963,
+              "mean": -0.032683338206881025,
               "count": 100,
-              "latest": -0.02516266474992009
+              "latest": -0.040708572468820294
             },
             "training_steps": {
               "mean": 100.0,
@@ -4088,15 +4088,15 @@
               "latest": 100.0
             },
             "parameter_norm": {
-              "mean": 0.3361432663997544,
+              "mean": 0.34477055036577364,
               "count": 100,
-              "latest": 0.3347318895154215
+              "latest": 0.34500731231595627
             }
           }
         }
       }
     ],
-    "episode_time": 0.012797117233276367,
-    "timestamp": 1755371780.4278634
+    "episode_time": 0.017364978790283203,
+    "timestamp": 1755982947.849961
   }
 ]

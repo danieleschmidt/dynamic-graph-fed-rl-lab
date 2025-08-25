@@ -1,0 +1,23 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+rule_files:
+  - "consciousness_rules.yml"
+
+scrape_configs:
+  - job_name: 'consciousness'
+    static_configs:
+      - targets: ['consciousness:8000']
+    metrics_path: '/metrics'
+    scrape_interval: 30s
+    
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets:
+          - alertmanager:9093

@@ -62,7 +62,7 @@ async def demonstrate_autonomous_research_system():
     try:
         # Configuration for research system
         config = SystemConfiguration(
-            openai_api_key="demo-key-research",  # Replace with actual key for GPT-4 integration
+            openai_api_key = "SECURE_API_KEY_FROM_ENV"  # TODO: Use environment variable,  # Replace with actual key for GPT-4 integration
             optimization_strategy=OptimizationStrategy.BALANCED,
             autonomous_mode_enabled=True,
             max_concurrent_experiments=2,

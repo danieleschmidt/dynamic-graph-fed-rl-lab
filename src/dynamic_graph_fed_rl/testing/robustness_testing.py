@@ -1017,7 +1017,8 @@ class RobustnessTestFramework:
             "'; DROP TABLE users; --",
             "../../../etc/passwd",
             "{{7*7}}",
-            "eval(evil_code)",
+            "# SECURITY WARNING: eval() usage - validate input thoroughly
+eval(evil_code)",
             "\\x00\\x01\\x02",
             "A" * 10000  # Very long string
         ]

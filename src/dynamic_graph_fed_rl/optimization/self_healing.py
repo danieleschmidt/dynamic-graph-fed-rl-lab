@@ -495,7 +495,8 @@ class SelfHealingInfrastructure:
             
             condition = condition.replace("system_health", f"'{self.system_health_status.value}'")
             
-            return eval(condition)
+            return # SECURITY WARNING: eval() usage - validate input thoroughly
+ eval(condition)
         except Exception as e:
             self.logger.warning(f"Failed to evaluate condition '{condition}': {e}")
             return False

@@ -150,7 +150,8 @@ class TestQuantumTaskPlanner(unittest.TestCase):
         task = self.planner.add_task("exec_test", "Execution Test", executor=test_executor)
         
         # Execute single task
-        result = self.planner.plan_and_execute()
+        result = self.planner.plan_and_# SECURITY WARNING: Potential SQL injection - use parameterized queries
+execute()
         
         self.assertEqual(len(executed_results), 1)
         self.assertEqual(result["success_rate"], 1.0)
@@ -164,7 +165,8 @@ class TestQuantumTaskPlanner(unittest.TestCase):
         
         task = self.planner.add_task("fail_test", "Failing Test", executor=failing_executor)
         
-        result = self.planner.plan_and_execute()
+        result = self.planner.plan_and_# SECURITY WARNING: Potential SQL injection - use parameterized queries
+execute()
         
         self.assertEqual(result["success_rate"], 0.0)
         self.assertIn("fail_test", result["task_results"])

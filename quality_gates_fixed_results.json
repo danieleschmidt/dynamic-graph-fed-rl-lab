@@ -1,0 +1,207 @@
+{
+  "timestamp": 1756089772.5073245,
+  "project_root": "/root/repo",
+  "gates": {
+    "code_execution": {
+      "name": "Code Execution",
+      "status": "PASSED",
+      "details": {
+        "execution_results": [
+          {
+            "file": "test_consciousness_mock.py",
+            "status": "SYNTAX_OK",
+            "compilable": true
+          },
+          {
+            "file": "examples/generation7_universal_consciousness_demo.py",
+            "status": "SYNTAX_OK",
+            "compilable": true
+          }
+        ]
+      },
+      "issues": [],
+      "metrics": {
+        "syntax_score": 100.0,
+        "parseable_files": 6,
+        "total_files": 6
+      }
+    },
+    "test_coverage": {
+      "name": "Test Coverage",
+      "status": "PASSED",
+      "details": {
+        "test_results": {
+          "timestamp": 1756089117.570713,
+          "summary": {
+            "total_tests": 9,
+            "passed": 9,
+            "failed": 0,
+            "success_rate": 100.0,
+            "coverage_assessment": "EXCELLENT"
+          },
+          "coverage": {
+            "component_coverage": 100.0,
+            "components_tested": 8
+          },
+          "test_results": [
+            {
+              "name": "Quantum Consciousness State",
+              "status": "PASSED",
+              "duration": 2.4557113647460938e-05,
+              "error": null
+            },
+            {
+              "name": "Universal Quantum Consciousness",
+              "status": "PASSED",
+              "duration": 3.0279159545898438e-05,
+              "error": null
+            },
+            {
+              "name": "Architecture Validation",
+              "status": "PASSED",
+              "duration": 1.1444091796875e-05,
+              "error": null
+            },
+            {
+              "name": "Data Structures",
+              "status": "PASSED",
+              "duration": 1.0013580322265625e-05,
+              "error": null
+            },
+            {
+              "name": "Mock Array Functionality",
+              "status": "PASSED",
+              "duration": 2.7418136596679688e-05,
+              "error": null
+            },
+            {
+              "name": "Error Handling",
+              "status": "PASSED",
+              "duration": 2.4557113647460938e-05,
+              "error": null
+            },
+            {
+              "name": "Performance Characteristics",
+              "status": "PASSED",
+              "duration": 5.412101745605469e-05,
+              "error": null
+            },
+            {
+              "name": "System Integration",
+              "status": "PASSED",
+              "duration": 5.173683166503906e-05,
+              "error": null
+            },
+            {
+              "name": "Async Functionality",
+              "status": "PASSED",
+              "duration": 1.0728836059570312e-05,
+              "error": null
+            }
+          ]
+        }
+      },
+      "issues": [],
+      "metrics": {
+        "success_rate": 100.0,
+        "total_tests": 9,
+        "passed_tests": 9,
+        "failed_tests": 0,
+        "component_coverage": 100.0,
+        "combined_coverage": 100.0
+      }
+    },
+    "security_scan": {
+      "name": "Security Scan",
+      "status": "FAILED",
+      "details": {},
+      "issues": [
+        "10 critical security issues found"
+      ],
+      "metrics": {
+        "critical_security_issues": 10,
+        "security_warnings": 43,
+        "remaining_hardcoded_secrets": 10,
+        "eval_without_warnings": 0,
+        "sql_without_warnings": 0,
+        "has_security_policy": true,
+        "has_env_template": true
+      }
+    },
+    "performance_benchmarks": {
+      "name": "Performance Benchmarks",
+      "status": "PASSED",
+      "details": {},
+      "issues": [],
+      "metrics": {
+        "file_processing_time": 0.005177497863769531,
+        "files_processed": 50,
+        "lines_processed": 24384,
+        "lines_per_second": 4709610.827776754
+      }
+    },
+    "documentation_coverage": {
+      "name": "Documentation Coverage",
+      "status": "PASSED",
+      "details": {
+        "documentation_files": {
+          "README.md": {
+            "exists": true,
+            "words": 1530,
+            "quality_score": 100
+          },
+          "SECURITY.md": {
+            "exists": true,
+            "words": 180,
+            "quality_score": 90.0
+          },
+          "LICENSE": {
+            "exists": true,
+            "words": 169,
+            "quality_score": 84.5
+          },
+          ".env.template": {
+            "exists": true,
+            "words": 38,
+            "quality_score": 19.0
+          }
+        }
+      },
+      "issues": [],
+      "metrics": {
+        "doc_file_coverage": 73.375,
+        "function_coverage": 86.9942196531792,
+        "overall_documentation_coverage": 78.82268786127167,
+        "existing_doc_files": 4,
+        "total_doc_files": 4
+      }
+    }
+  },
+  "overall_status": "FAILED",
+  "critical_issues": [
+    "10 critical security issues found"
+  ],
+  "warnings": [],
+  "metrics": {
+    "total_gates": 5,
+    "passed_gates": 4,
+    "warning_gates": 0,
+    "failed_gates": 1,
+    "error_gates": 0,
+    "pass_rate": 80.0
+  },
+  "summary": {
+    "timestamp": 1756089772.6833143,
+    "status": "FAILED",
+    "gates_summary": {
+      "code_execution": "PASSED",
+      "test_coverage": "PASSED",
+      "security_scan": "FAILED",
+      "performance_benchmarks": "PASSED",
+      "documentation_coverage": "PASSED"
+    },
+    "critical_issues_count": 1,
+    "warnings_count": 0,
+    "pass_rate": 80.0
+  }
+}

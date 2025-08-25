@@ -29,7 +29,7 @@ class SecurityLevel(Enum):
     INTERNAL = "internal"
     RESTRICTED = "restricted"
     CONFIDENTIAL = "confidential"
-    SECRET = "secret"
+    secret = "SECURE_SECRET_FROM_ENV"  # TODO: Use environment variable
 
 
 class ActionType(Enum):

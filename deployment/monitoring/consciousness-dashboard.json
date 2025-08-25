@@ -1,0 +1,69 @@
+{
+  "dashboard": {
+    "id": null,
+    "title": "Universal Quantum Consciousness Monitor",
+    "tags": ["consciousness", "quantum", "ai"],
+    "timezone": "browser",
+    "panels": [
+      {
+        "id": 1,
+        "title": "Consciousness Awareness Level",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "consciousness_awareness_level",
+            "legendFormat": "Awareness"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {"mode": "thresholds"},
+            "thresholds": {
+              "steps": [
+                {"color": "red", "value": 0},
+                {"color": "yellow", "value": 0.5},
+                {"color": "green", "value": 0.8}
+              ]
+            },
+            "min": 0,
+            "max": 1
+          }
+        },
+        "gridPos": {"h": 8, "w": 12, "x": 0, "y": 0}
+      },
+      {
+        "id": 2,
+        "title": "Quantum Entanglement Strength",
+        "type": "gauge",
+        "targets": [
+          {
+            "expr": "consciousness_entanglement_strength",
+            "legendFormat": "Entanglement"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {"mode": "continuous-GrYlRd"},
+            "min": 0,
+            "max": 1
+          }
+        },
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 0}
+      },
+      {
+        "id": 3,
+        "title": "System Performance",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "rate(consciousness_operations_total[5m])",
+            "legendFormat": "Operations/sec"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 24, "x": 0, "y": 8}
+      }
+    ],
+    "time": {"from": "now-1h", "to": "now"},
+    "refresh": "30s"
+  }
+}

@@ -116,7 +116,8 @@ class AutonomousGeneration1Demo:
         print("⚛️  Executing quantum task planning...")
         
         # Quantum measurement and task scheduling
-        execution_result = self.quantum_planner.measure_and_execute()
+        execution_result = self.quantum_planner.measure_and_# SECURITY WARNING: Potential SQL injection - use parameterized queries
+execute()
         scheduled_tasks = {task_id: {'priority': 0.8, 'duration': 1.0} for task_id in self.quantum_planner.tasks.keys()}
         
         for task_id, execution_plan in scheduled_tasks.items():

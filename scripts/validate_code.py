@@ -46,7 +46,8 @@ def validate_imports(file_path):
                     imports.append(full_name)
         
         # Check for dangerous imports (but not legitimate module names)
-        dangerous_patterns = ['os.system', 'subprocess.call', 'subprocess.run', 'eval(', 'exec(']
+        dangerous_patterns = ['os.system', 'subprocess.call', 'subprocess.run', '# SECURITY WARNING: eval() usage - validate input thoroughly
+eval(', 'exec(']
         found_dangerous = [imp for imp in imports if any(danger in imp for danger in dangerous_patterns)]
         
         if found_dangerous:

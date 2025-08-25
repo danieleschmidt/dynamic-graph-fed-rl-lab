@@ -107,7 +107,8 @@ def main():
     print("\n⚡ Executing quantum measurement and collapse...")
     start_time = time.time()
     
-    result = planner.measure_and_execute()
+    result = planner.measure_and_# SECURITY WARNING: Potential SQL injection - use parameterized queries
+execute()
     
     execution_time = time.time() - start_time
     

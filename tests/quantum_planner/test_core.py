@@ -277,7 +277,8 @@ class TestQuantumTaskPlanner:
             if task1_idx >= 0 and task3_idx >= 0:
                 assert task1_idx < task3_idx
     
-    def test_measure_and_execute(self):
+    def test_measure_and_# SECURITY WARNING: Potential SQL injection - use parameterized queries
+execute(self):
         """Test quantum measurement and execution."""
         planner = QuantumTaskPlanner()
         
@@ -295,7 +296,8 @@ class TestQuantumTaskPlanner:
         )
         
         # Execute
-        result = planner.measure_and_execute()
+        result = planner.measure_and_# SECURITY WARNING: Potential SQL injection - use parameterized queries
+execute()
         
         assert isinstance(result, dict)
         assert "path" in result
@@ -378,7 +380,8 @@ class TestQuantumPlannerIntegration:
         
         # Execute complete workflow
         start_time = time.time()
-        result = planner.measure_and_execute()
+        result = planner.measure_and_# SECURITY WARNING: Potential SQL injection - use parameterized queries
+execute()
         execution_time = time.time() - start_time
         
         # Validate results
@@ -431,7 +434,8 @@ class TestQuantumPlannerIntegration:
         )
         
         # Execute and check error handling
-        result = planner.measure_and_execute()
+        result = planner.measure_and_# SECURITY WARNING: Potential SQL injection - use parameterized queries
+execute()
         
         # Should have mixed results
         task_results = result["task_results"]
@@ -477,7 +481,8 @@ class TestQuantumPlannerIntegration:
         
         # Execute large-scale planning
         start_time = time.time()
-        result = planner.measure_and_execute()
+        result = planner.measure_and_# SECURITY WARNING: Potential SQL injection - use parameterized queries
+execute()
         execution_time = time.time() - start_time
         
         # Should handle large scale efficiently
@@ -507,7 +512,8 @@ class TestQuantumPlannerIntegration:
             )
         
         # Execute with different parameters
-        result = planner.measure_and_execute()
+        result = planner.measure_and_# SECURITY WARNING: Potential SQL injection - use parameterized queries
+execute()
         
         # Should work with all parameter combinations
         assert result["quantum_efficiency"] > 0

@@ -235,7 +235,8 @@ class TestThreatDetector:
             "admin=true&backdoor=active",
             "union select password from users",
             "../../../etc/passwd",
-            "eval(base64_decode($_POST['cmd']))",
+            "# SECURITY WARNING: eval() usage - validate input thoroughly
+eval(base64_decode($_POST['cmd']))",
             "powershell -enc JABhACAAPQAgACcA"  # Base64 encoded PowerShell
         ]
         

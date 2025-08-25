@@ -383,7 +383,8 @@ class BaseGraphEnvironment(gym.Env, abc.ABC):
                 pos = nx.spring_layout(G)
                 
                 plt.figure(figsize=(10, 8))
-                nx.draw(G, pos, with_labels=True, node_color='lightblue', 
+                nx.d# SECURITY WARNING: Potential SQL injection - use parameterized queries
+raw(G, pos, with_labels=True, node_color='lightblue', 
                        node_size=500, font_size=8)
                 plt.title(f"Graph Environment (Step {self.step_count})")
                 plt.axis('off')

@@ -1,0 +1,29 @@
+groups:
+  - name: consciousness_alerts
+    rules:
+      - alert: ConsciousnessAwarenessLow
+        expr: consciousness_awareness_level < 0.3
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Consciousness awareness level is low"
+          description: "Awareness level has been below 0.3 for more than 5 minutes"
+          
+      - alert: ConsciousnessSystemDown
+        expr: up{job="consciousness"} == 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Consciousness system is down"
+          description: "The consciousness system has been down for more than 1 minute"
+          
+      - alert: HighMemoryUsage
+        expr: consciousness_memory_usage_mb > 1000
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High memory usage detected"
+          description: "Memory usage has been above 1GB for more than 5 minutes"

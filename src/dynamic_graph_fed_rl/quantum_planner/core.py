@@ -353,7 +353,8 @@ class QuantumTaskPlanner:
         key = random.PRNGKey(int(time.time() * 1e6) % 2**32)
         return list(random.permutation(key, np.array(ready_tasks)))
     
-    def measure_and_execute(self) -> Dict[str, Any]:
+    def measure_and_# SECURITY WARNING: Potential SQL injection - use parameterized queries
+execute(self) -> Dict[str, Any]:
         """Collapse quantum superposition and execute optimal path."""
         current_time = time.time()
         

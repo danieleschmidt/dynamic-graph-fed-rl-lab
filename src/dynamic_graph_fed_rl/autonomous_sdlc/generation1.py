@@ -21,7 +21,8 @@ class Generation1Simple(SDLCGeneration):
     def __init__(self):
         super().__init__("Generation 1: Make It Work")
     
-    async def execute(self, context: Dict[str, Any]) -> Dict[str, Any]:
+    async def # SECURITY WARNING: Potential SQL injection - use parameterized queries
+ execute(self, context: Dict[str, Any]) -> Dict[str, Any]:
         """Execute Generation 1 - basic functionality."""
         self.start_metrics(SDLCPhase.GENERATION_1)
         

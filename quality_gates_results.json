@@ -1,0 +1,2328 @@
+{
+  "timestamp": 1756089245.8529987,
+  "project_root": "/root/repo",
+  "gates": {
+    "code_execution": {
+      "name": "Code Execution",
+      "status": "PASSED",
+      "details": {
+        "execution_results": [
+          {
+            "file": "test_consciousness_mock.py",
+            "status": "SYNTAX_OK",
+            "compilable": true
+          },
+          {
+            "file": "examples/generation7_universal_consciousness_demo.py",
+            "status": "SYNTAX_OK",
+            "compilable": true
+          }
+        ]
+      },
+      "issues": [],
+      "metrics": {
+        "syntax_score": 100.0,
+        "parseable_files": 6,
+        "total_files": 6
+      }
+    },
+    "test_coverage": {
+      "name": "Test Coverage",
+      "status": "PASSED",
+      "details": {
+        "test_results": {
+          "timestamp": 1756089117.570713,
+          "summary": {
+            "total_tests": 9,
+            "passed": 9,
+            "failed": 0,
+            "success_rate": 100.0,
+            "coverage_assessment": "EXCELLENT"
+          },
+          "coverage": {
+            "component_coverage": 100.0,
+            "components_tested": 8
+          },
+          "test_results": [
+            {
+              "name": "Quantum Consciousness State",
+              "status": "PASSED",
+              "duration": 2.4557113647460938e-05,
+              "error": null
+            },
+            {
+              "name": "Universal Quantum Consciousness",
+              "status": "PASSED",
+              "duration": 3.0279159545898438e-05,
+              "error": null
+            },
+            {
+              "name": "Architecture Validation",
+              "status": "PASSED",
+              "duration": 1.1444091796875e-05,
+              "error": null
+            },
+            {
+              "name": "Data Structures",
+              "status": "PASSED",
+              "duration": 1.0013580322265625e-05,
+              "error": null
+            },
+            {
+              "name": "Mock Array Functionality",
+              "status": "PASSED",
+              "duration": 2.7418136596679688e-05,
+              "error": null
+            },
+            {
+              "name": "Error Handling",
+              "status": "PASSED",
+              "duration": 2.4557113647460938e-05,
+              "error": null
+            },
+            {
+              "name": "Performance Characteristics",
+              "status": "PASSED",
+              "duration": 5.412101745605469e-05,
+              "error": null
+            },
+            {
+              "name": "System Integration",
+              "status": "PASSED",
+              "duration": 5.173683166503906e-05,
+              "error": null
+            },
+            {
+              "name": "Async Functionality",
+              "status": "PASSED",
+              "duration": 1.0728836059570312e-05,
+              "error": null
+            }
+          ]
+        }
+      },
+      "issues": [],
+      "metrics": {
+        "success_rate": 100.0,
+        "total_tests": 9,
+        "passed_tests": 9,
+        "failed_tests": 0,
+        "component_coverage": 100.0,
+        "combined_coverage": 100.0
+      }
+    },
+    "security_scan": {
+      "name": "Security Scan",
+      "status": "FAILED",
+      "details": {
+        "potential_secrets": [
+          {
+            "file": "comprehensive_quality_gates.py",
+            "line": 518,
+            "pattern": "key",
+            "context": "cached_value = cache.get(\"test_key\")"
+          },
+          {
+            "file": "comprehensive_test_suite.py",
+            "line": 219,
+            "pattern": "key",
+            "context": "assert cache.get(\"key1\") == \"value1\""
+          },
+          {
+            "file": "comprehensive_test_suite.py",
+            "line": 380,
+            "pattern": "key",
+            "context": "cached_value = cache.get(\"test_key\")"
+          },
+          {
+            "file": "quality_gates_validation.py",
+            "line": 104,
+            "pattern": "password",
+            "context": "if re.search(r'(password|secret|key)\\s*=\\s*[\"\\'][^\"\\']+[\"\\']', line, re.ignorecase):"
+          },
+          {
+            "file": "quality_gates_validation.py",
+            "line": 170,
+            "pattern": "password",
+            "context": "(r'password\\s*=\\s*[\"\\'][^\"\\']+[\"\\']', \"hardcoded password\"),"
+          },
+          {
+            "file": "quality_gates_validation.py",
+            "line": 104,
+            "pattern": "secret",
+            "context": "if re.search(r'(password|secret|key)\\s*=\\s*[\"\\'][^\"\\']+[\"\\']', line, re.ignorecase):"
+          },
+          {
+            "file": "quality_gates_validation.py",
+            "line": 172,
+            "pattern": "secret",
+            "context": "(r'secret\\s*=\\s*[\"\\'][^\"\\']+[\"\\']', \"hardcoded secret\"),"
+          },
+          {
+            "file": "quality_gates_validation.py",
+            "line": 104,
+            "pattern": "key",
+            "context": "if re.search(r'(password|secret|key)\\s*=\\s*[\"\\'][^\"\\']+[\"\\']', line, re.ignorecase):"
+          },
+          {
+            "file": "quality_gates_validation.py",
+            "line": 171,
+            "pattern": "key",
+            "context": "(r'api_key\\s*=\\s*[\"\\'][^\"\\']+[\"\\']', \"hardcoded api key\"),"
+          },
+          {
+            "file": "quality_gates_validation.py",
+            "line": 171,
+            "pattern": "api_key",
+            "context": "(r'api_key\\s*=\\s*[\"\\'][^\"\\']+[\"\\']', \"hardcoded api key\"),"
+          },
+          {
+            "file": "scalable_gen3_system.py",
+            "line": 394,
+            "pattern": "key",
+            "context": "cache_key = f\"node_sum_{node_id}\""
+          },
+          {
+            "file": "scalable_gen3_system.py",
+            "line": 441,
+            "pattern": "key",
+            "context": "cache_key = f\"action_{state_hash}\""
+          },
+          {
+            "file": "scalable_gen3_system.py",
+            "line": 566,
+            "pattern": "key",
+            "context": "cache_key = f\"aggregation_{self.federation_rounds}\""
+          },
+          {
+            "file": "scalable_gen3_system.py",
+            "line": 753,
+            "pattern": "key",
+            "context": "cache_key = f\"step_{action_hash}_{self.step_count // 10}\"  # bucket steps"
+          },
+          {
+            "file": "test_quantum_planner_comprehensive.py",
+            "line": 304,
+            "pattern": "key",
+            "context": "cache.put(\"test_key\", {\"data\": \"test_value\"}, quantum_coherence=0.9)"
+          },
+          {
+            "file": "test_quantum_planner_comprehensive.py",
+            "line": 307,
+            "pattern": "key",
+            "context": "result = cache.get(\"test_key\")"
+          },
+          {
+            "file": "test_quantum_planner_comprehensive.py",
+            "line": 312,
+            "pattern": "key",
+            "context": "result = cache.get(\"nonexistent_key\")"
+          },
+          {
+            "file": "test_consciousness_standalone.py",
+            "line": 355,
+            "pattern": "key",
+            "context": "result = cache.get(\"test_key\")"
+          },
+          {
+            "file": "test_consciousness_standalone.py",
+            "line": 359,
+            "pattern": "key",
+            "context": "miss_result = cache.get(\"nonexistent_key\")"
+          },
+          {
+            "file": "test_consciousness_standalone.py",
+            "line": 522,
+            "pattern": "key",
+            "context": "slowest_test = max(passed_tests, key=lambda r: r.get('duration', 0))"
+          },
+          {
+            "file": "test_consciousness_standalone.py",
+            "line": 340,
+            "pattern": "token",
+            "context": "token = security_manager.create_user_session(\"test_user\", [\"researcher\"])"
+          },
+          {
+            "file": "test_consciousness_standalone.py",
+            "line": 344,
+            "pattern": "token",
+            "context": "auth_result = security_manager.authorize_operation(token, \"read_state\")"
+          },
+          {
+            "file": "test_consciousness_standalone.py",
+            "line": 344,
+            "pattern": "auth",
+            "context": "auth_result = security_manager.authorize_operation(token, \"read_state\")"
+          },
+          {
+            "file": "run_quality_gates.py",
+            "line": 260,
+            "pattern": "secret",
+            "context": "secret_patterns = ["
+          },
+          {
+            "file": "run_quality_gates.py",
+            "line": 266,
+            "pattern": "secret",
+            "context": "files_with_secrets = []"
+          },
+          {
+            "file": "run_quality_gates.py",
+            "line": 291,
+            "pattern": "secret",
+            "context": "gate_result['details']['potential_secrets'] = files_with_secrets"
+          },
+          {
+            "file": "run_quality_gates.py",
+            "line": 292,
+            "pattern": "secret",
+            "context": "gate_result['metrics']['files_with_potential_secrets'] = len(files_with_secrets)"
+          },
+          {
+            "file": "run_quality_gates.py",
+            "line": 363,
+            "pattern": "secret",
+            "context": "total_issues = len(files_with_secrets) + len(eval_usage) + len(sql_risks) + len(insecure_files)"
+          },
+          {
+            "file": "run_quality_gates.py",
+            "line": 343,
+            "pattern": "key",
+            "context": "sensitive_files = ['*.key', '*.pem', '*.p12', '*.jks']"
+          },
+          {
+            "file": ".terragon/demo_discovery.py",
+            "line": 195,
+            "pattern": "key",
+            "context": "risk_keywords = [\"failure\", \"error\", \"vulnerability\", \"crash\", \"memory\", \"security\"]"
+          },
+          {
+            "file": ".terragon/value_discovery.py",
+            "line": 360,
+            "pattern": "key",
+            "context": "risk_keywords = [\"vulnerability\", \"security\", \"failure\", \"error\", \"bug\"]"
+          },
+          {
+            "file": ".terragon/value_discovery.py",
+            "line": 456,
+            "pattern": "key",
+            "context": "complexity_keywords = [\"refactor\", \"rewrite\", \"complex\", \"difficult\", \"major\"]"
+          },
+          {
+            "file": ".terragon/value_discovery.py",
+            "line": 457,
+            "pattern": "key",
+            "context": "simple_keywords = [\"fix\", \"update\", \"change\", \"simple\", \"quick\"]"
+          },
+          {
+            "file": "benchmarks/datasets.py",
+            "line": 159,
+            "pattern": "key",
+            "context": "heterogeneity_noise = random.normal(client_key, (self.graph_size,)) * self.params[\"heterogeneity\"]"
+          },
+          {
+            "file": "benchmarks/datasets.py",
+            "line": 235,
+            "pattern": "key",
+            "context": "\"std\": random.uniform(key, (5,), minval=0.5, maxval=2.0),"
+          },
+          {
+            "file": "benchmarks/datasets.py",
+            "line": 681,
+            "pattern": "key",
+            "context": "if key == \"false_positive_rate\":"
+          },
+          {
+            "file": "examples/autonomous_generation1_demo.py",
+            "line": 120,
+            "pattern": "key",
+            "context": "scheduled_tasks = {task_id: {'priority': 0.8, 'duration': 1.0} for task_id in self.quantum_planner.t"
+          },
+          {
+            "file": "examples/autonomous_research_demo.py",
+            "line": 65,
+            "pattern": "key",
+            "context": "openai_api_key=\"demo-key-research\",  # replace with actual key for gpt-4 integration"
+          },
+          {
+            "file": "examples/autonomous_research_demo.py",
+            "line": 65,
+            "pattern": "api_key",
+            "context": "openai_api_key=\"demo-key-research\",  # replace with actual key for gpt-4 integration"
+          },
+          {
+            "file": "examples/comprehensive_autonomous_demo.py",
+            "line": 201,
+            "pattern": "key",
+            "context": "openai_api_key=\"demo-comprehensive-key\","
+          },
+          {
+            "file": "examples/comprehensive_autonomous_demo.py",
+            "line": 201,
+            "pattern": "api_key",
+            "context": "openai_api_key=\"demo-comprehensive-key\","
+          },
+          {
+            "file": "examples/generation3_scaling_demo.py",
+            "line": 153,
+            "pattern": "key",
+            "context": "cache_key = getattr(task, 'cache_key')"
+          },
+          {
+            "file": "examples/generation3_scaling_demo.py",
+            "line": 218,
+            "pattern": "key",
+            "context": "agent_keys = [f\"agent_{agent['id']}\" for agent in self.federated_agents]"
+          },
+          {
+            "file": "examples/generation3_scaling_demo.py",
+            "line": 220,
+            "pattern": "key",
+            "context": "warm_function=lambda key: self.federated_agents[int(key.split('_')[1])],"
+          },
+          {
+            "file": "examples/generation3_scaling_demo.py",
+            "line": 238,
+            "pattern": "key",
+            "context": "cache_key = f\"optimization_{task.id}\""
+          },
+          {
+            "file": "examples/generation3_scaling_demo.py",
+            "line": 328,
+            "pattern": "key",
+            "context": "'best_strategy': max(optimization_results.keys(), key=lambda k: optimization_results[k]['speedup']),"
+          },
+          {
+            "file": "examples/generation3_scaling_demo.py",
+            "line": 352,
+            "pattern": "key",
+            "context": "cache_key = f\"training_{agent['id']}\""
+          },
+          {
+            "file": "examples/generation4_demo.py",
+            "line": 55,
+            "pattern": "key",
+            "context": "openai_api_key=openai_api_key or \"demo-key\",  # replace with actual key"
+          },
+          {
+            "file": "examples/generation4_demo.py",
+            "line": 304,
+            "pattern": "key",
+            "context": "achievements = demo_report[\"key_achievements\"]"
+          },
+          {
+            "file": "examples/generation4_demo.py",
+            "line": 55,
+            "pattern": "api_key",
+            "context": "openai_api_key=openai_api_key or \"demo-key\",  # replace with actual key"
+          },
+          {
+            "file": "examples/generation5_breakthrough_demo.py",
+            "line": 81,
+            "pattern": "key",
+            "context": "openai_api_key: str = \"demo_key\""
+          },
+          {
+            "file": "examples/generation5_breakthrough_demo.py",
+            "line": 81,
+            "pattern": "api_key",
+            "context": "openai_api_key: str = \"demo_key\""
+          },
+          {
+            "file": "examples/generation6_transcendent_demo.py",
+            "line": 421,
+            "pattern": "key",
+            "context": "'ready_for_deployment': success_rate >= 0.8 and key_metrics['transcendence_achieved']"
+          },
+          {
+            "file": "examples/generation6_transcendent_standalone.py",
+            "line": 565,
+            "pattern": "key",
+            "context": "'ready_for_deployment': success_rate >= 0.8 and key_metrics['transcendence_achieved']"
+          },
+          {
+            "file": "examples/quantum_planner_robust.py",
+            "line": 608,
+            "pattern": "key",
+            "context": "if key != 'status':"
+          },
+          {
+            "file": "examples/quantum_planner_scalable.py",
+            "line": 216,
+            "pattern": "key",
+            "context": "allocation_key = f\"{task_id}:{hash(str(sorted(requirements.items())))}\""
+          },
+          {
+            "file": "examples/quantum_planner_scalable.py",
+            "line": 383,
+            "pattern": "key",
+            "context": "plan_key = f\"exec_plan:{hash(str(sorted(tasks)))}\""
+          },
+          {
+            "file": "examples/quantum_planner_scalable.py",
+            "line": 626,
+            "pattern": "key",
+            "context": "cache_key = f\"task_result:{task_id}:{hash(str(getattr(task, 'executor', none)))}\""
+          },
+          {
+            "file": "examples/quantum_planner_scalable.py",
+            "line": 655,
+            "pattern": "key",
+            "context": "cache_key = f\"task_result:{task_id}:{hash(str(task.executor))}\""
+          },
+          {
+            "file": "examples/scalable_quantum_demo.py",
+            "line": 263,
+            "pattern": "key",
+            "context": "cache_key = f\"agg_{data_hash}\""
+          },
+          {
+            "file": "examples/scalable_quantum_demo.py",
+            "line": 331,
+            "pattern": "key",
+            "context": "cache_key = f\"agent_{agent_id}\""
+          },
+          {
+            "file": "examples/scalable_quantum_demo.py",
+            "line": 342,
+            "pattern": "key",
+            "context": "cache_key = f\"agent_{agent_id}\""
+          },
+          {
+            "file": "examples/scalable_quantum_demo.py",
+            "line": 436,
+            "pattern": "key",
+            "context": "cache_key = f\"action_{state_key}_{self.exploration_rate:.2f}\""
+          },
+          {
+            "file": "examples/simple_federated_demo.py",
+            "line": 21,
+            "pattern": "key",
+            "context": "elif name == 'prngkey':"
+          },
+          {
+            "file": "scripts/autonomous_mock_deps.py",
+            "line": 42,
+            "pattern": "key",
+            "context": "jax.random.normal = lambda key, shape: [0.1] * (shape[0] if hasattr(shape, '__iter__') else shape)"
+          },
+          {
+            "file": "scripts/autonomous_test_runner.py",
+            "line": 182,
+            "pattern": "key",
+            "context": "value = cache.get(\"test_key\")"
+          },
+          {
+            "file": "scripts/autonomous_test_runner.py",
+            "line": 321,
+            "pattern": "key",
+            "context": "test_data = [\"normal_string\", 12345, {\"key\": \"value\"}, [1, 2, 3]]"
+          },
+          {
+            "file": "tests/test_comprehensive_validation.py",
+            "line": 331,
+            "pattern": "key",
+            "context": "key = f\"thread_{thread_id}_key_{i}\""
+          },
+          {
+            "file": "tests/test_quality_gates.py",
+            "line": 176,
+            "pattern": "key",
+            "context": "result1 = get_from_cache(\"key1\")"
+          },
+          {
+            "file": "tests/test_quality_gates.py",
+            "line": 177,
+            "pattern": "key",
+            "context": "result2 = get_from_cache(\"key2\")"
+          },
+          {
+            "file": "tests/test_quality_gates.py",
+            "line": 204,
+            "pattern": "key",
+            "context": "state_key = f\"state_{(i % 3) + 1}\""
+          },
+          {
+            "file": "tests/test_quality_gates.py",
+            "line": 230,
+            "pattern": "key",
+            "context": "state_key = f\"state_{state_id}\""
+          },
+          {
+            "file": "tests/test_quality_gates.py",
+            "line": 323,
+            "pattern": "key",
+            "context": "state_key = f\"state_{step % 5}\""
+          },
+          {
+            "file": "tests/test_quality_gates.py",
+            "line": 332,
+            "pattern": "key",
+            "context": "next_state_key = f\"state_{(step + 1) % 5}\""
+          },
+          {
+            "file": "tests/test_quality_gates.py",
+            "line": 394,
+            "pattern": "key",
+            "context": "state_key = f\"state_{i}\""
+          },
+          {
+            "file": "tests/test_quality_gates.py",
+            "line": 404,
+            "pattern": "key",
+            "context": "state_key = f\"state_{i}\""
+          },
+          {
+            "file": "tests/test_quality_gates.py",
+            "line": 427,
+            "pattern": "key",
+            "context": "state_key = f\"state_{state_id}\""
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/__init__.py",
+            "line": 9,
+            "pattern": "auth",
+            "context": "__author__ = \"daniel schmidt\""
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/algorithms/graph_td3.py",
+            "line": 361,
+            "pattern": "key",
+            "context": "edge_indices = batch[f\"{key.replace('states', 'edge_indices')}\"]  # (batch_size, 2, max_edges)"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/algorithms/graph_td3.py",
+            "line": 471,
+            "pattern": "key",
+            "context": "self.rng_key = checkpoint[\"rng_key\"]"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/autonomous_sdlc/breakthrough_hypothesis_engine.py",
+            "line": 38,
+            "pattern": "key",
+            "context": "\\\"\\\"\\\"extended hypothesis with breakthrough discovery potential.\\\"\\\"\\\"\\n    breakthrough_type: break"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/consciousness/universal_quantum_consciousness.py",
+            "line": 112,
+            "pattern": "key",
+            "context": "domain_key = f\"domain_{domain_id}\""
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/consciousness/universal_quantum_consciousness.py",
+            "line": 114,
+            "pattern": "key",
+            "context": "key = f\"{domain_key}_{param_name}\""
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/consciousness/universal_quantum_consciousness.py",
+            "line": 175,
+            "pattern": "key",
+            "context": "base_name = source_key.split('_', 2)[-1]  # remove domain prefix"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/consciousness/universal_quantum_consciousness.py",
+            "line": 176,
+            "pattern": "key",
+            "context": "target_key = f\"domain_{target_domain}_{base_name}\""
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/consciousness/consciousness_security.py",
+            "line": 84,
+            "pattern": "secret",
+            "context": "self._master_key = secrets.token_bytes(key_size // 8)"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/consciousness/consciousness_security.py",
+            "line": 96,
+            "pattern": "secret",
+            "context": "nonce = secrets.token_bytes(16)"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/consciousness/consciousness_security.py",
+            "line": 157,
+            "pattern": "secret",
+            "context": "token_data = f\"{user_id}:{time.time()}:{secrets.token_hex(16)}\""
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/consciousness/consciousness_security.py",
+            "line": 417,
+            "pattern": "secret",
+            "context": "alert_id=f\"{rule_name}_{int(current_time)}_{secrets.token_hex(4)}\","
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/consciousness/consciousness_security.py",
+            "line": 433,
+            "pattern": "secret",
+            "context": "alert_id=f\"rule_error_{int(current_time)}_{secrets.token_hex(4)}\","
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/consciousness/consciousness_security.py",
+            "line": 452,
+            "pattern": "secret",
+            "context": "alert_id=f\"detection_error_{int(current_time)}_{secrets.token_hex(4)}\","
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/consciousness/consciousness_security.py",
+            "line": 578,
+            "pattern": "secret",
+            "context": "alert_id=f\"session_{int(time.time())}_{secrets.token_hex(4)}\","
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/consciousness/consciousness_security.py",
+            "line": 599,
+            "pattern": "secret",
+            "context": "alert_id=f\"auth_fail_{int(time.time())}_{secrets.token_hex(4)}\","
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/consciousness/consciousness_security.py",
+            "line": 84,
+            "pattern": "key",
+            "context": "self._master_key = secrets.token_bytes(key_size // 8)"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/consciousness/consciousness_security.py",
+            "line": 114,
+            "pattern": "key",
+            "context": "key_stream = b''"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/consciousness/consciousness_security.py",
+            "line": 119,
+            "pattern": "key",
+            "context": "hash_input = key + nonce + counter.to_bytes(4, 'big')"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/consciousness/consciousness_security.py",
+            "line": 396,
+            "pattern": "key",
+            "context": "metric_changes[f\"{key}_change\"] = abs(current_value - baseline_value)"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/consciousness/consciousness_security.py",
+            "line": 84,
+            "pattern": "token",
+            "context": "self._master_key = secrets.token_bytes(key_size // 8)"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/consciousness/consciousness_security.py",
+            "line": 96,
+            "pattern": "token",
+            "context": "nonce = secrets.token_bytes(16)"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/consciousness/consciousness_security.py",
+            "line": 157,
+            "pattern": "token",
+            "context": "token_data = f\"{user_id}:{time.time()}:{secrets.token_hex(16)}\""
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/consciousness/consciousness_security.py",
+            "line": 417,
+            "pattern": "token",
+            "context": "alert_id=f\"{rule_name}_{int(current_time)}_{secrets.token_hex(4)}\","
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/consciousness/consciousness_security.py",
+            "line": 433,
+            "pattern": "token",
+            "context": "alert_id=f\"rule_error_{int(current_time)}_{secrets.token_hex(4)}\","
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/consciousness/consciousness_security.py",
+            "line": 452,
+            "pattern": "token",
+            "context": "alert_id=f\"detection_error_{int(current_time)}_{secrets.token_hex(4)}\","
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/consciousness/consciousness_security.py",
+            "line": 578,
+            "pattern": "token",
+            "context": "alert_id=f\"session_{int(time.time())}_{secrets.token_hex(4)}\","
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/consciousness/consciousness_security.py",
+            "line": 599,
+            "pattern": "token",
+            "context": "alert_id=f\"auth_fail_{int(time.time())}_{secrets.token_hex(4)}\","
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/consciousness/consciousness_security.py",
+            "line": 804,
+            "pattern": "token",
+            "context": "user_token = security_manager.create_user_session(\"test_user\", [\"researcher\"])"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/consciousness/consciousness_security.py",
+            "line": 811,
+            "pattern": "token",
+            "context": "auth_result = security_manager.authorize_operation(user_token, \"read_state\")"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/consciousness/consciousness_security.py",
+            "line": 599,
+            "pattern": "auth",
+            "context": "alert_id=f\"auth_fail_{int(time.time())}_{secrets.token_hex(4)}\","
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/consciousness/consciousness_security.py",
+            "line": 602,
+            "pattern": "auth",
+            "context": "description=f\"unauthorized access attempt for operation: {operation}\","
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/consciousness/consciousness_security.py",
+            "line": 811,
+            "pattern": "auth",
+            "context": "auth_result = security_manager.authorize_operation(user_token, \"read_state\")"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/consciousness/consciousness_optimizer.py",
+            "line": 688,
+            "pattern": "key",
+            "context": "cache_key = self._generate_cache_key('process_input', input_data)"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/consciousness/consciousness_optimizer.py",
+            "line": 743,
+            "pattern": "key",
+            "context": "cache_key = self._generate_cache_key('evolve_consciousness', performance_feedback)"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/deployment/breakthrough_global_deployment.py",
+            "line": 253,
+            "pattern": "key",
+            "context": "}\\n        \\n        capabilities = provider_capabilities.get(provider, {})\\n        required_qubits"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/federation/gossip.py",
+            "line": 402,
+            "pattern": "key",
+            "context": "decompressed[key] = full_param.reshape(data[\"shape\"])"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/federation/gossip.py",
+            "line": 407,
+            "pattern": "key",
+            "context": "decompressed[key] = jnp.full(data[\"shape\"], data[\"constant_value\"])"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/federation/gossip.py",
+            "line": 412,
+            "pattern": "key",
+            "context": "decompressed[key] = dequantized.reshape(data[\"shape\"])"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/federation/quantum_inspired_gossip.py",
+            "line": 274,
+            "pattern": "key",
+            "context": "state_id = f\\\"{agent_id}_{timestamp}_{hash(amplitudes.tobytes())}\\\"\\n        \\n        superposition"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/global_deployment/compliance_framework.py",
+            "line": 482,
+            "pattern": "key",
+            "context": "key = tuple(record.get(qi, \"\") for qi in quasi_identifiers)"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/global_deployment/compliance_framework.py",
+            "line": 263,
+            "pattern": "auth",
+            "context": "event_type=\"unauthorized_data_transfer\","
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/global_deployment/i18n_manager.py",
+            "line": 274,
+            "pattern": "key",
+            "context": "cache_key = f\"{target_locale}:{key}\""
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/global_deployment/i18n_manager.py",
+            "line": 431,
+            "pattern": "key",
+            "context": "coverage_stats[\"total_keys\"] = len(all_keys)"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/global_deployment/i18n_manager.py",
+            "line": 447,
+            "pattern": "key",
+            "context": "coverage_stats[\"missing_translations\"][locale_code] = list(missing_keys)"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/monitoring/predictive_health_monitor.py",
+            "line": 691,
+            "pattern": "key",
+            "context": "key = f\"{prediction.component_name}_{prediction.failure_type}\""
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/monitoring/realtime_stream_processor.py",
+            "line": 90,
+            "pattern": "key",
+            "context": "partition_key=data['partition_key'],"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/monitoring/realtime_stream_processor.py",
+            "line": 411,
+            "pattern": "key",
+            "context": "if key.startswith('edge_') and (value.get('source') == node_id or value.get('target') == node_id):"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/monitoring/realtime_stream_processor.py",
+            "line": 456,
+            "pattern": "key",
+            "context": "key = f\"{entity_type}_{entity_id}\""
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/monitoring/realtime_stream_processor.py",
+            "line": 459,
+            "pattern": "key",
+            "context": "self.graph_state[key]['last_updated'] = event.timestamp"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/monitoring/realtime_stream_processor.py",
+            "line": 861,
+            "pattern": "key",
+            "context": "partition_key = data.get('node_id', data.get('source', source_id))"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/optimization/automl_pipeline.py",
+            "line": 358,
+            "pattern": "key",
+            "context": "algorithm_variants.sort(key=lambda v: v.performance_scores.get(\"combined_score\", 0), reverse=true)"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/optimization/automl_pipeline.py",
+            "line": 393,
+            "pattern": "key",
+            "context": "best_variant = max(algorithm_variants, key=lambda v: v.performance_scores.get(\"combined_score\", 0))"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/optimization/automl_pipeline.py",
+            "line": 623,
+            "pattern": "key",
+            "context": "best_candidate = max(deployment_candidates, key=lambda v: v.performance_scores.get(\"combined_score\","
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/optimization/breakthrough_performance_engine.py",
+            "line": 40,
+            "pattern": "key",
+            "context": "\\\"\\\"\\\"comprehensive performance metrics tracking.\\\"\\\"\\\"\\n    timestamp: float\\n    throughput: float"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/optimization/gpt4_optimizer.py",
+            "line": 348,
+            "pattern": "key",
+            "context": "required_keys = [\"parameter\", \"suggested_value\", \"confidence\"]"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/optimization/universal_optimization.py",
+            "line": 880,
+            "pattern": "key",
+            "context": "if isinstance(value, (int, float)) and key != \"improvement\":"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/optimization/universal_optimization.py",
+            "line": 881,
+            "pattern": "key",
+            "context": "final_values[f\"{layer_name}_{key}\"] = value"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/quantum_hardware/aws_braket.py",
+            "line": 433,
+            "pattern": "secret",
+            "context": "aws_secret_access_key=credentials.get(\"aws_secret_access_key\"),"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/quantum_hardware/aws_braket.py",
+            "line": 432,
+            "pattern": "key",
+            "context": "aws_access_key_id=credentials.get(\"aws_access_key_id\"),"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/quantum_hardware/aws_braket.py",
+            "line": 433,
+            "pattern": "key",
+            "context": "aws_secret_access_key=credentials.get(\"aws_secret_access_key\"),"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/quantum_hardware/aws_braket.py",
+            "line": 968,
+            "pattern": "key",
+            "context": "num_params = len([p for p in circuit.parameters.keys() if \"theta\" in p or \"phi\" in p])"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/quantum_hardware/aws_braket.py",
+            "line": 432,
+            "pattern": "credential",
+            "context": "aws_access_key_id=credentials.get(\"aws_access_key_id\"),"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/quantum_hardware/aws_braket.py",
+            "line": 433,
+            "pattern": "credential",
+            "context": "aws_secret_access_key=credentials.get(\"aws_secret_access_key\"),"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/quantum_hardware/aws_braket.py",
+            "line": 434,
+            "pattern": "credential",
+            "context": "region_name=credentials.get(\"region\", \"us-east-1\")"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/quantum_hardware/aws_braket.py",
+            "line": 438,
+            "pattern": "credential",
+            "context": "self.s3_bucket = credentials.get(\"s3_bucket\", \"amazon-braket-quantum-results\")"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/quantum_hardware/aws_braket.py",
+            "line": 439,
+            "pattern": "credential",
+            "context": "self.s3_prefix = credentials.get(\"s3_prefix\", \"quantum-federated-learning\")"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/quantum_hardware/error_correction.py",
+            "line": 639,
+            "pattern": "key",
+            "context": "corrected_key = ''.join(corrected_bitstring)"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/quantum_hardware/google_quantum.py",
+            "line": 205,
+            "pattern": "key",
+            "context": "cirq_circuit.append(cirq.measure(*measurement_qubits, key='result'))"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/quantum_hardware/google_quantum.py",
+            "line": 223,
+            "pattern": "key",
+            "context": "processor_id = kwargs.get(\"processor_id\", list(self.processors.keys())[0])"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/quantum_hardware/google_quantum.py",
+            "line": 328,
+            "pattern": "key",
+            "context": "num_params = len([p for p in circuit.parameters.keys() if \"theta\" in p])"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/quantum_hardware/google_quantum.py",
+            "line": 36,
+            "pattern": "credential",
+            "context": "project_id = credentials.get(\"project_id\")"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/quantum_hardware/hybrid_optimizer.py",
+            "line": 188,
+            "pattern": "key",
+            "context": "return max(quantum_devices, key=lambda d: d.get(\"quantum_volume\", d.get(\"qubits\", 0)))[\"name\"]"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/quantum_hardware/hybrid_optimizer.py",
+            "line": 378,
+            "pattern": "key",
+            "context": "return max(quantum_devices, key=lambda d: d.get(\"qubits\", 0))[\"name\"]"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/quantum_hardware/ibm_quantum.py",
+            "line": 41,
+            "pattern": "token",
+            "context": "token=credentials[\"token\"],"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/quantum_hardware/ibm_quantum.py",
+            "line": 41,
+            "pattern": "credential",
+            "context": "token=credentials[\"token\"],"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/quantum_hardware/ibm_quantum.py",
+            "line": 42,
+            "pattern": "credential",
+            "context": "instance=credentials.get(\"instance\", \"ibm-q/open/main\"),"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/quantum_hardware/ibm_quantum.py",
+            "line": 48,
+            "pattern": "credential",
+            "context": "instance=credentials.get(\"instance\", \"ibm-q/open/main\")"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/quantum_hardware/quantum_accelerated_optimizer.py",
+            "line": 379,
+            "pattern": "key",
+            "context": "param_group = []\\n            for client_params in client_parameters:\\n                flat_params ="
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/quantum_hardware/quantum_fed_learning.py",
+            "line": 212,
+            "pattern": "key",
+            "context": "return max(quantum_devices, key=lambda d: d.get(\"qubits\", 0))[\"name\"]"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/quantum_hardware/quantum_fed_learning.py",
+            "line": 426,
+            "pattern": "key",
+            "context": "return max(suitable_devices, key=lambda d: d.get(\"quantum_volume\", d.get(\"qubits\", 0)))[\"name\"]"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/quantum_planner/monitoring.py",
+            "line": 236,
+            "pattern": "key",
+            "context": "summary[\"histogram_summaries\"][key] = {"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/quantum_planner/security.py",
+            "line": 36,
+            "pattern": "secret",
+            "context": "secret = \"secret\""
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/quantum_planner/security.py",
+            "line": 37,
+            "pattern": "secret",
+            "context": "top_secret = \"top_secret\""
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/quantum_planner/security.py",
+            "line": 572,
+            "pattern": "secret",
+            "context": "session_id = secrets.token_urlsafe(32)"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/quantum_planner/security.py",
+            "line": 572,
+            "pattern": "token",
+            "context": "session_id = secrets.token_urlsafe(32)"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/quantum_planner/security.py",
+            "line": 586,
+            "pattern": "auth",
+            "context": "event_type=\"authentication\","
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/quantum_planner/security.py",
+            "line": 618,
+            "pattern": "auth",
+            "context": "event_type=\"authentication\","
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/quantum_planner/security.py",
+            "line": 637,
+            "pattern": "auth",
+            "context": "event_type=\"authorization\","
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/quantum_planner/security.py",
+            "line": 671,
+            "pattern": "auth",
+            "context": "event_type=\"authorization\","
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/quantum_planner/security.py",
+            "line": 672,
+            "pattern": "auth",
+            "context": "severity=\"info\" if authorized else \"warning\","
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/research/autonomous_research_director.py",
+            "line": 520,
+            "pattern": "key",
+            "context": "keywords=direction.get(\"keywords\", []),"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/research/autonomous_research_director.py",
+            "line": 829,
+            "pattern": "key",
+            "context": "keywords=[\"performance_anomaly\", \"sudden_improvement\"]"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/research/autonomous_research_director.py",
+            "line": 859,
+            "pattern": "key",
+            "context": "keywords=[\"optimization_patterns\", \"success_factors\", \"system_configuration\"]"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/research/autonomous_research_director.py",
+            "line": 886,
+            "pattern": "key",
+            "context": "keywords=[\"cross_domain\", \"synergy\", \"federated_learning\", \"performance_enhancement\"]"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/research/autonomous_research_director.py",
+            "line": 1929,
+            "pattern": "key",
+            "context": "domains = interaction_key.split(\" x \")"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/research/breakthrough_algorithm_discovery.py",
+            "line": 322,
+            "pattern": "key",
+            "context": "\"learning_rate\": float(random.uniform(key, minval=1e-5, maxval=1e-1)),"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/research/breakthrough_algorithm_discovery.py",
+            "line": 323,
+            "pattern": "key",
+            "context": "\"batch_size_factor\": float(random.uniform(random.split(key)[0], minval=0.1, maxval=2.0)),"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/research/breakthrough_algorithm_discovery.py",
+            "line": 324,
+            "pattern": "key",
+            "context": "\"regularization\": float(random.uniform(random.split(key)[1], minval=1e-6, maxval=1e-2)),"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/research/breakthrough_algorithm_discovery.py",
+            "line": 330,
+            "pattern": "key",
+            "context": "\"aggregation_weight\": float(random.uniform(random.split(key)[0], minval=0.1, maxval=1.0)),"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/research/breakthrough_algorithm_discovery.py",
+            "line": 331,
+            "pattern": "key",
+            "context": "\"momentum\": float(random.uniform(random.split(key)[1], minval=0.0, maxval=0.99)),"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/research/breakthrough_algorithm_discovery.py",
+            "line": 335,
+            "pattern": "key",
+            "context": "\"dropout_rate\": float(random.uniform(random.split(key)[0], minval=0.0, maxval=0.5)),"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/research/breakthrough_algorithm_discovery.py",
+            "line": 336,
+            "pattern": "key",
+            "context": "\"attention_heads\": int(random.randint(random.split(key)[1], minval=1, maxval=8, shape=())),"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/research/breakthrough_algorithm_discovery.py",
+            "line": 340,
+            "pattern": "key",
+            "context": "\"compression_ratio\": float(random.uniform(random.split(key)[0], minval=0.01, maxval=0.5)),"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/research/breakthrough_algorithm_discovery.py",
+            "line": 341,
+            "pattern": "key",
+            "context": "\"quantization_bits\": int(random.randint(random.split(key)[1], minval=4, maxval=32, shape=())),"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/research/breakthrough_algorithm_discovery.py",
+            "line": 1255,
+            "pattern": "key",
+            "context": "\"depth\": int(random.randint(random.split(key)[0], minval=2, maxval=8, shape=())),"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/research/breakthrough_algorithm_discovery.py",
+            "line": 1256,
+            "pattern": "key",
+            "context": "\"branching_factor\": int(random.randint(random.split(key)[1], minval=1, maxval=4, shape=())),"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/research/breakthrough_algorithm_discovery.py",
+            "line": 1257,
+            "pattern": "key",
+            "context": "\"recursion_depth\": int(random.randint(random.split(key)[0], minval=0, maxval=3, shape=())),"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/research/breakthrough_algorithm_discovery.py",
+            "line": 1287,
+            "pattern": "key",
+            "context": "\"dropout\": float(random.uniform(random.split(layer_key)[0], minval=0.0, maxval=0.5)),"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/research/breakthrough_algorithm_discovery.py",
+            "line": 1292,
+            "pattern": "key",
+            "context": "\"skip_connections\": bool(random.bernoulli(random.split(key)[0], p=0.3)),"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/research/breakthrough_algorithm_discovery.py",
+            "line": 1293,
+            "pattern": "key",
+            "context": "\"normalization\": \"layer_norm\" if random.bernoulli(random.split(key)[1], p=0.5) else \"batch_norm\","
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/research/breakthrough_algorithm_discovery.py",
+            "line": 1312,
+            "pattern": "key",
+            "context": "\"inner_lr\": float(random.uniform(random.split(key)[0], minval=1e-4, maxval=1e-1)),"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/research/breakthrough_algorithm_discovery.py",
+            "line": 1313,
+            "pattern": "key",
+            "context": "\"outer_lr\": float(random.uniform(random.split(key)[1], minval=1e-4, maxval=1e-2)),"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/research/breakthrough_algorithm_discovery.py",
+            "line": 1314,
+            "pattern": "key",
+            "context": "\"adaptation_steps\": int(random.randint(random.split(key)[0], minval=1, maxval=10, shape=())),"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/research/breakthrough_algorithm_discovery.py",
+            "line": 1315,
+            "pattern": "key",
+            "context": "\"meta_batch_size\": int(random.randint(random.split(key)[1], minval=4, maxval=32, shape=())),"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/research/breakthrough_research_director.py",
+            "line": 48,
+            "pattern": "key",
+            "context": "research_id: str\\n    primary_direction: researchdirection\\n    secondary_directions: list[researchd"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/research/breakthrough_research_director.py",
+            "line": 48,
+            "pattern": "auth",
+            "context": "research_id: str\\n    primary_direction: researchdirection\\n    secondary_directions: list[researchd"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/research/experimental_framework.py",
+            "line": 592,
+            "pattern": "key",
+            "context": "best_algorithm = max(comparisons.keys(), key=lambda k: comparisons[k][\"mean_performance\"])"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/robustness/byzantine_quantum_resilience.py",
+            "line": 144,
+            "pattern": "key",
+            "context": ")\\n            \\n            if error_detected:\\n                self.logger.warning(f\\\"quantum erro"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/saas/api.py",
+            "line": 142,
+            "pattern": "key",
+            "context": "rate_key = f\"{tenant_id}:{client_ip}\""
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/saas/api.py",
+            "line": 49,
+            "pattern": "token",
+            "context": "bucket[\"tokens\"] = min(max_requests, bucket[\"tokens\"] + tokens_to_add)"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/saas/api.py",
+            "line": 53,
+            "pattern": "token",
+            "context": "if bucket[\"tokens\"] >= 1:"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/saas/api.py",
+            "line": 54,
+            "pattern": "token",
+            "context": "bucket[\"tokens\"] -= 1"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/saas/api.py",
+            "line": 125,
+            "pattern": "token",
+            "context": "detail=\"invalid authentication token\""
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/saas/api.py",
+            "line": 125,
+            "pattern": "auth",
+            "context": "detail=\"invalid authentication token\""
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/saas/app.py",
+            "line": 95,
+            "pattern": "password",
+            "context": "required_fields = [\"company_name\", \"admin_email\", \"admin_password\", \"tier\"]"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/saas/app.py",
+            "line": 105,
+            "pattern": "password",
+            "context": "admin_password = request[\"admin_password\"]"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/saas/app.py",
+            "line": 127,
+            "pattern": "password",
+            "context": "password=admin_password,"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/saas/auth.py",
+            "line": 182,
+            "pattern": "password",
+            "context": "password_hash = bcrypt.hashpw(password.encode(), bcrypt.gensalt()).decode()"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/saas/auth.py",
+            "line": 187,
+            "pattern": "password",
+            "context": "password_hash=password_hash,"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/saas/auth.py",
+            "line": 101,
+            "pattern": "secret",
+            "context": "def __init__(self, secret_key: str = none):"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/saas/auth.py",
+            "line": 102,
+            "pattern": "secret",
+            "context": "self.secret_key = secret_key or secrets.token_urlsafe(32)"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/saas/auth.py",
+            "line": 221,
+            "pattern": "secret",
+            "context": "return jwt.encode(payload, self.secret_key, algorithm=\"hs256\")"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/saas/auth.py",
+            "line": 226,
+            "pattern": "secret",
+            "context": "payload = jwt.decode(token, self.secret_key, algorithms=[\"hs256\"])"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/saas/auth.py",
+            "line": 249,
+            "pattern": "secret",
+            "context": "api_key = secrets.token_urlsafe(32)"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/saas/auth.py",
+            "line": 101,
+            "pattern": "key",
+            "context": "def __init__(self, secret_key: str = none):"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/saas/auth.py",
+            "line": 102,
+            "pattern": "key",
+            "context": "self.secret_key = secret_key or secrets.token_urlsafe(32)"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/saas/auth.py",
+            "line": 221,
+            "pattern": "key",
+            "context": "return jwt.encode(payload, self.secret_key, algorithm=\"hs256\")"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/saas/auth.py",
+            "line": 226,
+            "pattern": "key",
+            "context": "payload = jwt.decode(token, self.secret_key, algorithms=[\"hs256\"])"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/saas/auth.py",
+            "line": 249,
+            "pattern": "key",
+            "context": "api_key = secrets.token_urlsafe(32)"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/saas/auth.py",
+            "line": 102,
+            "pattern": "token",
+            "context": "self.secret_key = secret_key or secrets.token_urlsafe(32)"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/saas/auth.py",
+            "line": 226,
+            "pattern": "token",
+            "context": "payload = jwt.decode(token, self.secret_key, algorithms=[\"hs256\"])"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/saas/auth.py",
+            "line": 249,
+            "pattern": "token",
+            "context": "api_key = secrets.token_urlsafe(32)"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/saas/auth.py",
+            "line": 249,
+            "pattern": "api_key",
+            "context": "api_key = secrets.token_urlsafe(32)"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/saas/customer_portal.py",
+            "line": 123,
+            "pattern": "auth",
+            "context": "author: str = \"\""
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/saas/security.py",
+            "line": 36,
+            "pattern": "password",
+            "context": "password_change = \"auth.password.change\""
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/saas/security.py",
+            "line": 33,
+            "pattern": "auth",
+            "context": "login_success = \"auth.login.success\""
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/saas/security.py",
+            "line": 34,
+            "pattern": "auth",
+            "context": "login_failure = \"auth.login.failure\""
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/saas/security.py",
+            "line": 35,
+            "pattern": "auth",
+            "context": "logout = \"auth.logout\""
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/saas/security.py",
+            "line": 36,
+            "pattern": "auth",
+            "context": "password_change = \"auth.password.change\""
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/saas/security.py",
+            "line": 39,
+            "pattern": "auth",
+            "context": "access_granted = \"authz.access.granted\""
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/saas/security.py",
+            "line": 40,
+            "pattern": "auth",
+            "context": "access_denied = \"authz.access.denied\""
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/saas/security.py",
+            "line": 41,
+            "pattern": "auth",
+            "context": "permission_change = \"authz.permission.change\""
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/scaling/caching_system.py",
+            "line": 289,
+            "pattern": "key",
+            "context": "def warm_cache(self, warm_function: callable, keys: list[str], namespace: str = \"default\"):"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/scaling/concurrent_processor.py",
+            "line": 495,
+            "pattern": "key",
+            "context": "cpu_keywords = ['compute', 'calculate', 'process', 'optimize', 'train', 'learn']"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/scaling/distributed_caching_system.py",
+            "line": 466,
+            "pattern": "key",
+            "context": "self.temporal_patterns[key]['avg_interval'] = avg_interval"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/scaling/distributed_caching_system.py",
+            "line": 467,
+            "pattern": "key",
+            "context": "self.temporal_patterns[key]['last_access'] = access_pattern[-1]"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/scaling/distributed_caching_system.py",
+            "line": 476,
+            "pattern": "key",
+            "context": "cache_key = f\"{key}_{int(current_time / 60)}\"  # cache for 1 minute"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/scaling/distributed_caching_system.py",
+            "line": 810,
+            "pattern": "key",
+            "context": "key_access_counts[record['key']] += 1"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/scaling/distributed_caching_system.py",
+            "line": 874,
+            "pattern": "key",
+            "context": "virtual_key = f\"{node}:{i}\""
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/scaling/distributed_caching_system.py",
+            "line": 883,
+            "pattern": "key",
+            "context": "virtual_key = f\"{node}:{i}\""
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/scaling/ml_load_balancer.py",
+            "line": 168,
+            "pattern": "key",
+            "context": "cache_key = f\"{int(time.time() / 300)}_{horizon_seconds}\"  # 5-minute cache"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/scaling/performance_optimizer.py",
+            "line": 234,
+            "pattern": "key",
+            "context": "key = agent.get('region', 'default')"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/scaling/performance_optimizer.py",
+            "line": 372,
+            "pattern": "key",
+            "context": "\"best_strategy\": max(recent_results, key=lambda r: r.efficiency_gain).strategy.value,"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/testing/robustness_testing.py",
+            "line": 1038,
+            "pattern": "key",
+            "context": "if key == \"malicious_field\":"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/testing/robustness_testing.py",
+            "line": 1219,
+            "pattern": "key",
+            "context": "if key == \"bias\" and hasattr(value, '__iter__'):"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/testing/robustness_testing.py",
+            "line": 1225,
+            "pattern": "key",
+            "context": "elif key == \"weights\" and hasattr(value, '__iter__'):"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/testing/robustness_testing.py",
+            "line": 37,
+            "pattern": "auth",
+            "context": "if user_id == \"unauthorized_user\" or (ip_address and \"999\" in ip_address):"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/testing/robustness_testing.py",
+            "line": 976,
+            "pattern": "auth",
+            "context": "user_id=\"unauthorized_user\","
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/testing/robustness_testing.py",
+            "line": 984,
+            "pattern": "auth",
+            "context": "result.metrics[\"unauthorized_access_blocked\"] = not access_granted"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/testing/robustness_testing.py",
+            "line": 990,
+            "pattern": "auth",
+            "context": "result.error_message = \"unauthorized access was granted\""
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/utils/disaster_recovery.py",
+            "line": 391,
+            "pattern": "secret",
+            "context": "security_level=securitylevel.secret"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/utils/disaster_recovery.py",
+            "line": 514,
+            "pattern": "secret",
+            "context": "security_level=securitylevel.secret"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/utils/disaster_recovery.py",
+            "line": 348,
+            "pattern": "key",
+            "context": "backup_metadata.encryption_key_id = \"default_key\""
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/utils/security.py",
+            "line": 405,
+            "pattern": "password",
+            "context": "password_hash = bcrypt.hashpw(password.encode(), bcrypt.gensalt()).decode()"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/utils/security.py",
+            "line": 412,
+            "pattern": "password",
+            "context": "password_hash=password_hash,"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/utils/security.py",
+            "line": 906,
+            "pattern": "password",
+            "context": "password=password,"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/utils/security.py",
+            "line": 911,
+            "pattern": "password",
+            "context": "def authenticate(username: str, password: str, ip_address: optional[str] = none) -> optional[str]:"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/utils/security.py",
+            "line": 32,
+            "pattern": "secret",
+            "context": "secret = \"secret\""
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/utils/security.py",
+            "line": 291,
+            "pattern": "secret",
+            "context": "def __init__(self, secret_key: optional[str] = none):"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/utils/security.py",
+            "line": 292,
+            "pattern": "secret",
+            "context": "self.secret_key = secret_key or secrets.token_urlsafe(32)"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/utils/security.py",
+            "line": 324,
+            "pattern": "secret",
+            "context": "security_level=securitylevel.secret"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/utils/security.py",
+            "line": 522,
+            "pattern": "secret",
+            "context": "return jwt.encode(payload, self.secret_key, algorithm='hs256')"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/utils/security.py",
+            "line": 527,
+            "pattern": "secret",
+            "context": "payload = jwt.decode(session_token, self.secret_key, algorithms=['hs256'])"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/utils/security.py",
+            "line": 908,
+            "pattern": "secret",
+            "context": "security_level=securitylevel.secret"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/utils/security.py",
+            "line": 160,
+            "pattern": "key",
+            "context": "user_key = f\"login_failures:{event.user_id}\""
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/utils/security.py",
+            "line": 161,
+            "pattern": "key",
+            "context": "ip_key = f\"login_failures:{event.ip_address}\""
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/utils/security.py",
+            "line": 197,
+            "pattern": "key",
+            "context": "user_history_key = f\"user_actions:{event.user_id}\""
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/utils/security.py",
+            "line": 227,
+            "pattern": "key",
+            "context": "user_key = f\"data_access:{event.user_id}\""
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/utils/security.py",
+            "line": 245,
+            "pattern": "key",
+            "context": "total_size = sum(entry['size'] for entry in self.suspicious_patterns[user_key])"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/utils/security.py",
+            "line": 291,
+            "pattern": "key",
+            "context": "def __init__(self, secret_key: optional[str] = none):"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/utils/security.py",
+            "line": 292,
+            "pattern": "key",
+            "context": "self.secret_key = secret_key or secrets.token_urlsafe(32)"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/utils/security.py",
+            "line": 522,
+            "pattern": "key",
+            "context": "return jwt.encode(payload, self.secret_key, algorithm='hs256')"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/utils/security.py",
+            "line": 527,
+            "pattern": "key",
+            "context": "payload = jwt.decode(session_token, self.secret_key, algorithms=['hs256'])"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/utils/security.py",
+            "line": 292,
+            "pattern": "token",
+            "context": "self.secret_key = secret_key or secrets.token_urlsafe(32)"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/utils/security.py",
+            "line": 527,
+            "pattern": "token",
+            "context": "payload = jwt.decode(session_token, self.secret_key, algorithms=['hs256'])"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/utils/security.py",
+            "line": 880,
+            "pattern": "token",
+            "context": "session_token = kwargs.get('session_token')"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/utils/security.py",
+            "line": 488,
+            "pattern": "auth",
+            "context": "resource=\"auth_system\","
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/utils/security.py",
+            "line": 508,
+            "pattern": "auth",
+            "context": "resource=\"auth_system\","
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/utils/security.py",
+            "line": 665,
+            "pattern": "auth",
+            "context": "resource=\"auth_system\","
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/utils/security.py",
+            "line": 911,
+            "pattern": "auth",
+            "context": "def authenticate(username: str, password: str, ip_address: optional[str] = none) -> optional[str]:"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/utils/validation.py",
+            "line": 204,
+            "pattern": "key",
+            "context": "f\"agent {agent_id}: tensor {key} values too large: max={max_abs} > {self.config.max_tensor_value}\""
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/utils/validation.py",
+            "line": 208,
+            "pattern": "key",
+            "context": "f\"agent {agent_id}: tensor {key} has large values: max={max_abs}\""
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/utils/zero_trust_security.py",
+            "line": 1007,
+            "pattern": "secret",
+            "context": "event_id=f\"threat_{int(time.time())}_{secrets.token_hex(4)}\","
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/utils/zero_trust_security.py",
+            "line": 1086,
+            "pattern": "secret",
+            "context": "session_id=session_token or f\"session_{secrets.token_hex(8)}\","
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/utils/zero_trust_security.py",
+            "line": 1098,
+            "pattern": "secret",
+            "context": "request_id=f\"req_{int(time.time())}_{secrets.token_hex(6)}\","
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/utils/zero_trust_security.py",
+            "line": 467,
+            "pattern": "key",
+            "context": "policy_key = f\"{source_zone.value}_to_{destination_zone.value}\""
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/utils/zero_trust_security.py",
+            "line": 1007,
+            "pattern": "token",
+            "context": "event_id=f\"threat_{int(time.time())}_{secrets.token_hex(4)}\","
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/utils/zero_trust_security.py",
+            "line": 1086,
+            "pattern": "token",
+            "context": "session_id=session_token or f\"session_{secrets.token_hex(8)}\","
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/utils/zero_trust_security.py",
+            "line": 1098,
+            "pattern": "token",
+            "context": "request_id=f\"req_{int(time.time())}_{secrets.token_hex(6)}\","
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/utils/zero_trust_security.py",
+            "line": 1012,
+            "pattern": "auth",
+            "context": "target_resource=\"authentication_system\","
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/utils/zero_trust_security.py",
+            "line": 1093,
+            "pattern": "auth",
+            "context": "authentication_factors=additional_context.get(\"auth_factors\", []) if additional_context else []"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/validation/comprehensive_quality_gates.py",
+            "line": 1278,
+            "pattern": "secret",
+            "context": "secret_vulns = [v for v in vulnerabilities if \"secret\" in v.get(\"type\", \"\").lower()]"
+          },
+          {
+            "file": "tests/load/locustfile.py",
+            "line": 32,
+            "pattern": "token",
+            "context": "self.token = response.json().get(\"token\")"
+          },
+          {
+            "file": "tests/load/locustfile.py",
+            "line": 48,
+            "pattern": "token",
+            "context": "headers={\"authorization\": f\"bearer {getattr(self, 'token', '')}\"}"
+          },
+          {
+            "file": "tests/load/locustfile.py",
+            "line": 56,
+            "pattern": "token",
+            "context": "headers={\"authorization\": f\"bearer {getattr(self, 'token', '')}\"}"
+          },
+          {
+            "file": "tests/load/locustfile.py",
+            "line": 73,
+            "pattern": "token",
+            "context": "headers={\"authorization\": f\"bearer {getattr(self, 'token', '')}\"}"
+          },
+          {
+            "file": "tests/load/locustfile.py",
+            "line": 48,
+            "pattern": "auth",
+            "context": "headers={\"authorization\": f\"bearer {getattr(self, 'token', '')}\"}"
+          },
+          {
+            "file": "tests/load/locustfile.py",
+            "line": 56,
+            "pattern": "auth",
+            "context": "headers={\"authorization\": f\"bearer {getattr(self, 'token', '')}\"}"
+          },
+          {
+            "file": "tests/load/locustfile.py",
+            "line": 73,
+            "pattern": "auth",
+            "context": "headers={\"authorization\": f\"bearer {getattr(self, 'token', '')}\"}"
+          },
+          {
+            "file": "tests/quantum_hardware/test_quantum_backends.py",
+            "line": 158,
+            "pattern": "token",
+            "context": "credentials = {\"token\": \"your_ibm_token_here\"}"
+          },
+          {
+            "file": "tests/quantum_hardware/test_quantum_backends.py",
+            "line": 148,
+            "pattern": "credential",
+            "context": "@pytest.mark.skipif(true, reason=\"requires actual quantum hardware credentials\")"
+          },
+          {
+            "file": "tests/quantum_hardware/test_quantum_backends.py",
+            "line": 158,
+            "pattern": "credential",
+            "context": "credentials = {\"token\": \"your_ibm_token_here\"}"
+          },
+          {
+            "file": "tests/quantum_hardware/test_quantum_backends.py",
+            "line": 170,
+            "pattern": "credential",
+            "context": "credentials = {\"project_id\": \"your_project_id\"}"
+          },
+          {
+            "file": "tests/quantum_planner/test_core.py",
+            "line": 249,
+            "pattern": "key",
+            "context": "entanglement_key = tuple(sorted([\"task1\", \"task3\"]))"
+          },
+          {
+            "file": "tests/quantum_planner/test_exceptions.py",
+            "line": 95,
+            "pattern": "auth",
+            "context": "violation_type=\"unauthorized_access\","
+          },
+          {
+            "file": "tests/quantum_planner/test_exceptions.py",
+            "line": 101,
+            "pattern": "auth",
+            "context": "assert error.violation_type == \"unauthorized_access\""
+          },
+          {
+            "file": "tests/quantum_planner/test_performance.py",
+            "line": 35,
+            "pattern": "key",
+            "context": "assert cache.get(\"key1\") == \"value1\""
+          },
+          {
+            "file": "tests/quantum_planner/test_performance.py",
+            "line": 51,
+            "pattern": "key",
+            "context": "assert cache.get(\"expiring_key\") == \"value\""
+          },
+          {
+            "file": "tests/quantum_planner/test_performance.py",
+            "line": 62,
+            "pattern": "key",
+            "context": "cache.put(\"coherent_key\", \"value\", coherence=0.98)"
+          },
+          {
+            "file": "tests/quantum_planner/test_performance.py",
+            "line": 65,
+            "pattern": "key",
+            "context": "assert cache.get(\"coherent_key\", coherence=0.98) == \"value\""
+          },
+          {
+            "file": "tests/quantum_planner/test_performance.py",
+            "line": 68,
+            "pattern": "key",
+            "context": "assert cache.get(\"coherent_key\", coherence=0.90) is none"
+          },
+          {
+            "file": "tests/quantum_planner/test_performance.py",
+            "line": 78,
+            "pattern": "key",
+            "context": "assert cache.get(\"key_149\") == \"value_149\"  # newest should remain"
+          },
+          {
+            "file": "tests/quantum_planner/test_security.py",
+            "line": 133,
+            "pattern": "key",
+            "context": "small_data = {\"key\": \"value\"}"
+          },
+          {
+            "file": "tests/quantum_planner/test_security.py",
+            "line": 138,
+            "pattern": "key",
+            "context": "large_data = {\"key\": \"x\" * 2000}  # exceeds 1024 byte limit"
+          },
+          {
+            "file": "tests/quantum_planner/test_security.py",
+            "line": 87,
+            "pattern": "auth",
+            "context": "details={\"attempted_action\": \"unauthorized_access\"}"
+          },
+          {
+            "file": "tests/quantum_planner/test_security.py",
+            "line": 391,
+            "pattern": "auth",
+            "context": "violation_type=\"unauthorized_access\","
+          },
+          {
+            "file": "tests/consciousness/test_universal_quantum_consciousness.py",
+            "line": 640,
+            "pattern": "key",
+            "context": "result = cache.get(\"test_key\")"
+          },
+          {
+            "file": "tests/consciousness/test_universal_quantum_consciousness.py",
+            "line": 644,
+            "pattern": "key",
+            "context": "miss_result = cache.get(\"nonexistent_key\")"
+          },
+          {
+            "file": "tests/consciousness/test_universal_quantum_consciousness.py",
+            "line": 654,
+            "pattern": "key",
+            "context": "result1 = cache.get(\"test_key\")"
+          },
+          {
+            "file": "tests/consciousness/test_universal_quantum_consciousness.py",
+            "line": 661,
+            "pattern": "key",
+            "context": "result2 = cache.get(\"test_key\")"
+          },
+          {
+            "file": "tests/consciousness/test_universal_quantum_consciousness.py",
+            "line": 601,
+            "pattern": "token",
+            "context": "token = security_manager.create_user_session(\"test_user\", [\"researcher\"])"
+          },
+          {
+            "file": "tests/consciousness/test_universal_quantum_consciousness.py",
+            "line": 611,
+            "pattern": "token",
+            "context": "token = security_manager.create_user_session(\"test_user\", [\"read_state\"])"
+          },
+          {
+            "file": "tests/consciousness/test_universal_quantum_consciousness.py",
+            "line": 614,
+            "pattern": "token",
+            "context": "auth_result = security_manager.authorize_operation(token, \"read_state\")"
+          },
+          {
+            "file": "tests/consciousness/test_universal_quantum_consciousness.py",
+            "line": 618,
+            "pattern": "token",
+            "context": "unauth_result = security_manager.authorize_operation(token, \"modify_consciousness\")"
+          },
+          {
+            "file": "tests/consciousness/test_universal_quantum_consciousness.py",
+            "line": 719,
+            "pattern": "token",
+            "context": "token = security.create_user_session(\"integration_test\", [\"researcher\", \"operator\"])"
+          },
+          {
+            "file": "tests/consciousness/test_universal_quantum_consciousness.py",
+            "line": 614,
+            "pattern": "auth",
+            "context": "auth_result = security_manager.authorize_operation(token, \"read_state\")"
+          },
+          {
+            "file": "tests/consciousness/test_universal_quantum_consciousness.py",
+            "line": 618,
+            "pattern": "auth",
+            "context": "unauth_result = security_manager.authorize_operation(token, \"modify_consciousness\")"
+          }
+        ],
+        "eval_usage": [
+          {
+            "file": "quality_gates_validation.py",
+            "line": 174,
+            "context": "(r'eval\\s*\\(', \"Use of eval() function\"),"
+          },
+          {
+            "file": "run_quality_gates.py",
+            "line": 301,
+            "context": "if 'eval(' in content:"
+          },
+          {
+            "file": "run_quality_gates.py",
+            "line": 304,
+            "context": "if 'eval(' in line and not line.strip().startswith('#'):"
+          },
+          {
+            "file": "scripts/validate_code.py",
+            "line": 49,
+            "context": "dangerous_patterns = ['os.system', 'subprocess.call', 'subprocess.run', 'eval(', 'exec(']"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/optimization/self_healing.py",
+            "line": 498,
+            "context": "return eval(condition)"
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/testing/robustness_testing.py",
+            "line": 1020,
+            "context": "\"eval(evil_code)\","
+          },
+          {
+            "file": "tests/quantum_planner/test_security.py",
+            "line": 238,
+            "context": "\"eval(base64_decode($_POST['cmd']))\","
+          },
+          {
+            "file": "tests/quantum_planner/test_validation.py",
+            "line": 123,
+            "context": "name=\"Dangerous eval() call\","
+          },
+          {
+            "file": "tests/quantum_planner/test_validation.py",
+            "line": 399,
+            "context": "\"estimated_duration\": \"eval('malicious code')\","
+          },
+          {
+            "file": "tests/consciousness/test_universal_quantum_consciousness.py",
+            "line": 287,
+            "context": "def test_memory_retrieval(self):"
+          }
+        ],
+        "sql_injection_risks": [],
+        "insecure_files": []
+      },
+      "issues": [
+        "10 critical security issues found"
+      ],
+      "metrics": {
+        "files_with_potential_secrets": 325,
+        "eval_usage_count": 10,
+        "sql_risk_count": 0,
+        "insecure_file_count": 0,
+        "total_security_issues": 335,
+        "critical_security_issues": 10
+      }
+    },
+    "performance_benchmarks": {
+      "name": "Performance Benchmarks",
+      "status": "PASSED",
+      "details": {
+        "performance_results": [
+          {
+            "test": "file_processing",
+            "duration": 0.00921320915222168,
+            "files_processed": 50,
+            "lines_processed": 24376,
+            "lines_per_second": 2645766.485624822
+          },
+          {
+            "test": "complexity_analysis",
+            "duration": 0.01164555549621582,
+            "files_analyzed": 20,
+            "avg_complexity": 108.6
+          }
+        ],
+        "complexity_scores": [
+          {
+            "file": "src/dynamic_graph_fed_rl/__init__.py",
+            "lines": 71,
+            "functions": 0,
+            "classes": 0,
+            "complexity_score": 2,
+            "complexity_per_line": 0.028169014084507043
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/cli.py",
+            "lines": 227,
+            "functions": 8,
+            "classes": 1,
+            "complexity_score": 47,
+            "complexity_per_line": 0.20704845814977973
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/algorithms/__init__.py",
+            "lines": 15,
+            "functions": 0,
+            "classes": 0,
+            "complexity_score": 2,
+            "complexity_per_line": 0.13333333333333333
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/algorithms/adaptive_temporal_graph_rl.py",
+            "lines": 769,
+            "functions": 24,
+            "classes": 5,
+            "complexity_score": 93,
+            "complexity_per_line": 0.12093628088426528
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/algorithms/base.py",
+            "lines": 329,
+            "functions": 28,
+            "classes": 6,
+            "complexity_score": 96,
+            "complexity_per_line": 0.2917933130699088
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/algorithms/buffers.py",
+            "lines": 454,
+            "functions": 23,
+            "classes": 3,
+            "complexity_score": 156,
+            "complexity_per_line": 0.3436123348017621
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/algorithms/graph_td3.py",
+            "lines": 584,
+            "functions": 20,
+            "classes": 2,
+            "complexity_score": 94,
+            "complexity_per_line": 0.16095890410958905
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/autonomous_sdlc/__init__.py",
+            "lines": 28,
+            "functions": 0,
+            "classes": 0,
+            "complexity_score": 0,
+            "complexity_per_line": 0.0
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/autonomous_sdlc/breakthrough_hypothesis_engine.py",
+            "lines": 38,
+            "functions": 42,
+            "classes": 11,
+            "complexity_score": 223,
+            "complexity_per_line": 5.868421052631579
+          },
+          {
+            "file": "src/dynamic_graph_fed_rl/autonomous_sdlc/core.py",
+            "lines": 609,
+            "functions": 22,
+            "classes": 8,
+            "complexity_score": 140,
+            "complexity_per_line": 0.22988505747126436
+          }
+        ]
+      },
+      "issues": [],
+      "metrics": {
+        "total_execution_time": 0.0208587646484375,
+        "estimated_memory_mb": 0.0002593994140625,
+        "files_per_second": 5426.990658075201
+      }
+    },
+    "documentation_coverage": {
+      "name": "Documentation Coverage",
+      "status": "WARNING",
+      "details": {
+        "documentation_files": {
+          "README.md": {
+            "exists": true,
+            "lines": 646,
+            "words": 1530,
+            "quality_score": 100
+          },
+          "ARCHITECTURE.md": {
+            "exists": true,
+            "lines": 229,
+            "words": 871,
+            "quality_score": 100
+          },
+          "CONTRIBUTING.md": {
+            "exists": true,
+            "lines": 155,
+            "words": 527,
+            "quality_score": 100
+          },
+          "LICENSE": {
+            "exists": true,
+            "lines": 22,
+            "words": 169,
+            "quality_score": 33.8
+          },
+          "CHANGELOG.md": {
+            "exists": true,
+            "lines": 46,
+            "words": 135,
+            "quality_score": 27.0
+          }
+        }
+      },
+      "issues": [
+        "Documentation coverage 77.7% below target"
+      ],
+      "metrics": {
+        "doc_file_coverage": 72.16,
+        "function_coverage": 66.557911908646,
+        "class_coverage": 96.11197511664075,
+        "code_documentation_coverage": 81.33494351264338,
+        "overall_documentation_coverage": 77.66496610758603,
+        "total_functions": 1839,
+        "documented_functions": 1224,
+        "total_classes": 643,
+        "documented_classes": 618
+      }
+    }
+  },
+  "overall_status": "CONDITIONAL_PASS",
+  "critical_issues": [
+    "10 critical security issues found"
+  ],
+  "warnings": [
+    "Documentation coverage 77.7% below target"
+  ],
+  "metrics": {
+    "total_gates": 5,
+    "passed_gates": 3,
+    "warning_gates": 1,
+    "failed_gates": 1,
+    "error_gates": 0,
+    "pass_rate": 60.0
+  },
+  "summary": {
+    "timestamp": 1756089246.3993483,
+    "status": "CONDITIONAL_PASS",
+    "gates_summary": {
+      "code_execution": "PASSED",
+      "test_coverage": "PASSED",
+      "security_scan": "FAILED",
+      "performance_benchmarks": "PASSED",
+      "documentation_coverage": "WARNING"
+    },
+    "critical_issues_count": 1,
+    "warnings_count": 1,
+    "pass_rate": 60.0
+  }
+}

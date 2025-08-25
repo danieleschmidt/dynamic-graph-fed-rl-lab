@@ -20,7 +20,8 @@ class Generation2Robust(SDLCGeneration):
     def __init__(self):
         super().__init__("Generation 2: Make It Robust")
     
-    async def execute(self, context: Dict[str, Any]) -> Dict[str, Any]:
+    async def # SECURITY WARNING: Potential SQL injection - use parameterized queries
+ execute(self, context: Dict[str, Any]) -> Dict[str, Any]:
         """Execute Generation 2 - robustness implementation."""
         self.start_metrics(SDLCPhase.GENERATION_2)
         

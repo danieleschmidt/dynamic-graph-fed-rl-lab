@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "formatters": {
+    "default": {
+      "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+    },
+    "json": {
+      "format": "%(asctime)s %(name)s %(levelname)s %(message)s",
+      "class": "pythonjsonlogger.jsonlogger.JsonFormatter"
+    }
+  },
+  "handlers": {
+    "console": {
+      "class": "logging.StreamHandler",
+      "level": "INFO",
+      "formatter": "default",
+      "stream": "ext://sys.stdout"
+    },
+    "file": {
+      "class": "logging.FileHandler",
+      "level": "INFO",
+      "formatter": "json",
+      "filename": "/app/logs/consciousness.log"
+    },
+    "error_file": {
+      "class": "logging.FileHandler",
+      "level": "ERROR",
+      "formatter": "json",
+      "filename": "/app/logs/consciousness-error.log"
+    }
+  },
+  "loggers": {
+    "consciousness": {
+      "level": "INFO",
+      "handlers": ["console", "file", "error_file"],
+      "propagate": false
+    },
+    "quantum": {
+      "level": "DEBUG",
+      "handlers": ["console", "file"],
+      "propagate": false
+    },
+    "security": {
+      "level": "WARNING",
+      "handlers": ["console", "error_file"],
+      "propagate": false
+    }
+  },
+  "root": {
+    "level": "INFO",
+    "handlers": ["console", "file"]
+  }
+}

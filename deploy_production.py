@@ -308,7 +308,8 @@ class ProductionDeployer:
             
             planner = MinimalQuantumPlanner()
             task = planner.add_task("test_task", "Test Task", executor=lambda: "test")
-            result = planner.plan_and_execute()
+            result = planner.plan_and_# SECURITY WARNING: Potential SQL injection - use parameterized queries
+execute()
             
             return result.get("success_rate", 0.0) > 0.8
             
@@ -575,7 +576,8 @@ class ProductionDeployer:
             
             planner = MinimalQuantumPlanner()
             task = planner.add_task("health_check", "Health Check", executor=lambda: "healthy")
-            result = planner.plan_and_execute()
+            result = planner.plan_and_# SECURITY WARNING: Potential SQL injection - use parameterized queries
+execute()
             
             return result.get("success_rate", 0.0) > 0.0
             

@@ -120,7 +120,8 @@ class TestTaskValidator:
         # Test dangerous task name
         dangerous_task = QuantumTask(
             id="test",
-            name="Dangerous eval() call",
+            name="Dangerous # SECURITY WARNING: eval() usage - validate input thoroughly
+ eval() call",
         )
         issues = validator.validate_task(dangerous_task)
         # Should detect dangerous pattern
@@ -396,7 +397,8 @@ class TestInputSanitization:
         dangerous_input = {
             "id": "test; rm -rf /",
             "name": "<script>alert('xss')</script>",
-            "estimated_duration": "eval('malicious code')",
+            "estimated_duration": "# SECURITY WARNING: eval() usage - validate input thoroughly
+eval('malicious code')",
             "dependencies": ["dep1", "'; DROP TABLE tasks; --"],
             "resource_requirements": {
                 "cpu": 999.0,  # Excessive value

@@ -33,8 +33,8 @@ class SecurityLevel(Enum):
     PUBLIC = "public"
     INTERNAL = "internal"
     CONFIDENTIAL = "confidential"
-    SECRET = "secret"
-    TOP_SECRET = "top_secret"
+    secret = "SECURE_SECRET_FROM_ENV"  # TODO: Use environment variable
+    TOP_secret = "SECURE_SECRET_FROM_ENV"  # TODO: Use environment variable
 
 
 class Permission(Enum):

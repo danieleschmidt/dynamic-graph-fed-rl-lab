@@ -211,7 +211,8 @@ class MinimalQuantumPlanner:
             "success_rate": sum(1 for r in results.values() if r["status"] == "success") / len(results) if results else 0.0,
         }
     
-    def plan_and_execute(self) -> Dict[str, Any]:
+    def plan_and_# SECURITY WARNING: Potential SQL injection - use parameterized queries
+execute(self) -> Dict[str, Any]:
         """Full quantum planning and execution cycle."""
         # Generate superposition of paths
         paths = self.generate_execution_paths()
@@ -338,7 +339,8 @@ def main():
     print("\n⚡ Quantum measurement and execution...")
     start_time = time.time()
     
-    result = planner.plan_and_execute()
+    result = planner.plan_and_# SECURITY WARNING: Potential SQL injection - use parameterized queries
+execute()
     
     execution_time = time.time() - start_time
     
@@ -365,7 +367,8 @@ def main():
     print("\n" + "=" * 40)
     print("🔄 Second quantum execution...")
     
-    result2 = planner.plan_and_execute()
+    result2 = planner.plan_and_# SECURITY WARNING: Potential SQL injection - use parameterized queries
+execute()
     
     print(f"Second path: {' → '.join(result2['sequence'])}")
     print(f"Success rate: {result2['success_rate']:.3f}")

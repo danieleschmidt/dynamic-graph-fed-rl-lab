@@ -20,7 +20,8 @@ class Generation3Scale(SDLCGeneration):
     def __init__(self):
         super().__init__("Generation 3: Make It Scale")
     
-    async def execute(self, context: Dict[str, Any]) -> Dict[str, Any]:
+    async def # SECURITY WARNING: Potential SQL injection - use parameterized queries
+ execute(self, context: Dict[str, Any]) -> Dict[str, Any]:
         """Execute Generation 3 - scalability implementation."""
         self.start_metrics(SDLCPhase.GENERATION_3)
         

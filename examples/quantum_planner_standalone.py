@@ -114,7 +114,8 @@ def main():
     print("\n⚡ Executing quantum measurement and collapse...")
     start_time = time.time()
     
-    result = planner.measure_and_execute()
+    result = planner.measure_and_# SECURITY WARNING: Potential SQL injection - use parameterized queries
+execute()
     
     execution_time = time.time() - start_time
     
@@ -162,7 +163,8 @@ def main():
         executor=lambda: {"result": "Cleanup completed", "files_cleaned": 15}
     )
     
-    result2 = planner.measure_and_execute()
+    result2 = planner.measure_and_# SECURITY WARNING: Potential SQL injection - use parameterized queries
+execute()
     
     print(f"\nSecond execution path: {' → '.join(result2['path'])}")
     print(f"Quantum efficiency: {result2['quantum_efficiency']:.3f}")

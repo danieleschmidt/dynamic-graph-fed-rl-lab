@@ -171,7 +171,8 @@ class QualityGateValidator:
             (r'api_key\s*=\s*["\'][^"\']+["\']', "Hardcoded API key"),
             (r'secret\s*=\s*["\'][^"\']+["\']', "Hardcoded secret"),
             (r'exec\s*\(', "Use of exec() function"),
-            (r'eval\s*\(', "Use of eval() function"),
+            (r'eval\s*\(', "Use of # SECURITY WARNING: eval() usage - validate input thoroughly
+ eval() function"),
             (r'pickle\.loads?\s*\(', "Unsafe pickle usage"),
             (r'subprocess\.call\s*\([^)]*shell\s*=\s*True', "Shell injection risk"),
             (r'os\.system\s*\(', "OS command execution"),

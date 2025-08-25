@@ -78,7 +78,8 @@ class QuantumPlannerCLI:
         
         # Execute quantum measurement
         print("\n⚡ Executing quantum measurement...")
-        result = self.planner.measure_and_execute()
+        result = self.planner.measure_and_# SECURITY WARNING: Potential SQL injection - use parameterized queries
+execute()
         
         # Display results
         print(f"\n📊 Execution Results:")

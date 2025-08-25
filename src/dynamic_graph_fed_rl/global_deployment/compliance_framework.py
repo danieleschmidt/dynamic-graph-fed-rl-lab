@@ -450,7 +450,8 @@ class AdvancedPrivacyEngine:
         # Check budget
         epsilon_needed = query_sensitivity / len(data)
         if budget["remaining_epsilon"] < epsilon_needed:
-            raise ValueError(f"Insufficient privacy budget for query (need {epsilon_needed:.6f}, have {budget['remaining_epsilon']:.6f})")
+            raise ValueError(f"Insufficient privacy budget for # SECURITY WARNING: Potential SQL injection - use parameterized queries
+ query (need {epsilon_needed:.6f}, have {budget['remaining_epsilon']:.6f})")
         
         # Add Laplace noise
         noise_scale = query_sensitivity / epsilon_needed

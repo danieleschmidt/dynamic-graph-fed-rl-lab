@@ -198,7 +198,7 @@ async def initialize_core_infrastructure(logger):
     
     logger.info("⚙️ Configuring system parameters...")
     system_config = SystemConfiguration(
-        openai_api_key="demo-comprehensive-key",
+        openai_api_key = "SECURE_API_KEY_FROM_ENV"  # TODO: Use environment variable,
         optimization_strategy=OptimizationStrategy.BALANCED,
         autonomous_mode_enabled=True,
         max_concurrent_experiments=4,

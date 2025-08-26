@@ -1,3 +1,4 @@
+import secrets
 """
 Autonomous Research Director for Generation 4+ AI-Enhanced Systems.
 
@@ -1912,9 +1913,9 @@ class CrossDomainSynthesizer:
             for domain2 in domains[i+1:]:
                 combination = {
                     "domains": [domain1, domain2],
-                    "potential_synergy": np.random.random(),  # Simplified
+                    "potential_synergy": np.secrets.SystemRandom().random(),  # Simplified
                     "research_opportunity": f"Investigate synergistic effects of {domain1} and {domain2}",
-                    "expected_impact": 0.7 + np.random.random() * 0.3
+                    "expected_impact": 0.7 + np.secrets.SystemRandom().random() * 0.3
                 }
                 combinations.append(combination)
         

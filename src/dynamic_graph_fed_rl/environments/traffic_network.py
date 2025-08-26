@@ -1,3 +1,4 @@
+import secrets
 """Traffic network environment for dynamic graph federated RL."""
 
 from dataclasses import dataclass
@@ -146,11 +147,11 @@ class TrafficNetworkEnv(BaseGraphEnvironment):
         intersections = []
         for i in range(self.num_intersections):
             if i in G.nodes():
-                pos = G.nodes[i].get('pos', (np.random.random(), np.random.random()))
+                pos = G.nodes[i].get('pos', (np.secrets.SystemRandom().random(), np.secrets.SystemRandom().random()))
                 intersection = IntersectionNode(
                     node_id=i,
                     position=pos,
-                    traffic_signal_state=np.random.randint(0, 3),
+                    traffic_signal_state=np.secrets.SystemRandom().randint(0, 3),
                     queue_length=np.random.uniform(0, 10),
                     flow_capacity=np.random.uniform(30, self.max_flow_capacity),
                     signal_timing=[30.0, 5.0, 25.0],  # Default timing
@@ -232,7 +233,7 @@ class TrafficNetworkEnv(BaseGraphEnvironment):
                 break
             
             # Create branch
-            branch_length = np.random.randint(3, 8)
+            branch_length = np.secrets.SystemRandom().randint(3, 8)
             G.add_edge(i, current_node)
             G.nodes[current_node]['pos'] = (float(i), 1.0)
             
@@ -356,13 +357,13 @@ class TrafficNetworkEnv(BaseGraphEnvironment):
         
         # Random incidents
         new_incidents = list(state.incident_locations)
-        if np.random.random() < self.incident_probability:
-            incident_node = np.random.randint(0, self.num_intersections)
+        if np.secrets.SystemRandom().random() < self.incident_probability:
+            incident_node = np.secrets.SystemRandom().randint(0, self.num_intersections)
             if incident_node not in new_incidents:
                 new_incidents.append(incident_node)
         
         # Resolve some incidents
-        if new_incidents and np.random.random() < 0.1:  # 10% chance to resolve
+        if new_incidents and np.secrets.SystemRandom().random() < 0.1:  # 10% chance to resolve
             resolved_incident = np.random.choice(new_incidents)
             new_incidents.remove(resolved_incident)
         

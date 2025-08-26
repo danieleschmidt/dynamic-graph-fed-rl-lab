@@ -1,45 +1,41 @@
 # Security Policy
 
-## Reporting Security Vulnerabilities
+## Supported Versions
 
-If you discover a security vulnerability, please report it responsibly:
+| Version | Supported          |
+| ------- | ------------------ |
+| 0.2.x   | :white_check_mark: |
+| 0.1.x   | :x:                |
 
-1. **Do not** create a public GitHub issue
-2. Email security@terragon.ai with details
-3. Include steps to reproduce if possible
-4. Allow time for fix before public disclosure
+## Reporting a Vulnerability
+
+To report a security vulnerability, please email security@terragon.ai with:
+
+1. Description of the vulnerability
+2. Steps to reproduce
+3. Potential impact
+4. Suggested fix (if available)
+
+We will acknowledge receipt within 24 hours and provide a detailed response within 72 hours.
 
 ## Security Measures
 
-### Code Security
-- No hardcoded secrets or passwords
-- Input validation for all user data
-- Parameterized queries to prevent SQL injection
-- Avoid eval() and similar dynamic execution
+### Encryption
+- All data in transit is encrypted using TLS 1.3
+- Data at rest uses AES-256 encryption
+- Post-quantum cryptography for future-proofing
 
-### Data Security
-- Encrypt sensitive data at rest and in transit
-- Use environment variables for secrets
-- Implement proper access controls
+### Authentication
+- Multi-factor authentication required
+- Zero-trust security model
 - Regular security audits
 
-### Deployment Security
-- Use HTTPS for all communications
-- Keep dependencies updated
-- Monitor for vulnerabilities
-- Implement proper logging
+### Code Security
+- Static code analysis on every commit
+- Dependency vulnerability scanning
+- Regular security updates
 
-## Security Checklist
-
-- [ ] No hardcoded credentials
-- [ ] Input validation implemented
-- [ ] SQL injection protection
-- [ ] XSS prevention
-- [ ] CSRF protection
-- [ ] Access control implemented
-- [ ] Logging and monitoring
-- [ ] Dependencies updated
-
-## Contact
-
-For security-related questions: security@terragon.ai
+### Privacy
+- Differential privacy for federated learning
+- Homomorphic encryption for sensitive computations
+- GDPR and CCPA compliance

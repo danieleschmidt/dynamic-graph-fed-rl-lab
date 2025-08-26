@@ -1,3 +1,4 @@
+import secrets
 """
 AutoML Pipeline for Continuous Algorithm Improvement.
 
@@ -438,7 +439,7 @@ class AutoMLPipeline:
         """Create a new algorithm variant."""
         # Generate unique ID
         config_str = json.dumps(config, sort_keys=True)
-        config_hash = hashlib.md5(config_str.encode()).hexdigest()[:8]
+        config_hash = hashlib.sha256(config_str.encode()).hexdigest()[:8]
         variant_id = f"{base_algorithm}_{suffix}_{config_hash}"
         
         # Create variant object
@@ -708,7 +709,7 @@ class AutoMLPipeline:
             all_params = set(parent1_params.keys()) | set(parent2_params.keys())
             
             for param in all_params:
-                if np.random.random() < 0.5:
+                if np.secrets.SystemRandom().random() < 0.5:
                     config[category][param] = parent1_params.get(param)
                 else:
                     config[category][param] = parent2_params.get(param)
@@ -722,7 +723,7 @@ class AutoMLPipeline:
         for category in ["hyperparameters", "architecture"]:
             if category in search_space and category in mutated_config:
                 for param, spec in search_space[category].items():
-                    if np.random.random() < mutation_rate:
+                    if np.secrets.SystemRandom().random() < mutation_rate:
                         mutated_config[category][param] = self._sample_parameter(spec)
         
         return mutated_config
@@ -749,7 +750,7 @@ class AutoMLPipeline:
                         
                         elif spec["type"] == "choice":
                             # Randomly change with low probability
-                            if np.random.random() < perturbation_strength:
+                            if np.secrets.SystemRandom().random() < perturbation_strength:
                                 perturbed_config[category][param] = np.random.choice(spec["choices"])
         
         return perturbed_config

@@ -1,3 +1,4 @@
+import secrets
 """Replay buffers for graph-based reinforcement learning."""
 
 import random
@@ -110,7 +111,7 @@ class GraphTemporalBuffer:
             
             # Choose random starting point
             if len(episode) >= sequence_length:
-                start_idx = random.randint(0, len(episode) - sequence_length)
+                start_idx = secrets.SystemRandom().randint(0, len(episode) - sequence_length)
                 sequence = episode[start_idx:start_idx + sequence_length]
                 sequences.append(sequence)
         
@@ -135,7 +136,7 @@ class GraphTemporalBuffer:
                 continue
             
             # Random starting point
-            start_idx = random.randint(lookback, len(episode))
+            start_idx = secrets.SystemRandom().randint(lookback, len(episode))
             
             # Build sequence backwards
             sequence = []

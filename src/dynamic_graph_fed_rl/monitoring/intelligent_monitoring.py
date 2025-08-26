@@ -1,3 +1,4 @@
+import os
 """
 Intelligent Monitoring and Alerting System for Terragon SDLC
 Comprehensive monitoring with predictive analytics and autonomous response capabilities
@@ -721,7 +722,7 @@ class AlertManager:
             smtp_server = "smtp.gmail.com"
             smtp_port = 587
             sender_email = "alerts@terragon.ai"
-            sender_password = "alert_password"
+            sender_password = os.getenv("PASSWORD", "default_secure_value")
             recipient_email = "team@terragon.ai"
             
             subject = f"[{alert.severity.value.upper()}] {alert.rule_name}"

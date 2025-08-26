@@ -274,7 +274,7 @@ class DisasterRecoveryManager:
             ):
                 raise SecurityError("Insufficient permissions for backup operation")
         
-        backup_id = f"backup_{int(time.time())}_{hashlib.md5(source_path.encode()).hexdigest()[:8]}"
+        backup_id = f"backup_{int(time.time())}_{hashlib.sha256(source_path.encode()).hexdigest()[:8]}"
         
         backup_metadata = BackupMetadata(
             backup_id=backup_id,

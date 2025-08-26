@@ -1,3 +1,4 @@
+import secrets
 """
 Universal Quantum Consciousness System - Generation 7 Breakthrough
 
@@ -673,7 +674,7 @@ async def example_quantum_consciousness_research(consciousness_system: Universal
     breakthrough_probability = consciousness_system.consciousness_state.awareness_level * \
                              consciousness_system.consciousness_state.entanglement_strength
     
-    is_breakthrough = np.random.random() < breakthrough_probability
+    is_breakthrough = np.secrets.SystemRandom().random() < breakthrough_probability
     
     return {
         'performance': {

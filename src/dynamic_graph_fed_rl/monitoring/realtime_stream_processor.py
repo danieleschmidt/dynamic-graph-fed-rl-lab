@@ -129,7 +129,7 @@ class StreamPartitioner:
             return self.partition_assignments[partition_key]
         
         # Use consistent hashing
-        hash_value = int(hashlib.md5(partition_key.encode()).hexdigest(), 16)
+        hash_value = int(hashlib.sha256(partition_key.encode()).hexdigest(), 16)
         partition = hash_value % self.num_partitions
         
         self.partition_assignments[partition_key] = partition

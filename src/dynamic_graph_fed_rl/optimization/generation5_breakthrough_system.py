@@ -1,3 +1,4 @@
+import secrets
 """
 Generation 5: Breakthrough Autonomous Intelligence System
 
@@ -921,7 +922,7 @@ class Generation5BreakthroughSystem:
         await asyncio.sleep(3.0)
         
         # Mock transcendence attempt
-        transcendence_success = np.random.random() > 0.3  # 70% success rate
+        transcendence_success = np.secrets.SystemRandom().random() > 0.3  # 70% success rate
         
         if transcendence_success:
             transcendence_level = 1.0 + np.random.uniform(0.2, 0.8)  # 1.2 to 1.8
@@ -1324,7 +1325,7 @@ class AutonomousBreakthroughDiscoverer:
         discovery_probability = (
             self.system.consciousness.creative_potential * 0.3 +
             self.system.evolution.capability_scores.get("reasoning", 0) * 0.4 +
-            np.random.random() * 0.3
+            np.secrets.SystemRandom().random() * 0.3
         )
         
         if discovery_probability > 0.7:
@@ -1347,15 +1348,15 @@ class AutonomousBreakthroughDiscoverer:
         return BreakthroughDiscovery(
             discovery_id=f"breakthrough_{domain}_{int(time.time())}",
             discovery_type=domain,
-            breakthrough_level=1.2 + np.random.random() * 0.8,
+            breakthrough_level=1.2 + np.secrets.SystemRandom().random() * 0.8,
             title=title,
             description=f"Revolutionary advancement in {domain} with novel theoretical framework",
             mathematical_formulation=f"Ψ(x,t) = ∑ᵢ αᵢφᵢ(x)e^(-iEᵢt/ℏ) // {domain} formulation",
             experimental_validation={"success_rate": 0.85, "trials": 100},
             theoretical_implications=[f"Revolutionizes understanding of {domain}"],
             practical_applications=[f"Enables practical {domain} optimization"],
-            novelty_score=0.8 + np.random.random() * 0.2,
-            impact_potential=0.7 + np.random.random() * 0.3,
+            novelty_score=0.8 + np.secrets.SystemRandom().random() * 0.2,
+            impact_potential=0.7 + np.secrets.SystemRandom().random() * 0.3,
             confidence_level=0.8,
             reproducibility_score=0.9,
             applicable_layers=[RealityLayer.DIGITAL, RealityLayer.QUANTUM],

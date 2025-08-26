@@ -1,3 +1,4 @@
+import secrets
 """
 Autonomous Research Director
 
@@ -102,8 +103,8 @@ class AutonomousResearchDirector:
         await asyncio.sleep(0.2)
         
         literature_analysis = {
-            "papers_reviewed": random.randint(50, 200),
-            "key_researchers": random.randint(10, 30),
+            "papers_reviewed": secrets.SystemRandom().randint(50, 200),
+            "key_researchers": secrets.SystemRandom().randint(10, 30),
             "research_gaps": [
                 f"Limited work on {domain} scalability",
                 f"Insufficient theoretical analysis of {domain}",
@@ -116,7 +117,7 @@ class AutonomousResearchDirector:
                 f"Federated {domain} protocols",
                 f"Autonomous {domain} systems"
             ],
-            "open_problems": random.randint(3, 8),
+            "open_problems": secrets.SystemRandom().randint(3, 8),
             "citation_network_density": random.uniform(0.3, 0.8)
         }
         
@@ -143,7 +144,7 @@ class AutonomousResearchDirector:
         ]
         
         # Combine and prioritize gaps
-        all_gaps = base_gaps + random.sample(additional_gaps, k=random.randint(3, 6))
+        all_gaps = base_gaps + random.sample(additional_gaps, k=secrets.SystemRandom().randint(3, 6))
         
         logger.info(f"Identified {len(all_gaps)} research gaps")
         return all_gaps
@@ -244,7 +245,7 @@ class AutonomousResearchDirector:
                 "significance_level": 0.05,
                 "power": 0.8,
                 "effect_size": 0.3,
-                "sample_size": random.randint(100, 1000),
+                "sample_size": secrets.SystemRandom().randint(100, 1000),
                 "multiple_comparison_correction": "bonferroni"
             },
             "reproducibility": {
@@ -283,8 +284,8 @@ class AutonomousResearchDirector:
             results[metric] = improvement
         
         experiment_result = ExperimentResult(
-            hypothesis_id=f"hyp_{random.randint(1000, 9999)}",
-            experiment_id=f"exp_{random.randint(1000, 9999)}",
+            hypothesis_id=f"hyp_{secrets.SystemRandom().randint(1000, 9999)}",
+            experiment_id=f"exp_{secrets.SystemRandom().randint(1000, 9999)}",
             results=results,
             success=statistical_significance and effect_size > 0.3,
             statistical_significance=statistical_significance,

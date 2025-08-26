@@ -1,3 +1,4 @@
+import secrets
 """
 Generation 4: AI-Enhanced Auto-Optimization Framework
 
@@ -482,7 +483,7 @@ class HealthMonitor:
             issues.append("High error rate detected")
         
         # Mock resource exhaustion check
-        if np.random.random() < 0.05:  # 5% chance of resource issues
+        if np.secrets.SystemRandom().random() < 0.05:  # 5% chance of resource issues
             resource_exhausted = True
             issues.append("Resource utilization approaching limits")
         
@@ -636,7 +637,7 @@ class ABTestingSystem:
             return await self._complete_test(test_id)
         
         # Randomly assign to control or treatment (50/50 split)
-        use_treatment = np.random.random() < 0.5
+        use_treatment = np.secrets.SystemRandom().random() < 0.5
         
         if use_treatment:
             result = await test['treatment_strategy'].optimize(tasks, [])
@@ -886,7 +887,7 @@ class AIEnhancedOptimizer:
             return OptimizationStrategy.QUANTUM_INTERFERENCE
         
         # Exploration vs exploitation
-        if np.random.random() < self.config.exploration_rate:
+        if np.secrets.SystemRandom().random() < self.config.exploration_rate:
             # Exploration: try different strategy
             return np.random.choice(list(OptimizationStrategy))
         else:

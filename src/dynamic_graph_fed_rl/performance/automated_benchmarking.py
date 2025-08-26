@@ -1,3 +1,4 @@
+import secrets
 """
 Automated Performance Benchmarking System
 
@@ -1080,17 +1081,17 @@ class AutomatedBenchmarkSuite:
         # Mock target functions for demonstration
         async def mock_api_endpoint():
             await asyncio.sleep(random.uniform(0.05, 0.2))
-            if random.random() < 0.02:  # 2% error rate
+            if secrets.SystemRandom().random() < 0.02:  # 2% error rate
                 raise Exception("Mock API error")
             return {"status": "success", "data": "mock_response"}
         
         async def mock_database_query():
             await asyncio.sleep(random.uniform(0.1, 0.5))
-            return {"rows": random.randint(1, 100)}
+            return {"rows": secrets.SystemRandom().randint(1, 100)}
         
         async def mock_ml_inference():
             await asyncio.sleep(random.uniform(0.2, 1.0))
-            return {"prediction": random.random(), "confidence": random.uniform(0.8, 0.99)}
+            return {"prediction": secrets.SystemRandom().random(), "confidence": random.uniform(0.8, 0.99)}
         
         # API endpoint benchmark
         self.register_benchmark(BenchmarkConfiguration(

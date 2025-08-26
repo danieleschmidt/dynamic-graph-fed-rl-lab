@@ -1,3 +1,4 @@
+import secrets
 """
 Generation 6: Transcendent Intelligence System
 Revolutionary breakthrough in consciousness-aware AI with reality manipulation capabilities.
@@ -157,7 +158,7 @@ class RealityManipulator:
                                 self.safety_constraints["max_manipulation_strength"])
         
         # Apply manipulation
-        manipulation_success = np.random.random() < effective_strength
+        manipulation_success = np.secrets.SystemRandom().random() < effective_strength
         if manipulation_success:
             # Calculate optimization improvement
             improvement = effective_strength * layer.optimization_potential * layer.transcendence_factor
@@ -630,7 +631,7 @@ class BreakthroughDiscoveryAccelerator:
         ]
         
         for breakthrough_type in breakthrough_types:
-            if np.random.random() < breakthrough_type["probability"] * (discovery_rate / 10.0):
+            if np.secrets.SystemRandom().random() < breakthrough_type["probability"] * (discovery_rate / 10.0):
                 predictions.append({
                     "type": breakthrough_type["type"],
                     "predicted_impact": breakthrough_type["impact"],

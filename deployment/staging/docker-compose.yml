@@ -1,0 +1,17 @@
+{
+  "version": "3.8",
+  "services": {
+    "fed-rl-app": {
+      "image": "dynamic-graph-fed-rl:latest",
+      "ports": [
+        "8080:8080"
+      ],
+      "environment": {
+        "ENVIRONMENT": "staging",
+        "REGION": "us-east-1",
+        "SCALE": "small"
+      },
+      "restart": "unless-stopped"
+    }
+  }
+}

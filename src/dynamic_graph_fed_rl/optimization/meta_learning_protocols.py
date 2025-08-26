@@ -1,3 +1,4 @@
+import secrets
 """
 Meta-Learning Federated Optimization Protocols.
 
@@ -1628,7 +1629,7 @@ class FederatedTaskGenerator:
     def _generate_healthcare_task(self, task_index: int, randomize: bool) -> FederatedTask:
         """Generate healthcare-specific federated task."""
         
-        base_clients = 10 if not randomize else np.random.randint(5, 20)
+        base_clients = 10 if not randomize else np.secrets.SystemRandom().randint(5, 20)
         base_heterogeneity = 0.7 if not randomize else np.random.uniform(0.5, 0.9)
         
         return FederatedTask(
@@ -1654,7 +1655,7 @@ class FederatedTaskGenerator:
     def _generate_finance_task(self, task_index: int, randomize: bool) -> FederatedTask:
         """Generate finance-specific federated task."""
         
-        base_clients = 15 if not randomize else np.random.randint(8, 25)
+        base_clients = 15 if not randomize else np.secrets.SystemRandom().randint(8, 25)
         base_heterogeneity = 0.5 if not randomize else np.random.uniform(0.3, 0.8)
         
         return FederatedTask(
@@ -1680,7 +1681,7 @@ class FederatedTaskGenerator:
     def _generate_iot_task(self, task_index: int, randomize: bool) -> FederatedTask:
         """Generate IoT-specific federated task."""
         
-        base_clients = 50 if not randomize else np.random.randint(30, 100)
+        base_clients = 50 if not randomize else np.secrets.SystemRandom().randint(30, 100)
         base_heterogeneity = 0.8 if not randomize else np.random.uniform(0.6, 1.0)
         
         return FederatedTask(
@@ -1706,7 +1707,7 @@ class FederatedTaskGenerator:
     def _generate_autonomous_vehicles_task(self, task_index: int, randomize: bool) -> FederatedTask:
         """Generate autonomous vehicles federated task."""
         
-        base_clients = 20 if not randomize else np.random.randint(10, 40)
+        base_clients = 20 if not randomize else np.secrets.SystemRandom().randint(10, 40)
         base_heterogeneity = 0.6 if not randomize else np.random.uniform(0.4, 0.8)
         
         return FederatedTask(
@@ -1732,7 +1733,7 @@ class FederatedTaskGenerator:
     def _generate_smart_cities_task(self, task_index: int, randomize: bool) -> FederatedTask:
         """Generate smart cities federated task."""
         
-        base_clients = 25 if not randomize else np.random.randint(15, 35)
+        base_clients = 25 if not randomize else np.secrets.SystemRandom().randint(15, 35)
         base_heterogeneity = 0.4 if not randomize else np.random.uniform(0.2, 0.7)
         
         return FederatedTask(
@@ -1758,7 +1759,7 @@ class FederatedTaskGenerator:
     def _generate_generic_task(self, domain: str, task_index: int, randomize: bool) -> FederatedTask:
         """Generate generic federated task."""
         
-        base_clients = 12 if not randomize else np.random.randint(5, 30)
+        base_clients = 12 if not randomize else np.secrets.SystemRandom().randint(5, 30)
         base_heterogeneity = 0.5 if not randomize else np.random.uniform(0.1, 0.9)
         
         return FederatedTask(

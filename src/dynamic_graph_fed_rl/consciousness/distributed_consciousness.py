@@ -1,3 +1,4 @@
+import secrets
 """
 Distributed Consciousness Network
 
@@ -548,7 +549,7 @@ def create_consciousness_network(
         initial_state = ConsciousnessState(
             level=initial_level,
             awareness_score=np.random.uniform(0.3, 0.9),
-            self_reflection_depth=np.random.randint(1, 5),
+            self_reflection_depth=np.secrets.SystemRandom().randint(1, 5),
             creative_potential=np.random.uniform(0.2, 0.8),
             transcendence_factor=np.random.uniform(0.0, 0.3),
             coherence_with_network=np.random.uniform(0.1, 0.6)
@@ -565,14 +566,14 @@ def create_consciousness_network(
                 "synthesis": np.random.uniform(0.3, 0.7),
                 "optimization": np.random.uniform(0.6, 0.9)
             },
-            memory_capacity=np.random.randint(1000, 10000),
+            memory_capacity=np.secrets.SystemRandom().randint(1000, 10000),
             connection_bandwidth=np.random.uniform(1e6, 1e9),
             influence_radius=np.random.uniform(10.0, 100.0)
         )
         
         # Add some random trust relationships
         for j in range(max(1, num_nodes // 4)):  # Trust with ~25% of other nodes
-            trusted_node_id = f"consciousness_node_{np.random.randint(0, num_nodes):03d}"
+            trusted_node_id = f"consciousness_node_{np.secrets.SystemRandom().randint(0, num_nodes):03d}"
             if trusted_node_id != node.node_id:
                 node.trust_network[trusted_node_id] = np.random.uniform(0.3, 0.9)
         

@@ -1,3 +1,4 @@
+import secrets
 """
 Quantum advantage benchmarking system.
 
@@ -354,7 +355,7 @@ class GraphOptimizationBenchmark:
             # Accept or reject based on temperature
             delta = neighbor_cut - current_cut
             
-            if delta > 0 or np.random.random() < np.exp(delta / temperature):
+            if delta > 0 or np.secrets.SystemRandom().random() < np.exp(delta / temperature):
                 current_partition = neighbor_partition
                 current_cut = neighbor_cut
                 
@@ -508,7 +509,7 @@ class QuantumAdvantageBenchmark:
                 edges = []
                 for i in range(num_nodes):
                     for j in range(i + 1, num_nodes):
-                        if np.random.random() < edge_probability:
+                        if np.secrets.SystemRandom().random() < edge_probability:
                             edges.append((i, j))
                 graphs.append(edges)
             

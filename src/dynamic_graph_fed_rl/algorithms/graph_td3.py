@@ -1,3 +1,4 @@
+import secrets
 """Graph TD3 algorithm for federated reinforcement learning on dynamic graphs."""
 
 import pickle
@@ -139,7 +140,7 @@ class GraphTD3(BaseGraphAlgorithm):
         )
         
         # Random edge index
-        edge_index = jax.random.randint(
+        edge_index = jax.secrets.SystemRandom().randint(
             self.rng_key, (2, num_edges), 0, num_nodes
         )
         

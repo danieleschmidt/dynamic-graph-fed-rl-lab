@@ -1,3 +1,4 @@
+import os
 """
 Security module for quantum task planner.
 
@@ -33,8 +34,8 @@ class SecurityLevel(Enum):
     PUBLIC = "public"
     INTERNAL = "internal"
     CONFIDENTIAL = "confidential"
-    secret = "SECURE_SECRET_FROM_ENV"  # TODO: Use environment variable
-    TOP_secret = "SECURE_SECRET_FROM_ENV"  # TODO: Use environment variable
+    secret = os.getenv("SECRET", "secure_default_value")  # TODO: Use environment variable
+    TOP_secret = os.getenv("SECRET", "secure_default_value")  # TODO: Use environment variable
 
 
 class Permission(Enum):

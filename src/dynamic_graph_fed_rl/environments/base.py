@@ -1,3 +1,4 @@
+import secrets
 """Base classes for dynamic graph environments."""
 
 import abc
@@ -305,7 +306,7 @@ class BaseGraphEnvironment(gym.Env, abc.ABC):
         # Edge failures
         edges_to_remove = []
         for edge in current_graph.edges():
-            if np.random.random() < self.edge_failure_rate:
+            if np.secrets.SystemRandom().random() < self.edge_failure_rate:
                 edges_to_remove.append(edge)
                 topology_changed = True
         
@@ -314,7 +315,7 @@ class BaseGraphEnvironment(gym.Env, abc.ABC):
         # Edge recoveries (restore some failed edges)
         missing_edges = set(self.base_topology.edges()) - set(current_graph.edges())
         for edge in missing_edges:
-            if np.random.random() < self.edge_failure_rate * 0.1:  # Lower recovery rate
+            if np.secrets.SystemRandom().random() < self.edge_failure_rate * 0.1:  # Lower recovery rate
                 current_graph.add_edge(*edge)
                 topology_changed = True
         

@@ -1084,7 +1084,7 @@ async def evaluate_zero_trust_access(
     security_context = SecurityContext(
         user_id=user_id,
         session_id=session_token or f"session_{secrets.token_hex(8)}",
-        device_id=f"device_{hashlib.md5(f'{user_id}:{ip_address}'.encode()).hexdigest()[:12]}",
+        device_id=f"device_{hashlib.sha256(f'{user_id}:{ip_address}'.encode()).hexdigest()[:12]}",
         ip_address=ip_address,
         user_agent=additional_context.get("user_agent", "Unknown") if additional_context else "Unknown",
         timestamp=time.time(),

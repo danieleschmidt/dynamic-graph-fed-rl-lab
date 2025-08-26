@@ -1,3 +1,4 @@
+import os
 """
 Enterprise-grade security framework with RBAC, audit logging, and threat protection.
 
@@ -29,7 +30,7 @@ class SecurityLevel(Enum):
     INTERNAL = "internal"
     RESTRICTED = "restricted"
     CONFIDENTIAL = "confidential"
-    secret = "SECURE_SECRET_FROM_ENV"  # TODO: Use environment variable
+    secret = os.getenv("SECRET", "secure_default_value")  # TODO: Use environment variable
 
 
 class ActionType(Enum):

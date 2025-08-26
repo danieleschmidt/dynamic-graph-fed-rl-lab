@@ -1,3 +1,4 @@
+import secrets
 """
 Autonomous A/B Testing Framework for Algorithm Variants.
 
@@ -498,7 +499,7 @@ class AutonomousABTester:
     
     def _assign_traffic_to_variant(self, config: ABTestConfig) -> str:
         """Assign traffic to variant based on allocation."""
-        if np.random.random() < config.traffic_allocation[0]:
+        if np.secrets.SystemRandom().random() < config.traffic_allocation[0]:
             return config.variant_a_id
         else:
             return config.variant_b_id

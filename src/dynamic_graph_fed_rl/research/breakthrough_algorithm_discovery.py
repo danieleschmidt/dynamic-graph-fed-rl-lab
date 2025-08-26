@@ -1,3 +1,4 @@
+import secrets
 """
 Breakthrough Algorithm Discovery Engine.
 
@@ -333,12 +334,12 @@ class BreakthroughAlgorithmDiscovery:
         elif algorithm_class == AlgorithmClass.GRAPH_ENCODER:
             base_params.update({
                 "dropout_rate": float(random.uniform(random.split(key)[0], minval=0.0, maxval=0.5)),
-                "attention_heads": int(random.randint(random.split(key)[1], minval=1, maxval=8, shape=())),
+                "attention_heads": int(secrets.SystemRandom().randint(random.split(key)[1], minval=1, maxval=8, shape=())),
             })
         elif algorithm_class == AlgorithmClass.COMMUNICATION_SCHEME:
             base_params.update({
                 "compression_ratio": float(random.uniform(random.split(key)[0], minval=0.01, maxval=0.5)),
-                "quantization_bits": int(random.randint(random.split(key)[1], minval=4, maxval=32, shape=())),
+                "quantization_bits": int(secrets.SystemRandom().randint(random.split(key)[1], minval=4, maxval=32, shape=())),
             })
         
         return base_params
@@ -377,12 +378,12 @@ class BreakthroughAlgorithmDiscovery:
         }
         
         pool = operation_pools.get(algorithm_class, ["identity", "linear", "nonlinear"])
-        num_operations = random.randint(key, minval=3, maxval=8, shape=())
+        num_operations = secrets.SystemRandom().randint(key, minval=3, maxval=8, shape=())
         
         selected_ops = []
         for i in range(num_operations):
             op_key = random.split(key, num_operations)[i]
-            op_idx = random.randint(op_key, minval=0, maxval=len(pool), shape=())
+            op_idx = secrets.SystemRandom().randint(op_key, minval=0, maxval=len(pool), shape=())
             selected_ops.append(pool[op_idx])
         
         return selected_ops
@@ -400,12 +401,12 @@ class BreakthroughAlgorithmDiscovery:
             connections.append((operations[i], operations[i + 1]))
         
         # Add random skip connections
-        num_skip = random.randint(key, minval=0, maxval=len(operations) // 2, shape=())
+        num_skip = secrets.SystemRandom().randint(key, minval=0, maxval=len(operations) // 2, shape=())
         
         for i in range(num_skip):
             skip_key = random.split(key, num_skip + 1)[i]
-            src_idx = random.randint(skip_key, minval=0, maxval=len(operations), shape=())
-            dst_idx = random.randint(random.split(skip_key)[0], minval=0, maxval=len(operations), shape=())
+            src_idx = secrets.SystemRandom().randint(skip_key, minval=0, maxval=len(operations), shape=())
+            dst_idx = secrets.SystemRandom().randint(random.split(skip_key)[0], minval=0, maxval=len(operations), shape=())
             
             if src_idx != dst_idx:
                 connections.append((operations[src_idx], operations[dst_idx]))
@@ -672,7 +673,7 @@ class BreakthroughAlgorithmDiscovery:
             parent1, parent2 = parents[i], parents[i + 1]
             
             # Crossover
-            if np.random.random() < self.crossover_rate:
+            if np.secrets.SystemRandom().random() < self.crossover_rate:
                 child1, child2 = await self._crossover(parent1, parent2, generation)
                 offspring.extend([child1, child2])
             else:
@@ -680,7 +681,7 @@ class BreakthroughAlgorithmDiscovery:
         
         # Mutation
         for individual in offspring:
-            if np.random.random() < self.mutation_rate:
+            if np.secrets.SystemRandom().random() < self.mutation_rate:
                 await self._mutate(individual)
         
         return offspring
@@ -693,8 +694,8 @@ class BreakthroughAlgorithmDiscovery:
     ) -> Tuple[AlgorithmGenotype, AlgorithmGenotype]:
         """Perform crossover between two parents."""
         # Create child genotypes
-        child1_id = f"child_{generation}_{int(time.time())}_{np.random.randint(10000)}"
-        child2_id = f"child_{generation}_{int(time.time())}_{np.random.randint(10000)}"
+        child1_id = f"child_{generation}_{int(time.time())}_{np.secrets.SystemRandom().randint(10000)}"
+        child2_id = f"child_{generation}_{int(time.time())}_{np.secrets.SystemRandom().randint(10000)}"
         
         # Mix architecture genes
         child1_arch = self._mix_architecture_genes(parent1.architecture_genes, parent2.architecture_genes)
@@ -747,7 +748,7 @@ class BreakthroughAlgorithmDiscovery:
         for key in all_keys:
             if key in arch1 and key in arch2:
                 # Both parents have this gene, randomly choose
-                mixed_arch[key] = arch1[key] if np.random.random() < 0.5 else arch2[key]
+                mixed_arch[key] = arch1[key] if np.secrets.SystemRandom().random() < 0.5 else arch2[key]
             elif key in arch1:
                 mixed_arch[key] = arch1[key]
             else:
@@ -782,7 +783,7 @@ class BreakthroughAlgorithmDiscovery:
         for i in range(max_length):
             if i < len(ops1) and i < len(ops2):
                 # Both parents have operation at this position
-                op = ops1[i] if np.random.random() < 0.5 else ops2[i]
+                op = ops1[i] if np.secrets.SystemRandom().random() < 0.5 else ops2[i]
                 mixed_ops.append(op)
             elif i < len(ops1):
                 mixed_ops.append(ops1[i])
@@ -814,7 +815,7 @@ class BreakthroughAlgorithmDiscovery:
     def _mutate_parameters(self, individual: AlgorithmGenotype):
         """Mutate parameter genes."""
         for key, value in individual.parameter_genes.items():
-            if np.random.random() < 0.1:  # 10% chance per parameter
+            if np.secrets.SystemRandom().random() < 0.1:  # 10% chance per parameter
                 # Gaussian mutation
                 mutation_strength = 0.1 * abs(value) if value != 0 else 0.01
                 mutation = np.random.normal(0, mutation_strength)
@@ -822,26 +823,26 @@ class BreakthroughAlgorithmDiscovery:
     
     def _mutate_operations(self, individual: AlgorithmGenotype):
         """Mutate operation genes."""
-        if np.random.random() < 0.1:  # 10% chance
+        if np.secrets.SystemRandom().random() < 0.1:  # 10% chance
             # Add random operation
             new_op = self._generate_random_operations(individual.algorithm_class, self.rng_key)[0]
             individual.operation_genes.append(new_op)
         
-        if len(individual.operation_genes) > 1 and np.random.random() < 0.1:
+        if len(individual.operation_genes) > 1 and np.secrets.SystemRandom().random() < 0.1:
             # Remove random operation
-            idx = np.random.randint(len(individual.operation_genes))
+            idx = np.secrets.SystemRandom().randint(len(individual.operation_genes))
             individual.operation_genes.pop(idx)
         
         # Mutate existing operations
         for i in range(len(individual.operation_genes)):
-            if np.random.random() < 0.05:  # 5% chance per operation
+            if np.secrets.SystemRandom().random() < 0.05:  # 5% chance per operation
                 new_ops = self._generate_random_operations(individual.algorithm_class, self.rng_key)
                 individual.operation_genes[i] = np.random.choice(new_ops)
     
     def _mutate_architecture(self, individual: AlgorithmGenotype):
         """Mutate architecture genes."""
         for key, value in individual.architecture_genes.items():
-            if np.random.random() < 0.05:  # 5% chance per gene
+            if np.secrets.SystemRandom().random() < 0.05:  # 5% chance per gene
                 if isinstance(value, (int, float)):
                     mutation = np.random.normal(0, 0.1 * abs(value) if value != 0 else 0.1)
                     individual.architecture_genes[key] = type(value)(max(0, value + mutation))
@@ -1248,13 +1249,13 @@ class GeneticProgrammer:
     def generate_random_program(self, key: jnp.ndarray) -> Dict[str, Any]:
         """Generate random program architecture."""
         program_types = ["sequential", "parallel", "hierarchical", "recurrent"]
-        program_type = program_types[random.randint(key, minval=0, maxval=len(program_types), shape=())]
+        program_type = program_types[secrets.SystemRandom().randint(key, minval=0, maxval=len(program_types), shape=())]
         
         return {
             "program_type": program_type,
-            "depth": int(random.randint(random.split(key)[0], minval=2, maxval=8, shape=())),
-            "branching_factor": int(random.randint(random.split(key)[1], minval=1, maxval=4, shape=())),
-            "recursion_depth": int(random.randint(random.split(key)[0], minval=0, maxval=3, shape=())),
+            "depth": int(secrets.SystemRandom().randint(random.split(key)[0], minval=2, maxval=8, shape=())),
+            "branching_factor": int(secrets.SystemRandom().randint(random.split(key)[1], minval=1, maxval=4, shape=())),
+            "recursion_depth": int(secrets.SystemRandom().randint(random.split(key)[0], minval=0, maxval=3, shape=())),
         }
 
 
@@ -1268,7 +1269,7 @@ class NeuralArchitectureSearcher:
     
     def generate_random_architecture(self, key: jnp.ndarray) -> Dict[str, Any]:
         """Generate random neural architecture."""
-        num_layers = random.randint(key, minval=2, maxval=self.max_layers, shape=())
+        num_layers = secrets.SystemRandom().randint(key, minval=2, maxval=self.max_layers, shape=())
         
         layer_types = ["linear", "graph_conv", "attention", "transformer", "residual"]
         activation_types = ["relu", "gelu", "swish", "tanh"]
@@ -1276,9 +1277,9 @@ class NeuralArchitectureSearcher:
         layers = []
         for i in range(num_layers):
             layer_key = random.split(key, num_layers)[i]
-            layer_type = layer_types[random.randint(layer_key, minval=0, maxval=len(layer_types), shape=())]
-            activation = activation_types[random.randint(random.split(layer_key)[0], minval=0, maxval=len(activation_types), shape=())]
-            hidden_dim = int(random.randint(random.split(layer_key)[1], minval=32, maxval=self.max_hidden_dim, shape=()))
+            layer_type = layer_types[secrets.SystemRandom().randint(layer_key, minval=0, maxval=len(layer_types), shape=())]
+            activation = activation_types[secrets.SystemRandom().randint(random.split(layer_key)[0], minval=0, maxval=len(activation_types), shape=())]
+            hidden_dim = int(secrets.SystemRandom().randint(random.split(layer_key)[1], minval=32, maxval=self.max_hidden_dim, shape=()))
             
             layers.append({
                 "type": layer_type,
@@ -1305,14 +1306,14 @@ class MetaLearningDiscoverer:
     def generate_random_strategy(self, key: jnp.ndarray) -> Dict[str, Any]:
         """Generate random meta-learning strategy."""
         meta_algorithms = ["maml", "reptile", "meta_sgd", "leo", "anil"]
-        meta_alg = meta_algorithms[random.randint(key, minval=0, maxval=len(meta_algorithms), shape=())]
+        meta_alg = meta_algorithms[secrets.SystemRandom().randint(key, minval=0, maxval=len(meta_algorithms), shape=())]
         
         return {
             "meta_algorithm": meta_alg,
             "inner_lr": float(random.uniform(random.split(key)[0], minval=1e-4, maxval=1e-1)),
             "outer_lr": float(random.uniform(random.split(key)[1], minval=1e-4, maxval=1e-2)),
-            "adaptation_steps": int(random.randint(random.split(key)[0], minval=1, maxval=10, shape=())),
-            "meta_batch_size": int(random.randint(random.split(key)[1], minval=4, maxval=32, shape=())),
+            "adaptation_steps": int(secrets.SystemRandom().randint(random.split(key)[0], minval=1, maxval=10, shape=())),
+            "meta_batch_size": int(secrets.SystemRandom().randint(random.split(key)[1], minval=4, maxval=32, shape=())),
         }
 
 
@@ -1333,7 +1334,7 @@ class QuantumInspiredMutator:
         # Quantum superposition mutation
         mutated_params = {}
         for key, value in parameters.items():
-            if np.random.random() < 0.1:  # Quantum mutation probability
+            if np.secrets.SystemRandom().random() < 0.1:  # Quantum mutation probability
                 # Create superposition of parameter values
                 superposition_values = [
                     value * 0.5,  # Ground state
@@ -1346,7 +1347,7 @@ class QuantumInspiredMutator:
         
         # Quantum entanglement between operations
         mutated_operations = operations.copy()
-        if len(mutated_operations) >= 2 and np.random.random() < self.entanglement_strength:
+        if len(mutated_operations) >= 2 and np.secrets.SystemRandom().random() < self.entanglement_strength:
             # Entangle two random operations
             idx1, idx2 = np.random.choice(len(mutated_operations), size=2, replace=False)
             

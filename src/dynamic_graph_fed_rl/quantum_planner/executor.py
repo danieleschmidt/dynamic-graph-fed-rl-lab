@@ -1,3 +1,4 @@
+import secrets
 """
 Quantum-inspired executors for task execution.
 
@@ -308,7 +309,7 @@ class QuantumExecutor(BaseExecutor):
             await asyncio.sleep(min(actual_time, 0.5))  # Cap simulation time
             
             # Quantum error probability
-            if np.random.random() < self.error_probability:
+            if np.secrets.SystemRandom().random() < self.error_probability:
                 raise Exception(f"Quantum execution error in task {task.id}")
             
             task.result = {

@@ -1100,7 +1100,7 @@ class ComplianceFramework:
     
     def record_data_processing(self, activity: Dict[str, Any]) -> str:
         """Record a data processing activity for compliance tracking."""
-        activity_id = hashlib.md5(
+        activity_id = hashlib.sha256(
             f"{activity.get('purpose', '')}{time.time()}".encode()
         ).hexdigest()[:12]
         
@@ -1130,7 +1130,7 @@ class ComplianceFramework:
     
     def record_consent(self, data_subject_id: str, consent_details: Dict[str, Any]) -> str:
         """Record consent from a data subject."""
-        consent_id = hashlib.md5(
+        consent_id = hashlib.sha256(
             f"{data_subject_id}{time.time()}".encode()
         ).hexdigest()[:12]
         
@@ -1181,7 +1181,7 @@ class ComplianceFramework:
     
     def process_data_subject_request(self, request: Dict[str, Any]) -> str:
         """Process data subject rights requests (access, deletion, portability)."""
-        request_id = hashlib.md5(
+        request_id = hashlib.sha256(
             f"{request.get('subject_id', '')}{request.get('type', '')}{time.time()}".encode()
         ).hexdigest()[:12]
         
@@ -1270,7 +1270,7 @@ class ComplianceFramework:
     
     def run_compliance_audit(self, standard_id: Optional[str] = None) -> Dict[str, Any]:
         """Run comprehensive compliance audit."""
-        audit_id = hashlib.md5(f"audit_{time.time()}".encode()).hexdigest()[:12]
+        audit_id = hashlib.sha256(f"audit_{time.time()}".encode()).hexdigest()[:12]
         audit_timestamp = time.time()
         
         print(f"🔍 Starting compliance audit: {audit_id}")
@@ -1309,7 +1309,7 @@ class ComplianceFramework:
                     passed_checks += 1
                 else:
                     violation = ComplianceViolation(
-                        id=hashlib.md5(f"{std_id}_{requirement}_{time.time()}".encode()).hexdigest()[:12],
+                        id=hashlib.sha256(f"{std_id}_{requirement}_{time.time()}".encode()).hexdigest()[:12],
                         standard_id=std_id,
                         violation_type=requirement,
                         description=check_result.get("message", "Requirement not met"),

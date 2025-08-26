@@ -866,7 +866,7 @@ class ConsistentHashRing:
     
     def _hash(self, key: str) -> int:
         """Hash function for the ring."""
-        return int(hashlib.md5(key.encode()).hexdigest(), 16)
+        return int(hashlib.sha256(key.encode()).hexdigest(), 16)
     
     def add_node(self, node: str):
         """Add a node to the hash ring."""

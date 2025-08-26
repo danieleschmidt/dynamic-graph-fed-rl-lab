@@ -1,3 +1,4 @@
+import secrets
 """
 Comprehensive Test Validation Framework
 
@@ -1146,7 +1147,7 @@ class ComprehensiveTestFramework:
                         changes.append({
                             "file": file_path,
                             "type": "modification",
-                            "lines_changed": random.randint(5, 50)  # Mock
+                            "lines_changed": secrets.SystemRandom().randint(5, 50)  # Mock
                         })
                 
                 return changes
@@ -1212,7 +1213,7 @@ class ComprehensiveTestFramework:
             "branch_coverage": random.uniform(0.75, 0.90),
             "function_coverage": random.uniform(0.85, 0.98),
             "line_coverage": random.uniform(0.82, 0.94),
-            "uncovered_lines": random.randint(10, 100),
+            "uncovered_lines": secrets.SystemRandom().randint(10, 100),
             "coverage_by_category": {
                 category.value: random.uniform(0.70, 0.95)
                 for category in TestCategory
@@ -1284,11 +1285,11 @@ class ComprehensiveTestFramework:
         
         for test_id, execution in failures.items():
             # Mock pattern analysis
-            failure_categories["timeout"] = random.randint(0, 3)
-            failure_categories["assertion_error"] = random.randint(0, 5)
-            failure_categories["import_error"] = random.randint(0, 2)
-            error_types["environment_setup"] = random.randint(0, 2)
-            error_types["data_dependency"] = random.randint(0, 3)
+            failure_categories["timeout"] = secrets.SystemRandom().randint(0, 3)
+            failure_categories["assertion_error"] = secrets.SystemRandom().randint(0, 5)
+            failure_categories["import_error"] = secrets.SystemRandom().randint(0, 2)
+            error_types["environment_setup"] = secrets.SystemRandom().randint(0, 2)
+            error_types["data_dependency"] = secrets.SystemRandom().randint(0, 3)
         
         return {
             "total_failures": len(failures),

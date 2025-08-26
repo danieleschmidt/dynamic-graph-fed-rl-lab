@@ -1,0 +1,38 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fed-rl-app
+  namespace: dynamic-graph-fed-rl-production
+  labels:
+    app: fed-rl-app
+    version: v1
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: fed-rl-app
+  template:
+    metadata:
+      labels:
+        app: fed-rl-app
+        version: v1
+    spec:
+      containers:
+      - name: fed-rl-app
+        image: dynamic-graph-fed-rl:latest
+        ports:
+        - containerPort: 8080
+          name: http
+        resources:
+          requests:
+            cpu: 1
+            memory: 2Gi
+          limits:
+            cpu: 4
+            memory: 8Gi
+        env:
+        - name: ENVIRONMENT
+          value: "production"
+        - name: REGION
+          value: "us-west-2"

@@ -1,0 +1,579 @@
+{
+  "timestamp": "2025-08-26T12:51:32.422037+00:00",
+  "security_scans": {
+    "static_analysis": {
+      "scan_type": "static_code_analysis",
+      "vulnerabilities_found": 42,
+      "critical_issues": 1,
+      "high_issues": 41,
+      "medium_issues": 0,
+      "low_issues": 0,
+      "scan_duration": 1.5536918640136719,
+      "vulnerabilities": [
+        {
+          "severity": "HIGH",
+          "type": "weak_crypto",
+          "description": "Weak cryptographic algorithm usage",
+          "file_path": "/root/repo/src/dynamic_graph_fed_rl/deployment/breakthrough_global_deployment.py",
+          "line_number": 155,
+          "cwe_id": "CWE-327",
+          "remediation": "Use strong cryptographic algorithms (SHA-256+, AES)"
+        },
+        {
+          "severity": "HIGH",
+          "type": "weak_crypto",
+          "description": "Weak cryptographic algorithm usage",
+          "file_path": "/root/repo/src/dynamic_graph_fed_rl/deployment/breakthrough_global_deployment.py",
+          "line_number": 253,
+          "cwe_id": "CWE-327",
+          "remediation": "Use strong cryptographic algorithms (SHA-256+, AES)"
+        },
+        {
+          "severity": "HIGH",
+          "type": "weak_crypto",
+          "description": "Weak cryptographic algorithm usage",
+          "file_path": "/root/repo/src/dynamic_graph_fed_rl/environments/base.py",
+          "line_number": 37,
+          "cwe_id": "CWE-327",
+          "remediation": "Use strong cryptographic algorithms (SHA-256+, AES)"
+        },
+        {
+          "severity": "HIGH",
+          "type": "weak_crypto",
+          "description": "Weak cryptographic algorithm usage",
+          "file_path": "/root/repo/src/dynamic_graph_fed_rl/environments/traffic_network.py",
+          "line_number": 149,
+          "cwe_id": "CWE-327",
+          "remediation": "Use strong cryptographic algorithms (SHA-256+, AES)"
+        },
+        {
+          "severity": "HIGH",
+          "type": "weak_crypto",
+          "description": "Weak cryptographic algorithm usage",
+          "file_path": "/root/repo/src/dynamic_graph_fed_rl/environments/traffic_network.py",
+          "line_number": 205,
+          "cwe_id": "CWE-327",
+          "remediation": "Use strong cryptographic algorithms (SHA-256+, AES)"
+        },
+        {
+          "severity": "HIGH",
+          "type": "weak_crypto",
+          "description": "Weak cryptographic algorithm usage",
+          "file_path": "/root/repo/src/dynamic_graph_fed_rl/federation/gossip.py",
+          "line_number": 1151,
+          "cwe_id": "CWE-327",
+          "remediation": "Use strong cryptographic algorithms (SHA-256+, AES)"
+        },
+        {
+          "severity": "HIGH",
+          "type": "weak_crypto",
+          "description": "Weak cryptographic algorithm usage",
+          "file_path": "/root/repo/src/dynamic_graph_fed_rl/federation/gossip.py",
+          "line_number": 1186,
+          "cwe_id": "CWE-327",
+          "remediation": "Use strong cryptographic algorithms (SHA-256+, AES)"
+        },
+        {
+          "severity": "HIGH",
+          "type": "weak_crypto",
+          "description": "Weak cryptographic algorithm usage",
+          "file_path": "/root/repo/src/dynamic_graph_fed_rl/federation/quantum_inspired_gossip.py",
+          "line_number": 97,
+          "cwe_id": "CWE-327",
+          "remediation": "Use strong cryptographic algorithms (SHA-256+, AES)"
+        },
+        {
+          "severity": "HIGH",
+          "type": "weak_crypto",
+          "description": "Weak cryptographic algorithm usage",
+          "file_path": "/root/repo/src/dynamic_graph_fed_rl/federation/quantum_inspired_gossip.py",
+          "line_number": 184,
+          "cwe_id": "CWE-327",
+          "remediation": "Use strong cryptographic algorithms (SHA-256+, AES)"
+        },
+        {
+          "severity": "CRITICAL",
+          "type": "command_injection",
+          "description": "Potential command injection vulnerability",
+          "file_path": "/root/repo/src/dynamic_graph_fed_rl/optimization/self_healing.py",
+          "line_number": 498,
+          "cwe_id": "CWE-77",
+          "remediation": "Validate input and use safe subprocess methods"
+        },
+        {
+          "severity": "HIGH",
+          "type": "weak_crypto",
+          "description": "Weak cryptographic algorithm usage",
+          "file_path": "/root/repo/src/dynamic_graph_fed_rl/quantum_planner/core.py",
+          "line_number": 87,
+          "cwe_id": "CWE-327",
+          "remediation": "Use strong cryptographic algorithms (SHA-256+, AES)"
+        },
+        {
+          "severity": "HIGH",
+          "type": "weak_crypto",
+          "description": "Weak cryptographic algorithm usage",
+          "file_path": "/root/repo/src/dynamic_graph_fed_rl/quantum_planner/core.py",
+          "line_number": 89,
+          "cwe_id": "CWE-327",
+          "remediation": "Use strong cryptographic algorithms (SHA-256+, AES)"
+        },
+        {
+          "severity": "HIGH",
+          "type": "weak_crypto",
+          "description": "Weak cryptographic algorithm usage",
+          "file_path": "/root/repo/src/dynamic_graph_fed_rl/quantum_planner/performance.py",
+          "line_number": 275,
+          "cwe_id": "CWE-327",
+          "remediation": "Use strong cryptographic algorithms (SHA-256+, AES)"
+        },
+        {
+          "severity": "HIGH",
+          "type": "weak_crypto",
+          "description": "Weak cryptographic algorithm usage",
+          "file_path": "/root/repo/src/dynamic_graph_fed_rl/quantum_planner/scaling.py",
+          "line_number": 134,
+          "cwe_id": "CWE-327",
+          "remediation": "Use strong cryptographic algorithms (SHA-256+, AES)"
+        },
+        {
+          "severity": "HIGH",
+          "type": "weak_crypto",
+          "description": "Weak cryptographic algorithm usage",
+          "file_path": "/root/repo/src/dynamic_graph_fed_rl/quantum_planner/scaling.py",
+          "line_number": 145,
+          "cwe_id": "CWE-327",
+          "remediation": "Use strong cryptographic algorithms (SHA-256+, AES)"
+        },
+        {
+          "severity": "HIGH",
+          "type": "weak_crypto",
+          "description": "Weak cryptographic algorithm usage",
+          "file_path": "/root/repo/src/dynamic_graph_fed_rl/research/breakthrough_discovery_accelerator.py",
+          "line_number": 148,
+          "cwe_id": "CWE-327",
+          "remediation": "Use strong cryptographic algorithms (SHA-256+, AES)"
+        },
+        {
+          "severity": "HIGH",
+          "type": "weak_crypto",
+          "description": "Weak cryptographic algorithm usage",
+          "file_path": "/root/repo/src/dynamic_graph_fed_rl/research/breakthrough_discovery_accelerator.py",
+          "line_number": 258,
+          "cwe_id": "CWE-327",
+          "remediation": "Use strong cryptographic algorithms (SHA-256+, AES)"
+        },
+        {
+          "severity": "HIGH",
+          "type": "weak_crypto",
+          "description": "Weak cryptographic algorithm usage",
+          "file_path": "/root/repo/src/dynamic_graph_fed_rl/research/breakthrough_discovery_accelerator.py",
+          "line_number": 341,
+          "cwe_id": "CWE-327",
+          "remediation": "Use strong cryptographic algorithms (SHA-256+, AES)"
+        },
+        {
+          "severity": "HIGH",
+          "type": "weak_crypto",
+          "description": "Weak cryptographic algorithm usage",
+          "file_path": "/root/repo/src/dynamic_graph_fed_rl/research/breakthrough_discovery_accelerator.py",
+          "line_number": 376,
+          "cwe_id": "CWE-327",
+          "remediation": "Use strong cryptographic algorithms (SHA-256+, AES)"
+        },
+        {
+          "severity": "HIGH",
+          "type": "weak_crypto",
+          "description": "Weak cryptographic algorithm usage",
+          "file_path": "/root/repo/src/dynamic_graph_fed_rl/research/breakthrough_discovery_accelerator.py",
+          "line_number": 475,
+          "cwe_id": "CWE-327",
+          "remediation": "Use strong cryptographic algorithms (SHA-256+, AES)"
+        },
+        {
+          "severity": "HIGH",
+          "type": "weak_crypto",
+          "description": "Weak cryptographic algorithm usage",
+          "file_path": "/root/repo/src/dynamic_graph_fed_rl/research/breakthrough_discovery_accelerator.py",
+          "line_number": 484,
+          "cwe_id": "CWE-327",
+          "remediation": "Use strong cryptographic algorithms (SHA-256+, AES)"
+        },
+        {
+          "severity": "HIGH",
+          "type": "weak_crypto",
+          "description": "Weak cryptographic algorithm usage",
+          "file_path": "/root/repo/src/dynamic_graph_fed_rl/research/breakthrough_discovery_accelerator.py",
+          "line_number": 486,
+          "cwe_id": "CWE-327",
+          "remediation": "Use strong cryptographic algorithms (SHA-256+, AES)"
+        },
+        {
+          "severity": "HIGH",
+          "type": "weak_crypto",
+          "description": "Weak cryptographic algorithm usage",
+          "file_path": "/root/repo/src/dynamic_graph_fed_rl/research/breakthrough_discovery_accelerator.py",
+          "line_number": 494,
+          "cwe_id": "CWE-327",
+          "remediation": "Use strong cryptographic algorithms (SHA-256+, AES)"
+        },
+        {
+          "severity": "HIGH",
+          "type": "weak_crypto",
+          "description": "Weak cryptographic algorithm usage",
+          "file_path": "/root/repo/src/dynamic_graph_fed_rl/research/breakthrough_discovery_accelerator.py",
+          "line_number": 914,
+          "cwe_id": "CWE-327",
+          "remediation": "Use strong cryptographic algorithms (SHA-256+, AES)"
+        },
+        {
+          "severity": "HIGH",
+          "type": "weak_crypto",
+          "description": "Weak cryptographic algorithm usage",
+          "file_path": "/root/repo/src/dynamic_graph_fed_rl/research/breakthrough_discovery_accelerator.py",
+          "line_number": 917,
+          "cwe_id": "CWE-327",
+          "remediation": "Use strong cryptographic algorithms (SHA-256+, AES)"
+        },
+        {
+          "severity": "HIGH",
+          "type": "weak_crypto",
+          "description": "Weak cryptographic algorithm usage",
+          "file_path": "/root/repo/src/dynamic_graph_fed_rl/research/communication_efficiency.py",
+          "line_number": 581,
+          "cwe_id": "CWE-327",
+          "remediation": "Use strong cryptographic algorithms (SHA-256+, AES)"
+        },
+        {
+          "severity": "HIGH",
+          "type": "weak_crypto",
+          "description": "Weak cryptographic algorithm usage",
+          "file_path": "/root/repo/src/dynamic_graph_fed_rl/research/communication_efficiency.py",
+          "line_number": 686,
+          "cwe_id": "CWE-327",
+          "remediation": "Use strong cryptographic algorithms (SHA-256+, AES)"
+        },
+        {
+          "severity": "HIGH",
+          "type": "weak_crypto",
+          "description": "Weak cryptographic algorithm usage",
+          "file_path": "/root/repo/src/dynamic_graph_fed_rl/research/quantum_coherence.py",
+          "line_number": 320,
+          "cwe_id": "CWE-327",
+          "remediation": "Use strong cryptographic algorithms (SHA-256+, AES)"
+        },
+        {
+          "severity": "HIGH",
+          "type": "weak_crypto",
+          "description": "Weak cryptographic algorithm usage",
+          "file_path": "/root/repo/src/dynamic_graph_fed_rl/research/quantum_coherence.py",
+          "line_number": 335,
+          "cwe_id": "CWE-327",
+          "remediation": "Use strong cryptographic algorithms (SHA-256+, AES)"
+        },
+        {
+          "severity": "HIGH",
+          "type": "weak_crypto",
+          "description": "Weak cryptographic algorithm usage",
+          "file_path": "/root/repo/src/dynamic_graph_fed_rl/scaling/distributed_caching_system.py",
+          "line_number": 533,
+          "cwe_id": "CWE-327",
+          "remediation": "Use strong cryptographic algorithms (SHA-256+, AES)"
+        },
+        {
+          "severity": "HIGH",
+          "type": "weak_crypto",
+          "description": "Weak cryptographic algorithm usage",
+          "file_path": "/root/repo/src/dynamic_graph_fed_rl/scaling/distributed_caching_system.py",
+          "line_number": 550,
+          "cwe_id": "CWE-327",
+          "remediation": "Use strong cryptographic algorithms (SHA-256+, AES)"
+        },
+        {
+          "severity": "HIGH",
+          "type": "weak_crypto",
+          "description": "Weak cryptographic algorithm usage",
+          "file_path": "/root/repo/src/dynamic_graph_fed_rl/scaling/distributed_caching_system.py",
+          "line_number": 599,
+          "cwe_id": "CWE-327",
+          "remediation": "Use strong cryptographic algorithms (SHA-256+, AES)"
+        },
+        {
+          "severity": "HIGH",
+          "type": "weak_crypto",
+          "description": "Weak cryptographic algorithm usage",
+          "file_path": "/root/repo/src/dynamic_graph_fed_rl/scaling/distributed_caching_system.py",
+          "line_number": 628,
+          "cwe_id": "CWE-327",
+          "remediation": "Use strong cryptographic algorithms (SHA-256+, AES)"
+        },
+        {
+          "severity": "HIGH",
+          "type": "weak_crypto",
+          "description": "Weak cryptographic algorithm usage",
+          "file_path": "/root/repo/src/dynamic_graph_fed_rl/scaling/distributed_caching_system.py",
+          "line_number": 794,
+          "cwe_id": "CWE-327",
+          "remediation": "Use strong cryptographic algorithms (SHA-256+, AES)"
+        },
+        {
+          "severity": "HIGH",
+          "type": "weak_crypto",
+          "description": "Weak cryptographic algorithm usage",
+          "file_path": "/root/repo/src/dynamic_graph_fed_rl/scaling/distributed_caching_system.py",
+          "line_number": 905,
+          "cwe_id": "CWE-327",
+          "remediation": "Use strong cryptographic algorithms (SHA-256+, AES)"
+        },
+        {
+          "severity": "HIGH",
+          "type": "weak_crypto",
+          "description": "Weak cryptographic algorithm usage",
+          "file_path": "/root/repo/src/dynamic_graph_fed_rl/scaling/distributed_caching_system.py",
+          "line_number": 968,
+          "cwe_id": "CWE-327",
+          "remediation": "Use strong cryptographic algorithms (SHA-256+, AES)"
+        },
+        {
+          "severity": "HIGH",
+          "type": "weak_crypto",
+          "description": "Weak cryptographic algorithm usage",
+          "file_path": "/root/repo/src/dynamic_graph_fed_rl/scaling/distributed_caching_system.py",
+          "line_number": 1025,
+          "cwe_id": "CWE-327",
+          "remediation": "Use strong cryptographic algorithms (SHA-256+, AES)"
+        },
+        {
+          "severity": "HIGH",
+          "type": "weak_crypto",
+          "description": "Weak cryptographic algorithm usage",
+          "file_path": "/root/repo/src/dynamic_graph_fed_rl/utils/data_loader.py",
+          "line_number": 342,
+          "cwe_id": "CWE-327",
+          "remediation": "Use strong cryptographic algorithms (SHA-256+, AES)"
+        },
+        {
+          "severity": "HIGH",
+          "type": "weak_crypto",
+          "description": "Weak cryptographic algorithm usage",
+          "file_path": "/root/repo/src/dynamic_graph_fed_rl/utils/data_loader.py",
+          "line_number": 372,
+          "cwe_id": "CWE-327",
+          "remediation": "Use strong cryptographic algorithms (SHA-256+, AES)"
+        },
+        {
+          "severity": "HIGH",
+          "type": "weak_crypto",
+          "description": "Weak cryptographic algorithm usage",
+          "file_path": "/root/repo/src/dynamic_graph_fed_rl/utils/data_loader.py",
+          "line_number": 427,
+          "cwe_id": "CWE-327",
+          "remediation": "Use strong cryptographic algorithms (SHA-256+, AES)"
+        },
+        {
+          "severity": "HIGH",
+          "type": "weak_crypto",
+          "description": "Weak cryptographic algorithm usage",
+          "file_path": "/root/repo/src/dynamic_graph_fed_rl/utils/data_loader.py",
+          "line_number": 450,
+          "cwe_id": "CWE-327",
+          "remediation": "Use strong cryptographic algorithms (SHA-256+, AES)"
+        },
+        {
+          "severity": "HIGH",
+          "type": "weak_crypto",
+          "description": "Weak cryptographic algorithm usage",
+          "file_path": "/root/repo/src/dynamic_graph_fed_rl/utils/data_loader.py",
+          "line_number": 463,
+          "cwe_id": "CWE-327",
+          "remediation": "Use strong cryptographic algorithms (SHA-256+, AES)"
+        }
+      ]
+    },
+    "dependency_scan": {
+      "scan_type": "dependency_vulnerability_scan",
+      "vulnerabilities_found": 0,
+      "critical_issues": 0,
+      "high_issues": 0,
+      "medium_issues": 0,
+      "low_issues": 0,
+      "scan_duration": 0.00021696090698242188,
+      "vulnerabilities": []
+    },
+    "configuration_scan": {
+      "scan_type": "configuration_security_scan",
+      "vulnerabilities_found": 5,
+      "critical_issues": 0,
+      "high_issues": 0,
+      "medium_issues": 5,
+      "low_issues": 0,
+      "scan_duration": 0.05523848533630371,
+      "vulnerabilities": [
+        {
+          "severity": "MEDIUM",
+          "type": "insecure_configuration",
+          "description": "Default password detected",
+          "file_path": "/root/repo/docker-compose.yml",
+          "line_number": null,
+          "cwe_id": "CWE-16",
+          "remediation": "Review and harden configuration settings"
+        },
+        {
+          "severity": "MEDIUM",
+          "type": "insecure_configuration",
+          "description": "Default password detected",
+          "file_path": "/root/repo/deployment/docker-compose.prod.yml",
+          "line_number": null,
+          "cwe_id": "CWE-16",
+          "remediation": "Review and harden configuration settings"
+        },
+        {
+          "severity": "MEDIUM",
+          "type": "insecure_configuration",
+          "description": "Default password detected",
+          "file_path": "/root/repo/monitoring/docker-compose.monitoring.yml",
+          "line_number": null,
+          "cwe_id": "CWE-16",
+          "remediation": "Review and harden configuration settings"
+        },
+        {
+          "severity": "MEDIUM",
+          "type": "insecure_configuration",
+          "description": "DEBUG mode enabled in production",
+          "file_path": "/root/repo/security/configs/bandit.yml",
+          "line_number": null,
+          "cwe_id": "CWE-16",
+          "remediation": "Review and harden configuration settings"
+        },
+        {
+          "severity": "MEDIUM",
+          "type": "insecure_configuration",
+          "description": "Default password detected",
+          "file_path": "/root/repo/quality_gates_results.json",
+          "line_number": null,
+          "cwe_id": "CWE-16",
+          "remediation": "Review and harden configuration settings"
+        }
+      ]
+    }
+  },
+  "performance_benchmarks": {
+    "quantum": [
+      {
+        "test_name": "quantum_task_creation",
+        "metric": "task_creation_time",
+        "value": 0.00018552613258361817,
+        "unit": "seconds",
+        "baseline": 0.001,
+        "improvement": 81.44738674163818,
+        "status": "PASS"
+      },
+      {
+        "test_name": "quantum_superposition_ops",
+        "metric": "operations_per_second",
+        "value": 3230.592432612292,
+        "unit": "ops/sec",
+        "baseline": 2000,
+        "improvement": 61.529621630614606,
+        "status": "PASS"
+      },
+      {
+        "test_name": "quantum_optimization",
+        "metric": "convergence_rate",
+        "value": 800.419836912443,
+        "unit": "iterations/sec",
+        "baseline": 80,
+        "improvement": 900.5247961405537,
+        "status": "PASS"
+      }
+    ],
+    "federated": [
+      {
+        "test_name": "federated_aggregation",
+        "metric": "aggregation_time",
+        "value": 0.1073906421661377,
+        "unit": "seconds",
+        "baseline": 0.1,
+        "improvement": -7.39064216613769,
+        "status": "PASS"
+      },
+      {
+        "test_name": "communication_throughput",
+        "metric": "bytes_per_second",
+        "value": 897413.5271231984,
+        "unit": "bytes/sec",
+        "baseline": 100000,
+        "improvement": 797.4135271231984,
+        "status": "PASS"
+      },
+      {
+        "test_name": "consensus_algorithm",
+        "metric": "consensus_rounds_per_second",
+        "value": 81.64190725341804,
+        "unit": "rounds/sec",
+        "baseline": 5,
+        "improvement": 1532.8381450683607,
+        "status": "PASS"
+      }
+    ],
+    "security": [
+      {
+        "test_name": "encryption_operations",
+        "metric": "encryptions_per_second",
+        "value": 901.2933933579019,
+        "unit": "ops/sec",
+        "baseline": 1000,
+        "improvement": -9.870660664209812,
+        "status": "PASS"
+      },
+      {
+        "test_name": "key_generation",
+        "metric": "keys_per_second",
+        "value": 466.45877354923374,
+        "unit": "keys/sec",
+        "baseline": 100,
+        "improvement": 366.45877354923374,
+        "status": "PASS"
+      },
+      {
+        "test_name": "digital_signatures",
+        "metric": "signatures_per_second",
+        "value": 1582.1233770642687,
+        "unit": "signatures/sec",
+        "baseline": 500,
+        "improvement": 216.42467541285373,
+        "status": "PASS"
+      }
+    ],
+    "scaling": [
+      {
+        "test_name": "auto_scaling_response",
+        "metric": "average_response_time",
+        "value": 0.050221705436706544,
+        "unit": "seconds",
+        "baseline": 0.1,
+        "improvement": 49.77829456329346,
+        "status": "PASS"
+      },
+      {
+        "test_name": "load_balancing",
+        "metric": "requests_per_second",
+        "value": 5330.472997531943,
+        "unit": "req/sec",
+        "baseline": 5000,
+        "improvement": 6.609459950638866,
+        "status": "PASS"
+      },
+      {
+        "test_name": "resource_optimization",
+        "metric": "optimizations_per_second",
+        "value": 1641.6062622309198,
+        "unit": "optimizations/sec",
+        "baseline": 1000,
+        "improvement": 64.16062622309198,
+        "status": "PASS"
+      }
+    ]
+  },
+  "overall_status": "FAIL"
+}

@@ -1,3 +1,4 @@
+import secrets
 """
 Automated Robustness Testing Framework for Federated Learning Systems.
 
@@ -398,7 +399,7 @@ class LoadGenerator:
         await asyncio.sleep(random.uniform(0.01, 0.1))
         
         # Random chance of failure
-        if random.random() < 0.05:  # 5% failure rate
+        if secrets.SystemRandom().random() < 0.05:  # 5% failure rate
             raise Exception("Simulated federation request failure")
     
     async def _simulate_quantum_execution(self, complexity: int):
@@ -408,7 +409,7 @@ class LoadGenerator:
         await asyncio.sleep(execution_time)
         
         # Random chance of failure
-        if random.random() < 0.02:  # 2% failure rate
+        if secrets.SystemRandom().random() < 0.02:  # 2% failure rate
             raise Exception("Simulated quantum execution failure")
     
     async def stop_load(self, load_id: str) -> bool:
@@ -939,7 +940,7 @@ class RobustnessTestFramework:
             # Create memory pressure (simplified simulation)
             memory_data = []
             for i in range(1000):  # Create some memory pressure
-                memory_data.append([random.random() for _ in range(1000)])
+                memory_data.append([secrets.SystemRandom().random() for _ in range(1000)])
                 if i % 100 == 0:
                     await asyncio.sleep(0.1)  # Allow other tasks to run
             
@@ -1018,7 +1019,7 @@ class RobustnessTestFramework:
             "../../../etc/passwd",
             "{{7*7}}",
             "# SECURITY WARNING: eval() usage - validate input thoroughly
-eval(evil_code)",
+# SECURITY: eval() removed - evil_code",
             "\\x00\\x01\\x02",
             "A" * 10000  # Very long string
         ]

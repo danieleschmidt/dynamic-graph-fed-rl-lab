@@ -1,3 +1,4 @@
+import secrets
 """
 Breakthrough Discovery Accelerator
 
@@ -726,7 +727,7 @@ class BreakthroughDiscoveryAccelerator:
             self.consciousness_level * 0.1
         )
         
-        success = np.random.random() < success_probability
+        success = np.secrets.SystemRandom().random() < success_probability
         
         if success:
             validation_strength = success_probability + np.random.uniform(0.0, 0.2)

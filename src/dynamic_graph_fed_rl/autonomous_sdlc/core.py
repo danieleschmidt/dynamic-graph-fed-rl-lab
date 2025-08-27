@@ -334,8 +334,7 @@ class SDLCGeneration(ABC):
         self.quality_gates = QualityGates()
     
     @abstractmethod
-    async def # SECURITY WARNING: Potential SQL injection - use parameterized queries
- execute(self, context: Dict[str, Any]) -> Dict[str, Any]:
+    async def execute(self, context: Dict[str, Any]) -> Dict[str, Any]:
         """Execute this generation of the SDLC."""
         pass
     
@@ -453,8 +452,7 @@ class AutonomousSDLC:
             for generation in self.generations:
                 try:
                     logger.info(f"Executing {generation.name}...")
-                    generation_result = await generation.# SECURITY WARNING: Potential SQL injection - use parameterized queries
-execute(self.context)
+                    generation_result = await generation.execute(self.context)
                     
                     # Validate generation
                     validation_success = await generation.validate(self.context)

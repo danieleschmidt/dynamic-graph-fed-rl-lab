@@ -1,16 +1,16 @@
 {
-  "timestamp": 1755983086.0451028,
-  "overall_score": 0.7777777777777777,
+  "timestamp": 1756336853.7342036,
+  "overall_score": 0.5555555555555555,
   "security_score": 0.6666666666666666,
-  "performance_score": 1.0,
-  "coverage_score": 0.6666666666666666,
+  "performance_score": 0.6666666666666666,
+  "coverage_score": 0.3333333333333333,
   "test_results": [
     {
       "test_name": "parameter_injection_resistance",
       "passed": true,
-      "duration": 0.039016008377075195,
+      "duration": 0.055361032485961914,
       "details": {
-        "max_parameter_value": 0.15973351781601455,
+        "max_parameter_value": 0.10230613922137106,
         "malicious_params_tested": 4,
         "bounds_enforced": true
       },
@@ -19,7 +19,7 @@
     {
       "test_name": "data_sanitization",
       "passed": true,
-      "duration": 0.015909194946289062,
+      "duration": 0.0006873607635498047,
       "details": {
         "action_is_finite": true,
         "malicious_inputs_tested": 3
@@ -29,7 +29,7 @@
     {
       "test_name": "byzantine_resistance",
       "passed": false,
-      "duration": 0.002640962600708008,
+      "duration": 0.002278566360473633,
       "details": {
         "federation_completed": true,
         "parameters_bounded": false,
@@ -41,55 +41,51 @@
     {
       "test_name": "action_selection_performance",
       "passed": true,
-      "duration": 0.1463165283203125,
+      "duration": 0.15602564811706543,
       "details": {
         "iterations": 1000,
-        "avg_time_seconds": 0.00014588181900012387,
-        "max_time_seconds": 0.0006643130000156816,
-        "actions_per_second": 6854.863799025915
+        "avg_time_seconds": 0.00015562647499994852,
+        "max_time_seconds": 0.0006144390000031308,
+        "actions_per_second": 6425.641909580814
       },
       "error_message": null
     },
     {
       "test_name": "federation_performance",
       "passed": true,
-      "duration": 0.1253654956817627,
+      "duration": 0.08917045593261719,
       "details": {
         "successful_rounds": 100,
         "total_rounds": 100,
-        "avg_time_seconds": 0.0012485180899966509,
-        "max_time_seconds": 0.0034950739999999314,
-        "rounds_per_second": 800.9495481180272
+        "avg_time_seconds": 0.0008886272200001599,
+        "max_time_seconds": 0.0020578090000071825,
+        "rounds_per_second": 1125.3312722063815
       },
       "error_message": null
     },
     {
       "test_name": "memory_usage",
-      "passed": true,
-      "duration": 1.1440513134002686,
+      "passed": false,
+      "duration": 0.4420444965362549,
       "details": {
-        "initial_objects": 16742,
-        "final_objects": 19724,
-        "object_growth": 2982,
-        "growth_rate": 29.82
+        "initial_objects": 14467,
+        "final_objects": 29315,
+        "object_growth": 14848,
+        "growth_rate": 148.48
       },
       "error_message": null
     },
     {
       "test_name": "generation1_functionality",
-      "passed": true,
-      "duration": 0.26286792755126953,
-      "details": {
-        "episodes_completed": 20,
-        "federation_rounds": 100,
-        "final_reward": -0.004753014477129793
-      },
-      "error_message": null
+      "passed": false,
+      "duration": 0.010453939437866211,
+      "details": {},
+      "error_message": "No module named 'numpy'"
     },
     {
       "test_name": "generation2_robustness",
       "passed": true,
-      "duration": 0.01466512680053711,
+      "duration": 0.019774436950683594,
       "details": {
         "error_scenarios_tested": 3,
         "successful_handles": 3,
@@ -100,7 +96,7 @@
     {
       "test_name": "generation3_scalability",
       "passed": false,
-      "duration": 0.0002124309539794922,
+      "duration": 0.00021505355834960938,
       "details": {
         "caching_functional": true,
         "load_balancing_functional": false,
